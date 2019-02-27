@@ -1,0 +1,10 @@
+---
+layout: post
+title: Direct3D 11 on Windows Vista with WSUS
+date: 2010-01-28 18:59
+author: walbourn
+comments: true
+categories: [direct3d, Uncategorized]
+---
+<p>The DirectX SDK (August 2009) release was our "RTM" release for DirectX 11 and includes the final versions of headers, link libraries, deployment details, and samples for shipping DirectX 11 applications. The <em><a title="Direct3D 11 Deployment for Game Developers" href="http://msdn.microsoft.com/en-us/library/ee416644.aspx" mce_href="http://msdn.microsoft.com/en-us/library/ee416644.aspx">Direct3D 11 Deployment for Game Developers</a></em> article details most everything you need to know to handle the DirectX 11 dependancy for your application. Windows 7 and Windows Server 2008 R2 already include the runtime, although if you make use of HLSL at runtime or D3DX, you'll still need to use DirectSetup to deploy those components as they are not included in the OS--be sure to see <a title="DirectX Installation for Game Developers" href="http://msdn.microsoft.com/en-us/library/ee416805.aspx" mce_href="http://msdn.microsoft.com/en-us/library/ee416805.aspx"><em>DirectX Installation for Game Developers</em></a><em>. </em>DirectX 11 is available on Windows Vista and Windows Server 2008 through <a title="KB 971644" href="http://go.microsoft.com/fwlink/?LinkId=160189" mce_href="http://go.microsoft.com/fwlink/?LinkId=160189">KB 971644</a>&nbsp;as explained in detail in the article.</p>
+<p>This pretty much buttoned up the consumer experience, but there was one small catch. Many developers at large publishers are actually working within locally managed Windows Server Update Service (WSUS) environments. For these developers, KB 971644 is not available. Instead, corporate network users need to refer to <a title="KB 971512" href="http://support.microsoft.com/kb/971512/" mce_href="http://support.microsoft.com/kb/971512/">KB 971512</a>. This is covered in the DirectX SDK (Feburary 2010) version of the deployment article.</p>
