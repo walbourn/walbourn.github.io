@@ -15,4 +15,4 @@ permalink: /:title/
 
 markdown: kramdown
 
-theme: midnight
+theme: jekyll-theme-midnight
