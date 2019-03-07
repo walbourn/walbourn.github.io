@@ -1,7 +1,8 @@
 name: Games for Windows and the DirectX SDK blog
 
-# Short bio or description (displayed in the header)
 description: Technical tips, tricks, and news about game development for Microsoft platforms including desktop, Xbox One, and UWPWeb Developer from Somewhere
+
+author: Chuck Walbourn
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/X_jpg.jpg
