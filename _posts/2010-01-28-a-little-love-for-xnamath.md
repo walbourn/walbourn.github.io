@@ -14,6 +14,6 @@ A recent Gamaustra [article](http://www.gamasutra.com/view/feature/4248/designin
 
 XNAMath version 2.02 is shipping in the February 2010 releases of the DirectX SDK and the Xbox 360 XDK.
 
-<strong>Update:</strong> See [XNAMath v2.04](2011-02-23-xna-math-version-2-04.md)</a>.
+<strong>Update:</strong> See [[XNAMath v2.04|2011-02-23-xna-math-version-2-04]].
 
 <strong>GitHub:</strong> Note that DirectXMath (formerly XNAMath) is now hosted on [GitHub](https://github.com/Microsoft/DirectXMath).
