@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Announcement: DirectX SDK (June 2010) is live
+title: Announcement - DirectX SDK (June 2010) is live
 date: 2010-06-10 12:38
 author: walbourn
 comments: true
 categories: [dxsdk, hlsl, pixw, visualc, xnamath]
 ---
 The June 2010 release of the DirectX SDK is now available on [Microsoft Downloads](https://www.microsoft.com/en-us/download/details.aspx?id=6812). This release introduces official support for Visual Studio 2010, an updated version of the HLSL compiler with numerous fixes and minor improvements, improved documentation and samples, XNAMath C++ SIMD library version 2.03, and PIX for Windows usability improvements.
+<!--more-->
 
 For download details, see the [DirectX Developer Center](http://msdn.microsoft.com/directx/).
 

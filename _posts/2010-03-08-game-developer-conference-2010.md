@@ -6,7 +6,7 @@ author: walbourn
 comments: true
 categories: [conference]
 ---
-I'm off to San Francisco for this week's <a title=conference href="http://www.gdconf.com/" mce_href="http://www.gdconf.com/">conference</a>. Microsoft will be doing two tutorials days again this year, but unlike previous years it is a mixed track of Windows, Xbox 360, and other Microsoft game platforms including XNA Game Studio material on both days. At prior conferences the XNA Game Studio product was on one day, and everything else was on another day. We are giving a number of talks through Sponsered Sessions during the main conference as well.
+I'm off to San Francisco for this week's <a href="http://www.gdconf.com/">conference</a>. Microsoft will be doing two tutorials days again this year, but unlike previous years it is a mixed track of Windows, Xbox 360, and other Microsoft game platforms including XNA Game Studio material on both days. At prior conferences the XNA Game Studio product was on one day, and everything else was on another day. We are giving a number of talks through Sponsered Sessions during the main conference as well.
 <!--more-->
 
 With **Gamefest** being a closed event this year, GDC will be the first public venue for this material.
