@@ -4,7 +4,7 @@ title: DirectX SDK (February 2010) is live
 date: 2010-02-05 16:58
 author: walbourn
 comments: true
-categories: [dxsdk, Uncategorized, xnamath]
+categories: [dxsdk, xnamath]
 ---
 <p>The DirectX SDK (February 2010) release is live on [Microsoft downloads](https://www.microsoft.com/en-us/download/details.aspx?id=10084). See that page for full release notes.</p>
 
