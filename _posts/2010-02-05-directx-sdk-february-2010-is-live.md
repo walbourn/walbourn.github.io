@@ -16,3 +16,4 @@ categories: [dxsdk, xnamath]
 <li>Some updates to the <strong>Direct3D 11 Deployment for Game Developers </strong>article and D3D11InstallHelper sample for corporate networks</li>
 <li>A few API changes for <strong>XAudio2</strong></li>
 </ul>
+<!--more-->

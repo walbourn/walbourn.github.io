@@ -7,6 +7,7 @@ comments: true
 categories: [dds]
 ---
 For anyone doing work with DirectX, you've likely run into texture data being stored as a ``.DDS`` file. This format has it roots in the misty dark ages of DirectX history and in fact "DDS" stands for "DirectDraw Surface". The format is largely just a binary blob with a header derived from DirectDraw 7 structures. While DirectDraw itself has passed into the land of 'legacy' API, the file format itself lives on to store any number of hardware and API-specific data used as resources in rendering.
+<!--more-->
 
 In the Direct3D 9 era, the format was reasonably well understood with a number of standard "FourCC" codes being used for common data like "DXT1", "DXT2", etc. and occasionally strange video-related things like "UYVY" data.  Where the format could be expressed as a standard surface, most code did something reasonable and used some FourCC code otherwise. The problem was that some formats didn't really fit here, particularly floating-point surfaces, and people solved this typically by just saying it was a FourCC code in the header and setting the FourCC code directly to the value of the D3DFMT enumeration. This resulted in strange non-ASCII FourCC codes like 110 or 112, but it basically worked.
 
