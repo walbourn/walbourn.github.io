@@ -10,6 +10,7 @@ categories: [dxsdk]
 <strong>The DirectX SDK is now legacy. See [Where is the DirectX SDK?](https://walbourn.github.io/where-is-the-directx-sdk/), [Where is the DirectX SDK (2013 Edition)?](https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/), and [Where is the DirectX SDK (2015 Edition)?](https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/),</strong>
 
 The next release of the DirectX SDK is scheduled to ship to developers in early June 2010. This release will be the first update to the Windows Graphics components since the August 2009 release and will also introduce support for Visual Studio 2010.
+<!--more-->
 
 <strong>Visual Studio 2010 Support</strong>
 
