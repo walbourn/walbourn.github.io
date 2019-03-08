@@ -19,3 +19,5 @@ permalink: /:title/
 markdown: kramdown
 
 theme: jekyll-theme-midnight
+
+excerpt_separator: <!--more-->
