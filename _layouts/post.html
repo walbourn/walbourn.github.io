@@ -6,6 +6,7 @@ layout: default
 
   <header>
     <h1>{{ page.title }}</h1>
+    <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/><br/>
     <span class="author"><i class="icon-user"></i> {% if page.author %}{{page.author}}{% else %}{{site.author}}{% endif%}</span> - <span><i class="icon-clock"></i><time datetime="{{page.date|date:"%F"}}">{{page.date|date:"%b %d, %Y"}}</time></span>
   </header>
 
@@ -16,7 +17,6 @@ layout: default
   </div>
 
   <footer>
-    <span class="category"><i class="icon-tag"></i> {{ page.categories | category_links }}</span><br/><br/>
-    <a href="https://walbourn.github.io/">{{ site.title }}</a>
+    <a href="https://walbourn.github.io/">Home</a> | <a href="https://walbourn.github.io/tags/">Posts by Tag</a>
   </footer>
 </article>
