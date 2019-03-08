@@ -4,7 +4,7 @@ title: The DDS File Format Lives
 date: 2010-02-05 15:33
 author: walbourn
 comments: true
-categories: [dds, Uncategorized]
+categories: [dds]
 ---
 For anyone doing work with DirectX, you've likely run into texture data being stored as a ``.DDS`` file. This format has it roots in the misty dark ages of DirectX history and in fact "DDS" stands for "DirectDraw Surface". The format is largely just a binary blob with a header derived from DirectDraw 7 structures. While DirectDraw itself has passed into the land of 'legacy' API, the file format itself lives on to store any number of hardware and API-specific data used as resources in rendering.
 

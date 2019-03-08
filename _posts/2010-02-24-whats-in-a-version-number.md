@@ -4,7 +4,7 @@ title: What's in a version number?
 date: 2010-02-24 11:39
 author: walbourn
 comments: true
-categories: [directx, Uncategorized]
+categories: [directx]
 ---
 There are many version numbers in Windows, and many different ways to obtain and use them. The plethora of ways to get versioning information, and the many different kinds of components involved, has typically resulted in lots of rope for developers to hang themselves. These messes tend to explode when a new Service Pack comes out or with a new release of the Windows OS. This is often a shame because otherwise the programs work perfectly well on the new version of Windows as long as you lie to them about the OS version number. In fact there's a lot of work put into identifying failing applications and putting in explicit code to lie about the OS version number for each of them, but this manual can't be done for every piece of software on the planet. There's been some <a title="recent work" href="https://docs.microsoft.com/en-us/windows/desktop/Win7AppQual/compatibility---application-manifest">recent work</a> to try to automate this, but it too relies on developers to "do the right thing" so ultimately it isn't a problem that can be completely fixed here in Redmond.
 
