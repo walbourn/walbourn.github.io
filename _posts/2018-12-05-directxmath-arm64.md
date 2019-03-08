@@ -9,6 +9,7 @@ categories: [xnamath]
 The Visual Studio 2017 ([15.9 update](https://walbourn.github.io/vs-2017-15-9-update/)) now supports the <a href="https://blogs.windows.com/buildingapps/2018/11/15/official-support-for-windows-10-on-arm-development">ARM64 architecture</a> for the Universal Windows Platform (UWP) apps.
 
 The ARM64 platform supports ARM-NEON using the same intrinsics as the ARM (32-bit) platform. The Windows on ARM (32-bit) platform assumes support for ARMv7, ARM-NEON, and VFPv3. The Windows on ARM (64-bit) platform assumes support for ARMv8, ARM-NEON, and VFPv4.
+<!--more-->
 
 # ARMv8
 
