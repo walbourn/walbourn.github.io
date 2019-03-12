@@ -4,7 +4,7 @@ title: DirectXMath - ARM64
 date: 2018-12-05 18:13
 author: walbourn
 comments: true
-categories: [xnamath]
+categories: [directxmath]
 ---
 The Visual Studio 2017 ([15.9 update](https://walbourn.github.io/vs-2017-15-9-update/)) now supports the <a href="https://blogs.windows.com/buildingapps/2018/11/15/official-support-for-windows-10-on-arm-development">ARM64 architecture</a> for the Universal Windows Platform (UWP) apps.
 
@@ -22,7 +22,7 @@ The ARMv8 instruction set implies support for several useful intrinsics for Dire
  	<li>fused-multiply and accumulate: <code>vfmaq_f32</code>, <code>vfmsq_f32</code></li>
 </ul>
 
-In ARM (32-bit), vector division had to be implemented using multiply-by-reciprocal with 2 or 3 iterations of <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson</a> refinement which is less precise. For the ARM64 platform, I was able to replace all uses of divide in non-Est functions with a ‘true divide’ in <em>XMVectorDivide</em>, <em>XMVectorReciprocal</em>, and in the implementation for a number of other functions.
+In ARM (32-bit), vector division had to be implemented using multiply-by-reciprocal with 2 or 3 iterations of <a href="https://en.wikipedia.org/wiki/Newton%27s_method">Newton-Raphson</a> refinement which is less precise. For the ARM64 platform, I was able to replace all uses of divide in non-Est functions with a 'true divide' in <em>XMVectorDivide</em>, <em>XMVectorReciprocal</em>, and in the implementation for a number of other functions.
 
 For ARM (32-bit) I used a number of tricks to perform the rounding operations. With the ARM64 platform, I can use the new intrinsics to implement <em>XMVectorRound</em>, <em>XMVectorTruncate</em>, <em>XMVectorFloor</em>, and <em>XMVectorCeiling</em>.
 

@@ -6,7 +6,7 @@ author: walbourn
 comments: true
 categories: [uwp, visualc, win10, windowssdk]
 ---
-The <em>Windows 10 April 2018 Update</em> (a.k.a. Version 1803) is <a href="https://blogs.windows.com/buildingapps/2018/04/30/start-developing-on-windows-10-april-2018-update-today/">now available</a> along with the Windows 10 SDK (10.0.17134). The new SDK can be installed via VS 2017 (<a href="https://walbourn.github.io/vs-2017-15-7-update/">15.7 update</a>) or as a <a href="https://go.microsoft.com/fwlink/?linkid=870807">standalone installer</a>. This release includes some updates to DirectX 12, DirectWrite, and DXGI. See <a href="https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134">What’s New in Windows 10 for developers, build 17134</a>.
+The <em>Windows 10 April 2018 Update</em> (a.k.a. Version 1803) is <a href="https://blogs.windows.com/buildingapps/2018/04/30/start-developing-on-windows-10-april-2018-update-today/">now available</a> along with the Windows 10 SDK (10.0.17134). The new SDK can be installed via VS 2017 (<a href="https://walbourn.github.io/vs-2017-15-7-update/">15.7 update</a>) or as a <a href="https://go.microsoft.com/fwlink/?linkid=870807">standalone installer</a>. This release includes some updates to DirectX 12, DirectWrite, and DXGI. See <a href="https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17134">What's New in Windows 10 for developers, build 17134</a>.
 <!--more-->
 
 <strong>VS 2015 Users:</strong> The Windows 10 SDK (15063, 16299, 17134) is officially only supported for VS 2017.

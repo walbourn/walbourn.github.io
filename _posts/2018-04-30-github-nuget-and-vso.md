@@ -9,7 +9,7 @@ categories: [github]
 There are April 2018 releases on GitHub for DirectX Tool Kit (<a href="https://github.com/Microsoft/DirectXTK/releases">DX11</a> / <a href="https://github.com/Microsoft/DirectXTK12/releases">DX12</a>), <a href="https://github.com/Microsoft/DirectXTex/releases">DirectXTex</a>, <a href="https://github.com/Microsoft/DirectXMesh/releases">DirectXMesh</a>, and <a href="https://github.com/Microsoft/UVAtlas/releases">UVAtlas</a>. These were more minor releases focused on code quality, fixing a few bugs, and cleaning up some <a href="https://devblogs.microsoft.com/cppblog/c-code-analysis-improvements-for-visual-studio-2017-15-7-preview-1/">new /analyze</a> issues based on the <a href="https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/code-quality/using-the-cpp-core-guidelines-checkers.md">C++ Core Checker</a> rules that will be appearing in Visual Studio 2017 (15.7 update) which is currently in preview.
 <!--more-->
 
-I’m mentioning these because there are some changes happening with <a href="https://www.nuget.org/">NuGet </a>where I’ve also been publishing new releases of many of these libraries that has some important implications I wanted to announce.
+I'm mentioning these because there are some changes happening with <a href="https://www.nuget.org/">NuGet </a>where I've also been publishing new releases of many of these libraries that has some important implications I wanted to announce.
 
 <h1>The Good</h1>
 
@@ -17,7 +17,7 @@ NuGet packages are getting support for digital signing, which means better secur
 
 See <a href="https://blog.nuget.org/20180301/NuGet-Spring-2018-Roadmap.html">this NuGet blog post</a> for more details.
 
-To support digital signing, I’m setting up <a href="https://www.visualstudio.com/vso/">Visual Studio Team Services (VSTS) </a> build support for my libraries so they can be more officially built than just sitting on my machine. Much of Microsoft’s internal processes have migrated to using VSO for building including my group’s samples work, so this is generally all goodness and it’s been a good learning experience making use of the cloud-based build services.
+To support digital signing, I'm setting up <a href="https://www.visualstudio.com/vso/">Visual Studio Team Services (VSTS) </a> build support for my libraries so they can be more officially built than just sitting on my machine. Much of Microsoft's internal processes have migrated to using VSO for building including my group's samples work, so this is generally all goodness and it's been a good learning experience making use of the cloud-based build services.
 
 <h1>The Bad</h1>
 
@@ -27,15 +27,15 @@ As such, the April releases above will be the last to support Visual Studio 2013
 
 Mine are not the only open source packages from Microsoft so affected, so expect most of them to be dropping these platforms as well.
 
-<em>As an aside, this change is good news for me. This greatly reduces the number of configurations I maintain and let’s me focus on the more complete C++14 language and Standard library conformance in VS 2015 or later with a lot of messy conditional compilation. I realize it’s a potential hardship on some users of these libraries, but you can continue to use the April 2018 or earlier releases.</em>
+<em>As an aside, this change is good news for me. This greatly reduces the number of configurations I maintain and let's me focus on the more complete C++14 language and Standard library conformance in VS 2015 or later with a lot of messy conditional compilation. I realize it's a potential hardship on some users of these libraries, but you can continue to use the April 2018 or earlier releases.</em>
 
 Note that Xbox One XDK development never supported VS 2013.
 
 <h1>The Ugly</h1>
 
-Another consequence of the move to the VSO build solution is that I can’t make use of the <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">legacy DirectX SDK</a> in those solutions that are published as NuGet packages. For the most part I don’t need the legacy DirectX SDK for anything since that’s one of the main motivations for doing these libraries in the first place. There is, however, one specific scenario that still require the legacy DirectX SDK: <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio 2.7 support for Windows 7</a>.
+Another consequence of the move to the VSO build solution is that I can't make use of the <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">legacy DirectX SDK</a> in those solutions that are published as NuGet packages. For the most part I don't need the legacy DirectX SDK for anything since that's one of the main motivations for doing these libraries in the first place. There is, however, one specific scenario that still require the legacy DirectX SDK: <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio 2.7 support for Windows 7</a>.
 
-Up through the April 2018 release, the NuGet <code>directxtk_desktop_2015</code> package includes <code>DirectXTKAudioDX.lib</code> which uses XAudio 2.7 to support Windows 7, but I will now have to make it include the <code>DirectXTKAudioWin8.lib</code> instead for the May 2018 and later versions of the NuGet package. That means if you using a project that is set up to use DirectX Tool Kit for Audio with Windows 7 (``_WIN32_WINNT`` set to 0x0600 or 0x0601), you’ll now get a build failure including <code>"Audio.h"</code> or trying to link. The newer Win32 desktop NuGet packages will work fine if you are building for Windows 8 or later (``_WIN32_WINNT`` set to 0x0602, 0x0603, or 0x0A00).
+Up through the April 2018 release, the NuGet <code>directxtk_desktop_2015</code> package includes <code>DirectXTKAudioDX.lib</code> which uses XAudio 2.7 to support Windows 7, but I will now have to make it include the <code>DirectXTKAudioWin8.lib</code> instead for the May 2018 and later versions of the NuGet package. That means if you using a project that is set up to use DirectX Tool Kit for Audio with Windows 7 (``_WIN32_WINNT`` set to 0x0600 or 0x0601), you'll now get a build failure including <code>"Audio.h"</code> or trying to link. The newer Win32 desktop NuGet packages will work fine if you are building for Windows 8 or later (``_WIN32_WINNT`` set to 0x0602, 0x0603, or 0x0A00).
 
 Use of the <code>DirectXTKAudioDX.lib</code> already required some gymnastics with the legacy DirectX SDK and imposed specific deployment requirements using legacy DirectSetup. If you need DirectX Tool Kit for Audio support on Windows 7, I recommend you move to using <a href="https://github.com/Microsoft/DirectXTK/wiki/DirectXTK#using-project-to-project-references">project-to-project references</a> instead of the NuGet package.
 
