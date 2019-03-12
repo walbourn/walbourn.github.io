@@ -7,6 +7,7 @@ comments: true
 categories: [direct3d, github]
 ---
 As part of my multi-year personal project of providing <a href="https://walbourn.github.io/living-without-d3dx/">open source replacements</a> for the deprecated D3DX library once found in the <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">legacy DirectX SDK</a>, two libraries are focused on content creation tools and build pipelines. <em>DirectXTex</em> handles loading image files, texture processing including format conversion, mipmap generation, block-compression, and writing out 'fully cooked' textures into DDS files. <em>DirectXMesh</em> provides geometry support such as computing normals and tangent-frames, transparent vertex cache optimization, and provides utilities for extracting/inserting vertex data in vertex buffers.
+<!--more-->
 
 These libraries were originally written for DirectX 11, and it seems likely that most tools should continue to use DirectX 11 for the simplicity and ease of developer productivity. There are, however, cases where you want to use some of this functionality 'in-engine', so the January 2017 releases include DirectX 12 API support as well.
 

@@ -7,6 +7,7 @@ comments: true
 categories: [codeplex, github]
 ---
 Note that as of today, CodePlex is now 'read-only' per <a href="https://aka.ms/codeplex-announcement">this blog post</a>. I've been recommending people using CodePlex for <em>DirectX Tool Kit for DirectX 11</em>, <em>DirectXTex</em>, <em>DirectXMesh</em>, and <em>UVAtlas</em> move to using GitHub for some time, but it's now official. The CodePlex archive is expected to stay online as read-only, but with respect to my projects the GitHub version is now the only repo and the CodePlex version is an outdated mirror.
+<!--more-->
 
 <table border="1">
 <tbody>

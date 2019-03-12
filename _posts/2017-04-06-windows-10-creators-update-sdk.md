@@ -8,6 +8,7 @@ categories: [uwp, visualc, win10, windowssdk]
 ---
 
 The <a href="https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creators-update-creators-update-sdk-released/">Windows 10 Creators Update</a> (a.k.a. Version 1703) is now available along with a new <a href="https://blogs.windows.com/buildingapps/2017/04/05/updating-tooling-windows-10-creators-update/">Windows 10 SDK</a> release. The <em>Windows 10 Creators Update SDK</em> (10.0.15063) can be installed via <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2017-update/">VS 2017 (15.1)</a> or as a <a href="https://go.microsoft.com/fwlink/p/?linkid=845298">standalone installer</a>. This includes <a href="https://walbourn.github.io/directxmath-3-10/">DirectXMath 3.10</a> and updated versions of <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d12/new-releases#windows_10__version_1703">Direct3D 12</a>, DXGI 1.6, <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/direct3d-11-4-features">Direct3D 11.4</a> <a href="https://docs.microsoft.com/en-us/windows/desktop/Direct2D/what-s-new-in-direct2d-for-windows-8-consumer-preview">Direct2D</a>, and <a href="https://docs.microsoft.com/en-us/windows/desktop/DirectWrite/what-s-new-in-directwrite-for-windows-8-consumer-preview">DirectWrite</a>. See <a href="https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-15063">What's New in Windows 10 for developers, build 15063</a>.
+<!--more-->
 
 <h1>Visual Studio 2017 (15.1/15.2 Updates)</h1>
 

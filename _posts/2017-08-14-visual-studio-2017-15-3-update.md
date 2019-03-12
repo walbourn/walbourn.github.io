@@ -7,6 +7,7 @@ comments: true
 categories: [visualc]
 ---
 Since the release of Visual Studio 2017 in March, there have been two minor updates (<a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2017-update/">15.1</a> and <a href="https://devblogs.microsoft.com/visualstudio/update-to-visual-studio-2017-and-next-preview/">15.2</a>) per the new <a href="https://www.visualstudio.com/en-us/productinfo/vs2017-release-rhythm">release rhythm</a>. The first update (15.1) integrated the <a href="https://walbourn.github.io/windows-10-creators-update-sdk/">Windows 10 Creators Update SDK</a> (15063), and the second update (15.2) included fixes for the IDE and tools. Neither of these updates included significant changes to the C/C++ compiler beyond a few specific hotfixes. The first major revision to the Visual C++ 19.1 compiler and libraries is now available with the latest update: <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2017-version-15-3-released/">Visual Studio 2017 (15.3)</a>.
+<!--more-->
 
 If you already have VS 2017 installed, run the "Visual Studio Installer" application on your system to apply the update. If you don't yet have VS 2017 installed, you can download the latest installer from <a href="https://www.visualstudio.com/downloads/">here</a>.
 

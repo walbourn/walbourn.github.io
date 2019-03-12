@@ -7,6 +7,7 @@ comments: true
 categories: [general]
 ---
 <em>This is a bit of a nostalgic navel-gazing like my Windows XP post was back in <a href="https://walbourn.github.io/goodbye-to-an-old-friend/">October 2010</a>, so please forgive my indulgence.</em>
+<!--more-->
 
 This week, Windows Vista has officially reached <a href="https://support.microsoft.com/en-us/help/22882/windows-vista-end-of-support">end-of-life</a>. There's been a few retrospective press pieces like this one on <a href="https://arstechnica.com/information-technology/2017/04/windows-10-gets-major-update-as-windows-vista-reaches-its-end-of-life/">Ars Technica</a>, so I thought I'd chime in with my own thoughts. I started my tenure at Microsoft the week that Windows XP Service Pack 2 shipped, so I missed much of the early over-promising of "Project Longhorn" as well as the grueling grind of the "security reset" that culminated in the Windows XP SP2 release, so I consider Windows Vista to really be my 'first Windows release'. There was a lot of game developer education needed for Windows Vista including Direct3D 10, Game Explorer, Parental Controls, User Account Control, and Windows x64--my first public presentation on Windows Vista was back at GDC 2006.
 

@@ -7,6 +7,7 @@ comments: true
 categories: [github, hdr]
 ---
 High Dynamic Range (<a href="https://en.wikipedia.org/wiki/High-dynamic-range_imaging">HDR</a>) lighting has been used in games for a long time, popularized by titles like Valve's <a href="https://en.wikipedia.org/wiki/Half-Life_2">Half-Life 2</a> using DirectX 9.0c. The rendering uses float-point render targets, allowing the lighting to exceed the normal 0 to 1 range. Then the final result is <a href="https://en.wikipedia.org/wiki/Tone_mapping">tone-mapped</a> back into normal range for display. The result is much improved contrast, making it easier to see a mix of dark interiors with bright exteriors, more realistic outdoor lighting, and a host of special effects.
+<!--more-->
 
 Recent advances in display technology are adding the ability to render a wider range of luminance directly on the display, enabling a wider gamut of colors and better handling of HDR images and scenes. The 4k Ultra High Definition (4K UHD) standard includes the <a href="https://en.wikipedia.org/wiki/High-dynamic-range_video#HDR10">HDR10 Media Profile</a> supported by game consoles like the Xbox One S and Xbox One X, as well as by Windows PCs running the Windows 10 Creators Update. A range of HDR10 capable TVs and monitors are becoming available.
 
