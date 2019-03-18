@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Who moved my [Windows Media] Cheese"?
+title: Who moved my Windows Media Cheese?
 date: 2010-08-13 13:55
 author: Chuck Walbourn
 comments: true

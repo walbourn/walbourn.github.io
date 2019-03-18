@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Known Issue: Direct3D 11 UpdateSubresource and Deferred Contexts
+title: Known Issue - Direct3D 11 UpdateSubresource and Deferred Contexts
 date: 2010-07-28 14:31
 author: Chuck Walbourn
 comments: true
