@@ -2,7 +2,7 @@
 layout: post
 title: HDR Lighting and Displays
 date: 2017-08-08 22:33
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [github, hdr]
 ---

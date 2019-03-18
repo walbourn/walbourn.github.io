@@ -2,7 +2,7 @@
 layout: post
 title: DirectX Tool Kit for DirectX 12
 date: 2016-07-18 23:54
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d, github]
 ---

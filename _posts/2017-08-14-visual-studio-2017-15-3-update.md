@@ -2,7 +2,7 @@
 layout: post
 title: Visual Studio 2017 (15.3) update
 date: 2017-08-14 12:52
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [visualc]
 ---

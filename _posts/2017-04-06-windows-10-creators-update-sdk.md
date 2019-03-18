@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 Creators Update SDK
 date: 2017-04-06 06:03
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, visualc, win10, windowssdk]
 ---

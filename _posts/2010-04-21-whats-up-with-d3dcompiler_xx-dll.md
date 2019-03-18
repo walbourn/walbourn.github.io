@@ -2,7 +2,7 @@
 layout: post
 title: What's up with D3DCompiler_xx.DLL?
 date: 2010-04-21 16:00
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d, hlsl]
 ---

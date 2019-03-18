@@ -2,7 +2,7 @@
 layout: post
 title: DirectX Tool Kit and C++/WinRT
 date: 2017-02-11 07:54
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, visualc, xbox one]
 ---

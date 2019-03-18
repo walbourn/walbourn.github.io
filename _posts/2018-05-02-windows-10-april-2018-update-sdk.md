@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 April 2018 Update SDK
 date: 2018-05-02 22:52
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, visualc, win10, windowssdk]
 ---

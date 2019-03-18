@@ -2,7 +2,7 @@
 layout: post
 title: Visual Studio 2015 Update 2
 date: 2016-03-31 01:04
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [visualc]
 ---

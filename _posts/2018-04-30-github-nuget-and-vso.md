@@ -2,7 +2,7 @@
 layout: post
 title: GitHub, NuGet, and VSTS
 date: 2018-04-30 11:13
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [github]
 ---

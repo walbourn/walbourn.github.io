@@ -2,7 +2,7 @@
 layout: post
 title: DirectX 11 Hardware Vendor Differences
 date: 2010-06-10 13:03
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: DirectXMesh Update
 date: 2018-02-12 10:48
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [github]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: The DDS File Format Lives
 date: 2010-02-05 15:33
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [dds]
 ---

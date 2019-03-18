@@ -2,7 +2,7 @@
 layout: post
 title: A little love for XNAMath...
 date: 2010-01-28 18:21
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [xnamath, directxmath]
 ---

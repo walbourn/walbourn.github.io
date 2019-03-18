@@ -2,7 +2,7 @@
 layout: post
 title: Anatomy of Direct3D 12 Create Device
 date: 2016-08-16 23:39
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d, win10]
 ---

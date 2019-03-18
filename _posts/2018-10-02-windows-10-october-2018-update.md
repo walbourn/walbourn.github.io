@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 October 2018 Update
 date: 2018-10-02 16:20
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, visualc, win10, windowssdk]
 ---

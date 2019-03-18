@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 Anniversary Update SDK
 date: 2016-08-02 18:33
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, win10, windowssdk]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Announcement - DirectX SDK (June 2010) is live
 date: 2010-06-10 12:38
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [dxsdk, hlsl, pixw, visualc, directxmath]
 ---

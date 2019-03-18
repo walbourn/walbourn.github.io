@@ -2,7 +2,7 @@
 layout: post
 title: Windows 10 Fall Creators Update SDK
 date: 2017-10-11 13:19
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [uwp, visualc, win10, windowssdk]
 ---

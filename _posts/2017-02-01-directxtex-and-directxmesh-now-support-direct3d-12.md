@@ -2,7 +2,7 @@
 layout: post
 title: DirectXTex and DirectXMesh now support Direct3D 12
 date: 2017-02-01 06:55
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d, github]
 ---

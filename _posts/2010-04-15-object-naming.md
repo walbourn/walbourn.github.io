@@ -2,7 +2,7 @@
 layout: post
 title: Object Naming
 date: 2010-04-15 12:07
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d, pixw]
 ---

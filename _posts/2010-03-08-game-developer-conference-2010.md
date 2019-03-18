@@ -2,7 +2,7 @@
 layout: post
 title: Game Developer Conference 2010
 date: 2010-03-08 12:36
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [conference]
 ---

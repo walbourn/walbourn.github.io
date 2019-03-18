@@ -2,7 +2,7 @@
 layout: post
 title: DirectXMath - ARM64
 date: 2018-12-05 18:13
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [directxmath]
 ---

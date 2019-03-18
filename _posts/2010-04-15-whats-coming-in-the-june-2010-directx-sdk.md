@@ -2,7 +2,7 @@
 layout: post
 title: What's Coming in the June 2010 DirectX SDK
 date: 2010-04-15 11:57
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [dxsdk]
 ---

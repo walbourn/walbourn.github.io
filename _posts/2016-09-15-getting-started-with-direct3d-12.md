@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Direct3D 12
 date: 2016-09-15 19:41
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [direct3d]
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: What's in a version number?
 date: 2010-02-24 11:39
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [directx]
 ---

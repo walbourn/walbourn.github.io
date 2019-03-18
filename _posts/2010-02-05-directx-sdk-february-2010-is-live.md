@@ -2,7 +2,7 @@
 layout: post
 title: DirectX SDK (February 2010) is live
 date: 2010-02-05 16:58
-author: walbourn
+author: Chuck Walbourn
 comments: true
 categories: [dxsdk, directxmath]
 ---
