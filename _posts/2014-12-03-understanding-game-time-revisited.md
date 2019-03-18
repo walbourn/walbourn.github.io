@@ -69,7 +69,7 @@ The work around to all these problems is the Win32 API <code>QueryPerformanceCou
 
 <strong>Windows RT/Windows phone: </strong>The ARM instruction <code>rdpmccntr64</code> is not guaranteed to be sync'd between cores, and <code>rdtsc</code> is not supported for this platform. Use <code>QueryPerformanceCounter</code>.
 
-<h1>C++11 <chrono></h1>
+<h1>C++11 chrono</h1>
 
 With C++11's ``<chrono>`` header you may well be tempted to go with the 'standards-based' solution and use <code>high_precision_clock</code>. Unfortunately, the VS 2012 and VS 2013 implementations of both <code>high_precision_clock</code> and <code>steady_clock</code> are not based on <code>QueryPerformanceCounter</code>, and instead use <code>GetSystemTimeAsFileTime</code> which is not nearly as high-precision as you'd expect--this is fixed in <a href="https://walbourn.github.io/visual-studio-2015-rtm/">Visual Studio 2015</a> or later.
 

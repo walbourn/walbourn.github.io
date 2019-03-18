@@ -1,6 +1,6 @@
 ---
 layout: post
-title: UVAtlas: Return of the Isochart
+title: UVAtlas - Return of the Isochart
 date: 2014-11-14 02:00
 author: Chuck Walbourn
 comments: true
@@ -48,5 +48,6 @@ Here's a handy table of equivalents for D3DX (see <a href="https://walbourn.gith
 </tbody>
 </table>
 
-<strong>Update: </strong>In related news, I've also posted an update of <a href="http://go.microsoft.com/fwlink/?LinkID=324981">DirectXMesh</a> with a sample tool <em>meshconvert</em>.</p>
-<p>In addition to <a href="https://uvatlas.codeplex.com/">CodePlex</a>, this project is also hosted on <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.
+<strong>Update: </strong>In related news, I've also posted an update of <a href="http://go.microsoft.com/fwlink/?LinkID=324981">DirectXMesh</a> with a sample tool <em>meshconvert</em>.
+
+In addition to <a href="https://uvatlas.codeplex.com/">CodePlex</a>, this project is also hosted on <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.
