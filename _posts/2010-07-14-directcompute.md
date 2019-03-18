@@ -23,7 +23,7 @@ The following samples:<br /><a href="https://github.com/walbourn/directx-sdk-sam
 
 NVIDIA and AMD also did a number of presentations at <strong>Game Developers Conference</strong>, including the following talks covering DirectCompute:
 
-<strong>GDC 2010 - </strong><em>DirectCompute Performance on DX11 Hardware</em><br /><a href="http://developer.download.nvidia.com/presentations/2010/gdc/DirectCompute_Performance.pdf">NVIDIA Developer Website</a> | <a href="https://developer.amd.com/wordpress/media/2012/10/DirectCompute%20Performance.ppsx">AMD Developer Website</a>
+<strong>GDC 2010 - </strong><em>DirectCompute Performance on DX11 Hardware</em><br /><a href="http://developer.download.nvidia.com/presentations/2010/gdc/DirectCompute_Performance.pdf">NVIDIA Developer Website</a> or <a href="https://developer.amd.com/wordpress/media/2012/10/DirectCompute%20Performance.ppsx">AMD Developer Website</a>
 
 <strong>GDC 2009 - </strong><em>Shader Model 5.0 and Compute Shader</em> (AMD)<br />
 
