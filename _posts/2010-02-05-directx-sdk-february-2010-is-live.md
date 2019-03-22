@@ -6,9 +6,9 @@ author: Chuck Walbourn
 comments: true
 categories: [dxsdk, directxmath]
 ---
-<p>The DirectX SDK (February 2010) release is live on [Microsoft downloads](https://www.microsoft.com/en-us/download/details.aspx?id=10084). See that page for full release notes.</p>
+The DirectX SDK (February 2010) release is live on [Microsoft downloads](https://www.microsoft.com/en-us/download/details.aspx?id=10084). See that page for full release notes.
 
-<p>This release contains:</p>
+This release contains:
 
 <ul>
 <li><strong>Improvements to PIX </strong>particularly for Direct3D 11 support</li>

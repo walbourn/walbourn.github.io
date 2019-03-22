@@ -12,7 +12,7 @@ An update to Visual Studio 2013 is now available for <a href="http://go.microsof
 For more details see <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2013-update-2-is-here/">Visual Studio Team Blog</a>, <a href="https://devblogs.microsoft.com/bharry/vs-2013-update-2-and-other-teched-news/
 ">Brian Harry's blog</a>, and <a href="https://devblogs.microsoft.com/somasegar/mobile-first-cloud-first-development-visual-studio-2013-update-2-released-visual-studio-apache-cordova-tooling-preview-and-the-future-of-net-for-cloud-and-server/">Somasegar's blog</a>.
 
-<p>Official KB article <a href="http://go.microsoft.com/fwlink/?LinkId=390522">2927432</a></p>
+Official KB article <a href="http://go.microsoft.com/fwlink/?LinkId=390522">2927432</a>
 
 <h1>Compiler and CRT</h1>
 

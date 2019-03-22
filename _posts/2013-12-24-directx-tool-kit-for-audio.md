@@ -40,5 +40,6 @@ More detailed <a href="https://github.com/Microsoft/DirectXTK/wiki/Audio">docume
 
 ``*`` = The December 2013 releases of <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a> on CodePlex fully support development for both Xbox One ADK and Xbox One XDK developers. See <a href="http://www.xbox.com/en-us/Developers/id">ID@Xbox</a>.
 
-<strong>Update:</strong> The January 2014 release of DirectXTK includes voice management and optional mastering volume limiter. Refreshed all the Simple Sample releases to include <em>DirectXTK for Audio</em> demo. DirectX Tool Kit is also hosted on <a href="https://github.com/Microsoft/DirectXTK">GitHub</a></p>
-<p><strong>Windows 10: </strong>When building with the Windows 10 SDK, <em>DirectX Tool Kit</em> for Audio uses <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ee415802.aspx">XAudio 2.9</a>.
+<strong>Update:</strong> The January 2014 release of DirectXTK includes voice management and optional mastering volume limiter. Refreshed all the Simple Sample releases to include <em>DirectXTK for Audio</em> demo. DirectX Tool Kit is also hosted on <a href="https://github.com/Microsoft/DirectXTK">GitHub</a>
+
+<strong>Windows 10: </strong>When building with the Windows 10 SDK, <em>DirectX Tool Kit</em> for Audio uses <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ee415802.aspx">XAudio 2.9</a>.

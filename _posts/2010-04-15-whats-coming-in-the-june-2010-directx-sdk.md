@@ -78,7 +78,7 @@ The June 2010 DirectX SDK adds the following new method to the <strong>ID3D11Sha
 
 <strong>New HLSL Compiler fixes and features</strong>
 
-The HLSL Effects compiler (fxc.exe) has been updated with the following fixes and features:</p>
+The HLSL Effects compiler (fxc.exe) has been updated with the following fixes and features:
 
 <ul>
 <li>No-optimization (``/Od``) compiles will produce less-optimized code than before in order to provide improved debugging.</li>
@@ -90,7 +90,7 @@ The HLSL Effects compiler (fxc.exe) has been updated with the following fixes an
 
 <strong>Documentation Enhancements</strong>
 
-The June 2010 DirectX SDK includes the following documentation enhancements:</p>
+The June 2010 DirectX SDK includes the following documentation enhancements:
 
 <ul>
 <li>Added links to descriptions of data types for parameters and return values to help developers locate related types.</li>

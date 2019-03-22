@@ -17,4 +17,4 @@ For the latest documentation on the Samples Content Exporter, see the <a href="h
 
 <strong>Disclaimer:</strong> <code>.SDKMESH</code> has been our long-time samples runtime geometry format since the retiring of the legacy .X file format. It has a number of limitations, and we don't recommend using it as a your production solution for meshes. It is, however, very useful for samples and itself serves as an example of such file containers. Support for loading this file format can be found in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit library</a> and the <a href="http://go.microsoft.com/fwlink/?LinkId=320437">DXUT for Direct3D 11 framework</a>. The documentation on the format can be found <a href="https://github.com/walbourn/contentexporter/wiki/SDKMESH">here</a>.
 
-<p><strong>Related: </strong><a href="https://walbourn.github.io/samples-content-exporter-update/">Samples Content Exporter Update (April 2012)</a></p>
+<strong>Related: </strong><a href="https://walbourn.github.io/samples-content-exporter-update/">Samples Content Exporter Update (April 2012)</a>

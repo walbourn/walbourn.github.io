@@ -21,4 +21,4 @@ While many legacy DirectX APIs were left behind in the 32-bit only world (<em>Di
 
 In general for video processing it is recommended that you make use of <em>DirectShow</em> or <em>Windows Media Foundation</em>. For low-level video operations on Windows Vista and Windows 7, you can make use of the <a href="http://msdn.microsoft.com/en-us/library/aa965263.aspx">DXVA 2.0</a> API. On Windows XP, DXVA 1.0 is supported through VMR9 via <em>DirectShow</em>.
 
-<p><strong>Update</strong>: I have made some improvements to the <em>DDSWithoutD3DX11 </em>sample and updated the <code>DDS.H</code> header since the June 2010 release. See my <a href="https://walbourn.github.io/ddswithoutd3dx-sample-update/">blog post</a> on this topic.</p>
+<strong>Update</strong>: I have made some improvements to the <em>DDSWithoutD3DX11 </em>sample and updated the <code>DDS.H</code> header since the June 2010 release. See my <a href="https://walbourn.github.io/ddswithoutd3dx-sample-update/">blog post</a> on this topic.

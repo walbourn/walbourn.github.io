@@ -19,5 +19,6 @@ See the <a href="https://blogs.windows.com/buildingapps/2015/03/23/windows-10-de
 
 <em><strong>Update:</strong> With the release of flight <a href="https://blogs.windows.com/windowsexperience/2015/06/12/releasing-windows-10-insider-preview-build-10130-for-pcs-to-the-slow-ring/">10130</a>, the <code>GamePad</code> class in DirectX Tool Kit makes use of the new <code>IGamePad</code> WinRT class for universal Windows apps. Note that this API currently supports Xbox 360 Common Controllers, but does not yet support Xbox One Controllers in this flight.</em>
 
-<strong>DirectXMath:</strong> This Windows 10 SDK preview includes DirectXMath 3.07 which addresses a number of <a href="https://walbourn.github.io/known-issues-directxmath-3-06/">known issues in version 3.06</a>.</p>
-<p><strong>Related:</strong> <a href="https://walbourn.github.io/windows-10-technical-preview/">Windows 10 Technical Preview</a>
+<strong>DirectXMath:</strong> This Windows 10 SDK preview includes DirectXMath 3.07 which addresses a number of <a href="https://walbourn.github.io/known-issues-directxmath-3-06/">known issues in version 3.06</a>.
+
+<strong>Related:</strong> <a href="https://walbourn.github.io/windows-10-technical-preview/">Windows 10 Technical Preview</a>

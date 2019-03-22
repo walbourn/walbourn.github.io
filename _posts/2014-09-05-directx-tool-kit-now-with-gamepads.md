@@ -17,8 +17,9 @@ The September 2014 release of <a href="http://go.microsoft.com/fwlink/?LinkId=24
 
 See the <a href="https://github.com/Microsoft/DirectXTK/wiki/GamePad">documentation wiki page</a> on the new class for details, and the <a href="https://github.com/Microsoft/DirectXTK/wiki/Game-controller-input">tutorial</a>.
 
-<em>The headset audio features of XInput are not supported by the GamePad class. Headset audio is not supported by XInput 9.1.0, has some known issues in XInput 1.3 on Windows 7 and below, works a bit differently in XInput 1.4 on Windows 8, and is completely different again on the Xbox One platform. </em></p>
-<p>The GamePad class is supported on all the DirectX Tool Kit platforms: Win32 desktop applications for Windows Vista or later, Windows Store apps for Windows 8.x, and Xbox One. You can create and poll the GamePad class on Windows Phone 8.x as well, but since there's no support for gamepads on that platform it always returns 'no gamepad connected'.
+<em>The headset audio features of XInput are not supported by the GamePad class. Headset audio is not supported by XInput 9.1.0, has some known issues in XInput 1.3 on Windows 7 and below, works a bit differently in XInput 1.4 on Windows 8, and is completely different again on the Xbox One platform. </em>
+
+The GamePad class is supported on all the DirectX Tool Kit platforms: Win32 desktop applications for Windows Vista or later, Windows Store apps for Windows 8.x, and Xbox One. You can create and poll the GamePad class on Windows Phone 8.x as well, but since there's no support for gamepads on that platform it always returns 'no gamepad connected'.
 
 <h1>Xbox One Controller</h1>
 

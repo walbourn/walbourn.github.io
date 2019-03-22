@@ -75,9 +75,13 @@ This next set of headers/libraries are only needed when targeting Windows 7 or e
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> The Windows 8.x SDK copy of <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.4 if ``_WIN32_WINNT`` is set below 0x0602 (Windows 8.0). The legacy DirectX SDK <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.3. if <code>XINPUT_USE_9_1_0</code> is defined. The Windows 7.1 SDK copy of <code>xinput.h</code> only uses XInput 9.1.0.</p>
+
+<strong>Note:</strong> The Windows 8.x SDK copy of <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.4 if ``_WIN32_WINNT`` is set below 0x0602 (Windows 8.0). The legacy DirectX SDK <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.3. if <code>XINPUT_USE_9_1_0</code> is defined. The Windows 7.1 SDK copy of <code>xinput.h</code> only uses XInput 9.1.0.
+
 <h1>Windows XP</h1>
-<p>Lastly, this set of headers/libraries are only needed when targeting Windows XP (i.e. building a EXE that can run on Windows XP as obviously Direct3D 10.x and Direct3D 11 are not supported on Windows XP). These headers/libs all conflict with the Windows 8.x SDK except XNAMath, are out of date compared to the Windows 8.x SDK, and should be moved into a subfolder. Some of these are not present in the Windows 7.1A SDK, while others are newer versions.</p>
+
+Lastly, this set of headers/libraries are only needed when targeting Windows XP (i.e. building a EXE that can run on Windows XP as obviously Direct3D 10.x and Direct3D 11 are not supported on Windows XP). These headers/libs all conflict with the Windows 8.x SDK except XNAMath, are out of date compared to the Windows 8.x SDK, and should be moved into a subfolder. Some of these are not present in the Windows 7.1A SDK, while others are newer versions.
+
 <table border="1">
 <tbody>
 <tr>
@@ -99,7 +103,8 @@ This next set of headers/libraries are only needed when targeting Windows 7 or e
 
 <h1>Project Configuration</h1>
 
-<p>Assuming you had a <code>dxsdk</code> subtree configured as described above, then you should use the following as <em>Additional Include Paths</em> and <em>Additional Library Paths</em> in your project settings depending on your target platform if you have legacy DirectX SDK dependencies. <em>Ideally you should minimize and work to eliminate all use of the legacy DirectX SDK in favor of the standard Windows SDK content.</em></p>
+Assuming you had a <code>dxsdk</code> subtree configured as described above, then you should use the following as <em>Additional Include Paths</em> and <em>Additional Library Paths</em> in your project settings depending on your target platform if you have legacy DirectX SDK dependencies. <em>Ideally you should minimize and work to eliminate all use of the legacy DirectX SDK in favor of the standard Windows SDK content.</em>
+
 <ul>
 <li>For Windows Store apps, universal Windows apps, Windows phone apps, and Xbox One apps you should <span style="text-decoration: underline;">not use any</span> of these paths in your build.</li>
 </ul>

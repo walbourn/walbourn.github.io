@@ -13,8 +13,9 @@ See <a href="http://support.microsoft.com/kb/2797912">KB 2797912</a>
 
 <h1>Compiler and CRT</h1>
 
-<em>VS 2012 Update 2</em> includes a new version of the compiler (17.00.60315).</p>
-<p>The C/C++ Runtime was not updated, so you should continue to use the <em>VS 2012 Update 1</em> version (11.0.51106).
+<em>VS 2012 Update 2</em> includes a new version of the compiler (17.00.60315).
+
+The C/C++ Runtime was not updated, so you should continue to use the <em>VS 2012 Update 1</em> version (11.0.51106).
 
 <h1>Graphics Diagnostics</h1>
 

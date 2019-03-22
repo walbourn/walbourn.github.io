@@ -18,7 +18,9 @@ The most recent additions to the library include
 <li>Improved <strong>GeometricPrimitive</strong> with support for proper winding order for both right-handed coordinates (the assumed default based on the XNA Game Studio conventions) and left-handed coordinates (typically used by DirectX C++ applications), as well as support for drawing them with custom effects.</li>
 <li><a href="https://github.com/Microsoft/DirectXTK/wiki/Model">Model</a> - This draws simple meshes loaded from Visual Studio 2012's built in Autodesk FBX exporter <code>.CMO</code> files or the legacy DirectX SDK <a href="https://walbourn.github.io/samples-content-exporter-update/">Samples Content Exporter</a> <code>.SDKMESH</code> files. This is currently limited to rigid models but we'll be working to add skinning support.</li>
 </ul>
-<p>The <strike>CodePlex</strike>GitHub site hosts the latest version of the library, <a href="https://github.com/Microsoft/DirectXTK/wiki">documentation</a>, discussion forums, bug reports, and feature requests. Developers can use Visual Studio 2012 or use Visual Studio 2010 with the standalone Windows 8.0 SDK.</p>
+
+The <strike>CodePlex</strike>GitHub site hosts the latest version of the library, <a href="https://github.com/Microsoft/DirectXTK/wiki">documentation</a>, discussion forums, bug reports, and feature requests. Developers can use Visual Studio 2012 or use Visual Studio 2010 with the standalone Windows 8.0 SDK.
+
 <a href="https://github.com/Microsoft/DirectXTK">https://github.com/Microsoft/DirectXTK</a>
 
 We are also getting some samples using DirectXTK available on <a href="https://github.com/walbourn/directxtk-samples">GitHub</a>.
