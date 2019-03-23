@@ -1,6 +1,6 @@
 ---
 layout: post
-title: XDSP.H: Digital Signal Processing helper functions
+title: XDSP.H - Digital Signal Processing helper functions
 date: 2012-04-30 16:52
 author: Chuck Walbourn
 comments: true
