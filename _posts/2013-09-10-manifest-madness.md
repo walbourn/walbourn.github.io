@@ -53,7 +53,7 @@ In the Windows 10 (14393) update, the system now supports a new element, ``<dpiA
 
 With Windows Vista, just having the UAC elements was enough to know that the application had been updated for Windows Vista. If no UAC manifest element was found, Windows Vista enabled the Program Compatibility Assistant (PCA) which could check for common failures and resolve them.
 
-Windows 7 needed a new way to detect if the EXE really understood Windows 7 to avoid any use of the <a href="https://blogs.msdn.microsoft.com/cjacks/2011/11/22/managing-the-windows-7-program-compatibility-assistant-pca/">PCA</a>, and UAC manifest elements alone wasn't sufficient. The solution was... (drum roll, please): more manifest elements! You again add an "Additional Manifest Files" file reference to a text file containing:
+Windows 7 needed a new way to detect if the EXE really understood Windows 7 to avoid any use of the <a href="https://techcommunity.microsoft.com/t5/Windows-Blog-Archive/Managing-the-Windows-7-Program-Compatibility-Assistant-PCA/ba-p/228724">PCA</a>, and UAC manifest elements alone wasn't sufficient. The solution was... (drum roll, please): more manifest elements! You again add an "Additional Manifest Files" file reference to a text file containing:
 
 ```
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
