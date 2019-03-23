@@ -67,6 +67,9 @@ if ( SUCCEEDED( XAudio2Create( &pXAudio2, 0 ) ) )
     IXAudio2MasteringVoice* pMasteringVoice = nullptr;
     if ( SUCCEEDED( pXAudio2->CreateMasteringVoice( &pMasteringVoice, 0, 0, 0, index ) ) )
     {
+      ...
+    }
+  }
 ```
 
 This code assumes you are only supporting Windows Vista or later which supports WASAPI. If you still need to support Windows XP, you need to add an additional comparison in the search loop over XAudio2 device details values in the code above. On Windows XP, the deviceID from XAudio2 is a DirectSound GUID, while on Windows Vista and later it is a WASAPI Audio Endpoint Device Identifier.
@@ -74,7 +77,7 @@ This code assumes you are only supporting Windows Vista or later which supports 
 ```cpp
 #if (_WIN32_WINNT < _WIN32_WINNT_VISTA)
 WCHAR szDSGUID[40] = {};
-swprintf_s( szDSGUID, L"{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}\n",
+swprintf_s( szDSGUID, L"{ %08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X }\n",
   render.Data1, render.Data2, render.Data3,
   render.Data4[0], render.Data4[1], render.Data4[2], render.Data4[3],
   render.Data4[4], render.Data4[5], render.Data4[6], render.Data4[7] );
@@ -108,7 +111,7 @@ bool DSoundtoMMEndpoint(const GUID& guid, WCHAR* id, size_t maxsize, bool captur
         if (SUCCEEDED(hr))
         {
             WCHAR szDSGUID[40] = {};
-            swprintf_s(szDSGUID, L"{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}\n",
+            swprintf_s(szDSGUID, L"{ %08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X }\n",
                 guid.Data1, guid.Data2, guid.Data3,
                 guid.Data4[0], .Data4[1], guid.Data4[2], guid.Data4[3],
                 guid.Data4[4], guid.Data4[5], guid.Data4[6], guid.Data4[7]);
