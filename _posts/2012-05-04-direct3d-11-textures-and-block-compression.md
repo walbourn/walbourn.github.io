@@ -140,11 +140,9 @@ The legacy DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-dir
 
 <h1>Presentations</h1>
 
-Modern Texture Content Pipelines (<em>Gamefest 2011</em>)
+Modern Texture Content Pipelines (<em>Gamefest 2011</em>) [link](https://walbourn.github.io/download/Graphics-Modern-Texture-Content-Pipelines.zip)
 
-Tiled Resources for Xbox 360 and Direct3D 11 (Gamefest 2011)
-
-Block Compression Smorgasbord (<em>Gamefest 2010</em>)
+Block Compression Smorgasbord (<em>Gamefest 2010</em>) [link](https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip)
 
 <h1>IHV Compressors</h1>
 
