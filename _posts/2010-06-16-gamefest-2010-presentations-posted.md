@@ -27,7 +27,7 @@ Think DirectX 11 Tessellation! - What Are Your Options?
 
 DirectX 11 DirectCompute: A Teraflop for Everyone
 
-Block Compression Smorgasbord
+Block Compression Smorgasbord [link](https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip)
 
 Advanced Rendering Techniques with DirectX 11 (AMD)
 

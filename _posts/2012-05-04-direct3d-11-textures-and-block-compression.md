@@ -140,9 +140,9 @@ The legacy DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-dir
 
 <h1>Presentations</h1>
 
-Modern Texture Content Pipelines (<em>Gamefest 2011</em>) [link](https://walbourn.github.io/download/Graphics-Modern-Texture-Content-Pipelines.zip)
+Modern Texture Content Pipelines (Gamefest 2011) [link](https://walbourn.github.io/download/Graphics-Modern-Texture-Content-Pipelines.zip)
 
-Block Compression Smorgasbord (<em>Gamefest 2010</em>) [link](https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip)
+Block Compression Smorgasbord (Gamefest 2010) [link](https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip)
 
 <h1>IHV Compressors</h1>
 
@@ -154,6 +154,6 @@ The various video independent hardware vendors (IHVs) have their own texture too
 <li><a href="https://developer.nvidia.com/gpu-accelerated-texture-compression">NVIDIA Texture Tools</a><br /><a href="https://developer.nvidia.com/nvidia-texture-tools-adobe-photoshop">NVIDIA Texture Tools for Adobe Photoshop</a></li>
 </ul>
 
-<em>Note that the NVIDIA tools haven't been updated in some time, and are currently missing support for the <a href="https://walbourn.github.io/the-dds-file-format-lives/">DX10 header extension</a>, BC6H, and BC7.</em>
+> The NVIDIA tools haven't been updated in some time, and are currently missing support for the <a href="https://walbourn.github.io/the-dds-file-format-lives/">DX10 header extension</a>, BC6H, and BC7.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/getting-started-with-direct3d-11/">Getting Started with Direct3D 11</a>
