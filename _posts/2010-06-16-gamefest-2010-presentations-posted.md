@@ -25,7 +25,7 @@ DirectX 11 Technology Update <a href="https://walbourn.github.io/download/Direct
 
 Think DirectX 11 Tessellation! - What Are Your Options?
 
-DirectX 11 DirectCompute: A Teraflop for Everyone
+DirectX 11 DirectCompute: A Teraflop for Everyone [link](https://walbourn.github.io/download/DirectX-11-DirectCompute-A-Teraflop-for-Everyone.zip)
 
 Block Compression Smorgasbord [link](https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip)
 

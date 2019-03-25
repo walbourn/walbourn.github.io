@@ -140,9 +140,10 @@ The legacy DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-dir
 
 <h1>Presentations</h1>
 
-Modern Texture Content Pipelines (Gamefest 2011) <a href="https://walbourn.github.io/download/Graphics-Modern-Texture-Content-Pipelines.zip">link</a>
-
-Block Compression Smorgasbord (Gamefest 2010) <a href="https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip">link</a>
+<ul>
+<li>Modern Texture Content Pipelines (Gamefest 2011) <a href="https://walbourn.github.io/download/Graphics-Modern-Texture-Content-Pipelines.zip">link</a></li>
+<li>Block Compression Smorgasbord (Gamefest 2010) <a href="https://walbourn.github.io/download/Block-Compression-Smorgasbord.zip">link</a></li>
+</ul>
 
 <h1>IHV Compressors</h1>
 

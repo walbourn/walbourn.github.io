@@ -9,11 +9,11 @@ categories: [directcompute, directx]
 The DirectX 11 Compute Shader, also known as <em>Direct Compute</em>, is a powerful but complex feature. In addition to the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/direct3d-11-advanced-stages-compute-shader">Windows DirectX Graphics documentation</a>, here is a list of resources for learning to use this technology:
 <!--more-->
 
-<strong>Gamefest 2008</strong> - <em>Direct3D 11 Compute Shader --More Generality for Advanced Techniques</em><br />
+<strong>Gamefest 2008</strong> - <em>Direct3D 11 Compute Shader -- More Generality for Advanced Techniques</em> <a href="https://walbourn.github.io/download/Direct3D-11-Compute-Shader-More-Generality-for-Advanced-Techniques.zip">link</a><br />
 
-<strong>Game Developer Conference 2009</strong> - <em>Direct3D11 Multithreaded Rendering and Compute</em><br />
+<strong>Game Developer Conference 2009</strong> - <em>Direct3D11 Multithreaded Rendering and Compute</em> <a href="https://walbourn.github.io/download/Direct3D11-Multithreaded-Rendering-and-Compute.zip">link</a><br />
 
-<strong>Gamefest 2010</strong> - <em>DirectX 11 DirectCompute - A Teraflop for Everyone<br /></em>
+<strong>Gamefest 2010</strong> - <em>DirectX 11 DirectCompute - A Teraflop for Everyone</em> <a href="https://walbourn.github.io/download/DirectX-11-DirectCompute-A-Teraflop-for-Everyone.zip">link</a><br />
 
 <strong>Channel 9</strong> DirectCompute Lecture Series<br /><a href="http://go.microsoft.com/fwlink/?LinkId=194362">Channel 9</a>
 
