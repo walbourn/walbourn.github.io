@@ -11,41 +11,31 @@ With the inclusion of <a href="https://walbourn.github.io/xaudio2-and-windows-8-
 
 <h1>Gamefest 2007</h1>
 
-Power to the Core: Audio Foundations on Microsoft Platforms
+<a href="https://walbourn.github.io/download/XAudio-2-Goes-Green.zip">XAudio2 Goes Green: Making Game Audio a Sustainable Resource</a>
 
-XAudio2 Goes Green: Making Game Audio a Sustainable Resource
+<a href="https://walbourn.github.io/download/Positioning-Yourself-for-3D-X3DAudio-and-Sound-Spatialization.zip">Positioning Yourself for 3D: X3DAudio and Sound Spatialization</a>
 
-Learn to Speak XAudio2 Like a Pro: Translating from DirectSound and XAudio
-
-Positioning Yourself for 3D: X3DAudio and Sound Spatialization
-
-xAPOs Mark the Spot: The DSP Implementation Framework for XAudio2
+<a href="https://walbourn.github.io/download/xAPOs-Mark-the-Spot.zip">xAPOs Mark the Spot: The DSP Implementation Framework for XAudio2</a>
 
 <h1>Gamefest 2008</strong></h1>
 
-Audio Blueprints: Microsoft Platform Audio Architecture 101
+<a href="https://walbourn.github.io/download/XAudio-2-An-Acoustic-Architecture.zip">XAudio2: An Acoustic Architecture</a>
 
-XAudio2: An Acoustic Architecture
+<a href="https://walbourn.github.io/download/XAudio-2-Advanced.zip">XAudio2 Advanced</a>
 
-Learn to Speak XAudio2 Like a Pro: Translating from DirectSound and XAudio
-
-XAudio2 Advanced
-
-Codifying Microsoft Game Audio Codecs
-
-xAPOs: Build Your Own "Sound Shaders"
+<a href="https://walbourn.github.io/download/xAPOs-Build-Your-Own-Sound-Shaders.zip">xAPOs: Build Your Own "Sound Shaders"</a>
 
 <h1>Gamefest 2010</h1>
 
-XAudio2 - High Performance Considerations
+<a href="https://walbourn.github.io/download/XAudio2-Performance-Tips.zip">XAudio2 - High Performance Considerations</a>
 
-The (3D) Sound of Success - X3DAudio and Sound Positioning
+<a href="https://walbourn.github.io/download/The-3D-Sound-of-Success.zip">The (3D) Sound of Success - X3DAudio and Sound Positioning</a>
 
 <h1>Gamefest 2011</h1>
 
-Higher-Performance XAudio2
+<a href="https://walbourn.github.io/download/Audio_XAudio2_Advanced.zip">Higher-Performance XAudio2</a>
 
-Making the Most of XAudio2's xAPO Framework
+<a href="https://walbourn.github.io/download/Audio_Making_the_Most_of_XAudio2_xAPO_Framework.zip">Making the Most of XAudio2's xAPO Framework</a>
 
 <h1>Windows Store app samples</h1>
 

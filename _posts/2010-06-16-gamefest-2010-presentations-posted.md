@@ -49,9 +49,9 @@ Moving Beyond Threads: Parallel Programming in C++ with the Parallel Pattern Lib
 
 <strong>XAUDIO2 </strong>(<em>Audio</em>)
 
-XAudio2: High Performance Considerations
+XAudio2: High Performance Considerations [link](https://walbourn.github.io/download/XAudio2-Performance-Tips.zip)
 
-The (3D) Sound of Success: X3DAudio and Sound Positioning
+The (3D) Sound of Success: X3DAudio and Sound Positioning [link](https://walbourn.github.io/download/The-3D-Sound-of-Success.zip)
 
 <strong>Games for Windows - LIVE</strong>
 
