@@ -23,7 +23,7 @@ System-wide Game Profiling with the Windows Performance Toolkit (<em>CPU and Sys
 
 DirectX 11 Technology Update <a href="https://walbourn.github.io/download/DirectX-11-Technology-Update.zip">link</a>
 
-Think DirectX 11 Tessellation! - What Are Your Options?
+Think DirectX 11 Tessellation! - What Are Your Options? <a href="https://walbourn.github.io/download/Think-DirectX11-Tessellation-what-are-your-options.zip">link</a>
 
 DirectX 11 DirectCompute: A Teraflop for Everyone [link](https://walbourn.github.io/download/DirectX-11-DirectCompute-A-Teraflop-for-Everyone.zip)
 

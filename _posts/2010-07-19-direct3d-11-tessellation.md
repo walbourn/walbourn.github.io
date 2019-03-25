@@ -6,18 +6,18 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, tessellation]
 ---
-The new hardware tessellation feature available on Direct3D 11 video cards has great potential, but using it effectively currently requires understanding higher-order surfaces as well as a myriad of performance implications. In addition to the <a href="http://msdn.microsoft.com/en-us/library/ff476340.aspx">Windows DirectX Graphics documentation</a>, here are a number of resources for learning more about using Direct3D 11 Tessellation:
+The new hardware tessellation feature available on Direct3D 11 video cards has great potential, but using it effectively currently requires understanding higher-order surfaces as well as a myriad of performance implications. In addition to the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/direct3d-11-advanced-stages-tessellation">Windows DirectX Graphics documentation</a>, here are a number of resources for learning more about using Direct3D 11 Tessellation:
 <!--more-->
 
-<strong>Gamefest 2008</strong> - <em>Direct3D 11 Tessellation</em><br />
+<strong>Gamefest 2008</strong> - <em>Direct3D 11 Tessellation</em> <a href="https://walbourn.github.io/download/Direct3D-11-Tessellation.zip">link</a><br />
 
 <strong>Gamefest 2008 </strong>- <em>Advanced Topics in GPU Tessellation</em> (AMD/ATI)<br />
 
 <strong>Gamefest 2008</strong> - <em>Water-Tight, Textured, Displaced Subdivision Surface Tessellation Using Direct3D 11 </em>(NVIDIA)<br />
 
-<strong>Game Developer Conference 2009</strong> - <em>Direct3D11 Tessellation Deep Dive</em><br />
+<strong>Game Developer Conference 2009</strong> - <em>Direct3D11 Tessellation Deep Dive</em> <a href="https://walbourn.github.io/download/Direct3D-11-Tessellation-Deep-Dive.zip">link</a><br />
 
-<strong>Gamefest 2010</strong> -<em> Think DirectX 11 Tessellation! - What Are Your Options?</em><br />
+<strong>Gamefest 2010</strong> -<em> Think DirectX 11 Tessellation! - What Are Your Options?</em> <a href="https://walbourn.github.io/download/Think-DirectX11-Tessellation-what-are-your-options.zip">link</a><br />
 
 The following samples:<br /><a href="http://developer.amd.com/tools-and-sdks/graphics-development/amd-radeon-sdk/">DetailTessellation11, PNTriangles11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/SimpleBezier11">SimpleBezier11</a>, and <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/SubD11">SubD11</a>
 
