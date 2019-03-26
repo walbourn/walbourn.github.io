@@ -49,4 +49,4 @@ There is something called the <em>DirectX 12 SDK</em> which was used as a beta v
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>
 
-<strong>See also:</strong> <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where is DXERR.LIB?</a>, <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">GDF Tools</a>, <a href="https://walbourn.github.io/xdsp-h/">XDSP.H</a>, <a href="https://walbourn.github.io/spherical-harmonics-math/">SH Math</a>
+<strong>See also:</strong> <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where is DXERR.LIB?</a>, <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">GDF Tools</a>, <a href="https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/">XDSP.H</a>, <a href="https://walbourn.github.io/spherical-harmonics-math/">SH Math</a>

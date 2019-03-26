@@ -40,7 +40,7 @@ BTW, if you want to know what those SAL2 fixups look like:
 Additional math functionality that build on DirectXMath's capabilities are also available
 
 <ul>
- 	<li><a href="https://walbourn.github.io/xdsp-h/">Digital Signal Processing helper functions</a></li>
+ 	<li><a href="https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/">Digital Signal Processing helper functions</a></li>
  	<li><a href="https://walbourn.github.io/spherical-harmonics-math/">Spherical Harmonics math</a></li>
 </ul>
 

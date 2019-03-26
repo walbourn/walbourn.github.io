@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [audio, input, win8]
 ---
-In an earlier [post](https://walbourn.github.io/xinput-and-windows-8-consumer-preview), I covered how to use XInput with the release of the Windows 8 Consumer Preview. In this post, I'll discuss how to make use of headset audio for the Xbox 360 Common Controller.
+In an earlier [post](https://walbourn.github.io/xinput-and-windows-8/), I covered how to use XInput with the release of the Windows 8 Consumer Preview. In this post, I'll discuss how to make use of headset audio for the Xbox 360 Common Controller.
 <!--more-->
 
 <strong>Update:</strong> This advice also applies to the [Windows 8 Release Preview](https://walbourn.github.io/windows-8-release-preview-and-gdfs) / RTM and [Visual Studio 2012 RC](https://walbourn.github.io/visual-studio-2012-release-candidate) / RTM.

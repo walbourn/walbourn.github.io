@@ -55,4 +55,4 @@ With the inclusion of <a href="https://walbourn.github.io/xaudio2-and-windows-8/
 
 <a href="http://msdn.microsoft.com/en-us/magazine/dn166936.aspx">Streaming and Manipulating Audio Files in Windows 8</a> (April 2013)
 
-**Related:** <a href="https://walbourn.github.io/xdsp-h/">XDSP</a>, <a href="https://walbourn.github.io/xinput-and-xaudio2/">XINPUT</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-audio/">DirectXTK for Audio</a>, <a href="https://walbourn.github.io/known-issues-xaudio-2-7/">Known Issues: XAudio 2.7</a>
+**Related:** <a href="https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/">XDSP</a>, <a href="https://walbourn.github.io/xinput-and-xaudio2/">XINPUT</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-audio/">DirectXTK for Audio</a>, <a href="https://walbourn.github.io/known-issues-xaudio-2-7/">Known Issues: XAudio 2.7</a>
