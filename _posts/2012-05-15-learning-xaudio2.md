@@ -17,7 +17,7 @@ With the inclusion of <a href="https://walbourn.github.io/xaudio2-and-windows-8-
 
 <a href="https://walbourn.github.io/download/xAPOs-Mark-the-Spot.zip">xAPOs Mark the Spot: The DSP Implementation Framework for XAudio2</a>
 
-<h1>Gamefest 2008</strong></h1>
+<h1>Gamefest 2008</h1>
 
 <a href="https://walbourn.github.io/download/XAudio-2-An-Acoustic-Architecture.zip">XAudio2: An Acoustic Architecture</a>
 
@@ -45,7 +45,7 @@ With the inclusion of <a href="https://walbourn.github.io/xaudio2-and-windows-8-
 
 <h1>Win32 desktop samples</h1>
 
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Win32 Samples</a>
+<a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Win32 Samples</a>
 
 <h1>MSDN Magazine</h1>
 

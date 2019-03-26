@@ -52,7 +52,7 @@ Feature Level 11.0 and 11.1 devices support <a href="https://docs.microsoft.com/
 
 <h1>Porting Notes</h1>
 
-<p>Here's a handy table of equivalents for replacing legacy D3DX texture related functions.
+Here's a handy table of equivalents for replacing legacy D3DX texture related functions.
 
 <table border="1">
 <tbody>
