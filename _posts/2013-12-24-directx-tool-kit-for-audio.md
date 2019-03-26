@@ -36,7 +36,7 @@ More detailed <a href="https://github.com/Microsoft/DirectXTK/wiki/Audio">docume
 <li><a href="https://developer.xboxlive.com/en-us/platform/development/adk/Pages/ADKSamples.aspx">DirectXTK Simple Sample for Xbox One ADK</a> (login required)</li>
 </ul>
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/xaudio2-and-windows-8-consumer-preview/">XAudio2 and Windows 8</a>, <a href="https://walbourn.github.io/directxtk/">DirectXTK (March 2012)</a>, <a href="https://walbourn.github.io/directxtk-update/">DirectXTK Update (Jan 2013)</a>, <a href="https://walbourn.github.io/codeplex-vs-2013-refresh/">CodePlex VS 2013 Refresh</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a>, <a href="https://walbourn.github.io/directxtk/">DirectXTK (March 2012)</a>, <a href="https://walbourn.github.io/directxtk-update/">DirectXTK Update (Jan 2013)</a>, <a href="https://walbourn.github.io/codeplex-vs-2013-refresh/">CodePlex VS 2013 Refresh</a>
 
 ``*`` = The December 2013 releases of <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> and <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a> on CodePlex fully support development for both Xbox One ADK and Xbox One XDK developers. See <a href="http://www.xbox.com/en-us/Developers/id">ID@Xbox</a>.
 

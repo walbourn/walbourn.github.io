@@ -62,7 +62,7 @@ In this series of posts, I explore how applications using DirectXMath can take a
 
 <ul>
  	<li><a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a></li>
- 	<li><a href="https://walbourn.github.io/directxmath-sse4-1-and-sse-4-2/">SSE4.1 and SSE 4.2</a></li>
+ 	<li><a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE 4.2</a></li>
  	<li><a href="https://walbourn.github.io/directxmath-avx/">AVX</a></li>
  	<li><a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a></li>
  	<li><a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a></li>

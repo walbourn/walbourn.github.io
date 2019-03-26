@@ -57,7 +57,7 @@ The next set of headers/libs are those that are unique to the legacy DirectX SDK
 
 <h1>Windows 7</h1>
 
-This next set of headers/libraries are only needed when targeting Windows 7 or earlier if you are using XAudio or more functionality for XInput than is provided in the basic 9.1.0 version of the API which is already present on Windows. This provides XAudio 2.7 (see <a href="https://walbourn.github.io/xaudio2-and-windows-8-consumer-preview/">this post</a>) and XInput 1.3 (see <a href="https://walbourn.github.io/xinput-and-windows-8-consumer-preview/">this post</a>). These headers/libs directly conflict with headers/libs in the Windows 8.x SDK, are not present in the Windows 7.1A SDK, and should be moved into a subfolder.
+This next set of headers/libraries are only needed when targeting Windows 7 or earlier if you are using XAudio or more functionality for XInput than is provided in the basic 9.1.0 version of the API which is already present on Windows. This provides XAudio 2.7 (see <a href="https://walbourn.github.io/xaudio2-and-windows-8/">this post</a>) and XInput 1.3 (see <a href="https://walbourn.github.io/xinput-and-windows-8/">this post</a>). These headers/libs directly conflict with headers/libs in the Windows 8.x SDK, are not present in the Windows 7.1A SDK, and should be moved into a subfolder.
 
 <table border="1">
 <tbody>
@@ -146,4 +146,4 @@ If you make use of these legacy DirectX SDK libraries, then you continue to depe
 <li>Use of <code>dxsdk\include\xp</code> for <code>D3DCompiler_43.DLL</code> or <code>D3DCSX_43.DLL</code></li>
 </ul>
 
-<strong>VS 2015 Users:  </strong>Note that <code>DXERR.LIB</code> in the legacy DirectX SDK is not compatible with the C Runtime used by VS 2015. You must use <a href="https://walbourn.github.io/where-s-dxerr-lib/">this version</a> of DXERR instead.
+<strong>VS 2015 Users:  </strong>Note that <code>DXERR.LIB</code> in the legacy DirectX SDK is not compatible with the C Runtime used by VS 2015. You must use <a href="https://walbourn.github.io/wheres-dxerr-lib/">this version</a> of DXERR instead.

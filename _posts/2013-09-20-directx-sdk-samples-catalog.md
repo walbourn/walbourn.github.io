@@ -155,7 +155,7 @@ SimpleController<br /> RumbleController</td>
 <td>
 <p><a href="http://code.msdn.microsoft.com/XInput-Win32-Samples-cc25ce24">XInput Samples</a> (Win32)</p>
 <p>XInput 1.4 is only supported on Windows 8.x. XInput 1.3 is only available in the DirectX SDK.</p>
-<p>See <a href="https://walbourn.github.io/xinput-and-windows-8-consumer-preview/">XINPUT and Windows 8</a> for more information.</p>
+<p>See <a href="https://walbourn.github.io/xinput-and-windows-8/">XINPUT and Windows 8</a> for more information.</p>
 <p>Windows Store sample:<br /><a href="http://code.msdn.microsoft.com/windowsapps/Simple-XInput-Controller-77c4b8e5">Game controller sample</a></p>
 </td>
 </tr>
@@ -166,7 +166,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <td>
 <p><a href="http://code.msdn.microsoft.com/XAudio2-Win32-Samples-024b3933">XAudio2 Samples</a> (Win32)</p>
 <p>XAudio 2.8 is only supported on Windows 8.x. XAudio 2.7 is only available in the DirectX SDK.</p>
-<p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8-consumer-preview/">XAudio2 and Windows 8</a> for more information.</p>
+<p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> for more information.</p>
 <p>Windows Store app samples:<br /><a href="http://code.msdn.microsoft.com/windowsapps/Basic-Audio-Sample-9a5bb0b7">Audio file playback sample</a><br /><a href="http://code.msdn.microsoft.com/windowsapps/XAudio2-Stream-Effect-3f95c8f2">Audio stream effect sample</a></p>
 <p><em><a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK for Audio</a> is also a sample of XAudio2 usage, and is demonstrated in the <a href="https://github.com/walbourn/directxtk-samples">DirectX TK Simple Samples</a>.</em></p>
 </td>

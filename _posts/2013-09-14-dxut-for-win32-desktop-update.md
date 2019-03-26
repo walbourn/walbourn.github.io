@@ -78,4 +78,4 @@ Visual Studio 2012 and 2013 include great DirectX templates for Windows Store ap
 
 > You can use DXUT in combination with <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> in the same project, but you should remove the files <code>DDSTextureLoader.h, DDSTextureLoader.cpp, ScreenGrab.h, ScreenGrab.cpp, WICTextureLoader.h,</code> and <code>WICTextureLoader.cpp</code> from ``DXUT\Core``. Removal of <code>SDKmesh.h</code> and <code>SDKmesh.cpp</code> from ``DXUT\Optional`` is also recommended. You may have to add additional include paths to the DXUT projects to find the ``DirectXTK\Inc`` folder as well.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a>, <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects 11</a>, <a href="https://walbourn.github.io/where-s-dxerr-lib/">Where's DXERR.lIB?</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a>, <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects 11</a>, <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where's DXERR.lIB?</a>

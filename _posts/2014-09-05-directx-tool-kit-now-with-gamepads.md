@@ -31,4 +31,4 @@ The Xbox One Wireless controller is not compatible with the <em>Xbox 360 Wireles
 
 <strong>Windows 10:</strong> There is a new WinRT API in the <a href="https://docs.microsoft.com/en-us/uwp/api/Windows.Gaming.Input">Windows.Gaming.Input</a> namespace for universal Windows apps. This API supports both the Xbox 360 Common Controller and the Xbox One controller, including access to the left/right trigger motors. The latest version of GamePad is implemented using this new API when built for Windows 10. Note that existing XInput-based Windows Store applications can link against <code>xinputuap.lib</code> which is an adapter for the new API for universal Windows apps--this adapter does not exist headset audio either.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/xinput-and-windows-8-consumer-preview/">XInput and Windows 8</a>, <a href="https://walbourn.github.io/xinput-and-xaudio2/">XInput and XAudio2</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/xinput-and-windows-8/">XInput and Windows 8</a>, <a href="https://walbourn.github.io/xinput-and-xaudio2/">XInput and XAudio2</a>

@@ -65,7 +65,7 @@ Direct3D 12</td>
 <tr>
 <td><code>DXERR9.LIB</code></td>
 <td><p>The <em>August 2007 DirectX SDK</em> was the last version to include the <code>dxerr9.lib</code>. It has been replaced by <code>dxerr.lib</code> in <a href="https://walbourn.github.io/announcement-directx-sdk-june-2010-is-live/">June 2010 DirectX SDK</a> which supports all the same error codes plus some new ones. Changing references to <code>dxerr.lib</code> or making a copy as <code>dxerr9.lib</code> should resolve link issues for this library.</p>
-<p>Note for Windows 8.x SDK users, see <a href="https://walbourn.github.io/where-s-dxerr-lib/">this</a> post for a replacement solution.</p></td>
+<p>Note for Windows 8.x SDK users, see <a href="https://walbourn.github.io/wheres-dxerr-lib/">this</a> post for a replacement solution.</p></td>
 </tr>
 <tr>
 <td>XACT</td>
@@ -80,7 +80,7 @@ Direct3D 12</td>
 <tr>
 <td>DirectInput</td>
 <td><p>The <em>August 2007 DirectX SDK</em> was the last version to include DirectInput7 and prior (<code>dinput.lib</code>). DirectInput8 (<code>dinput.h dinput8.lib</code>) is available in the Windows SDK 7.0 or later and is supported for both x86 and x64 native Win32 desktop applications.</p>
-<p>For gamepads, we'd recommend supporting XINPUT. XINPUT 9.1.0 headers and libraries are available in the Windows SDK 6.0 or later. See <a href="https://walbourn.github.io/xinput-and-windows-8-consumer-preview/">this</a> post for additional information. For mouse and keyboard input, you should use standard Windows messages rather than DirectInput as well.</p></td>
+<p>For gamepads, we'd recommend supporting XINPUT. XINPUT 9.1.0 headers and libraries are available in the Windows SDK 6.0 or later. See <a href="https://walbourn.github.io/xinput-and-windows-8/">this</a> post for additional information. For mouse and keyboard input, you should use standard Windows messages rather than DirectInput as well.</p></td>
 </tr>
 <tr>
 <td>DirectSound</td>

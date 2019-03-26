@@ -37,7 +37,7 @@ With that preamble out of the way, you should familiarize yourself with the docu
 
 <strong>Utilities: </strong>The various Direct3D 12 templates make use of a simple header-only helper <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d12/helper-structures-and-functions-for-d3d12">D3DX12</a>. This does not have nearly the scope of the <a href="https://walbourn.github.io/living-without-d3dx/">deprecated D3DX libraries</a>, but is useful in taking care of many of the more mundane aspects of creating the required structures. For support in loading textures, rendering fonts & sprites, loading models, etc. see <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12</a>. For graphics math, see <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a>. You should use <a href="https://walbourn.github.io/directxtex-and-directxmesh-now-support-direct3d-12/">DirectXTex, DirectXMesh</a>, and <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas</a> for content processing as well.
 
-<strong>Multi-GPU:</strong> See <a href="https://blogs.msdn.microsoft.com/directx/2016/07/13/explicit-directx-12-multigpu-the-affinity-layer-helper-library-and-your-game/">this blog post</a>.
+<strong>Multi-GPU:</strong> See <a href="https://devblogs.microsoft.com/directx/explicit-directx-12-multigpu-the-affinity-layer-helper-library-and-your-game/">this blog post</a>.
 
 <strong>Books:</strong> So far the only book I'm aware of that's been published is Frank Luna's <em>Introduction to 3D Game Programming with DirectX 12</em> (2016).
 

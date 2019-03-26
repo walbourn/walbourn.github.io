@@ -133,7 +133,7 @@ inline XMVECTOR XMVectorCeiling
 }
 ```
 
-This problem does not apply to the <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse-4-2/">SSE 4.1 versions</a> of these functions.
+This problem does not apply to the <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE 4.1 versions</a> of these functions.
 
 <h1>XMConvertHalfToFloat and XMConvertFloatToHalf</h1>
 

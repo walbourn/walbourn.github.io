@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [dxsdk]
 ---
-In the same vein as my post on where you can find many of the <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a> from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee663275/">legacy DirectX SDK</a>, where you can find all the various <a href="https://walbourn.github.io/living-without-d3dx/">replacements for D3DX</a>, and the status of various <a href="https://walbourn.github.io/directx-sdk-s-of-a-certain-age/">DirectX components</a>; this post is a catalog of where you can find the latest version of various tools that shipped with the legacy DirectX SDK. Lacking that, it at least provides a status or alternative for the tool.
+In the same vein as my post on where you can find many of the <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a> from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee663275/">legacy DirectX SDK</a>, where you can find all the various <a href="https://walbourn.github.io/living-without-d3dx/">replacements for D3DX</a>, and the status of various <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX components</a>; this post is a catalog of where you can find the latest version of various tools that shipped with the legacy DirectX SDK. Lacking that, it at least provides a status or alternative for the tool.
 <!--more-->
 
 <table border="1">
@@ -23,7 +23,7 @@ HLSL Compiler (<code>fxc.exe</code>)
 <td>DirectX Error Lookup Tool (<code>DXErr.exe</code>)</td>
 <td>The Visual Studio<em> Error Lookup</em> (under Tools) should help with many HRESULT values, particularly for development on Windows 8.x or later.
 
-For notes on the DxErr library that the <code>DXErr.exe</code> tool used, see <a href="https://walbourn.github.io/where-s-dxerr-lib/">this post</a>.</td>
+For notes on the DxErr library that the <code>DXErr.exe</code> tool used, see <a href="https://walbourn.github.io/wheres-dxerr-lib/">this post</a>.</td>
 </tr>
 <tr>
 <td>Game Definition File Validator (<code>gdftrace.exe</code>)</td>
@@ -61,7 +61,7 @@ The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=2489
 </tr>
 <tr>
 <td><code>xWMAEncode.exe</code></td>
-<td>xWMA compression is supported by XAudio 2.7 and the Xbox One version of XAudio, but not by <a href="https://walbourn.github.io/xaudio2-and-windows-8-consumer-preview/">XAudio 2.8 in Windows 8.x</a>.
+<td>xWMA compression is supported by XAudio 2.7 and the Xbox One version of XAudio, but not by <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio 2.8 in Windows 8.x</a>.
 
 Therefore this tool only ships in the legacy DirectX SDK and in the Xbox One XDK.</td>
 </tr>

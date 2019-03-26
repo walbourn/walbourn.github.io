@@ -19,4 +19,4 @@ The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D
 
 <em><strong>Note: The DirectX SDK is now legacy. You should use the [Windows 10 SDK](https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/) instead.</strong></em>
 
-<strong>Related:</strong> [DirectX SDKs of a certain age](https://walbourn.github.io/directx-sdk-s-of-a-certain-age/), [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/), [Living without D3DX](https://walbourn.github.io/living-without-d3dx/), [DirectX SDK Tools Catalog](https://walbourn.github.io/directx-sdk-tools-catalog/), and [DirectX SDK Samples Catalog](https://walbourn.github.io/directx-sdk-samples-catalog/)
+<strong>Related:</strong> [DirectX SDKs of a certain age](https://walbourn.github.io/directx-sdks-of-a-certain-age/), [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/), [Living without D3DX](https://walbourn.github.io/living-without-d3dx/), [DirectX SDK Tools Catalog](https://walbourn.github.io/directx-sdk-tools-catalog/), and [DirectX SDK Samples Catalog](https://walbourn.github.io/directx-sdk-samples-catalog/)

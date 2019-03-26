@@ -58,7 +58,7 @@ inline XMVECTOR XM_CALLCONV XMVectorRound
 }
 ```
 
-Thanks to <a href="http://randomascii.wordpress.com/2014/01/27/theres-only-four-billion-floatsso-test-them-all/">Bruce Dawson</a> for the report and fix. This issue does not affect the SSE4 version of <code>XMVectorRound</code> from this <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse-4-2/">post</a>.
+Thanks to <a href="http://randomascii.wordpress.com/2014/01/27/theres-only-four-billion-floatsso-test-them-all/">Bruce Dawson</a> for the report and fix. This issue does not affect the SSE4 version of <code>XMVectorRound</code> from this <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">post</a>.
 
 <h1>XMVectorATan2, XMVectorATan2Est</h1>
 

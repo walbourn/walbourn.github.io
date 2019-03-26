@@ -62,4 +62,4 @@ This ensures that the DLL is not unloaded while XAudio2 objects are active.
 
 <strong>Note:</strong> The use of <code>LoadLibraryEx</code> above with the <code>LOAD_LIBRARY_SEARCH_SYSTEM32</code> flag is a <a href="https://docs.microsoft.com/en-us/security-updates/SecurityAdvisories/2010/2269637">security best practice</a>.  For a Windows 7 system, this requires the <a href="https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot">KB 2533623</a> update to be installed.
 
-<strong>See also:</strong> <a href="https://walbourn.github.io/xaudio2-and-windows-8-consumer-preview/">XAudio2 and Windows 8</a>, <a href="https://walbourn.github.io/learning-xaudio2/">Learning XAudio2</a>, <a href="https://walbourn.github.io/windows-10-sdk-rtm/">Windows 10 SDK RTM</a>
+<strong>See also:</strong> <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a>, <a href="https://walbourn.github.io/learning-xaudio2/">Learning XAudio2</a>, <a href="https://walbourn.github.io/windows-10-sdk-rtm/">Windows 10 SDK RTM</a>

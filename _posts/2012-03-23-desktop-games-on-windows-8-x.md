@@ -26,7 +26,7 @@ With a new release of Windows, publishers and developers want to ensure customer
 </ul>
 
 <ul>
- 	<li><strong>There are now three choices for using the </strong><a href="https://walbourn.github.io/xinput-and-windows-8-consumer-preview/"><strong>XINPUT</strong></a><strong> API depending on your requirements</strong>: XINPUT 1.4 is built into Windows 8.x and Windows 10 (useable by both Windows Store apps and desktop Win32 applications), XINPUT 9.1.0 for simplified common-controller usage across all versions of Windows without any redistribution package, and the existing DirectX SDK version XINPUT 1.3 which requires DirectSetup to deploy. [TR 1.4]</li>
+ 	<li><strong>There are now three choices for using the </strong><a href="https://walbourn.github.io/xinput-and-windows-8/"><strong>XINPUT</strong></a><strong> API depending on your requirements</strong>: XINPUT 1.4 is built into Windows 8.x and Windows 10 (useable by both Windows Store apps and desktop Win32 applications), XINPUT 9.1.0 for simplified common-controller usage across all versions of Windows without any redistribution package, and the existing DirectX SDK version XINPUT 1.3 which requires DirectSetup to deploy. [TR 1.4]</li>
 </ul>
 
 <ul>
@@ -100,4 +100,4 @@ In addition to learning about the new Windows Store app model (a.k.a. Metro styl
 
 <strong>Update:</strong> This page has been updated on October 25, 2012 for Windows 8 GA (was originally written for Windows 8 Consumer Preview).
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">Dual-use Coding Techniques for Games</a>, <a href="https://walbourn.github.io/directx-sdk-s-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/manifest-madness/">Manifest Madness</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">Dual-use Coding Techniques for Games</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/manifest-madness/">Manifest Madness</a>
