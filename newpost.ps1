@@ -8,7 +8,7 @@
     
     process {
         $Date = Get-Date -Format "yyyy-MM-dd"
-        $Time = Get-Date -Format "HH:MM"
+        $Time = Get-Date -Format "HH:mm"
         $FileName = "$($date.ToString())-$($name.Replace(" ","-")).md"
 
         $Blog = New-Object -TypeName "System.Text.StringBuilder"
@@ -20,7 +20,7 @@
         [void]$Blog.Append("comments: true`n") 
         [void]$Blog.Append("categories: [general]`n") 
         [void]$Blog.Append("---`n") 
-        [void]$Blog.Append($Content)
+        [void]$Blog.Append("`n<!--more-->`n")
         $Blog = $Blog.toString() 
 
         $NewBlogPath = Join-Path -ChildPath $FileName -Path "./_posts"

@@ -8,6 +8,7 @@ categories: [general]
 ---
 
 Sorry for having been quiet for so long. In addition to the usual holiday lull, I've also been working on migrating this blog to GitHub Pages which has necessitated a lot of manual cleanup and formatting moving from WordPress to Markdown. In any case, the new location for the <em>Games for Windows and DirectX SDK blog</em> is now: <a href="https://walbourn.github.io/">https://walbourn.github.io/</a>. The new site has the entire archive by <a href="https://walbourn.github.io/archive/">month</a> and <a href="https://walbourn.github.io/tags/">tag</a>.
+<!--more-->
 
 You may or may not have also noticed some other DirectX and related blogs have migrated recently as well, so now is a good time to update your bookmarks:
 
