@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D 11 Textures and Block Compression
 date: 2012-05-04 11:08
 author: Chuck Walbourn

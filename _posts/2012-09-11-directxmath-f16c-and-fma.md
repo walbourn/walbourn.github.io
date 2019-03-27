@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - F16C and FMA
 date: 2012-09-11 12:50
 author: Chuck Walbourn

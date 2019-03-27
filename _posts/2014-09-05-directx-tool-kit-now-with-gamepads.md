@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX Tool Kit - Now with GamePads
 date: 2014-09-05 13:04
 author: Chuck Walbourn

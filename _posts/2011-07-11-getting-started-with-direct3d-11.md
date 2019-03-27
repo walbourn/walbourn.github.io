@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Getting Started with Direct3D 11
 date: 2011-07-11 13:37
 author: Chuck Walbourn

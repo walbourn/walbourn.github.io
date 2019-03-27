@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issue - D3D11InstallHelper sample
 date: 2010-11-10 13:33
 author: Chuck Walbourn

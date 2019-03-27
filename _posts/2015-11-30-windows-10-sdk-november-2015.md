@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 SDK (November 2015)
 date: 2015-11-30 18:02
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMesh
 date: 2014-06-27 11:17
 author: Chuck Walbourn

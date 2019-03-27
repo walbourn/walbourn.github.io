@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX SDK Tools Catalog
 date: 2014-10-28 16:47
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: BC6HBC7EncoderDecoder Sample Update
 date: 2011-06-02 11:33
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: A look back - Windows Vista
 date: 2017-04-18 20:24
 author: Chuck Walbourn

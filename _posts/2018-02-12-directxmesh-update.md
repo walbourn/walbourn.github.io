@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMesh Update
 date: 2018-02-12 10:48
 author: Chuck Walbourn

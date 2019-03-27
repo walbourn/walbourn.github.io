@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Manifest Madness
 date: 2013-09-10 02:00
 author: Chuck Walbourn

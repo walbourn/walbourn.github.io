@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2010 Service Pack 1
 date: 2011-03-15 17:57
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 Technical Preview
 date: 2014-10-03 11:00
 author: Chuck Walbourn

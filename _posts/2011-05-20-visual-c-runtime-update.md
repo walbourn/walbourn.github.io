@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual C++ Runtime Update
 date: 2011-05-20 11:07
 author: Chuck Walbourn

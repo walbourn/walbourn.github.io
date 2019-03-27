@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Anatomy of Direct3D 12 Create Device
 date: 2016-08-16 23:39
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Desktop Games on Windows 8.x
 date: 2012-03-23 12:19
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX SDK Samples Catalog
 date: 2013-09-20 02:00
 author: Chuck Walbourn

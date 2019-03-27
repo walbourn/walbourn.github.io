@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Where is the DirectX SDK (2015 Edition)?
 date: 2015-08-05 10:00
 author: Chuck Walbourn

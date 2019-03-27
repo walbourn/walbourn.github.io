@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Where's DXERR.LIB?
 date: 2012-04-24 12:28
 author: Chuck Walbourn

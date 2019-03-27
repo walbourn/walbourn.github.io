@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX 11.1 and Windows 7 Update
 date: 2013-02-26 11:11
 author: Chuck Walbourn

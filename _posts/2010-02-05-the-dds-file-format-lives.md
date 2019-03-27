@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: The DDS File Format Lives
 date: 2010-02-05 15:33
 author: Chuck Walbourn

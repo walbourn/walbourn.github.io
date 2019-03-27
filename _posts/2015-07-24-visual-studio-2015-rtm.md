@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2015 RTM
 date: 2015-07-24 13:31
 author: Chuck Walbourn

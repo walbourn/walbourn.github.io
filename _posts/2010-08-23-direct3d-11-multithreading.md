@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D 11 Multithreading
 date: 2010-08-23 15:29
 author: Chuck Walbourn

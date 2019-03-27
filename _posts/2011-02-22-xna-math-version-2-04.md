@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XNA Math Version 2.04
 date: 2011-02-22 16:13
 author: Chuck Walbourn

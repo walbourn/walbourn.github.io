@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Where is the DirectX SDK (2013 Edition)?
 date: 2013-07-01 02:00
 author: Chuck Walbourn

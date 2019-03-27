@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D 11 on Windows Vista with WSUS
 date: 2010-01-28 18:59
 author: Chuck Walbourn

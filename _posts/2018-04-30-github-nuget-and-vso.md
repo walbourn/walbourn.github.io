@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: GitHub, NuGet, and VSTS
 date: 2018-04-30 11:13
 author: Chuck Walbourn

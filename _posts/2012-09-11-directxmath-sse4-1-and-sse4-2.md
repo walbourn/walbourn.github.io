@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - SSE4.1 and SSE4.2
 date: 2012-09-11 12:18
 author: Chuck Walbourn

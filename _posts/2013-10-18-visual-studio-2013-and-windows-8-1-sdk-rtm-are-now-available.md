@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2013 and Windows 8.1 SDK RTM are now available
 date: 2013-10-18 13:59
 author: Chuck Walbourn

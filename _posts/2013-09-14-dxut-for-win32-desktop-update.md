@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DXUT for Win32 Desktop Update
 date: 2013-09-14 09:00
 author: Chuck Walbourn

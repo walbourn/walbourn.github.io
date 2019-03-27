@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Game Developer Conference 2013
 date: 2013-06-06 11:34
 author: Chuck Walbourn

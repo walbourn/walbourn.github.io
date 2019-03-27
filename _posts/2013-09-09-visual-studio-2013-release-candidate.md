@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2013 Release Candidate
 date: 2013-09-09 13:45
 author: Chuck Walbourn

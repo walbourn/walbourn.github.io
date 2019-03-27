@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX and .NET
 date: 2010-12-09 11:49
 author: Chuck Walbourn

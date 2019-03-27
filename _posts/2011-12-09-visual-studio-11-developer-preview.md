@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 11 Developer Preview
 date: 2011-12-09 12:03
 author: Chuck Walbourn

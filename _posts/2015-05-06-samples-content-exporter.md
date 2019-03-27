@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Samples Content Exporter
 date: 2015-05-06 14:36
 author: Chuck Walbourn

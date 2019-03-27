@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows Networking
 date: 2011-11-04 13:04
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: BUILD 2012 Conference
 date: 2012-11-01 10:50
 author: Chuck Walbourn

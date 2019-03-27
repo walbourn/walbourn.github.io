@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 SDK RTM
 date: 2015-07-30 13:57
 author: Chuck Walbourn

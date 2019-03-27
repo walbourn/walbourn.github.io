@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - AVX2
 date: 2015-06-03 16:02
 author: Chuck Walbourn

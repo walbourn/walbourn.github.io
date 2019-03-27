@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2012 Release Candidate
 date: 2012-05-31 15:59
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - SSE, SSE2, and ARM-NEON
 date: 2012-09-11 11:43
 author: Chuck Walbourn

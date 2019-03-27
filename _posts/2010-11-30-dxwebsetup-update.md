@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DXWEBSETUP Update
 date: 2010-11-30 15:26
 author: Chuck Walbourn

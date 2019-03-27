@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Gamefest 2010 Presentations Posted
 date: 2010-06-16 11:54
 author: Chuck Walbourn

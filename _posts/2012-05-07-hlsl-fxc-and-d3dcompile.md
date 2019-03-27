@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: HLSL, FXC, and D3DCompile
 date: 2012-05-07 12:42
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Goodbye to an old friend...
 date: 2010-10-22 10:54
 author: Chuck Walbourn

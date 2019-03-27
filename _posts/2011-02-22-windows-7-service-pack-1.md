@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 7 Service Pack 1
 date: 2011-02-22 15:19
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2013 Update 2
 date: 2014-05-12 14:24
 author: Chuck Walbourn

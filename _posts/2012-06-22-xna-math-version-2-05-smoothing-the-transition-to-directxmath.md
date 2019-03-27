@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XNA Math Version 2.05 - Smoothing the transition to DirectXMath
 date: 2012-06-22 11:45
 author: Chuck Walbourn

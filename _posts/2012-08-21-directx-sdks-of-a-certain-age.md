@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX SDKs of a certain age
 date: 2012-08-21 16:56
 author: Chuck Walbourn

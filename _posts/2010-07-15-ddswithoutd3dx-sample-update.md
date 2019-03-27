@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DDSWithoutD3DX Sample Update
 date: 2010-07-15 14:50
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 October 2018 Update
 date: 2018-10-02 16:20
 author: Chuck Walbourn

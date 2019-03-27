@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2012 and Windows 8.0 SDK RTM are now available
 date: 2012-08-15 13:40
 author: Chuck Walbourn

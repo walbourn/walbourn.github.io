@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows Imaging Component and Windows 8
 date: 2012-11-19 15:07
 author: Chuck Walbourn

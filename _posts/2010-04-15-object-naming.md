@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Object Naming
 date: 2010-04-15 12:07
 author: Chuck Walbourn

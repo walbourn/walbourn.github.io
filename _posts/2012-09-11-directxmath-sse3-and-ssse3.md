@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - SSE3 and SSSE3
 date: 2012-09-11 12:01
 author: Chuck Walbourn

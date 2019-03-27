@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DXSETUP Update
 date: 2011-04-19 10:49
 author: Chuck Walbourn

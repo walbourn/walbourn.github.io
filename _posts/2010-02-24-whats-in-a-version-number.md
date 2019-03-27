@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: What's in a version number?
 date: 2010-02-24 11:39
 author: Chuck Walbourn

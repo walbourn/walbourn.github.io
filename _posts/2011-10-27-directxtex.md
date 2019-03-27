@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXTex
 date: 2011-10-27 17:15
 author: Chuck Walbourn

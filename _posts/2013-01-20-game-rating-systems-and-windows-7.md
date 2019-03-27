@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Game Rating Systems and Windows 7
 date: 2013-01-20 23:35
 author: Chuck Walbourn

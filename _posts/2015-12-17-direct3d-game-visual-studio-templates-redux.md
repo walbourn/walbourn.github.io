@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D Game Visual Studio templates (Redux)
 date: 2015-12-17 12:45
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DXGI Debug  Device
 date: 2015-07-27 14:49
 author: Chuck Walbourn

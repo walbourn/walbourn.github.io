@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: HDR Lighting and Displays
 date: 2017-08-08 22:33
 author: Chuck Walbourn

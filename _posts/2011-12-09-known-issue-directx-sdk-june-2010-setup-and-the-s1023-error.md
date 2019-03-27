@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issue - DirectX SDK (June 2010) Setup and the S1023 error
 date: 2011-12-09 12:48
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: TiledResources11
 date: 2011-10-28 15:03
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2015 Update 1
 date: 2015-11-30 12:03
 author: Chuck Walbourn

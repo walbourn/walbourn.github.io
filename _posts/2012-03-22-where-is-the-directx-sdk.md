@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Where is the DirectX SDK?
 date: 2012-03-22 11:45
 author: Chuck Walbourn

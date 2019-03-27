@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DDS Update and 10:10:10:2 Problems
 date: 2010-06-15 14:53
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: UVAtlas - Return of the Isochart
 date: 2014-11-14 02:00
 author: Chuck Walbourn

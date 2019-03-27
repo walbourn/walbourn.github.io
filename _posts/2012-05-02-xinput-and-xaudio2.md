@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XINPUT and XAudio2
 date: 2012-05-02 17:08
 author: Chuck Walbourn

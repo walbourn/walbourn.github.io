@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: CodePlex vs. GitHub
 date: 2017-11-27 12:37
 author: Chuck Walbourn

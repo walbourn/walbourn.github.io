@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XDSP.H - Digital Signal Processing helper functions
 date: 2012-04-30 16:52
 author: Chuck Walbourn

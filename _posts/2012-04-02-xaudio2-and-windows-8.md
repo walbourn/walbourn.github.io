@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XAudio2 and Windows 8
 date: 2012-04-02 15:12
 author: Chuck Walbourn

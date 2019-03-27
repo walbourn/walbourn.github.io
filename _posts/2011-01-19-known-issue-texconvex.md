@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issue - TexconvEx
 date: 2011-01-19 14:58
 author: Chuck Walbourn

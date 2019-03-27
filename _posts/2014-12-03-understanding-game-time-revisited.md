@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Understanding Game Time Revisited
 date: 2014-12-03 12:43
 author: Chuck Walbourn

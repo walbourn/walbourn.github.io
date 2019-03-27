@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Dual-use Coding Techniques for Games, part 3
 date: 2012-09-17 17:37
 author: Chuck Walbourn

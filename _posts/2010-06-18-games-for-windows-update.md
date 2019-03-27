@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Games for Windows Update
 date: 2010-06-18 13:36
 author: Chuck Walbourn

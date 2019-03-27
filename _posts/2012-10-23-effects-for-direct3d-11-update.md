@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Effects for Direct3D 11 Update
 date: 2012-10-23 16:14
 author: Chuck Walbourn

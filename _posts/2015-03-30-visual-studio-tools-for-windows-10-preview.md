@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio Tools for Windows 10 Preview
 date: 2015-03-30 14:34
 author: Chuck Walbourn

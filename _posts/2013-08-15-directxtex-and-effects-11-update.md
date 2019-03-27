@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXTex and Effects 11 Update
 date: 2013-08-15 11:57
 author: Chuck Walbourn

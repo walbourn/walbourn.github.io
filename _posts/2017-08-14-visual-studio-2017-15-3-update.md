@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2017 (15.3) update
 date: 2017-08-14 12:52
 author: Chuck Walbourn

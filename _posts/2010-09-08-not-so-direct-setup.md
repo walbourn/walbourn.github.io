@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Not So Direct Setup
 date: 2010-09-08 11:08
 author: Chuck Walbourn

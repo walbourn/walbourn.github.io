@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXMath - ARM64
 date: 2018-12-05 18:13
 author: Chuck Walbourn

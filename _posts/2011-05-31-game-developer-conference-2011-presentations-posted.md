@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Game Developer Conference 2011 Presentations Posted
 date: 2011-05-31 16:48
 author: Chuck Walbourn

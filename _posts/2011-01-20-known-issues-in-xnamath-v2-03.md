@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issues in XNAMath v2.03
 date: 2011-01-20 10:57
 author: Chuck Walbourn

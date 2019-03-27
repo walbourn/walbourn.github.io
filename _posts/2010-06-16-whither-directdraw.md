@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Whither DirectDraw?
 date: 2010-06-16 15:10
 author: Chuck Walbourn

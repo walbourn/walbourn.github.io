@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2010 shipped!
 date: 2010-04-12 16:53
 author: Chuck Walbourn

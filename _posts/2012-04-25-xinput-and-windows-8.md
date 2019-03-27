@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: XINPUT and Windows 8
 date: 2012-04-25 18:39
 author: Chuck Walbourn

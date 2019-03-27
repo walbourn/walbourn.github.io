@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX and UWP on Xbox One
 date: 2017-12-15 02:25
 author: Chuck Walbourn

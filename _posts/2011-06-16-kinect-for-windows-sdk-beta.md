@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Kinect for Windows SDK Beta
 date: 2011-06-16 13:26
 author: Chuck Walbourn

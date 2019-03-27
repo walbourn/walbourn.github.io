@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Introducing DirectXMath
 date: 2012-03-26 16:28
 author: Chuck Walbourn

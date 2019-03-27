@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX Tool Kit for Audio
 date: 2013-12-24 23:40
 author: Chuck Walbourn

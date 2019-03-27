@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: CodePlex VS 2013 Refresh
 date: 2013-10-29 12:07
 author: Chuck Walbourn

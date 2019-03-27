@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Living without D3DX
 date: 2013-08-20 17:49
 author: Chuck Walbourn

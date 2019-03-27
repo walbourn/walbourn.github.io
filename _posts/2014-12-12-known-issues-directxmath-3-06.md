@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issues - DirectXMath 3.06
 date: 2014-12-12 15:51
 author: Chuck Walbourn

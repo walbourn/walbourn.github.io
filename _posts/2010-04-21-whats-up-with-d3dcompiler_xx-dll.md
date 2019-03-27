@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: What's up with D3DCompiler_xx.DLL?
 date: 2010-04-21 16:00
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D Win32 Game Visual Studio template
 date: 2015-01-06 04:00
 author: Chuck Walbourn

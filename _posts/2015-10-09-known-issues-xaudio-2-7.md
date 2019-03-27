@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Known Issues - XAudio 2.7
 date: 2015-10-09 11:08
 author: Chuck Walbourn

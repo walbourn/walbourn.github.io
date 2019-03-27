@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 2012 Update 4
 date: 2013-11-14 14:40
 author: Chuck Walbourn

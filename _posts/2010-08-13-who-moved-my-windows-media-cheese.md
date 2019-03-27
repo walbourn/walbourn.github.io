@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Who moved my Windows Media Cheese?
 date: 2010-08-13 13:55
 author: Chuck Walbourn

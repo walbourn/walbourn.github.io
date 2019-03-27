@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXTK
 date: 2012-03-02 13:11
 author: Chuck Walbourn

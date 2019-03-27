@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 April 2018 Update SDK
 date: 2018-05-02 22:52
 author: Chuck Walbourn

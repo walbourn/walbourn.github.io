@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Gamefest 2011 Presentations Posted
 date: 2011-11-15 10:46
 author: Chuck Walbourn

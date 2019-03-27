@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: June 2010 HLSL Compiler Issue with Tessellation
 date: 2010-10-27 11:16
 author: Chuck Walbourn

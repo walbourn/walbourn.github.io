@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX SDK Install Helpers
 date: 2012-05-29 15:11
 author: Chuck Walbourn

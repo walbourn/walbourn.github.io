@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Book Recommendations
 date: 2014-04-07 10:00
 author: Chuck Walbourn

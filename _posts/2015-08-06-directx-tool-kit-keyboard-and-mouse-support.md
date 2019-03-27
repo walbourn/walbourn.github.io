@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX Tool Kit - Keyboard and Mouse support
 date: 2015-08-06 12:08
 author: Chuck Walbourn

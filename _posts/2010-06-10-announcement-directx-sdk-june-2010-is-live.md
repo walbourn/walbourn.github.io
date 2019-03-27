@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Announcement - DirectX SDK (June 2010) is live
 date: 2010-06-10 12:38
 author: Chuck Walbourn

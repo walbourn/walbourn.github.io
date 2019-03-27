@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Spherical Harmonics Math
 date: 2012-07-28 00:03
 author: Chuck Walbourn

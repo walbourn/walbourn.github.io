@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: CodePlex July 2014 Refresh
 date: 2014-07-31 02:00
 author: Chuck Walbourn

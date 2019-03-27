@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: A Brief History of Windows SDKs
 date: 2013-10-03 11:13
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 8.x and GDFs
 date: 2012-05-31 15:42
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D 11 Tessellation
 date: 2010-07-19 11:05
 author: Chuck Walbourn

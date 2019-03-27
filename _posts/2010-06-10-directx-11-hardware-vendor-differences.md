@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX 11 Hardware Vendor Differences
 date: 2010-06-10 13:03
 author: Chuck Walbourn

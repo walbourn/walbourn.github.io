@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 10 Creators Update SDK
 date: 2017-04-06 06:03
 author: Chuck Walbourn

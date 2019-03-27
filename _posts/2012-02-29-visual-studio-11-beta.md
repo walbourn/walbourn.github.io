@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Visual Studio 11 Beta
 date: 2012-02-29 11:56
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: A little love for XNAMath...
 date: 2010-01-28 18:21
 author: Chuck Walbourn

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX Tool Kit and C++/WinRT
 date: 2017-02-11 07:54
 author: Chuck Walbourn

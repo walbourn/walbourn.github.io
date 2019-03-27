@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: HLSL Compiler support for Symbolic Derivatives
 date: 2011-03-08 14:29
 author: Chuck Walbourn

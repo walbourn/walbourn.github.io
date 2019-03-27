@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Game Developer Conference 2010
 date: 2010-03-08 12:36
 author: Chuck Walbourn

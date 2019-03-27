@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectXTK and DirectXTex now on Codeplex
 date: 2012-06-18 13:41
 author: Chuck Walbourn

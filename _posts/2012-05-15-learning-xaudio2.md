@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Learning XAudio2
 date: 2012-05-15 12:37
 author: Chuck Walbourn

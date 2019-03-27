@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Windows 8.1 Update
 date: 2014-04-08 10:35
 author: Chuck Walbourn

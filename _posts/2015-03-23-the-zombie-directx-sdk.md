@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: The Zombie DirectX SDK
 date: 2015-03-23 14:58
 author: Chuck Walbourn

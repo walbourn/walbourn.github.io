@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectX Tool Kit for DirectX 12
 date: 2016-07-18 23:54
 author: Chuck Walbourn

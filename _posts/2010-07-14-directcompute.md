@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: DirectCompute
 date: 2010-07-14 12:27
 author: Chuck Walbourn

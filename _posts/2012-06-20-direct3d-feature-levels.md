@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D Feature Levels
 date: 2012-06-20 11:31
 author: Chuck Walbourn

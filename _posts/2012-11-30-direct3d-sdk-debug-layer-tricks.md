@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: msdnpost
 title: Direct3D SDK Debug Layer Tricks
 date: 2012-11-30 12:25
 author: Chuck Walbourn
