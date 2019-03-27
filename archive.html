@@ -3,6 +3,10 @@ layout: default
 title: Archive
 ---
 
+<header>
+  <a href="https://walbourn.github.io/">Home</a> | <a href="https://walbourn.github.io/tags/">Posts by Tag</a><br /><br />
+</header>
+
 {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %B'"  %}
 {% for yearMonth in postsByYearMonth %}
   <h3>{{ yearMonth.name }}</h3>
