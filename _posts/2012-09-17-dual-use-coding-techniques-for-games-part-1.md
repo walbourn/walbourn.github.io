@@ -487,10 +487,11 @@ Note you can use Win32 APIs for <code>GetSystemTime</code> and <code>GetLocalTim
 <h1>Machine Architectures</h1>
 
 Windows Store apps should compile for Windows x86 (32-bit), Windows x64 (64-bit) native, and Windows RT (ARM). Win32 desktop apps should compile for Windows x86 and Windows x64 native. Most C/C++ code should work fine across all platforms if using platform-neutral types.
+
 <ul>
- 	<li><strong>Use portable types.</strong> Use <code>size_t</code>, <code>ptrdiff_t</code>, and the various ``<stdint.h>`` (``<cstdint>``) types (i.e. <code>int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, intptr_t,</code> and <code>uintptr_t</code>).</li>
+ 	<li><strong>Use portable types.</strong> Use <code>size_t</code>, <code>ptrdiff_t</code>, and the various <code>&lt;stdint.h&gt;</code> (<code>&lt;cstdint&gt;</code>) types (i.e. <code>int8_t, uint8_t, int16_t, uint16_t, int32_t, uint32_t, int64_t, uint64_t, intptr_t,</code> and <code>uintptr_t</code>).</li>
  	<li><strong>Group pointers in structures and classes.</strong> Most data types do not change size when moving to x64 native, but pointers become 8 bytes (known as the "<a href="http://en.wikipedia.org/wiki/64-bit">LLP64</a>" data model). The default pack setting for x64 is 16 rather than 8 to ensure structures are padded to a natural alignment including pointers. Mixing pointers with other data types in structures results in more padding than would happen if the pointers were grouped together.</li>
- 	<li><strong>Prefer C++ style casts.</strong> Use of <code>const_cast<></code>, <code>static_cast<></code>, and <code>reinterpret_cast<></code> rather than C-style casts can help highlight potential pointer-truncation issues more easily.</li>
+ 	<li><strong>Prefer C++ style casts.</strong> Use of <code>const_cast&lt;&gt;</code>, <code>static_cast&lt;&gt;</code>, and <code>reinterpret_cast&lt;&gt;</code> rather than C-style casts can help highlight potential pointer-truncation issues more easily.</li>
  	<li><strong>Use maximum warnings (<code>/Wall</code>).</strong> A number of warnings that tend to highlight 64-bit portability issues include C4302 and C4826 are off by default. You can disable specific warnings to reduce 'noise' as they are identified by <code>#pragma warning</code> or <code>/wd</code>.</li>
  	<li><strong>Use <code>/analyze</code>.</strong> Static code analysis will highlight a number of issues, particularly using the incorrect <code>printf</code> format specifications--note that <a href="https://devblogs.microsoft.com/cppblog/format-specifiers-checking/">VS 2015 does check</a> <code>printf</code> format specifications even without using <code>/analyze</code>, but it is not as extensive.</li>
 </ul>
