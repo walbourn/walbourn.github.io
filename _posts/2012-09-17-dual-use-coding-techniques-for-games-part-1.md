@@ -232,11 +232,15 @@ Universal character names in literals</td>
 </tr>
 </tbody>
 </table>
-* = In VS 2010, <code>final</code> was implemented as <code>sealed</code>. Also note that VS 2010 considers <code>override</code> to be a MSVC extension and generates warning C4481.
+
+> In VS 2010, <code>final</code> was implemented as <code>sealed</code>. Also note that VS 2010 considers <code>override</code> to be a MSVC extension and generates warning C4481.
 
 Use of the older standalone DirectX SDK is not recommended or supported for Windows Store apps. It includes many legacy technologies that are not supported for this platform, and thus their use complicates the goal of 'dual-use' coding. See the blog posts "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>", and "<a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>" for more information.
+
 <h1>C++11 Standard Library</h1>
+
 The majority of the C++11 Standard Library is supported for both Windows Store apps and Win32 desktop apps. This provides a large breadth of functionality that is common and safe to use for 'dual-use' scenarios.
+
 <table border="1">
 <tbody>
 <tr>
@@ -251,23 +255,23 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 <td><strong>VS 2015</strong></td>
 </tr>
 <tr>
-<td><code><array>, <memory>, <random>, <regex>,
-<tuple>, <type_traits>,
-<unordered_map>, <unordered_set></code></td>
+<td><code>&lt;array&gt;, &lt;memory&gt;, &lt;random&gt;, &lt;regex&gt;,
+&lt;tuple&gt;, &lt;type_traits&gt;,
+&lt;unordered_map&gt;, &lt;unordered_set&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><stdint.h>, cstdint</code></td>
+<td><code>&lt;stdint.h&gt;, &lt;cstdint&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code>unique_ptr<T></code></td>
+<td><code>unique_ptr&lt;T&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
@@ -281,14 +285,14 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><forward_list></code></td>
+<td><code>&lt;forward_list&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><algorithm></code> and <code><exception> </code>updates
+<td><code>&lt;algorithm&gt;</code> and <code>&lt;exception&gt;</code> updates
 <ul>
  	<li><code>find_if_not, copy_if, is_sorted,etc.</code></li>
  	<li><code>exception_ptr</code></li>
@@ -300,21 +304,21 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><allocators><code></code></code></td>
+<td><code>&lt;allocators&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><codecvt></code></td>
+<td><code>&lt;codecvt&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><system_error></code></td>
+<td><code>&lt;system_error&gt;</code></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
@@ -328,66 +332,66 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><chrono>*</code></td>
+<td><code>&lt;chrono&gt; \* </code></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><ratio></code></td>
+<td><code>&lt;ratio&gt;</code></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><scoped_allocator></code></td>
+<td><code>&lt;scoped_allocator&gt;</code></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><atomic>, <condition_variable>, <future>, <mutex>,
-<thread></code></td>
+<td><code>&lt;atomic&gt;, &lt;condition_variable&gt;, &lt;future&gt;, &lt;mutex&gt;,
+&lt;thread&gt;</code></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code><intializer_list></code></td>
+<td><code>&lt;intializer_list&gt;</code></td>
 <td></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><code>std::make_unique<T></code> (C++14)</td>
+<td><code>std::make_unique&lt;T&gt;</code> (C++14)</td>
 <td></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td><a href="https://devblogs.microsoft.com/cppblog/c99-library-support-in-visual-studio-2013/">C99</a>: <code><stdbool.h>, <complex.h> / <ccomplex>,
-<fenv.h> / <cfenv>,
-<inttypes.h> / <cinttypes>,<ctgmath></code></td>
+<td><a href="https://devblogs.microsoft.com/cppblog/c99-library-support-in-visual-studio-2013/">C99</a>: <code>&lt;stdbool.h&gt;, &lt;complex.h&gt; / &lt;ccomplex,
+&lt;fenv.h&gt; / &lt;cfenv&gt;,
+&lt;inttypes.h&gt; / &lt;cinttypes&gt;, &lt;ctgmath&gt;</code></td>
 <td></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td>C99: <code><uchar.h></code> / <code><cuchar></code></td>
+<td>C99: <code>&lt;uchar.h&gt;</code> / <code>&lt;cuchar&gt;</code></td>
 <td></td>
 <td></td>
 <td></td>
 <td><span style="line-height: 115%;font-family: Wingdings;font-size: 11pt">ü</span></td>
 </tr>
 <tr>
-<td>C99: <code><tgmath.h></code>, some <code>printf</code> format specifiers</td>
+<td>C99: <code>&lt;tgmath.h&gt;</code>, some <code>printf</code> format specifiers</td>
 <td></td>
 <td></td>
 <td></td>
@@ -395,7 +399,8 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 </tr>
 </tbody>
 </table>
-* = Note that VS 2012 / VS 2013's high_resolution_clock has some <a href="https://connect.microsoft.com/VisualStudio/feedback/details/719443/">known issues</a>. This is fixed in VS 2015.
+
+> VS 2012 / VS 2013's ``high_resolution_clock`` has some <a href="https://connect.microsoft.com/VisualStudio/feedback/details/719443/">known issues</a>. This is fixed in VS 2015.
 
 The majority of Visual C++ functions in the C Runtime are available for Windows Store apps, but there are some specific headers which are not fully available.
 
@@ -477,7 +482,7 @@ Note you can use Win32 APIs for <code>GetSystemTime</code> and <code>GetLocalTim
 </tbody>
 </table>
 
-<strong>Update:</strong> If you are interesting in using <a href="http://www.boost.org/">Boost</a>, take a look at this <a href="https://devblogs.microsoft.com/cppblog/using-boost-libraries-in-windows-store-and-phone-applications/">blog post</a>.
+> <strong>Update:</strong> If you are interesting in using <a href="http://www.boost.org/">Boost</a>, take a look at this <a href="https://devblogs.microsoft.com/cppblog/using-boost-libraries-in-windows-store-and-phone-applications/">blog post</a>.
 
 <h1>Machine Architectures</h1>
 
@@ -496,13 +501,16 @@ The ability to write standalone assembly for all machine architectures is not su
 
 When writing architecture-specific code, make use of the <code>_M_IX86</code> (32-bit), <code>_M_X64</code> (64-bit), <code>_M_ARM</code>, and <code>_M_ARM64</code>  machine architecture defines for conditional compilation. All are "Little Endian" platforms.
 
-<strong>Note:</strong> The VS 2012, VS 2013, and VS 2015 toolsets support x86, x64, and ARM. VS 2017 (15.9 update) also supports ARM64. VS 2010 has no support for ARM targets.
+> The VS 2012, VS 2013, and VS 2015 toolsets support x86, x64, and ARM. VS 2017 (15.9 update) also supports ARM64. VS 2010 has no support for ARM targets.
+
 <h1>Exception-Safe Coding</h1>
-Windows Store apps make use of C++ exception handling and are compiled with <code>/EHsc</code>. Many Win32 desktop applications use <code>HRESULT</code>s and do not enable exception handling of any kind, although some do use it. Dual-use shared code can use <code>HRESULT</code>s or other error codes and leave the decision to use exception handling to the client code. (See <a href="http://directxtex.codeplex.com/">DirectXTex</a> for an example of this approach.) Alternatively, dual-use shared code can throw either C++ standard exceptions or Windows Store app <code>Platform</code> exceptions through specific compiler techniques. (See <a href="http://directxtk.codeplex.com/">DirectXTK</a> for an example of this approach.)
+
+Windows Store apps make use of C++ exception handling and are compiled with <code>/EHsc</code>. Many Win32 desktop applications use <code>HRESULT</code>s and do not enable exception handling of any kind, although some do use it. Dual-use shared code can use <code>HRESULT</code>s or other error codes and leave the decision to use exception handling to the client code. (See <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a> for an example of this approach.) Alternatively, dual-use shared code can throw either C++ standard exceptions or Windows Store app <code>Platform</code> exceptions through specific compiler techniques. (See <a href="https://github.com/Microsoft/DirectXTK">DirectXTK</a> for an example of this approach.)
 
 Since dual-use code can be used in the context of exception handling, it is strongly recommended that you make use of 'exception-safe' coding practices. C++ exception handling takes advantage of the language and ensures that objects are properly destructed when leaving scope normally or when processing an exception. When using the C++11 Standard Library, those containers are already written to be 'exception-safe'.
 
 The main area where this impacts 'dual-use' shared code and C++ code in general is when allocating resources. The guidance here is to never rely on calling <code>delete, delete [], CloseHandle, Release,</code> etc. directly but have the destructor of a class instance handle it automatically. This technique is known as <em>Resource Acquisition Is Initialization</em> (<a href="http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initialization">RAII</a>). This ensures that the code will behave well both in normal operation and in the cases where exception handling is used. The C++11 Standard Library provides a number of classes that make implementing this pattern fairly straight-forward.
+
 <table border="1">
 <tbody>
 <tr>
@@ -511,69 +519,69 @@ The main area where this impacts 'dual-use' shared code and C++ code in general 
 </tr>
 <tr>
 <td><code>MyObject \* obj = new MyObject; </code></td>
-<td><code>std::unique_ptr<MyObject> obj(new MyObject);</code><br />
+<td><code>std::unique_ptr&lt;MyObject&gt; obj(new MyObject);</code><br />
 <br />
 -or-
 <br /><br />
-<code>auto obj = std::make_unique<MyObject>();</code><br />
+<code>auto obj = std::make_unique&lt;MyObject&gt;();</code><br />
 <br />
-<strong>Note:</strong> VS 2013 or later includes <code>std::make_unique<T></code>, but it is not available in older toolsets.
+<strong>Note:</strong> VS 2013 or later includes <code>std::make_unique&lt;T&gt;</code>, but it is not available in older toolsets.
 <br /><br />
 -or-
 <br /><br />
-<code>std::shared_ptr<MyObject> obj = std::make_shared<MyObject>();</code></td>
+<code>auto obj = std::make_shared&lt;MyObject&gt;();</code></td>
 </tr>
 <tr>
 <td><code>BYTE \* buffer = new BYTE[ 2048 ];</code></td>
-<td><code>std::array<uin8_t, 2048> buffer;</code>
+<td><code>std::array&lt;uin8_t, 2048&gt; buffer;</code>
 <br /><br />
 -or-
 <br /><br />
-<code>std::unique_ptr<uin8_t[]> buffer( new uint8_t[2048]; )</code></td>
+<code>std::unique_ptr&lt;uin8_t[]&gt; buffer( new uint8_t[2048]; )</code></td>
 </tr>
 <tr>
 <td><code>float \* buffer = _aligned_malloc( 2048, 16 );</code></td>
-<td><code>struct aligned_deleter <br />
-{ <br />
-void operator()(void \* p) <br />
-{ _aligned_free(p); } <br />
-}; <br />
-std::unique_ptr<float, aligned_deleter> buffer( _aligned_malloc(2048,16)) ;</code></td>
+<td><code>struct aligned_deleter</code> <br />
+<code>{</code> <br />
+<code>void operator()(void \* p)</code> <br />
+<code>{ _aligned_free(p); }</code> <br />
+<code>};</code> <br />
+<code>std::unique_ptr&lt;float, aligned_deleter&gt; buffer( _aligned_malloc(2048,16));</code></td>
 </tr>
 <tr>
-<td><code>HANDLE h = CreateFile(…);<br />
-if ( h == INVALID_HANDLE)<br />
-// error</code></td><br />
-<td><code>struct handle_closer<br />
-{<br />
-void operator()(HANDLE h)<br />
-{
-assert(h != INVALID_HANDLE_VALUE);<br />
-if (h) CloseHandle(h);<br />
-}<br />
-};<br />
-inline HANDLE safe_handle( HANDLE h )<br />
-{<br />
-return (h==INVALID_HANDLE_VALUE) ? nullptr:h;<br />
-}<br />
-std::unique_ptr<void, handle_closer><br />
-hFile( safe_handle( CreateFile(…) ) );<br />
-if ( !hFile )<br />
-// error</code></td>
+<td><code>HANDLE h = CreateFile(…);</code><br />
+<code>if ( h == INVALID_HANDLE)</code><br />
+<code>// error</code></td><br />
+<td><code>struct handle_closer</code><br />
+<code>{</code><br />
+<code>void operator()(HANDLE h)</code><br />
+<code>{</code>
+<code>assert(h != INVALID_HANDLE_VALUE);</code><br />
+<code>if (h) CloseHandle(h);</code><br />
+<code>}</code><br />
+<code>};</code><br />
+<code>inline HANDLE safe_handle( HANDLE h )</code><br />
+<code>{</code><br />
+<code>return (h==INVALID_HANDLE_VALUE) ? nullptr:h;</code><br />
+<code>}</code><br />
+<code>std::unique_ptr&lt;void, handle_closer&gt;</code><br />
+<code>hFile( safe_handle( CreateFile(…) ) );</code><br />
+<code>if ( !hFile )</code><br />
+<code>// error</code></td>
 </tr>
 <tr>
-<td><code>CRITICAL_SECTION cs;<br />
-InitializeCriticalSection(&amp;cs);<br />
-EnterCriticalSection(&amp;cs <br />
+<td><code>CRITICAL_SECTION cs;</code><br />
+<code>InitializeCriticalSection(&amp;cs);</code><br />
 <br />
+<code>EnterCriticalSection(&amp;cs </code><br />
 ...
 <br />
-LeaveCriticalSection(&amp;cs);</code></td>
-<td><code>std::mutex m;<br />
-{<br />
-std::lock_guard lock(m);<br />
-// lock on m held until end of scope<br />
-}</code></td>
+<code>LeaveCriticalSection(&amp;cs);</code></td>
+<td><code>std::mutex m;</code><br />
+<code>{</code><br />
+<code>std::lock_guard lock(m);</code><br />
+<code>// lock on m held until end of scope</code><br />
+<code>}</code></td>
 </tr>
 <tr>
 <td><code> ID3D11InputLayout \* inputLayout = NULL;</code><br />
@@ -585,7 +593,7 @@ std::lock_guard lock(m);<br />
 <br />
 <code>using Microsoft::WRL::ComPtr;</code>
 <br />
-<code>ComPtr<ID3D11InputLayout> inputLayout;</code><br />
+<code>ComPtr&lt;ID3D11InputLayout&gt; inputLayout;</code><br />
 <br />
 <code>device->CreateInputLayout(…, &amp;inputLayout );</code>
 <br /><br />
