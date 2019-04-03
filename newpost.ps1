@@ -25,8 +25,8 @@
 
         $NewBlogPath = Join-Path -ChildPath $FileName -Path "./_posts"
 
-        Set-Content -Value $Blog -Path $NewBlogPath
-        Write-Output (Get-ChildItem $NewBlogPath)
+        Set-Content -Value $Blog -Path $NewBlogPath.tolower()
+        Write-Output (Get-ChildItem $NewBlogPath.tolower())
 
         atom $NewBlogPath
     }
