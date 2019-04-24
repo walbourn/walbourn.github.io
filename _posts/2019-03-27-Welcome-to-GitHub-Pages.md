@@ -19,12 +19,24 @@ You may or may not have also noticed some other DirectX and related blogs have m
 <td><a href="https://devblogs.microsoft.com/directx/">https://devblogs.microsoft.com/directx/</a></td>
 </tr>
 <tr>
+<td>PIX on Windows Blog</td>
+<td><a href="https://devblogs.microsoft.com/pix/">https://devblogs.microsoft.com/pix/</a></td>
+</tr>
+<tr>
 <td>Visual C++ Team Blog</td>
 <td><a href="https://devblogs.microsoft.com/cppblog/">https://devblogs.microsoft.com/cppblog/</a></td>
 </tr>
 <tr>
-<td>Shawn Hargreaves Blog</td>
-<td><a href="http://www.shawnhargreaves.com/blogindex.html">http://www.shawnhargreaves.com/blogindex.html</a></td>
+<td>Shawn Hargreaves' Blog</td>
+<td><a href="https://www.shawnhargreaves.com/blogindex.html">https://www.shawnhargreaves.com/blogindex.html</a></td>
+</tr>
+<tr>
+<td>Tom Miller's Blog</td>
+<td><a href="http://millermansworld.com/">http://millermansworld.com/</a></td>
+</tr>
+<tr>
+<td>Raymond Chen's Blog</td>
+<td><a href="https://devblogs.microsoft.com/oldnewthing/">https://devblogs.microsoft.com/oldnewthing/</a></td>
 </tr>
 </tbody>
 </table>
