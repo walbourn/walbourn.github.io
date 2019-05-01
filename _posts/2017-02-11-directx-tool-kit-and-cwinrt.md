@@ -23,13 +23,13 @@ For more on C++/WinRT, see:
 
 "<a href="https://www.youtube.com/watch?v=v0SjumbIips">Putting Coroutines to Work with the Windows Runtime</a>" (CppCon 2016)
 
-<strong>VS Templates:</strong> I've added C++/WinRT variants of my Direct3D UWP templates for DirectX 11 and DirectX 12 to <a href="https://github.com/walbourn/directx-vs-templates">directx-vs-templates</a> and the <a href="https://github.com/walbourn/directx-vs-templates/releases">VS 2015 VSIX</a>.
+<strong>VS Templates:</strong> I've added C++/WinRT variants of my Direct3D UWP templates for DirectX 11 and DirectX 12 to <a href="https://github.com/walbourn/directx-vs-templates">directx-vs-templates</a> and the <a href="https://github.com/walbourn/directx-vs-templates/releases">VS 2015/2017/2019 VSIX</a>.
 
 <strong>Samples:</strong> In addition to the samples on the cppwinrt GitHub, there's a C++/WinRT version of some samples on <a href="https://github.com/Microsoft/Xbox-ATG-Samples">Xbox-ATG-Samples</a>.
 
-<strong>NuGet: </strong>You can use  <a href="https://www.nuget.org/packages/cppwinrt/">C++/WinRT on NuGet</a> as an easy way to add the C++/WinRT headers for the <em>Windows 10 Anniversary Update</em> (<a href="https://walbourn.github.io/windows-10-anniversary-update-sdk/">14393</a>) to the templates above or your own project.
+<strong>NuGet:</strong> <strike>You can use  <a href="https://www.nuget.org/packages/cppwinrt/">C++/WinRT on NuGet</a> as an easy way to add the C++/WinRT headers for the <em>Windows 10 Anniversary Update</em> (<a href="https://walbourn.github.io/windows-10-anniversary-update-sdk/">14393</a>) to the templates above or your own project.</strike>. The NuGet **cppwinrt** header package has been retired. Please use the Windows 10 SDK ([17134](https://walbourn.github.io/windows-10-april-2018-update-sdk/)) or later which includes WinRT/C++ headers. There is also a [Microsoft.Windows.CppWinRT](https://www.nuget.org/packages/Microsoft.Windows.CppWinRT/) NuGet package that includes templates, debug visualization, and other tools.
 
-<strong>Compiler:</strong> To use C++/WinRT, you must be use using <a href="https://walbourn.github.io/visual-studio-2015-update-3/">Visual Studio 2015 Update 3</a> or Visual Studio 2017 and build with the <a href="https://devblogs.microsoft.com/cppblog/permissive-switch/"><code>/std:c++latest</code></a> switch. The use of <a href="https://devblogs.microsoft.com/cppblog/using-c-coroutines-to-simplify-async-uwp-code/"><code>/await</code></a> is also recommended.
+<strong>Compiler:</strong> To use C++/WinRT, you must be use using <a href="https://walbourn.github.io/visual-studio-2015-update-3/">Visual Studio 2015 Update 3</a>, Visual Studio 2017, or Visual Studio 2019 and build with the <a href="https://devblogs.microsoft.com/cppblog/permissive-switch/"><code>/std:c++17</code></a> (``/std:c++latest`` for VS 2015) switch. The use of <a href="https://devblogs.microsoft.com/cppblog/using-c-coroutines-to-simplify-async-uwp-code/"><code>/await</code></a> is also recommended.
 
 <strong>DirectXMath, DirectXTex, DirectXMesh:</strong> These libraries are also compatible with both C++/WinRT and C++/CX applications.
 

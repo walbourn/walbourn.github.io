@@ -6,14 +6,14 @@ author: Chuck Walbourn
 comments: true
 categories: [direct3d, uwp, visual]
 ---
-Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-template/">January</a>, I released a <strong>D3D11Win32Game</strong> Visual Studio 2013 template for Win32 desktop development primarily to support my <a href="https://github.com/Microsoft/DirectXTK/wiki/Getting-Started">DirectX Tool Kit tutorials</a>. I modeled it after the basic template that we ship with the Xbox One XDK that consist of a <code>Game</code> class which sets up a device, swap chain, and timed rendering loop. I've since updated the templates on <a href="https://github.com/walbourn/directx-vs-templates">GitHub</a> and now have versions for VS 2015, for the universal Windows platform, for Direct3D 12, and versions with the <code>DeviceResources</code> abstraction that is used in the official Windows Store and UWP templates.
+Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-template/">January</a>, I released a <strong>D3D11Win32Game</strong> Visual Studio 2013 template for Win32 desktop development primarily to support my <a href="https://github.com/Microsoft/DirectXTK/wiki/Getting-Started">DirectX Tool Kit tutorials</a>. I modeled it after the basic template that we ship with the Xbox One XDK that consist of a <code>Game</code> class which sets up a device, swap chain, and timed rendering loop. I've since updated the templates on <a href="https://github.com/walbourn/directx-vs-templates">GitHub</a> and now have versions for VS 2015, for the Universal Windows Platform, for Direct3D 12, and versions with the <code>DeviceResources</code> abstraction that is used in the official Windows Store and UWP templates.
 <!--more-->
 
 <strong>VS Express users:</strong> I recommend taking a look at the VS Community edition which supports Windows desktop development if you don't have the budget for purchasing a license for the Pro+ editions
 
 <h1>Using the VSIX</h1>
 
-<strong>To install</strong>: VS 2013 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> and VS 2015 / VS 2017 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame.vsix</a>. These packages install all the templates supported for that version of Visual Studio under the "Visual C++" node of the <em>New Project</em> dialog. If you have Visual Studio open, you should shut it down and restart it. If you have an older version installed of this VSIX installed, you should uninstall the old one first.
+<strong>To install</strong>: VS 2013 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> and VS 2015 / VS 2017 / VS 2019 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame.vsix</a>. These packages install all the templates supported for that version of Visual Studio under the "Visual C++" node of the <em>New Project</em> dialog. If you have Visual Studio open, you should shut it down and restart it. If you have an older version installed of this VSIX installed, you should uninstall the old one first.
 
 <strong>To remove: </strong>Go to <em>Tools / Extensions and Updates...</em> then uninstall "Direct3DWin32Game" or "Direct3DUWPGame".
 
@@ -22,7 +22,7 @@ Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-te
 <tr>
 <td><strong>Template</strong></td>
 <td><strong>VS 2013</strong></td>
-<td><strong>VS 2015 / 2017</strong></td>
+<td><strong>VS 2015 / 2017 / 2019</strong></td>
 <td><strong>Description</strong></td>
 </tr>
 <tr>
@@ -204,4 +204,8 @@ Otherwise the DR version of the template is the same as the <a href="https://wal
 
 <strong>VS 2013 vs. 2015:</strong> Note there is one minor code difference between the VS 2013 and VS 2015 version of the templates because VS 2013 does not support C++11 uniform initialization. Otherwise the code is basically the same. VS 2015 is required for UWP development, and the Windows 10 SDK is required for Direct3D 12 development which only officially integrates with VS 2015--you can use a <a href="https://walbourn.github.io/windows-10-sdk-november-2015/">props</a> solution to get it to work with VS 2013.
 
-<strong>VS 2017:</strong> The latest version of the Direct3DUWPGame.vsix now supports both VS 2015 and VS 2017. On VS 2015, it will use Platform Toolset v140 while for VS 2017 it uses v141. The Direct3D 11 Win32 game template originally used the VS 2015 default Windows 8.1 SDK while the other templates all require a Windows 10 SDK. Since VS 2017 only includes a Windows 10 SDK by default, the Direct3D 11 Win32 game template and it's DeviceResources variant now trigger the same Windows 10 SDK selection wizard as the UWP and Direct3D 12 templates.
+> Note that the VS 2013 version of the template was last updated in [July 2017](https://github.com/walbourn/directx-vs-templates/releases/tag/jul2017).
+
+<strong>VS 2017:</strong> The latest version of the ``Direct3DUWPGame.vsix`` (March 2017 or later) now supports both VS 2015 and VS 2017. On VS 2015, it will use Platform Toolset ``v140`` while for VS 2017 it uses ``v141``. The Direct3D 11 Win32 game template originally used the VS 2015 default Windows 8.1 SDK while the other templates all require a Windows 10 SDK. Since VS 2017 only includes a Windows 10 SDK by default, the Direct3D 11 Win32 game template and it's DeviceResources variant now trigger the same Windows 10 SDK selection wizard as the UWP and Direct3D 12 templates.
+
+<strong>VS 2019:</strong> The latest version of the ``Direct3DUWPGame.vsix`` (April 2019 or later) now supports VS 2015, 2017, and 2019. It uses a Platform Toolset of ``v140``, ``v141``, or ``v142`` accordingly.
