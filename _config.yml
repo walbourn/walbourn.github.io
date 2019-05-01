@@ -6,6 +6,8 @@ description: Technical tips, tricks, and news about game development for Microso
 
 author: Chuck Walbourn
 
+url: https://walbourn.github.io/
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/X_jpg.jpg
 
@@ -21,3 +23,7 @@ markdown: kramdown
 theme: jekyll-theme-midnight
 
 excerpt_separator: <!--more-->
+
+plugins:
+  - jekyll-feed
+
