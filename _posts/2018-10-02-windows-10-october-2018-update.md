@@ -4,7 +4,7 @@ title: Windows 10 October 2018 Update
 date: 2018-10-02 16:20
 author: Chuck Walbourn
 comments: true
-categories: [uwp, visualc, win10, windowssdk]
+categories: [uwp, win10, windowssdk]
 ---
 The <a href="https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/">Windows 10 October 2018 Update</a> (a.k.a. Version 1809) is now available along with the <a href="https://blogs.windows.com/buildingapps/2018/10/02/start-developing-on-windows-10-october-2018-update-today">Windows 10 SDK</a> (10.0.17763). The new SDK can be installed via VS 2017 (15.8.6 update or later) as an optional component under the UWP workload, as an individual component, or as a <a href="https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk">standalone installer</a>. This release includes some updates to [DirectX 12](https://docs.microsoft.com/en-us/windows/desktop/direct3d12/new-releases#windows-10-version-1809), DirectWrite, DXGI, and <a href="https://walbourn.github.io/directxmath-3-13/">DirectXMath</a>. See <a href="https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-17763">What's New in Windows 10 for developers, build 17763</a>.
 <!--more-->

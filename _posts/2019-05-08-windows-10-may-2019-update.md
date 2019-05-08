@@ -4,10 +4,10 @@ title: Windows 10 May 2019 Update
 date: 2019-05-08 12:12
 author: Chuck Walbourn
 comments: true
-categories: [general]
+categories: [uwp, win10, windowssdk]
 ---
 
-The Windows 10 May 2019 Update (a.k.a. Version 1903) has been deployed to insiders and will be showing up for consumer machines at some point, but in the meantime the matching Windows 10 SDK (10.0.18362) is available now. See [this blog post](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today) for details on the 'go-live' plan.
+The Windows 10 May 2019 Update (a.k.a. Version 1903) has been deployed to insiders and will be deployed publicly [in late May](https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency/), but in the meantime the matching Windows 10 SDK (10.0.18362) is available now. See [this blog post](https://blogs.windows.com/buildingapps/2019/04/18/start-developing-on-windows-10-may-2019-update-today) for details on the 'go-live' plan.
 <!--more-->
 
 If you are using VS 2019 (16.0) you can install the latest Windows 10 SDK by selecting it from the Visual Studio installer in the 'individual components' tab. If you are using VS 2017, then you can install the [standalone](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk) SDK. This release includes some updates to DirectX 12 including the release of [HLSL Shader Model 6.4](https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/hlsl-shader-model-6-4-features-for-direct3d-12). See [What's New in Windows 10 for developers, build 18362](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-18362).
