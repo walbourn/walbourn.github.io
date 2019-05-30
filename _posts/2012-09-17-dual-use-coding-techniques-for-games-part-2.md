@@ -191,7 +191,6 @@ SetThreadIdealProcessor
 SetThreadPriority
 Sleep(Ex)
 TlsAlloc</code></td>
-
 <td><p>Windows Store apps for Windows 8.0 do not support POSIX-style threading APIs. These applications must use the Windows Runtime (WinRT) ThreadPool API in <code>Windows.System.Threading</code>.</p>
 <p>For dual-use coding, you can make use of the C++11 Standard Library threading support and/or the Concurrency Runtime (ConcRT) which is supported for both Windows Store apps and Win32 desktop apps.</p>
 <p><strong>Update</strong>: Windows Store apps for Windows 8.1 can now use these threading APIs as of VS 2013 Update 4. They are also supported for Windows phone 8.1, Xbox One apps, and Universal Windows Platform (UWP) apps for Windows 10.</p></td>
@@ -227,7 +226,7 @@ etc.</td>
 <td><p>This is the standard memory allocation routine family is available for all applications.</p>
 <p><code>LocalAlloc, GlobalAlloc</code> are only available for Win32 desktop applications.</p>
 <p><code>VirtualAlloc</code> is not available for Windows 8.x Store apps or Windows phone 8.x apps.</p>
-<p><em>Note:</em> Xbox One XDK does support <code>VirtualAlloc</code> but does not allow EXECUTE page-level permission.<p/>
+<p><em>Note:</em> Xbox One XDK does support <code>VirtualAlloc</code> but does not allow EXECUTE page-level permission.</p>
 <p><strong>Windows 10:</strong> <code>VirtualAlloc</code> is supported for Universal Windows Platform (UWP) apps for Windows 10 as a remap for the new <code>VirtualAllocFromApp</code>.</p></td>
 </tr>
 <tr>
@@ -248,7 +247,7 @@ etc.</td>
 <tr>
 <td>OpenGL</td>
 <td><p>OpenGL is not supported for Windows Store apps, Windows phone 8.x, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</p>
-<p><em>Note: </em>For OpenGL ES applications, you may find the <a href="https://github.com/Microsoftangle">Angle project</a> useful.</p></td>
+<p><em>Note:</em> For OpenGL ES applications, you may find the <a href="https://github.com/Microsoftangle">Angle project</a> useful.</p></td>
 </tr>
 <tr>
 <td><code>QueryPerformanceCounter
