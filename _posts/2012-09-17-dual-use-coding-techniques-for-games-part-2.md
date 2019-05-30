@@ -8,20 +8,18 @@ categories: [win10, win8, winphone, xbox one]
 ---
 <em>Writing shared code for Windows Store, Xbox One, Universal Windows Platform (UWP) apps, and Win32 desktop apps</em>
 
-(continued from <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">part 1</a>)
+(continued from <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-1/">part 1</a>)
 
 <h1>Win32 APIs</h1>
 
 The majority of the "core" API family are new Windows Runtime (WinRT) style APIs which are not available for down-level Win32 desktop applications. Therefore the overlap is in Win32 APIs that are available to both kinds of applications. In many cases, the Windows Store apps 'core' API family contains a Win32 API that is very recent. Therefore, a key technique for writing dual-use code properly is learning to leverage the ``_WIN32_WINNT`` control define for <a href="https://docs.microsoft.com/en-us/windows/desktop/WinProg/using-the-windows-headers">Windows Headers</a>.
 <!--more-->
 
-<ul>
- 	<li>For Windows 8.1 support, ``_WIN32_WINNT`` is 0x0603 which is the default with the Windows 8.1 SDK / VS 2013 and is the value you expect to use for Windows Store apps for Windows 8.1 and Windows phone 8.1.</li>
- 	<li>For Windows 8.x support, ``_WIN32_WINNT`` is 0x0602 which is the default with the Windows 8.0 SDK / VS 2012 and is the value you expect to use for Windows Store apps for Windows 8.0, Windows phone 8.0, and Xbox One.</li>
- 	<li>For Windows 7 and Windows 8.x Win32 desktop support, ``_WIN32_WINNT`` should be 0x0601.</li>
- 	<li>For Windows Vista, Windows 7, and Windows 8.x Win32 desktop support, ``_WIN32_WINNT`` should be 0x0600.</li>
- 	<li>For Windows XP SP3 or Windows Server 2003 SP2, you must set ``_WIN32_WINNT`` to 0x0501 and use a Platform Toolset of "v110_xp" or "v120_xp" which selects the Windows 7.1 SDK that has <a href="https://walbourn.github.io/visual-studio-2012-update-1/">limited DirectX integration</a>. <em>The Windows 8.x SDK does not support any platform prior to Windows Vista</em>.</li>
-</ul>
+* For Windows 8.1 support, ``_WIN32_WINNT`` is 0x0603 which is the default with the Windows 8.1 SDK / VS 2013 and is the value you expect to use for Windows Store apps for Windows 8.1 and Windows phone 8.1.
+* For Windows 8.x support, ``_WIN32_WINNT`` is 0x0602 which is the default with the Windows 8.0 SDK / VS 2012 and is the value you expect to use for Windows Store apps for Windows 8.0, Windows phone 8.0, and Xbox One.
+* For Windows 7 and Windows 8.x Win32 desktop support, ``_WIN32_WINNT`` should be 0x0601.
+* For Windows Vista, Windows 7, and Windows 8.x Win32 desktop support, ``_WIN32_WINNT`` should be 0x0600.
+* For Windows XP SP3 or Windows Server 2003 SP2, you must set ``_WIN32_WINNT`` to 0x0501 and use a Platform Toolset of "v110_xp" or "v120_xp" which selects the Windows 7.1 SDK that has <a href="https://walbourn.github.io/visual-studio-2012-update-1/">limited DirectX integration</a>. <em>The Windows 8.x SDK does not support any platform prior to Windows Vista</em>.
 
 <strong>Windows 10: </strong>For Windows 10 support, ``_WIN32_WINNT`` is 0x0A00 which is the default with the Windows 10 SDK / VS 2015 and is the value you expect to use for Universal Windows Platform (UWP) apps.
 
@@ -60,7 +58,7 @@ Here are a number of Win32 APIs that are available to Windows Store apps when us
 <tr>
 <td><strong>Older API</strong></td>
 <td><strong>"Core" Win32 API</strong></td>
-<td><strong>``_WIN32_WINNT`` Required</strong></td>
+<td><strong>`_WIN32_WINNT` Required</strong></td>
 </tr>
 <tr>
 <td><code>GetDiskFreeSpace \*</code></td>
@@ -220,8 +218,8 @@ etc.</td>
 <td>Windows Store apps do not use the Win32 registry. The recommendation is to store settings data in the application local directory using standard file I/O.</td>
 </tr>
 <tr>
-<td><p><code>GlobalMemoryStatus(Ex)</code></td>
-<td>There is no Windows Store app function available that will return physical or virtual memory information.</p>
+<td><code>GlobalMemoryStatus(Ex)</code></td>
+<td><p>There is no Windows Store app function available that will return physical or virtual memory information.</p>
 <p><strong>Windows 10:</strong> This is now supported for Universal Windows Platform (UWP) apps as of the Windows 10 Anniversary Update SDK (14393).</p></td>
 </tr>
 <tr>
@@ -270,8 +268,10 @@ timeEndPeriod</code></td>
 </tr>
 </tbody>
 </table>
+
 <h1>DirectX and Media Technologies</h1>
 One of the reasons that dual-use shared code is possible for game technology is because many of the traditional DirectX Win32 APIs are available for Windows Store apps as well as down level for Win32 desktop apps.
+
 <table border="1">
 <tbody>
 <tr>
@@ -337,7 +337,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 </tr>
 <tr>
 <td>Windows Imaging Component (WIC)</td>
-<td><p>This technology is available for Windows Store apps,Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to set the ``_WIN32_WINNT`` definition properly to ensure use of the correct version of the WIC factory. See "<a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">Windows Imaging Component and Windows 8</a>" for more information.</p>
+<td><p>This technology is available for Windows Store apps,Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to set the `_WIN32_WINNT` definition properly to ensure use of the correct version of the WIC factory. See "<a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">Windows Imaging Component and Windows 8</a>" for more information.</p>
 <p><em>Note:</em> Windows phone 8.0 does not support WIC, but this is supported for Windows phone 8.1. Xbox One XDK does not support the JPEG XR / HD Photo codec and a few other aspects of 'standard' WIC.</p></td>
 </tr>
 <tr>

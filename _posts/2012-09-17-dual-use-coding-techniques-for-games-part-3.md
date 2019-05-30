@@ -8,7 +8,7 @@ categories: [win10, win8, winphone, xbox one]
 ---
 <em>Writing shared code for Windows Store, Xbox One, Universal Windows Platform (UWP) apps, and Win32 desktop apps</em>
 
-(continued from <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">part 1</a> and <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-2/">part 2</a>)
+(continued from <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-1/">part 1</a> and <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-2/">part 2</a>)
 
 <h1>Windows Runtime (WinRT) APIs</h1>
 

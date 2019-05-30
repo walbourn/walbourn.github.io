@@ -100,4 +100,4 @@ In addition to learning about the new Windows Store app model (a.k.a. Metro styl
 
 <strong>Update:</strong> This page has been updated on October 25, 2012 for Windows 8 GA (was originally written for Windows 8 Consumer Preview).
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">Dual-use Coding Techniques for Games</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/manifest-madness/">Manifest Madness</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-1/">Dual-use Coding Techniques for Games</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/manifest-madness/">Manifest Madness</a>

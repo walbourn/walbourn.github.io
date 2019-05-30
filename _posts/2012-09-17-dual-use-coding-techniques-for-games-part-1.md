@@ -235,6 +235,8 @@ Universal character names in literals</td>
 
 > In VS 2010, <code>final</code> was implemented as <code>sealed</code>. Also note that VS 2010 considers <code>override</code> to be a MSVC extension and generates warning C4481.
 
+> VS 2017 supports all C++11 features as well as C++14 and C++17. VS 2019 supports C++11, C++14, C++17, and portions of the C++20 draft.
+
 Use of the older standalone DirectX SDK is not recommended or supported for Windows Store apps. It includes many legacy technologies that are not supported for this platform, and thus their use complicates the goal of 'dual-use' coding. See the blog posts "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>", and "<a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>" for more information.
 
 <h1>C++11 Standard Library</h1>
@@ -400,7 +402,7 @@ The majority of the C++11 Standard Library is supported for both Windows Store a
 </tbody>
 </table>
 
-> VS 2012 / VS 2013's ``high_resolution_clock`` has some <a href="https://connect.microsoft.com/VisualStudio/feedback/details/719443/">known issues</a>. This is fixed in VS 2015.
+> VS 2012 / VS 2013's ``high_resolution_clock`` has some <a href="https://connect.microsoft.com/VisualStudio/feedback/details/719443/">known issues</a>. This is fixed in VS 2015 or later.
 
 The majority of Visual C++ functions in the C Runtime are available for Windows Store apps, but there are some specific headers which are not fully available.
 
@@ -502,7 +504,7 @@ The ability to write standalone assembly for all machine architectures is not su
 
 When writing architecture-specific code, make use of the <code>_M_IX86</code> (32-bit), <code>_M_X64</code> (64-bit), <code>_M_ARM</code>, and <code>_M_ARM64</code>  machine architecture defines for conditional compilation. All are "Little Endian" platforms.
 
-> The VS 2012, VS 2013, and VS 2015 toolsets support x86, x64, and ARM. VS 2017 (15.9 update) also supports ARM64. VS 2010 has no support for ARM targets.
+> The VS 2012, VS 2013, and VS 2015 toolsets support x86, x64, and ARM. VS 2017 (15.9 update) or later also supports ARM64. VS 2010 has no support for ARM targets.
 
 <h1>Exception-Safe Coding</h1>
 

@@ -54,7 +54,7 @@ Some additional notes:
 
 <ul>
 	<li>This makes use of <code>Microsoft::WRL::ComPtr</code> as a <a href="https://docs.microsoft.com/en-us/cpp/windows/wrl/comptr-class">smart-pointer</a> to manage the lifetime of the COM objects.</li>
-	<li>It makes use of <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games/">C++ Exception handling</a> for errors, including the <code>DX::ThrowIfFailed</code> helper present in the other DirectX templates.</li>
+	<li>It makes use of <a href="https://walbourn.github.io/dual-use-coding-techniques-for-games-part-1/">C++ Exception handling</a> for errors, including the <code>DX::ThrowIfFailed</code> helper present in the other DirectX templates.</li>
 	<li>The modules default to using the <code>DirectX</code> namespace to simplify use of <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> or other helper libraries like <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit</a>. Following good C++ coding practice, you should use fully qualified names in the headers (i.e. in <code>Game.h</code>).</li>
 	<li>If <code>Game::Present</code> detects as a device-removed or device-reset case, it will call <code>Game::OnDeviceLost</code> which releases all Direct3D objects and then calls <code>Game::CreateDevice</code> and <code>Game::CreateResources</code> again to re-create them.</li>
 	<li>COM is initialized using a multi-threading model to simplify use of Windows Imaging Component (WIC) or XAudio2.</li>
