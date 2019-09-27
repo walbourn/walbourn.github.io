@@ -16,22 +16,22 @@ hr = m_d3dDevice.As(&d3dDebug);
 if (SUCCEEDED(hr))
 {
     ComPtr<ID3D11InfoQueue> d3dInfoQueue;
-    hr = d3dDebug.As(&d3dInfoQueue);
-    if (SUCCEEDED(hr))
-    {
+    hr = d3dDebug.As(&d3dInfoQueue);
+    if (SUCCEEDED(hr))
+    {
 #ifdef _DEBUG
-        d3dInfoQueue->SetBreakOnSeverity(D3D11_MESSAGE_SEVERITY_CORRUPTION, true);
-        d3dInfoQueue->SetBreakOnSeverity(D3D11_MESSAGE_SEVERITY_ERROR, true);
- #endif
-        D3D11_MESSAGE_ID hide [] =
-        {
-            D3D11_MESSAGE_ID_SETPRIVATEDATA_CHANGINGPARAMS,
-            // TODO: Add more message IDs here as needed
-        };
-        D3D11_INFO_QUEUE_FILTER filter = {};
-        filter.DenyList.NumIDs = _countof(hide);
-        filter.DenyList.pIDList = hide;
-        d3dInfoQueue->AddStorageFilterEntries(&filter);
+        d3dInfoQueue->SetBreakOnSeverity(D3D11_MESSAGE_SEVERITY_CORRUPTION, true);
+        d3dInfoQueue->SetBreakOnSeverity(D3D11_MESSAGE_SEVERITY_ERROR, true);
+#endif
+        D3D11_MESSAGE_ID hide [] =
+        {
+            D3D11_MESSAGE_ID_SETPRIVATEDATA_CHANGINGPARAMS,
+            // TODO: Add more message IDs here as needed
+        };
+        D3D11_INFO_QUEUE_FILTER filter = {};
+        filter.DenyList.NumIDs = _countof(hide);
+        filter.DenyList.pIDList = hide;
+        d3dInfoQueue->AddStorageFilterEntries(&filter);
     }
 }
 #endif
@@ -46,22 +46,22 @@ For traditional Windows desktop apps, you are expected to use <span style="text-
 ```cpp
 #include <dxgidebug.h>
 #if defined(_DEBUG)
-     Microsoft::WRL::ComPtr<IDXGIInfoQueue> dxgiInfoQueue;
-  
-     typedef HRESULT (WINAPI * LPDXGIGETDEBUGINTERFACE)(REFIID, void ** );
-  
-     HMODULE dxgidebug = LoadLibraryEx( L"dxgidebug.dll", nullptr, LOAD_LIBRARY_SEARCH_SYSTEM32 );
-     if ( dxgidebug )
-     {
-         auto dxgiGetDebugInterface = reinterpret_cast<LPDXGIGETDEBUGINTERFACE>(
-             reinterpret_cast<void*>( GetProcAddress( dxgidebug, "DXGIGetDebugInterface" ) ) );
-  
-         if ( SUCCEEDED( dxgiGetDebugInterface( IID_PPV_ARGS( dxgiInfoQueue.GetAddressOf() ) ) ) )
-         {
-             dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_ERROR, true );
-             dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_CORRUPTION, true );
-         }
-     }
+    Microsoft::WRL::ComPtr<IDXGIInfoQueue> dxgiInfoQueue;
+
+    typedef HRESULT (WINAPI * LPDXGIGETDEBUGINTERFACE)(REFIID, void ** );
+
+    HMODULE dxgidebug = LoadLibraryEx( L"dxgidebug.dll", nullptr, LOAD_LIBRARY_SEARCH_SYSTEM32 );
+    if ( dxgidebug )
+    {
+        auto dxgiGetDebugInterface = reinterpret_cast<LPDXGIGETDEBUGINTERFACE>(
+            reinterpret_cast<void*>( GetProcAddress( dxgidebug, "DXGIGetDebugInterface" ) ) );
+
+        if ( SUCCEEDED( dxgiGetDebugInterface( IID_PPV_ARGS( dxgiInfoQueue.GetAddressOf() ) ) ) )
+        {
+            dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_ERROR, true );
+            dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_CORRUPTION, true );
+        }
+    }
 #endif
 ```
 
@@ -72,8 +72,8 @@ One issue with this pattern is that you can't use it for Windows Store or univer
 Microsoft::WRL::ComPtr<IDXGIInfoQueue> dxgiInfoQueue;
 if ( SUCCEEDED( DXGIGetDebugInterface1( 0, IID_PPV_ARGS( dxgiInfoQueue.GetAddressOf() ) ) ) )
 {
-       dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_ERROR, true );
-       dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_CORRUPTION, true );
+    dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_ERROR, true );
+    dxgiInfoQueue->SetBreakOnSeverity( DXGI_DEBUG_ALL, DXGI_INFO_QUEUE_MESSAGE_SEVERITY_CORRUPTION, true );
 }
 #endif
 ```
