@@ -23,7 +23,9 @@ As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sd
 
 <strong>D3DX:</strong> All versions of D3DX are deprecated including D3DX9, D3DX10, and D3DX11. See <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a> for replacements and recommendations including <a href="https://github.com/Microsoft/DirectXTK">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a>, and <a href="https://github.com/Microsoft/UVAtlas">UVAtlas</a> on GitHub.
 
-<strong>FX:</strong> The latest version of Effects for Direct3D 11 is available on <a href="https://github.com/Microsoft/FX11">GitHub</a> and does not require the legacy DirectX SDK or any version of D3DX.
+<strong>XNAMath:</strong> The C++ SIMD math library "xnamath" has been replaced by [DirectXMath](https://walbourn.github.io/introducing-directxmath/). It's in the Windows 10 SDK as well as being hosted on [GitHub](https://github.com/Microsoft/DirectXMath).
+
+<strong>FX:</strong> The latest version of Effects for Direct3D 11 is available on <a href="https://github.com/Microsoft/FX11">GitHub</a> and does not require the legacy DirectX SDK or any version of D3DX. <i>The ``fx_*`` shader profile support in the HLSL complier is deprecated.</i>
 
 <strong>DXUT:</strong> The latest version of DXUT for Direct3D 11 is available on <a href="https://github.com/Microsoft/DXUT">GitHub</a> and does not require the legacy DirectX SDK or any version of D3DX.
 
