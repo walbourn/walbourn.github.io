@@ -1,6 +1,6 @@
 ---
 layout: msdnpost
-title: Windows 10 October 2018 Update
+title: Windows 10 October 2018 Update SDK
 date: 2018-10-02 16:20
 author: Chuck Walbourn
 comments: true
