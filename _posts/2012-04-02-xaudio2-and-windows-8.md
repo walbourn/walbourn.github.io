@@ -9,6 +9,8 @@ categories: [audio, dxsdk, win8, windowssdk, winphone, xbox one]
 The <em>Windows 8 Consumer Preview</em> includes version 2.8 of the <a href="https://docs.microsoft.com/en-us/windows/desktop/xaudio2/xaudio2-apis-portal">XAudio2</a> game audio API built in, and this API is fully supported for both Windows Store apps (including x86, x64, and Windows on ARM) and desktop Win32 applications. The full details of the differences compared to XAudio2 2.7 which shipped in the <em>DirectX SDK (June 2010)</em> release are addressed on <a href="https://docs.microsoft.com/en-us/windows/desktop/xaudio2/xaudio2-versions">Microsoft Docs</a>. The headers and libraries for XAudio 2.8 are included in the Windows SDK 8.0 that is part of <a href="https://walbourn.github.io/visual-studio-11-beta/">Visual Studio 11 Beta</a>.
 <!--more-->
 
+<strong>Windows 7 Update: </strong> There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details.
+
 <strong>Update: </strong>This information also applies to <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">Windows 8</a> RTM, <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Visual Studio 2012</a> RTM, Windows 8.1, and <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Visual Studio 2013</a>.
 
 <strong>Windows phone</strong>: <a href="http://go.microsoft.com/fwlink/?LinkID=261873">Windows phone 8</a> supports XAudio 2.8 as well.

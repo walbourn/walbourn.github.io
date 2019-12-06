@@ -22,6 +22,8 @@ The December 2013 release of <a href="http://go.microsoft.com/fwlink/?LinkId=248
 
 When building Win32 desktop applications, you can either make use of XAudio 2.8 if targeting Windows 8.0 or later, or you can make use of XAudio 2.7 with the legacy DirectX SDK (June 2010) to target Windows Vista, Windows 7, or later. There is one VS project for the graphics component, another for the Windows 8.x version of the audio components, and another for the down-level version that requires the legacy DirectX SDK to build.
 
+<strong>Windows 7 Update: </strong> There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details.
+
 The DirectXTK package also includes a new command-line tool, [XWBTool](https://github.com/Microsoft/DirectXTK/wiki/xwbtool), which can be used to build XACT-style wave banks for more efficient management of audio data. <em>DirectXTK for Audio</em> does not make use of the legacy XACT Engine, XACT Cue, or XACT SoundBank. It only uses ``.xwb`` wave banks as a method for packing .wav data. The WaveBank class can use ``.xwb`` wave banks built with XWBTool or the legacy XACTBLD tool.
 
 More detailed <a href="https://github.com/Microsoft/DirectXTK/wiki/Audio">documentation</a>, full release notes, and other information can be found on the DirectXTK <strike>CodePlex</strike>GitHub site.

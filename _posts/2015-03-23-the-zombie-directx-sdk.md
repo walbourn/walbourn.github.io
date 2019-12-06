@@ -78,6 +78,8 @@ This next set of headers/libraries are only needed when targeting Windows 7 or e
 
 <strong>Note:</strong> The Windows 8.x SDK copy of <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.4 if ``_WIN32_WINNT`` is set below 0x0602 (Windows 8.0). The legacy DirectX SDK <code>xinput.h</code> will use XInput 9.1.0 instead of XInput 1.3. if <code>XINPUT_USE_9_1_0</code> is defined. The Windows 7.1 SDK copy of <code>xinput.h</code> only uses XInput 9.1.0.
 
+<strong>Update: </strong> There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details. As such, XAudio use on Windows 7 is no longer a reason to keep using the legacy DirectX SDK.
+
 <h1>Windows XP</h1>
 
 Lastly, this set of headers/libraries are only needed when targeting Windows XP (i.e. building a EXE that can run on Windows XP as obviously Direct3D 10.x and Direct3D 11 are not supported on Windows XP). These headers/libs all conflict with the Windows 8.x SDK except XNAMath, are out of date compared to the Windows 8.x SDK, and should be moved into a subfolder. Some of these are not present in the Windows 7.1A SDK, while others are newer versions.

@@ -9,7 +9,7 @@ categories: [audio, dxsdk]
 The XAudio2 library in the <a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">legacy DirectX SDK</a> makes use of COM creation and reference counting for lifetime management, and a recent investigation has found a problem in this implementation. In short: in some situations the XAudio DLL itself is unloaded before the XAudio2 objects are completely destroyed, thus leading to an access violation. This normally happens on exit, although the exact details of when it might be evident depends on exactly which version of Windows you are using and the overall process layout for your application.
 <!--more-->
 
-<em>This issue does not affect XAudio 2.8 (Windows 8 SDK), XAudio 2.9 (Windows 10 SDK), XAudio2 on Xbox 360, or XAudio2 on Xbox One.</em>
+<strong>Update:</strong> This issue does not affect XAudio 2.8 (Windows 8 SDK), XAudio 2.9 (Windows 10 SDK), XAudio2 on Xbox 360, or XAudio2 on Xbox One. There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details. Using this new version avoids this known issue.
 
 An application level workaround is very easy to implement, and is already implemented in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit for Audio</a> and in the XAudio2 DirectX SDK refreshed samples on <a href="https://github.com/walbourn/directx-sdk-samples">GitHub</a>.
 
