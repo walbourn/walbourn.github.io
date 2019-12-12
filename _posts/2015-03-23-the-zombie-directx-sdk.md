@@ -101,7 +101,7 @@ Lastly, this set of headers/libraries are only needed when targeting Windows XP 
 </tbody>
 </table>
 
-<strong>Note:</strong> <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> will work on Windows XP, but there's no official include path configuration that would support this scenario. You could in theory delete ``xnamath*.*`` and instead put a copy of ``DirectXMath*.*``, ``DirectXCollision.*``, <code>DirectXColors.h</code>, and ``DirectXPackedVector.*`` in this folder instead for Windows XP use.<em> I make no claim that this is or is not allowed by the terms of the Windows SDK EULA.</em>
+<strong>Note:</strong> <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> will work on Windows XP, and while it's not present in the Windows 7.1A SDK you can use the [NuGet](https://www.nuget.org/packages/directxmath/) package or download it from [GitHub](https://github.com/microsoft/DirectXMath).</em>
 
 <h1>Project Configuration</h1>
 
@@ -148,4 +148,4 @@ If you make use of these legacy DirectX SDK libraries, then you continue to depe
 <li>Use of <code>dxsdk\include\xp</code> for <code>D3DCompiler_43.DLL</code> or <code>D3DCSX_43.DLL</code></li>
 </ul>
 
-<strong>VS 2015 Users:  </strong>Note that <code>DXERR.LIB</code> in the legacy DirectX SDK is not compatible with the C Runtime used by VS 2015. You must use <a href="https://walbourn.github.io/wheres-dxerr-lib/">this version</a> of DXERR instead.
+<strong>VS 2015 or later Users:  </strong>Note that <code>DXERR.LIB</code> in the legacy DirectX SDK is not compatible with the C Runtime used by VS 2015. You must use <a href="https://walbourn.github.io/wheres-dxerr-lib/">this version</a> of DXERR instead.
