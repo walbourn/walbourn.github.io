@@ -11,7 +11,7 @@ As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sd
 
 <ol>
  	<li>You have code (or perhaps an <a href="https://walbourn.github.io/book-recommendations/">older book</a>) that makes use of D3DX9, D3DX10, D3DX11, or XACT Engine.</li>
- 	<li>Your application uses use XAudio2 and supports Windows 7 systems.</li>
+ 	<li><strike>Your application uses use XAudio2 and supports Windows 7 systems.</strike></li>
  	<li>You are targeting Windows XP with the alternate <code>v1x0_xp</code> Platform Toolset.</li>
 </ol>
 
@@ -21,7 +21,7 @@ As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sd
 
     Dism /online /add-capability /capabilityname:Tools.Graphics.DirectX~~~~0.0.1.0
 
-<strong>D3DX:</strong> All versions of D3DX are deprecated including D3DX9, D3DX10, and D3DX11. See <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a> for replacements and recommendations including <a href="https://github.com/Microsoft/DirectXTK">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a>, and <a href="https://github.com/Microsoft/UVAtlas">UVAtlas</a> on GitHub.
+<strong>D3DX:</strong> D3DX9, D3DX10, and D3DX11 are all deprecated. See <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a> for replacements and recommendations including <a href="https://github.com/Microsoft/DirectXTK">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a>, and <a href="https://github.com/Microsoft/UVAtlas">UVAtlas</a> on GitHub.
 
 <strong>XNAMath:</strong> The C++ SIMD math library "xnamath" has been replaced by [DirectXMath](https://walbourn.github.io/introducing-directxmath/). It's in the Windows 10 SDK as well as being hosted on [GitHub](https://github.com/Microsoft/DirectXMath).
 
@@ -41,13 +41,13 @@ Both the Windows 8.1 SDK Spring 2015 update and the Windows 10 SDK include Direc
 
 <strong>XAudio:</strong> The Windows 10 SDK includes XAudio 2.9 which is supported on Windows 10. The Windows 8.1 SDK and Windows 10 SDK include XAudio 2.8 which is supported on Windows 8.x and Windows 10. <strike>You have to use the legacy DirectX SDK and XAudio 2.7 to support Windows 7. See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> and <a href="https://walbourn.github.io/known-issues-xaudio-2-7/">Known Issues: XAudio 2.7</a></strike>. There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details.
 
-<strong>DirectX SDK:</strong> If you need to make use of legacy DirectX SDK components such as D3DX9, D3DX10, D3DX11, or XAudio 2.7 with VS 2012, VS 2013 or VS 2015, see <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">MSDN</a> for details on mixing the Windows 8 or Windows 10 SDK correctly with the legacy DirectX SDK. Be sure to <a href="https://walbourn.github.io/the-zombie-directx-sdk/">The Zombie DirectX SDK</a> as well. If you are targeting Windows XP which makes use of the Windows 7.1A SDK, see <a href="https://walbourn.github.io/visual-studio-2012-update-1/">Visual Studio 2012 Update 1</a>.
+<strong>DirectX SDK:</strong> If you need to make use of legacy DirectX SDK components such as D3DX9, D3DX10, D3DX11, or XAudio 2.7 with VS 2012 or later, see <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> for details on mixing the Windows 8 or Windows 10 SDK correctly with the legacy DirectX SDK. Be sure to <a href="https://walbourn.github.io/the-zombie-directx-sdk/">The Zombie DirectX SDK</a> as well. If you are targeting Windows XP which makes use of the Windows 7.1A SDK, see <a href="https://walbourn.github.io/visual-studio-2012-update-1/">Visual Studio 2012 Update 1</a>.
 
 <h1>DirectX 12</h1>
 
 There is something called the <em>DirectX 12 SDK</em> which was used as a beta vehicle for the development of DirectX 12 through the Early Access Program. Now that the Windows 10 SDK is final, you don't need access to the <em>DirectX 12 SDK</em> at all. The DirectX 12 samples are on <a href="https://github.com/Microsoft/DirectX-Graphics-Samples">GitHub</a>.
 
-<strong>D3DX:</strong> Note that there is also a header file called <code>d3dx12.h</code> which is an all inline header with some utility code shipped in the GitHub samples. D3DX12 is not in any SDK, there's no DLL, and there's no REDIST for it. <a href="https://github.com/Microsoft/DirectXTK12">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> also support DirectX 12.
+<strong>D3DX:</strong> Note that there is also a header file called <code>d3dx12.h</code> which is an all inline header with some utility code shipped in the GitHub samples and [DirectX 12 Visual Studio templates](https://github.com/walbourn/directx-sdk-samples). D3DX12 is not in any SDK, there's no DLL, and there's no REDIST for it. You can obtain the latest version from [GitHub](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12). <a href="https://github.com/Microsoft/DirectXTK12">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> also support DirectX 12.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>
 
