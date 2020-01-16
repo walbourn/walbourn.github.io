@@ -16,16 +16,23 @@ For a more complete version history, you might want to check out <a href="http:/
 <h1>Q: What SDK am I using currently?</h1>
 
 Most developers get a copy of the Windows SDK or Platform SDK with their Visual Studio installation.
-
 <table border="1">
 <tbody>
+<tr>
+<td>Visual Studio 2019</td>
+<td>Windows 10 SDK (17763 or 18363)
+
+Windows 8.1 SDK Spring 2015 [optional]
+
+Windows 7.1A SDK for ``v14?_xp`` Platform Toolset</td>
+</tr>
 <tr>
 <td>Visual Studio 2017</td>
 <td>Windows 10 SDK (14393, 15063, 16299, or 17763)
 
 Windows 8.1 SDK Spring 2015 [optional]
 
-Windows 7.1A SDK for "v14_xp" Platform Toolset</td>
+Windows 7.1A SDK for ``v14?_xp`` Platform Toolset</td>
 </tr>
 <tr>
 <td>Visual Studio 2015</td>
@@ -33,13 +40,13 @@ Windows 7.1A SDK for "v14_xp" Platform Toolset</td>
 
 Windows 10 SDK (10240, 10586, or 14393) [optional]
 
-Windows 7.1A SDK for "v140_xp" Platform Toolset</td>
+Windows 7.1A SDK for ``v140_xp`` Platform Toolset</td>
 </tr>
 <tr>
 <td>Visual Studio 2013</td>
 <td>Windows 8.1 SDK (VS 2013 Update 3 and Update 5 contain newer versions)
 
-Windows 7.1A SDK for "v120_xp" Platform Toolset
+Windows 7.1A SDK for ``v120_xp`` Platform Toolset
 
 VS 2013 Express for Windows only includes a subset of the full Windows 8.1 SDK</td>
 </tr>
@@ -47,7 +54,7 @@ VS 2013 Express for Windows only includes a subset of the full Windows 8.1 SDK</
 <td>Visual Studio 2012</td>
 <td>Windows 8.0 SDK
 
-Windows 7.1A SDK for "v110_xp" Platform Toolset (added in Update 1)
+Windows 7.1A SDK for ``v110_xp`` Platform Toolset (added in Update 1)
 
 VS 2012 Express for Windows only includes a subset of the full Windows 8.0 SDK</td>
 </tr>
@@ -89,10 +96,11 @@ Another aspect is that the Windows SDK often supports a smaller set of platform
  	<li>Windows 8.1 SDK requires Windows 7 SP1, Windows 8, or Windows 8.1</li>
  	<li>Windows 8.0 SDK requires Windows 7 or Windows 8.x</li>
 </ul>
-<h1>Q: What compiler toolset does a given Windows SDK support?</h1>
-Not all Windows SDKs can be used with all versions of Visual Studio. Changes in language features, /analyze SAL annotation, and other aspects of the compiler toolset are assumed as the baseline for a given Visual Studio release--usually that version that comes with a given Visual Studio release is the 'oldest' one it supports.
+<h1>Q: What compiler toolset does a given Windows SDK support?</h1>
+Not all Windows SDKs can be used with all versions of Visual Studio. Changes in language features, <code>/analyze</code> SAL annotation, and other aspects of the compiler toolset are assumed as the baseline for a given Visual Studio release--usually that version that comes with a given Visual Studio release is the 'oldest' one it supports.
 <ul>
- 	<li>Windows 10 SDK supports Visual Studio 2015</li>
+  <li>Windows 10 SDK (14393 or later) supports Visual Studio 2017. For <code>/permissive-</code> you should have the latest version of the compiler and SDK available.</li>
+ 	<li>Windows 10 SDK (10240, 10586, or 14393) supports Visual Studio 2015</li>
  	<li>Windows 8.1 SDK supports Visual Studio 2010 or later. To use with VS 2010 or VS 2012 requires manual integration per this <a href="https://devblogs.microsoft.com/cppblog/using-the-windows-8-sdk-with-visual-studio-2010-configuring-multiple-projects/">blog</a> post.</li>
  	<li>Windows 8.0 SDK supports Visual Studio 2010 or later. To use with VS 2010 requires manual integration per this <a href="https://devblogs.microsoft.com/cppblog/using-the-windows-8-sdk-with-visual-studio-2010-configuring-multiple-projects/">blog</a> post.</li>
  	<li>Windows 7.1 SDK supports Visual Studio 2005 or later.</li>
