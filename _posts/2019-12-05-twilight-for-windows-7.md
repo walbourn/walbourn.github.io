@@ -30,6 +30,8 @@ In my many blog posts about the retiring of the [legacy DirectX SDK](https://aka
 
 The great news here is that much like the DirectX 12 story, there is a version of XAudio 2.9 that supports Windows 7 SP1, Windows 8.0, Windows 8.1, and still takes advantage of the Windows 10 built-in version. See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/xaudio2/xaudio2-redistributable) for all the details. The developer story utilizes a [NuGet](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) package as well.
 
+> The XAudio2 samples on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2) have been updated to support using the new XAudio 2.9 REDIST version instead of the DirectX SDK.
+
 # HLSL
 
 The ``D3DCompiler_47.dll`` in the Windows 10 SDK is compatible with Windows 7 and can be redistributed with your application. See [HLSL, FXC, and D3DCompile](https://walbourn.github.io/hlsl-fxc-and-d3dcompile/).
