@@ -148,4 +148,6 @@ If you make use of these legacy DirectX SDK libraries, then you continue to depe
 <li>Use of <code>dxsdk\include\xp</code> for <code>D3DCompiler_43.DLL</code> or <code>D3DCSX_43.DLL</code></li>
 </ul>
 
+<strong>Desktop Bridge</strong>: [Desktop Bridge](https://developer.microsoft.com/en-us/windows/bridges/desktop/) applications that use D3DX9, D3DX10, D3DX11, XAudio 2.7, XInput 1.3, or XACT must use the [Microsoft.DirectX.x86](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x86.appx) / [Microsoft.DirectX.x64](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x64.appx) framework to deploy these legacy DirectX SDK side-by-side components. Alternatively, developers can remove all such dependencies—see https://aka.ms/Kfsdiu, https://aka.ms/XAudio2Redist, https://aka.ms/Mu9kn7.
+
 <strong>VS 2015 or later Users:  </strong>Note that <code>DXERR.LIB</code> in the legacy DirectX SDK is not compatible with the C Runtime used by VS 2015. You must use <a href="https://walbourn.github.io/wheres-dxerr-lib/">this version</a> of DXERR instead.
