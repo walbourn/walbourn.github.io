@@ -1,4 +1,4 @@
-Update---
+---
 layout: post
 title: DirectXMath 3.14
 date: 2020-03-10 23:29
