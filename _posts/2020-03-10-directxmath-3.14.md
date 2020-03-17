@@ -7,7 +7,7 @@ comments: true
 categories: [directxmath]
 ---
 
-DirectXMath 3.14 is now available on [NuGet](https://www.nuget.org/packages/directxmath/2019.8.23.1) and [GitHub](https://github.com/microsoft/DirectXMath/releases/tag/aug2019). It is included in the upcoming Windows 10 "20H1" Update SDK ([19041](https://blogs.windows.com/windowsdeveloper/2019/12/17/windows-10-sdk-preview-build-19041-available-now/)) which will be in Visual Studio 2019 16.5--it's an optional component in the current Preview.
+DirectXMath 3.14 is now available on [NuGet](https://www.nuget.org/packages/directxmath/2019.8.23.1) and [GitHub](https://github.com/microsoft/DirectXMath/releases/tag/aug2019). It is included in the upcoming Windows 10 "20H1" Update SDK ([19041](https://blogs.windows.com/windowsdeveloper/2019/12/17/windows-10-sdk-preview-build-19041-available-now/)) which is available in [Visual Studio 2019 16.5](https://walbourn.github.io/vs-2019-update-5/) as an optional component.
 <!--more-->
 
 The focus for this release was updating for the Visual C++ 2019 compiler, as well as improved clang/LLVM support.
