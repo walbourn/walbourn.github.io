@@ -21,6 +21,6 @@ The recommendation is to use byte-alignment (which is what the <strong>DDSWithou
 
 See also <a href="https://walbourn.github.io/the-dds-file-format-lives/">The DDS File Format Lives</a> and <a href="https://walbourn.github.io/dds-update-and-10-10-10-2-problems/">DDS Update and 10:10:10:2 problems</a>
 
-<strong>Update 4: </strong>For Direct3D 11 only applications, consider using the DDSTextureLoader included in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> instead.
+<strong>Update 4:</strong> For Direct3D 11 only applications, consider using the DDSTextureLoader included in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit for DX11</a> instead. There is also a DDSTextureLoader for DirectX 12 included in <a href="http://go.microsoft.com/fwlink/?LinkID=615561">DirectX Tool Kit for DX12</a>.
 
 <a href="https://walbourn.github.io/download/DDSTextureLoader-Updates-August-2011.zip">DDSTextureLoader Updates August 2011.zip</a>
