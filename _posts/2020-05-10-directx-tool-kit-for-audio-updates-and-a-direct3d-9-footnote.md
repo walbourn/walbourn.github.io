@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DirectX Tool Kit for Audio updates and a Direct3D 9 footnote
+title: DirectXTK for Audio updates and a Direct3D 9 footnote
 date: 2020-05-10 14:20
 author: Chuck Walbourn
 comments: true
