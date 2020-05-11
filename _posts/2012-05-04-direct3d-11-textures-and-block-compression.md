@@ -11,6 +11,8 @@ categories: [dds, direct3d]
 There are a number of previous posts on the state of <code>.DDS</code> files which is the container format for Direct3D resources (see <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddds/dx-graphics-dds-pguide">Microsoft Docs</a> for some basics).
 <!--more-->
 
+**UPDATE: The latest version of DDSTextureLoader, WICTextureLoader, and ScreenGrab for Direct3D 9, Direct3D 11, and Direct3D 12 can be found on [GitHub](https://github.com/microsoft/DirectXTex/)**
+
 <a href="https://walbourn.github.io/the-dds-file-format-lives/">The DDS File Format Lives</a>
 
 <a href="https://walbourn.github.io/dds-update-and-10-10-10-2-problems/">DDS Update and 10:10:10:2 Problems</a>
