@@ -57,7 +57,7 @@ VS 2012 or later can view all DDS files supported by DirectXTex.</td>
 <p>XaudConsole3.exe</p></code></td>
 <td>XACT is deprecated and is only available in the legacy DirectX SDK.
 
-The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit </a> can build XACT3-style .xwb wave banks for bulk loading of .wav files using <em>DirectX Tool Kit for Audio</em>.</td>
+The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit </a> can build XACT3-style <code>.xwb</code> wave banks for bulk loading of <code>.wav</code> files as well as streaming using <em>DirectX Tool Kit for Audio</em>.</td>
 </tr>
 <tr>
 <td><code>xWMAEncode.exe</code></td>
@@ -81,7 +81,7 @@ Certification for Windows logo usage for Win32 desktop application is managed th
 </tr>
 <tr>
 <td>UVAtlas Tool</td>
-<td>In the legacy DirectX SDK the <code>uvatlas.exe</code> was a Direct3D 9 sample. You can find the latest version on <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.
+<td>In the legacy DirectX SDK the <code>uvatlas.exe</code> was a Direct3D 9 sample. You can find the latest version on <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.</td>
 </tr>
 </tbody>
 </table>
