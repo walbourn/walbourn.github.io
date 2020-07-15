@@ -140,6 +140,8 @@ Here's a handy table of equivalents for replacing legacy D3DX texture related fu
 
 The legacy DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>) includes the DirectX Texture Viewer tool. This only supports older Direct3D 9 <code>.DDS</code> files and will fail to load any file using the 'DX10' extension or BC4, BC5, BC6H, or BC7. <a href="https://walbourn.github.io/visual-studio-2012-release-candidate/">Visual Studio 2012</a> can view modern <code>.DDS</code> files directly via File / Open / File... (the Image Files filter includes <code>.dds</code>). There is also a 'ddsview' sample available in the DirectXTex package.
 
+<b>Windows 8.1:</b> The WIC codec for Windows 8.1 and Windows 10 supports ``DDS`` 2D textures for DXT1-5 (BC1-BC3) formats. No other ``DDS`` file format or texture type is supported by the built-in codec.
+
 <h1>Presentations</h1>
 
 <ul>
