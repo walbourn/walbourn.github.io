@@ -184,7 +184,7 @@ Support for SSE4.1 and SSE4.2 intrinsics was added to Visual Studio 2010.
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox:</strong> Xbox One supports SSE4a, SSE4.1, and SSE4.2.
+<strong>Xbox:</strong> Xbox One and [Xbox Series X](https://www.xbox.com/en-US/project-scarlett) support SSE4a, SSE4.1, and SSE4.2.
 
 <strong>Update:</strong> Per the latest numbers from the [Value Hardware Survey](https://store.steampowered.com/hwsurvey), for PC games you can require SSE4.1 / SSE4.2 support without excluding significant numbers of gamers. You should check for the CPU support at startup to avoid unexplained crashes due to invalid instructions if a customer tries to run it on an older PC.
 
