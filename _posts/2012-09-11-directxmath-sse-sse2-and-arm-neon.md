@@ -39,7 +39,11 @@ For x86/x64 apps, you can use the following code as well:
 
 ```cpp
 int CPUInfo[4] = { -1 };
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0);
+#endif
 bool bSSE = false;
 bool bSSE2 = false;
 if (CPUInfo[0] > 0)
@@ -69,6 +73,8 @@ In this series of posts, I explore how applications using DirectXMath can take a
  	<li><a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a></li>
 </ul>
 
-<strong>Xbox One:</strong> The Xbox One version of DirectXMath in the XDK and ADK includes the majority optimizations discussed in this series as Xbox One supports SSE3, SSSE3, SSE4.1, SSE4.2, AVX, and F16C.
+<strong>Xbox:</strong> The Xbox One version of DirectXMath in the XDK and ADK includes the majority optimizations discussed in this series as Xbox One supports SSE3, SSSE3, SSE4.1, SSE4.2, AVX, and F16C.
 
 <strong>GitHub:</strong> Note that DirectXMath is now hosted on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a>.
+
+<strong>Update:</strong> DirectXMath version 3.09 or later includes the optimizations from this blog series as well, and is included in the Windows 10 SDK starting with the Anniversary Update SDK (14393). They are enabled automatically when building with ``/arch:AVX`` or ``/arch:AVX2``.

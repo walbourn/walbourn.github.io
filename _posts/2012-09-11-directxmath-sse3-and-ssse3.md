@@ -88,12 +88,20 @@ Supplemental SSE3 (SSSE3) is supported by Intel Core 2 Duo, Intel Core i7/i5/i3,
 
 ```cpp
 int CPUInfo[4] = { -1 };
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0);
+#endif
 bool bSSE3 = false;
 bool bSSSE3 = false;
 if (CPUInfo[0] > 0)
 {
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
     __cpuid(CPUInfo, 1);
+#endif
     bSSE3 = (CPUInfo[2] & 0x1) != 0;
     bSSSE3 = (CPUInfo[2] & 0x200) != 0;
 }
@@ -105,10 +113,12 @@ You can also use the <code>IsProcessorFeaturePresent</code> Win32 API with <code
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>. A <code>XMVectorSum</code> function was added to recent versions of DirectXMath which makes use of horizontal-add.
 
-<strong>Xbox One:</strong> This platform supports SSE3 and SSSE3.
+<strong>Xbox:</strong> Xbox One supports SSE3 and SSSE3.
 
 <strong>DirectXMath 3.10:</strong> Added the <code>XMVectorSum</code> method for horizontal adds, as well as the ability to specifically opt-in to just the SSE3 optimizations via ``-D_XM_SSE3_INTRINSICS_``
 
-<strong>Windows 10</strong>: As of Windows 10, x64 editions of the OS require support for a few specific instructions (CMPXCHG16b, PrefetchW, and LAHF/SAHF) which excludes a number of first-generation x64 CPUs from both Intel and AMD. The net result is that it's even more likely that an x64 native application can assume SSE3 is supported even though only SSE/SSE2 is actually in the system requirements.
+<strong>Windows 10</strong>: As of Windows 10, x64 editions of the OS require support for a few specific instructions (``CMPXCHG16b``, ``PrefetchW``, and ``LAHF/SAHF``) which excludes a number of first-generation x64 CPUs from both Intel and AMD. The net result is that it's even more likely that an x64 native application can assume SSE3 is supported even though only SSE/SSE2 is actually in the system requirements.
+
+<strong>Update:</strong> Per the latest numbers from the [Value Hardware Survey](https://store.steampowered.com/hwsurvey), for PC games you can require SSE3 and SSSE3 support without excluding significant numbers of gamers. You should check for the CPU support at startup to avoid unexplained crashes due to invalid instructions if a customer tries to run it on an ancient PC.
 
 <strong>See Also:</strong> <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE, SSE2, and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C an FMA</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>

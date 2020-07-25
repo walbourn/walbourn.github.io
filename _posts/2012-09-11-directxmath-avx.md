@@ -97,15 +97,23 @@ Because the resulting EXE makes extensive use of AVX instructions, the resulting
 
 AVX is supported by Intel "Sandy Bridge", AMD Bulldozer, and later processors.
 
-In addition to the hardware supporting the new instruction set, the OS must support saving the new YMM register file or the AVX instructions will remain invalid. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012. This support is indicated by the OSXSAVE bit in CPUID being set along with the AVX support bit.
+In addition to the hardware supporting the new instruction set, the OS must support saving the new YMM register file or the AVX instructions will remain invalid. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012. This support is indicated by the ``OSXSAVE`` bit in ``CPUID`` being set along with the AVX support bit.
 
 ```cpp
 int CPUInfo[4] = { -1 };
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0);
+#endif
 bool bAVX = false;
 if (CPUInfo[0] > 0)
 {
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
     __cpuid(CPUInfo, 1);
+#endif
     bool bOSXSAVE = (CPUInfo[2] & 0x8000000) != 0;
     bAVX = bOSXSAVE && (CPUInfo[2] & 0x10000000) != 0;
 }
@@ -119,8 +127,10 @@ Support for AVX intrinsics was added to Visual Studio 2010 via Service Pack 1. T
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox One:</strong> This platform supports AVX
+<strong>Xbox:</strong> Xbox One supports AVX.
+
+<strong>Windows 7 x64 Known Issue with AVX:</strong> See <a href="http://support.microsoft.com/kb/2864432/">KB 2864432</a>
+
+<strong>Update:</strong> Per the latest numbers from the [Value Hardware Survey](https://store.steampowered.com/hwsurvey), for PC games you could support AVX without excluding significant numbers of gamers. You should check for the CPU & OS support at startup to avoid unexplained crashes due to invalid instructions if a customer tries to run it on an older PC.
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>
-
-<strong>Windows 7 x64 Known Issue with AVX:</strong> See <a href="http://support.microsoft.com/kb/2864432/">KB 2864432</a>

@@ -83,7 +83,11 @@ As extensions of the AVX instruction set, these instructions all require OSXSAVE
 
 ```cpp
 int CPUInfo[4] = { -1 };
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0);
+#endif
 bool bOSXSAVE = false;
 bool bAVX = false;
 bool bF16C = false;
@@ -91,16 +95,28 @@ bool bFMA3 = false;
 bool bFMA4 = false;
 if (CPUInfo[0] > 0)
 {
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
     __cpuid(CPUInfo, 1);
+#endif
     bOSXSAVE = (CPUInfo[2] & 0x8000000) != 0;
     bF16C = bOSXSAVE && (CPUInfo[2] & 0x20000000) != 0;
     bAVX = bOSXSAVE && (CPUInfo[2] & 0x10000000) != 0;
     bFMA3 = bOSXSAVE && (CPUInfo[2] & 0x1000) != 0;
 }
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0x80000000, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0x80000000);
+#endif
 if (CPUInfo[0] > 0x80000000)
 {
-    _cpuid(CPUInfo, 0x80000001);
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(0x80000001, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+    __cpuid(CPUInfo, 0x80000001);
+#endif
     bFMA4 = bOSXSAVE && (CPUInfo[2] & 0x10000) != 0;
 }
 ```
@@ -115,6 +131,6 @@ FMA3 and F16C/CVT16 intrinsic support requires Visual Studio 2012.
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox One:</strong> This platform supports F16C, but does not support FMA3 or FMA4.
+<strong>Xbox:</strong> Xbox One supports F16C, but does not support FMA3 or FMA4.
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2;</a> <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>

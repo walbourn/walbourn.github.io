@@ -24,17 +24,29 @@ inline XMVECTOR XM_CALLCONV XMVectorSplatX( FXMVECTOR V )
 
 AVX2 is supported by Intel "Haswell", AMD Excavator, and later processors.
 
-In addition to the hardware supporting the new instruction set, the OS must support saving the new YMM register file or the AVX instructions will remain invalid. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012. This support is indicated by the OSXSAVE bit in CPUID being set along with the AVX2 support bit.
+In addition to the hardware supporting the new instruction set, the OS must support saving the new YMM register file or the AVX instructions will remain invalid. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012. This support is indicated by the ``OSXSAVE`` bit in ``CPUID`` being set along with the AVX2 support bit.
 
 ```cpp
 int CPUInfo[4] = {-1};
-__cpuid( CPUInfo, 0 );
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+__cpuid(CPUInfo, 0);
+#endif
 bool bAVX2 = false;
 if ( CPUInfo[0] >= 7 )
 {
-    __cpuid(CPUInfo, 1 );
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+    __cpuid(CPUInfo, 1);
+#endif
     bool bOSXSAVE = (CPUInfo[2] & 0x8000000) != 0;
-    __cpuidex( CPUInfo, 7, 0 );
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid_count(7, 0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
+    __cpuidex(CPUInfo, 7, 0);
+#endif
     bAVX2 = bOSXSAVE && (CPUInfo[1] & 0x20) != 0;
 }
 ```
@@ -47,8 +59,8 @@ Support for AVX2 intrinsics was added to Visual Studio 2012. The <code>/arch:AVX
 
 <h1>Utility Code</h1>
 
-The source for this project and the rest of the blog series is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+The source for this project and the rest of the blog series is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox One:</strong> This platform does not support AVX2.
+<strong>Xbox:</strong> Xbox One does not support AVX2.
 
-<strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>
+<strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>;  <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>

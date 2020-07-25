@@ -151,12 +151,20 @@ SSE 4.1 and SSE4.2 are supported on Intel Core i7 ("Nehalem"), AMD Bulldozer, an
 
 ```cpp
 int CPUInfo[4] = { -1 };
+#if defined(__clang__) || defined(__GNUC__)
+__cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
 __cpuid(CPUInfo, 0);
+#endif
 bool bSSE4_1 = false;
 bool bSSE4_2 = false;
 if (CPUInfo[0] > 0)
 {
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
     __cpuid(CPUInfo, 1);
+#endif
     bSSE4_1 = (CPUInfo[2] & 0x80000) != 0;
     bSSE4_2 = (CPUInfo[2] & 0x100000) != 0;
 }
@@ -170,6 +178,8 @@ Support for SSE4.1 and SSE4.2 intrinsics was added to Visual Studio 2010.
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox One: </strong>This platform supports SSE4a, SSE4.1, and SSE4.2.
+<strong>Xbox:</strong> Xbox One supports SSE4a, SSE4.1, and SSE4.2.
+
+<strong>Update:</strong> Per the latest numbers from the [Value Hardware Survey](https://store.steampowered.com/hwsurvey), for PC games you can require SSE4.1 / SSE4.2 support without excluding significant numbers of gamers. You should check for the CPU support at startup to avoid unexplained crashes due to invalid instructions if a customer tries to run it on an older PC.
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE, SSE2, and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>
