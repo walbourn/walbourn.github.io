@@ -87,6 +87,12 @@ SSE3 is supported by Intel Pentium 4 processors ("Prescott"), AMD Athlon 64 ("re
 Supplemental SSE3 (SSSE3) is supported by Intel Core 2 Duo, Intel Core i7/i5/i3, Intel Atom, AMD Bulldozer, and later processors.
 
 ```cpp
+#if defined(__clang__) || defined(__GNUC__)
+#include <cpuid.h>
+#else
+#include <intrin.h>
+#endif
+
 int CPUInfo[4] = { -1 };
 #if defined(__clang__) || defined(__GNUC__)
 __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);

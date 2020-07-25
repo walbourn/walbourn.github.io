@@ -150,6 +150,12 @@ SSE4.1 is supported on Intel Core 2 ("Penryn"), Intel Core i7 ("Nehalem"), AMD B
 SSE 4.1 and SSE4.2 are supported on Intel Core i7 ("Nehalem"), AMD Bulldozer, and later processors.
 
 ```cpp
+#if defined(__clang__) || defined(__GNUC__)
+#include <cpuid.h>
+#else
+#include <intrin.h>
+#endif
+
 int CPUInfo[4] = { -1 };
 #if defined(__clang__) || defined(__GNUC__)
 __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);

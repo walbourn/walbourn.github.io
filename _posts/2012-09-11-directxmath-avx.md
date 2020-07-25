@@ -100,6 +100,12 @@ AVX is supported by Intel "Sandy Bridge", AMD Bulldozer, and later processors.
 In addition to the hardware supporting the new instruction set, the OS must support saving the new YMM register file or the AVX instructions will remain invalid. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012. This support is indicated by the ``OSXSAVE`` bit in ``CPUID`` being set along with the AVX support bit.
 
 ```cpp
+#if defined(__clang__) || defined(__GNUC__)
+#include <cpuid.h>
+#else
+#include <intrin.h>
+#endif
+
 int CPUInfo[4] = { -1 };
 #if defined(__clang__) || defined(__GNUC__)
 __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);

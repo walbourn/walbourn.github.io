@@ -38,6 +38,12 @@ You can also use the <code>IsProcessorFeaturePresent</code> Win32 API with <code
 For x86/x64 apps, you can use the following code as well:
 
 ```cpp
+#if defined(__clang__) || defined(__GNUC__)
+#include <cpuid.h>
+#else
+#include <intrin.h>
+#endif
+
 int CPUInfo[4] = { -1 };
 #if defined(__clang__) || defined(__GNUC__)
 __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
@@ -48,7 +54,11 @@ bool bSSE = false;
 bool bSSE2 = false;
 if (CPUInfo[0] > 0)
 {
+#if defined(__clang__) || defined(__GNUC__)
+    __cpuid(1, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
+#else
     __cpuid(CPUInfo, 1);
+#endif
     bSSE = (CPUInfo[3] & 0x2000000) != 0;
     bSSE2 = (CPUInfo[3] & 0x4000000) != 0;
 }

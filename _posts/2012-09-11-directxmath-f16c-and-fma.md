@@ -82,6 +82,12 @@ FMA3 will be supported by Intel "Haswell" and AMD "Piledriver" processors.
 As extensions of the AVX instruction set, these instructions all require OSXSAVE support. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012.
 
 ```cpp
+#if defined(__clang__) || defined(__GNUC__)
+#include <cpuid.h>
+#else
+#include <intrin.h>
+#endif
+
 int CPUInfo[4] = { -1 };
 #if defined(__clang__) || defined(__GNUC__)
 __cpuid(0, CPUInfo[0], CPUInfo[1], CPUInfo[2], CPUInfo[3]);
