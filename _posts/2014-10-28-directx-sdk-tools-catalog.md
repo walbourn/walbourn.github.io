@@ -12,12 +12,16 @@ In the same vein as my post on where you can find many of the <a href="https://w
 <table border="1">
 <tbody>
 <tr>
-<td><p>DirectX Capabilities Viewer (<code>DxCapsViewer.exe</code>)</p>
+<td>
 <p>DirectX Control Panel (<code>DxCpl.exe</code>)</p>
 <p>Game Definition File Editor (<code>GDFMaker.exe</code>)</p>
 <p>HLSL Compiler (<code>fxc.exe</code>)</p>
 <p><code>AdpcmEncode.exe</code></p></td>
 <td><a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Windows 8.1 SDK / Visual Studio 2013</a> or later</td>
+</tr>
+<tr>
+<td>DirectX Capabilities Viewer (<code>DxCapsViewer.exe</code>)</td>
+<td>See <a href="https://walbourn.github.io/directx-caps-viewer-update/">DirectX Caps Viewer Update</a>.</td>
 </tr>
 <tr>
 <td>DirectX Error Lookup Tool (<code>DXErr.exe</code>)</td>
@@ -51,10 +55,10 @@ VS 2012 or later can view all DDS files supported by DirectXTex.</td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/wic/what-s-new-in-wic-for-windows-8-1">Windows 8.1 WIC</a> or later supports DDS format files for BC1-BC3/DXT1-5 so these show up as thumbnails and can be opened with Photo Viewer.</td>
 </tr>
 <tr>
-<td><code><p>AudConsole3.exe</p>
-<p>Xact3.exe</p>
-<p>XactBld3.exe</p>
-<p>XaudConsole3.exe</p></code></td>
+<td><p><code>AudConsole3.exe</code></p>
+<p><code>Xact3.exe</code></p>
+<p><code>XactBld3.exe</code></p>
+<p><code>XaudConsole3.exe</code></p></td>
 <td>XACT is deprecated and is only available in the legacy DirectX SDK.
 
 The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit </a> can build XACT3-style <code>.xwb</code> wave banks for bulk loading of <code>.wav</code> files as well as streaming using <em>DirectX Tool Kit for Audio</em>.</td>

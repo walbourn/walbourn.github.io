@@ -9,6 +9,7 @@ categories: [github]
 
 The *DirectX Capabilities Viewer* utility dates back to the DirectX 5 era, which was written to help developers review the myriad "caps bits", resolutions, and devices supported by DirectX components. It shipped in the legacy [DirectX SDK](https://docs.microsoft.com/en-us/windows/win32/directx-sdk--august-2009-), and then moved to the Windows 8.0 SDK, Windows 8.1 SDK, and ships in the Windows 10 SDK today.
 
+This post covers some recent developments with this tool.
 <!--more-->
 
 # DirectX SDK Version
@@ -38,3 +39,5 @@ Since then, I've sporadically updated the tool, initially for Direct3D 12 then D
 Over the past few releases of Windows 10, the tool had again aged a bit so I recently updated the tool for numerous optional Direct3D 12 features such as Pipeline libraries, Variable Rate Shading, DirectX Raytracing, and Amplification/Mesh Shaders.
 
 The latest source for this tool is now available on [GitHub](https://github.com/microsoft/DxCapsViewer). The latest functionality can be seen in the [Windows 10 SDK Insider Preview](https://www.microsoft.com/en-us/software-download/windowsinsiderpreviewSDK) or, of course, you can build it yourself from source.
+
+**Related**: [DirectX SDK Tools Catalog](https://walbourn.github.io/directx-sdk-tools-catalog/)
