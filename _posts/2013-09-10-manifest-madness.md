@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [win10, win8]
 ---
-<em>This blog post discusses </em><a href="https://docs.microsoft.com/en-us/windows/desktop/SbsCs/application-manifests"><em>Application Manifest</em></a><em> elements for use in Win32 desktop applications. This is not about the </em><a href="https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest"><em>App package manifest</em></a><em> (aka AppX) used for Windows Store apps for Windows 8.x.</em>
+<em>This blog post discusses </em><a href="https://docs.microsoft.com/en-us/windows/desktop/SbsCs/application-manifests"><em>Application Manifest</em></a><em> elements for use in Win32 desktop applications. This is not about the </em><a href="https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest"><em>App package manifest</em></a><em> (aka AppX) used for Windows Store apps for Windows 8.x, UWP, Centennial Desktop Bridge, or Xbox One XDK.</em>
 
 <h1>User Account Control</h1>
 
@@ -15,17 +15,17 @@ Back when Windows Vista launched and the User Account Control feature was first 
 
 ```
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
- <ms_asmv2:trustInfo xmlns:ms_asmv2="urn:schemas-microsoft-com:asm.v2">
-     <ms_asmv2:security>
-         <ms_asmv2:requestedPrivileges>
-             <ms_asmv2:requestedExecutionLevel level="asInvoker" uiAccess="false" />
-             </ms_asmv2:requestedPrivileges>
-     </ms_asmv2:security>
- </ms_asmv2:trustInfo>
+ <asmv2:trustInfo xmlns:asmv2="urn:schemas-microsoft-com:asm.v2">
+     <asmv2:security>
+         <asmv2:requestedPrivileges>
+             <asmv2:requestedExecutionLevel level="asInvoker" uiAccess="false" />
+             </asmv2:requestedPrivileges>
+     </asmv2:security>
+ </asmv2:trustInfo>
 </assembly>
 ```
 
-With Visual Studio 2008 and later, the project settings dialog offered direct support for this under Linker \ Manifest File – "Enable User Account Control (UAC)" and "UAC Execution Level". This guidance still fully applies to Windows 7, Windows 8 and Windows 8.1. See <a href="https://docs.microsoft.com/en-us/windows/desktop/DxTechArts/user-account-control-for-game-developers">User Account Control for Game Developers</a> for more details on UAC and related implications.
+With Visual Studio 2008 and later, the project settings dialog offered direct support for this under Linker \ Manifest File – "Enable User Account Control (UAC)" and "UAC Execution Level". This guidance still fully applies to Windows 7, Windows 8, Windows 8.1 and Windows 10. See <a href="https://docs.microsoft.com/en-us/windows/desktop/DxTechArts/user-account-control-for-game-developers">User Account Control for Game Developers</a> for more details on UAC and related implications.
 
 <h1>High-DPI</h1>
 
@@ -126,8 +126,9 @@ Note that the <a href="http://blogs.windows.com/bloggingwindows/2014/09/30/annou
 
 <strong>Certification requirements for Windows desktop apps</strong>: The WACK 3.0 test will generate warnings if your application is missing any of these manifest elements.
 
-<strong>Manifest Tool Note:</strong> Older versions of MT.EXE (including the one that comes with VS 2010 and the Windows 7.0 SDK) will generate a harmless warning for the ``<compatibility>`` section. This can be resolved by updating to a newer version of the Manifest Tool by copying MT.EXE out of the <a href="https://walbourn.github.io/windows-sdk-7-1/">Windows 7.1 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Windows 8.0 SDK</a>, or <a href="http://go.microsoft.com/fwlink/?LinkID=323507">Windows 8.1 SDK</a> into a directory on your project's <code>$(ExecutablePath)</code>. This issue does not affect VS 2012 or VS 2013.
+<strong>Manifest Tool Note:</strong> Older versions of [MT.EXE](https://docs.microsoft.com/en-us/windows/win32/sbscs/mt-exe) (including the one that comes with VS 2010 and the Windows 7.0 SDK) will generate a harmless warning for the ``<compatibility>`` section. This can be resolved by updating to a newer version of the Manifest Tool by copying MT.EXE out of the <a href="https://walbourn.github.io/windows-sdk-7-1/">Windows 7.1 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Windows 8.0 SDK</a>, <a href="http://go.microsoft.com/fwlink/?LinkID=323507">Windows 8.1 SDK</a>, or Windows 10 SDK into a directory on your project's <code>$(ExecutablePath)</code>. This issue does not affect VS 2012 or later.
 
 <strong>Dynamic Link Library (DLL):</strong> Embedded manifests can be applied to DLLs for specific elements, but none of the elements listed in this article apply. They only work if provided in the original launching EXE.
 
-<a href="https://walbourn.github.io/download/settings.manifest">settings.manifest</a>
+**VS 2008 or later**: <a href="https://walbourn.github.io/download/settings.manifest">settings.manifest</a>   
+**Other toolsets**: <a href="https://walbourn.github.io/download/settingsUAC.manifest">settingsUAC.manifest</a>
