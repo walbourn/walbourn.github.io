@@ -42,7 +42,7 @@ With a new release of Windows, publishers and developers want to ensure customer
 </ul>
 
 <ul>
- 	<li><strong>Ensure any OS checks are done correctly.</strong> Windows 8 is version "6.2", and will pass the current 'minimum bar' tests <a href="https://walbourn.github.io/what-s-in-a-version-number/">recommended</a> for game deployment. <em>Windows 8.1 is version "6.3", but note that GetVersion(Ex) APIs are now deprecated and have <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/operating-system-version-changes-in-windows-8-1">new appcompat behavior</a> by default. With Windows 10  VersionVersionInfo has a similar behavior, and the OS has a version of "10.0" (it was "6.4" the early Technical Previews).</em> [TR 2.5]</li>
+ 	<li><strong>Ensure any OS checks are done correctly.</strong> Windows 8 is version "6.2", and will pass the current 'minimum bar' tests <a href="https://walbourn.github.io/whats-in-a-version-number/">recommended</a> for game deployment. <em>Windows 8.1 is version "6.3", but note that GetVersion(Ex) APIs are now deprecated and have <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/operating-system-version-changes-in-windows-8-1">new appcompat behavior</a> by default. With Windows 10 ``VersionVersionInfo`` has a similar behavior, and the OS has a version of "10.0" (it was "6.4" the early Technical Previews).</em> [TR 2.5]</li>
 </ul>
 
 <ul>
