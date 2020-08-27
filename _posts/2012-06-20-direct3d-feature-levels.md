@@ -72,12 +72,12 @@ Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro
 <tr>
 <td><code>D3D_FEATURE_LEVEL_12_0</code>
 <code>D3D_FEATURE_LEVEL_12_1</code></td>
-<td><p>See <a href="https://channel9.msdn.com/Events/GDC/GDC-2015/Advanced-DirectX12-Graphics-and-Performance">Advanced DirectX12 Graphics and Performance</a> (GDC 2015).</p>
+<td><p>See <a href="https://channel9.msdn.com/Events/GDC/GDC-2015/Advanced-DirectX12-Graphics-and-Performance">Advanced DirectX12 Graphics and Performance</a> (GDC 2015).</p></td>
 </tr>
 <tr>
 <td><p><code>D3D_FEATURE_LEVEL_12_2</code></p>
 <p><em>Implies a WDDM 2.0 or later driver</em></p></td>
-<td><p>See <a href="https://devblogs.microsoft.com/directx/new-in-directx-feature-level-12_2/">this blog post</a> about this new DirectX12 only feature level. Technical details are <a href="https://microsoft.github.io/DirectX-Specs/d3d/D3D12_FeatureLevel12_2.html#capabilities">here</a>.</p>
+<td><p>See <a href="https://devblogs.microsoft.com/directx/new-in-directx-feature-level-12_2/">this blog post</a> about this new DirectX12 only feature level. Technical details are <a href="https://microsoft.github.io/DirectX-Specs/d3d/D3D12_FeatureLevel12_2.html#capabilities">here</a>.</p></td>
 </tr>
 </tbody>
 </table>
