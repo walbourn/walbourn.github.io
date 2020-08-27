@@ -18,9 +18,10 @@ In my Gamefest 2010 talk I tried to make this a bit more concrete with a table. 
 <table border="1">
 <tbody>
 <tr>
-<td><code>D3D_FEATURE_LEVEL_9_1</code>
+<td><p><code>D3D_FEATURE_LEVEL_9_1</code>
 (e.g. Intel G965 Express Chipset;
-Surface RT; Surface 2)<em>Implies a WDDM 1.0 or later driver</em></td>
+Surface RT; Surface 2)</p>
+<p><em>Implies a WDDM 1.0 or later driver</em></p></td>
 <td>Direct3D 9 hardware: must support Shader Model 2.0 (<code>vs_2_0/ps_2_0</code>), 2K textures, volume textures, event queries, BC1-3 (aka DXTn), and a few other specific capabilities.</td>
 </tr>
 <tr>
@@ -52,16 +53,18 @@ Bridge")</td>
 <td>Direct3D 10.1 hardware: Shader Model 4.1, cubemap arrays, extended MSAA, optional DirectCompute (CS 4.1), all 10_0 features.</td>
 </tr>
 <tr>
-<td><code>D3D_FEATURE_LEVEL_11_0</code>
+<td><p><code>D3D_FEATURE_LEVEL_11_0</code>
 (e.g. ATI Radeon HD 5000-7000;
 NVIDIA Geforce GTX 400-700;
-Intel HD Graphics 4000/2500 "Ivy Bridge"; Surface Pro)<em>Implies a WDDM 1.1 or later driver</em></td>
+Intel HD Graphics 4000/2500 "Ivy Bridge"; Surface Pro)</p>
+<p><em>Implies a WDDM 1.1 or later driver</em></p></td>
 <td>Direct3D 11 hardware: Shader Model 5.0, hull & domain shaders, mandatory DirectCompute (CS 5.0), 16K textures, BC6H/BC7, all 10_1 features.</td>
 </tr>
 <tr>
-<td><code>D3D_FEATURE_LEVEL_11_1</code>
+<td><p><code>D3D_FEATURE_LEVEL_11_1</code>
 (e.g. AMD Radeon HD 8000; NVIDIA GeForce GTX 900;
-Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro 2, Surface Pro 3, Xbox One, HoloLens)<em>Implies a WDDM 1.2 or later driver</em></td>
+Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro 2, Surface Pro 3, Xbox One, HoloLens)</p>
+<p><em>Implies a WDDM 1.2 or later driver</em></p></td>
 <td><p>Direct3D 11.1 hardware: Shader Model 5.0 with optional extensions, Logical blend operations, Target-independent rasterization, UAVs at every stage, Constant buffer offsetting and partial updates, UAV only rendering with force sample count, all 11_0 features.</p>
 <p>Note: This feature level is only available on Windows 8.x / Windows Server 2012 or later. <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/jj863687.aspx">DirectX 11.1 on Windows 7</a> does not support this feature level.</p>
 <p><em>Xbox One XDK developers have access to this feature level plus additional platform-specific APIs.</em></p></td>
@@ -69,13 +72,17 @@ Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro
 <tr>
 <td><code>D3D_FEATURE_LEVEL_12_0</code>
 <code>D3D_FEATURE_LEVEL_12_1</code></td>
-<td><p>See <a href="https://channel9.msdn.com/Events/GDC/GDC-2015/Advanced-DirectX12-Graphics-and-Performance">Advanced DirectX12 Graphics and Performance</a> (GDC 2015)</p>
-<p>Note: These feature levels are only available on Windows 10.</p></td>
+<td><p>See <a href="https://channel9.msdn.com/Events/GDC/GDC-2015/Advanced-DirectX12-Graphics-and-Performance">Advanced DirectX12 Graphics and Performance</a> (GDC 2015).</p>
+</tr>
+<tr>
+<td><p><code>D3D_FEATURE_LEVEL_12_2</code></p>
+<p><em>Implies a WDDM 2.0 or later driver</em></p></td>
+<td><p>See <a href="https://devblogs.microsoft.com/directx/new-in-directx-feature-level-12_2/">this blog post</a> about this new DirectX12 only feature level. Technical details are <a href="https://microsoft.github.io/DirectX-Specs/d3d/D3D12_FeatureLevel12_2.html#capabilities">here</a>.</p>
 </tr>
 </tbody>
 </table>
 
-See <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">Direct3D feature levels</a>, and the various <em>Hardware Support for Direct3D9 X Formats</em> pages in the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/dx-graphics-dxgi-overviews">DXGI</a> documentation.
+See *Microsoft Docs: Direct3D feature levels* for <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/overviews-direct3d-11-devices-downlevel-intro">DX11</a> / <a href="https://docs.microsoft.com/en-us/windows/win32/direct3d12/hardware-feature-levels">DX12</a>, and the various <em>Hardware Support for Direct3D9 X Formats</em> pages in the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/dx-graphics-dxgi-overviews">DXGI</a> documentation.
 
 By default, if you call <code>D3D11CreateDevice</code> or <code>D3D11CreateDeviceAndSwapChain</code> with the <code>pFeatureLevels</code> parameter set to <code>NULL</code> (or better yet <code>nullptr</code> for VS 2010 and VS 2012 developers!), then the system will try to create a device using the highest feature level available. Note for compatibility reasons, this does not include Feature Level 11.1 on machines with the DirectX 11.1 runtime installed. If you try to use <code>D3D_FEATURE_LEVEL_11_1</code> on a system with only the DirectX 11.0 runtime installed, it fails immediately. The solution is covered in <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a>--the retry isn't needed for Windows Store apps where you can assume DirectX 11.1 runtime is always available.
 
