@@ -137,9 +137,9 @@ One more consideration: For gamma-correct rendering to standard 8-bit per channe
 
 To build an application using Direct3D 12 APIs, you must make use of the Windows 10 SDK. The latest version is the <a href="https://walbourn.github.io/windows-10-anniversary-update-sdk/">Windows 10 Anniversary Update SDK (14393)</a>. With Visual Studio 2015, you install it via a <a href="https://devblogs.microsoft.com/cppblog/developing-for-windows-10-with-visual-c-2015/">custom install option</a> and for Win32 classic desktop projects you'll need to explicitly change the project property to use it rather than the default Windows 8.1 SDK (Spring 2015).
 
-<strong>Update: </strong>With Visual Studio 2017, you can use the <a href="https://walbourn.github.io/windows-10-creators-update-sdk/">Windows 10 Creators Update SDK (15063)</a> or <a href="https://walbourn.github.io/windows-10-fall-creators-update-sdk/">Windows 10 Fall Creators Update SDK (16299)</a>. VS 2015 is not supported by these newer SDKs.
+<strong>Update:</strong> With Visual Studio 2017, you can use the <a href="https://walbourn.github.io/windows-10-creators-update-sdk/">Windows 10 Creators Update SDK (15063)</a> or <a href="https://walbourn.github.io/windows-10-fall-creators-update-sdk/">Windows 10 Fall Creators Update SDK (16299)</a>. VS 2015 is not supported by these newer SDKs.
 
-<h1>Direct3D 12.1</h1>
+<h1>Direct3D 12.x</h1>
 
 With the <a href="https://walbourn.github.io/windows-10-anniversary-update-sdk/">Windows 10 Anniversary Update (14393)</a>, newer drivers and devices can support some additional features for Direct3D 12. You can obtain the 12.1 interface from your 12.0 device by using <code>QueryInterface</code> or <code>ComPtr::As</code>--this will fail on older versions of Windows 10.
 
@@ -151,7 +151,17 @@ if (SUCCEEDED(device.As(&device1)))
 }
 ```
 
-<b>Note:</b> There is also a <code>ID3D12Device2</code> for the <a href="https://walbourn.github.io/windows-10-creators-update-sdk/">Windows 10 Creators Update (15063)</a>, a <code>ID3D12Device3</code> for the <a href="https://walbourn.github.io/windows-10-fall-creators-update-sdk/">Windows 10 Fall Creators Update (16299)</a> as well.
+Interface | Windows OS version
+--|--
+``ID3D12Device1`` | Windows 10 Anniversary Update (14393)
+``ID3D12Device2`` | Windows 10 Creators Update (15063)
+``ID3D12Device3`` | Windows 10 Fall Creators Update (16299)
+``ID3D12Device4`` | Windows 10 April 2018 Update (17134)
+``ID3D12Device5`` | Windows 10 October 2018 (17763)
+``ID3D12Device6`` | Windows 10 May 2019 (18362)
+``ID3D12Device7``, ``ID3D12Device8`` | Windows 10 May 2020 Update (19041)
+
+The ``D3D12CreateDevice`` method can directly create newer versions of the interface if you know your target environment supports it. For example, if you are using DirectX 12 on Xbox or if your installer has already ensured a particular version of Windows 10 as a minimum.
 
 <h1>Win32 desktop application notes</h1>
 
