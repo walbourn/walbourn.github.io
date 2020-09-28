@@ -52,7 +52,7 @@ This still leaves the use of flags 'loosely typed' since if you had a second set
 HRESULT MyFunction(FLAGS_DO_A_THING | UNRELATED_FLAGS_FEATURE);
 ```
 
-Modern C++ recommends solving this with Bitmask flags per the [standard](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3485.pdf) (section 17.5.2.1.13). DirectX 11 used the older loosely typed ``DWORD`` (a.k.a ``unsigned long``) plus ``enum`` flags, but DirectX 12 adopts this new *typed bitmask flags* pattern. Therefore, I've updated my GitHub libraries to use the pattern as well, and this does have some implications for existing code.
+Modern C++ recommends solving this with Bitmask flags per the [standard](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/n3485.pdf) (section 17.5.2.1.3). DirectX 11 used the older loosely typed ``DWORD`` (a.k.a ``unsigned long``) plus ``enum`` flags, but DirectX 12 adopts this new *typed bitmask flags* pattern. Therefore, I've updated my GitHub libraries to use the pattern as well, and this does have some implications for existing code.
 <!--more-->
 
 The Modern C++ recommendation is to change our example as follows:
