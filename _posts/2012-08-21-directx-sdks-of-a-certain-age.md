@@ -75,7 +75,7 @@ Direct3D 12</td>
 <tr>
 <td>DirectDraw</td>
 <td><p>While <em>February 2010 DirectX SDK</em> was the last to contain <code>ddraw.h</code> and <code>ddraw.lib</code>, <code>ddraw.h</code> is still available in the Windows SDK 6.0 or later. <code>ddraw.lib</code> isn't needed.</p>
-<p>See <a href="https://walbourn.github.io/wither-directdraw/">Wither DirectDraw</a> for details.</p></td>
+<p>See <a href="https://walbourn.github.io/whither-directdraw/">Whither DirectDraw</a> for details.</p></td>
 </tr>
 <tr>
 <td>DirectInput</td>
