@@ -26,9 +26,9 @@ See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi/ne-
 
 # Scaling modes
 
-Another swap chain feature introduced with DirectX 11.1/Window 8/DXGI 1.2 was controlling how to handle the case where the "swapchain buffer" was not the same dimension as the target output window. ``DXGI_SCALING_STRETCH`` was the original behavior of doing a StretchBlt, with ``DXGI_SCALING_NODE`` being an option to have the image just drawn in the middle with a color (only supported for ``DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL``).
+Another swap chain feature introduced with DirectX 11.1/Window 8/DXGI 1.2 was controlling how to handle the case where the "swapchain buffer" was not the same dimension as the target output window. ``DXGI_SCALING_STRETCH`` was the original behavior of doing a StretchBlt, with ``DXGI_SCALING_NODE`` being an option to have the image just drawn in the middle with a background color (only supported for ``DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL``).
 
-A more interesting ``DXGI_SCALING_ASPECT_RATIO_STRETCH`` mode was added for Windows Phone 8 and Windows 10/DXGI 1.4, which automatically supports "letter-boxing". It's an awesomely useful mode, but alas is only implemented for "CoreWindow" and "DirectComposition"-enabled Windows, not classic Win32 windows.
+A more interesting ``DXGI_SCALING_ASPECT_RATIO_STRETCH`` mode was added for Windows Phone 8 and Windows 10/DXGI 1.4, which automatically supports "letter-boxing". It's an awesomely useful mode for dealing with scaling backbuffer size for performance (most on that later), but alas is only implemented for "CoreWindow" and "DirectComposition"-enabled Windows, not classic Win32 windows.
 
 See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_scaling)
 
@@ -67,7 +67,7 @@ hr = device->CreateRenderTargetView(tex, &rtvDesc, &rtv);
 hr = device->CreateRenderTargetView(tex, nullptr, &rtv);
 ```
 
-2. The **second** way you can express the same thing is to use the non-SRGB format for the resource, but to create the view using the matching ``DXGI_FORMAT_*_SRGB`` format:
+2. The **second** way you can express the same thing is to use the non-sRGB format for the resource, but to create the view using the matching ``DXGI_FORMAT_*_SRGB`` format:
 
 ```cpp
 // Create texture
@@ -77,7 +77,7 @@ desc.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
 hr = device->CreateTexture2D(&desc, nullptr, &tex);
 ```
 
-When you create a ShaderResourceView or a RenderTargetView, you just default to using the same format as the resource:
+When you create a ShaderResourceView or a RenderTargetView, you indicate it's to use the sRGB degamma/gamma behavior:
 
 ```cpp
 D3D11_SHADER_RESOURCE_VIEW_DESC srvDesc = {};
@@ -114,7 +114,8 @@ scDesc.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
 DXGI_SWAP_CHAIN_FULLSCREEN_DESC fsDesc = {};
 fsSwapChainDesc.Windowed = TRUE;
 
-hr = dxgiFactory->CreateSwapChainForHwnd(device, hwnd, &scDesc, &fsDesc, nullptr, &swapchain);
+hr = dxgiFactory->CreateSwapChainForHwnd(device, hwnd, &scDesc,
+    &fsDesc, nullptr, &swapchain);
 if (FAILED(hr)) // error
 
 hr = swapchain->GetBuffer(0, &backBuffer);
@@ -124,7 +125,7 @@ hr = device->CreateRenderTargetView(backBuffer, nullptr, &rtv);
 if (FAILED(hr)) // error
 ```
 
-2. Use the non-SRGB format for the backbuffer, but the matching ``DXGI_FORMAT_*_SRGB`` for the view:
+2. Use the non-sRGB format for the backbuffer, but the matching ``DXGI_FORMAT_*_SRGB`` for the view:
 
 ```cpp
 DXGI_SWAP_CHAIN_DESC1 scDesc = {};
@@ -139,7 +140,8 @@ scDesc.SwapEffect = ...;
 DXGI_SWAP_CHAIN_FULLSCREEN_DESC fsDesc = {};
 fsSwapChainDesc.Windowed = TRUE;
 
-hr = dxgiFactory->CreateSwapChainForHwnd(device, hwnd, &scDesc, &fsDesc, nullptr, &swapchain);
+hr = dxgiFactory->CreateSwapChainForHwnd(device, hwnd, &scDesc,
+    &fsDesc, nullptr, &swapchain);
 if (FAILED(hr)) // error
 
 hr = swapchain->GetBuffer(0, &backBuffer);
@@ -157,16 +159,23 @@ For the recommended for DirectX 11--required for DirectX 12 & UWP--"flip-style" 
 If you have [DXGI debugging](https://walbourn.github.io/dxgi-debug-device/) enabled, you'll get this "wall of text" debug output:
 
 ```
-DXGI ERROR: IDXGIFactory::CreateSwapChain: Flip model swapchains (DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL and
-DXGI_SWAP_EFFECT_FLIP_DISCARD) only support the following Formats: (DXGI_FORMAT_R16G16B16A16_FLOAT,
-DXGI_FORMAT_B8G8R8A8_UNORM, DXGI_FORMAT_R8G8B8A8_UNORM, DXGI_FORMAT_R10G10B10A2_UNORM), assuming
-the underlying Device does as well.
-DXGI_SWAP_CHAIN_DESC{ SwapChainType = ..._HWND, BufferDesc = DXGI_MODE_DESC1{Width = 800, Height = 600,
+DXGI ERROR: IDXGIFactory::CreateSwapChain: Flip model swapchains
+(DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL and DXGI_SWAP_EFFECT_FLIP_DISCARD)
+only support the following Formats: (DXGI_FORMAT_R16G16B16A16_FLOAT,
+DXGI_FORMAT_B8G8R8A8_UNORM, DXGI_FORMAT_R8G8B8A8_UNORM,
+DXGI_FORMAT_R10G10B10A2_UNORM), assuming the underlying Device
+does as well.
+DXGI_SWAP_CHAIN_DESC{ SwapChainType = ..._HWND,
+BufferDesc = DXGI_MODE_DESC1{Width = 800, Height = 600,
 RefreshRate = DXGI_RATIONAL{ Numerator = 0, Denominator = 0 },
-Format = B8G8R8A8_UNORM_SRGB, ScanlineOrdering = ..._UNSPECIFIED, Scaling = ..._UNSPECIFIED, Stereo = FALSE },
-SampleDesc = DXGI_SAMPLE_DESC{ Count = 1, Quality = 0 }, BufferUsage = 0x20, BufferCount = 2,
+Format = B8G8R8A8_UNORM_SRGB, ScanlineOrdering = ..._UNSPECIFIED,
+Scaling = ..._UNSPECIFIED, Stereo = FALSE },
+SampleDesc = DXGI_SAMPLE_DESC{ Count = 1, Quality = 0 },
+BufferUsage = 0x20, BufferCount = 2,
 OutputWindow = 0x002B03F6, Scaling = ..._STRETCH, Windowed = TRUE,
-SwapEffect = ..._FLIP_DISCARD, AlphaMode = ..._UNSPECIFIED, Flags = 0x0 } [ MISCELLANEOUS ERROR #101: ]
+SwapEffect = ..._FLIP_DISCARD, AlphaMode = ..._UNSPECIFIED,
+Flags = 0x0 }
+[ MISCELLANEOUS ERROR #101: ]
 ```
 
 *I'll be adding more parts to this blog series soon to cover MSAA and Fullscreen...*
