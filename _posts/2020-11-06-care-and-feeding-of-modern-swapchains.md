@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Care and Feeding of Modern Swap Chains
+title: The Care and Feeding of Modern Swap Chains (part 1)
 date: 2020-11-06 17:31
 author: Chuck Walbourn
 comments: true
@@ -28,7 +28,7 @@ See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi/ne-
 
 Another swap chain feature introduced with DirectX 11.1/Window 8/DXGI 1.2 was controlling how to handle the case where the "swapchain buffer" was not the same dimension as the target output window. ``DXGI_SCALING_STRETCH`` was the original behavior of doing a StretchBlt, with ``DXGI_SCALING_NODE`` being an option to have the image just drawn in the middle with a background color (only supported for ``DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL``).
 
-A more interesting ``DXGI_SCALING_ASPECT_RATIO_STRETCH`` mode was added for Windows Phone 8 and Windows 10/DXGI 1.4, which automatically supports "letter-boxing". It's an awesomely useful mode for dealing with scaling backbuffer size for performance (most on that later), but alas is only implemented for "CoreWindow" and "DirectComposition"-enabled Windows, not classic Win32 windows.
+A more interesting ``DXGI_SCALING_ASPECT_RATIO_STRETCH`` mode was added for Windows Phone 8 and Windows 10/DXGI 1.4, which automatically supports "letter-boxing". It's an awesomely useful mode for dealing with scaling backbuffer size for performance (more on that later), but alas is only implemented for "CoreWindow" and "DirectComposition"-enabled Windows, not classic Win32 windows.
 
 See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_scaling)
 
@@ -178,8 +178,6 @@ Flags = 0x0 }
 [ MISCELLANEOUS ERROR #101: ]
 ```
 
-*I'll be adding more parts to this blog series soon to cover MSAA and Fullscreen...*
-
 # Sample code
 
 For a detailed C++ implementation handling this behavior, see:
@@ -195,5 +193,9 @@ For a detailed C++ implementation handling this behavior, see:
 [Chapter 24. The Importance of Being Linear](https://developer.nvidia.com/gpugems/gpugems3/part-iv-image-effects/chapter-24-importance-being-linear), GPU Gems 3
 
 [Gamma-correct rendering](https://blog.molecular-matters.com/2011/11/21/gamma-correct-rendering/)   
+
+# Additional Topics
+
+* [Multi-Sample Anti-Aliasing (MSAA)](https://walbourn.github.io/care-and-feeding-of-modern-swapchains-2/)
 
 <b>See also:</b> <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>, <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a>, <a href="https://walbourn.github.io/hdr-lighting-and-displays/">HDR Lighting and Displays</a>
