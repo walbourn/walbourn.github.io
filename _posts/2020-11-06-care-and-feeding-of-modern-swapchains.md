@@ -197,5 +197,6 @@ For a detailed C++ implementation handling this behavior, see:
 # Additional Topics
 
 * [Multi-Sample Anti-Aliasing (MSAA)](https://walbourn.github.io/care-and-feeding-of-modern-swapchains-2/)
+* [Fullscreen](https://walbourn.github.io/care-and-feeding-of-modern-swapchains-3/)
 
 <b>See also:</b> <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>, <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a>, <a href="https://walbourn.github.io/hdr-lighting-and-displays/">HDR Lighting and Displays</a>
