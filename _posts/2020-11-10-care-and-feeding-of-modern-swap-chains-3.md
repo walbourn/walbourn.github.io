@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Care and Feeding of Modern Swap Chains (part 3)
+title: The Care and Feeding of Modern Swap Chains (part 3)
 date: 2020-11-10 12:07
 author: Chuck Walbourn
 comments: true
