@@ -38,6 +38,40 @@ Since modern flat-panels displays look best at their 'native' resolution, a Wind
 
 Windows Store apps were therefore designed to never change the display resolution. "Immersive" mode here is just a windowed rendering mode maximized to full screen. This works well with the rest of the system for notifications, multi-tasking, multi-monitor displays, etc. There's also been a lot of optimization work to remove the difference in performance between "immersive fullscreen" and "classic FSE".
 
+```cpp
+case WM_SYSKEYDOWN:
+    if (wParam == VK_RETURN && (lParam & 0x60000000) == 0x20000000)
+    {
+        // Implements the classic ALT+ENTER fullscreen toggle
+        if (s_fullscreen)
+        {
+            SetWindowLongPtr(hWnd, GWL_STYLE, WS_OVERLAPPEDWINDOW);
+            SetWindowLongPtr(hWnd, GWL_EXSTYLE, 0);
+
+            int width = 800;
+            int height = 600;
+            if (game)
+                game->GetDefaultSize(width, height);
+
+            ShowWindow(hWnd, SW_SHOWNORMAL);
+
+            SetWindowPos(hWnd, HWND_TOP, 0, 0, width, height, SWP_NOMOVE | SWP_NOZORDER | SWP_FRAMECHANGED);
+        }
+        else
+        {
+            SetWindowLongPtr(hWnd, GWL_STYLE, 0);
+            SetWindowLongPtr(hWnd, GWL_EXSTYLE, WS_EX_TOPMOST);
+
+            SetWindowPos(hWnd, HWND_TOP, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER | SWP_FRAMECHANGED);
+
+            ShowWindow(hWnd, SW_SHOWMAXIMIZED);
+        }
+
+        s_fullscreen = !s_fullscreen;
+    }
+    break;
+```
+
 Implementation is very simple, but does it require a change in perspective on performance scaling. Historically game developers have changed the display resolution to reduce the number of pixels to render because the backbuffer is scaled as result. With "immersive fullscreen", you don't change the display resolution but you still have full control over the render target size to speed up rendering.
 
 One approach would be to make the backbuffer on your swapchain smaller in response to your game "resolution" slider setting, and make use of ``DXGI_SCALING_STRETCH``. In this case, the Desktop Windows Compositor will scale up your content to fill the display size.
@@ -61,6 +95,57 @@ For DirectX games aimed at Windows 7 as well as Windows 10, using the classic 'f
 There's one more modern swap chain feature to mention. For most of the history of PC display systems, a 'vertical sync' (or vsync) was performed every frame at the "refresh rate" for the display (typically 60Hz). This is another example of flat-panel displays emulating the behavior of the old CRT. For a CRT, if you didn't draw fast enough, the pixels would fade away. For a LCD display, this never happens so it's not require you maintain a specific refresh rate for the display--although it does matter to the user that you keep rendering going fast enough that frames actually blend together smoothly.
 
 High-end modern flat panels now support [Variable refresh rate](https://en.wikipedia.org/wiki/Variable_refresh_rate) through technologies like nVIDIA's G-Sync&trade; or AMD's Freesync&trade;. This is supported on Windows 10 via DXGI 1.5, and you guessed it, only supports 'flip-style' swap chains using borderless fullscreen window rendering.
+
+```cpp
+if (m_options & c_AllowTearing)
+{
+    BOOL allowTearing = FALSE;
+
+    ComPtr<IDXGIFactory5> factory5;
+    HRESULT hr = m_dxgiFactory.As(&factory5);
+    if (SUCCEEDED(hr))
+    {
+        hr = factory5->CheckFeatureSupport(DXGI_FEATURE_PRESENT_ALLOW_TEARING, &allowTearing, sizeof(allowTearing));
+    }
+
+    if (FAILED(hr) || !allowTearing)
+    {
+        m_options &= ~c_AllowTearing;
+    }
+}
+```
+
+```cpp
+DXGI_SWAP_CHAIN_DESC1 swapChainDesc = {};
+...
+swapChainDesc.SwapEffect = (m_options & (c_FlipPresent | c_AllowTearing))
+    ? DXGI_SWAP_EFFECT_FLIP_DISCARD
+    : DXGI_SWAP_EFFECT_DISCARD;
+swapChainDesc.Flags = (m_options & c_AllowTearing)
+    ? DXGI_SWAP_CHAIN_FLAG_ALLOW_TEARING
+    : 0u;
+```
+
+```cpp
+hr = m_swapChain->ResizeBuffers(
+    m_backBufferCount,
+    backBufferWidth,
+    backBufferHeight,
+    backBufferFormat,
+    (m_options & c_AllowTearing) ? DXGI_SWAP_CHAIN_FLAG_ALLOW_TEARING : 0u
+    );
+```
+
+```cpp
+if (m_options & c_AllowTearing)
+{
+    hr = m_swapChain->Present(0, DXGI_PRESENT_ALLOW_TEARING);
+}
+else
+{
+    hr = m_swapChain->Present(1, 0);
+}
+```
 
 See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/variable-refresh-rate-displays), and the [DirectX Developer Blog](https://devblogs.microsoft.com/directx/unlocked-frame-rate-and-more-now-enabled-for-uwp/).
 

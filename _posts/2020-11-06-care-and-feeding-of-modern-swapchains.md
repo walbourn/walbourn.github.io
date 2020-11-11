@@ -18,7 +18,23 @@ For Windows 10/DXGI 1.4, ``DXGI_SWAP_EFFECT_FLIP_DISCARD`` was added as well. Di
 
 A number of improvements have been made to swap chain performance, and for 'back compat' reasons these changes are heavily focused on the newer "flip-style" modes. At this point, it's recommended that DirectX 11 apps prefer to use the 'flip-modes' as discussed on the [DirectX Developer Blog](https://devblogs.microsoft.com/directx/dxgi-flip-model/), and DirectX 12 apps must use them.
 
-> For implementation details, especially handling older versions of Windows, see the [DX11 DeviceResources](https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_win32_dr/DeviceResources.cpp).
+```cpp
+ComPtr<IDXGIFactory4> factory4;
+if (FAILED(m_dxgiFactory.As(&factory4)))
+{
+    m_options &= ~c_FlipPresent;
+}
+```
+
+```cpp
+DXGI_SWAP_CHAIN_DESC1 swapChainDesc = {};
+...
+swapChainDesc.SwapEffect = (m_options & c_FlipPresent)
+    ? DXGI_SWAP_EFFECT_FLIP_DISCARD
+    : DXGI_SWAP_EFFECT_DISCARD;
+```
+
+> For more implementation details, especially handling older versions of Windows, see the [DX11 DeviceResources](https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_win32_dr/DeviceResources.cpp).
 
 > For anyone who has looked at [D3D12 on Windows 7](https://microsoft.github.io/DirectX-Specs/d3d/D3D12onWin7.html), there's a lot of weirdness and limitations around handling the swapchain present since Windows 7 doesn't support the newer flip modes.
 
