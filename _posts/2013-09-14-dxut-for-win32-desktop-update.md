@@ -9,6 +9,8 @@ categories: [codeplex, direct3d]
 With the deprecation of the DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a> and <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>), there's been a lot of guidance both on this blog and on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> on moving to newer, supported solutions. As a number of folks have noticed, DXUT (aka the DirectX SDK samples framework) is not included in the Windows 8.x SDK.  This post provides an updated version of DXUT for Direct3D 11. The primary purpose of this release is to remove dependencies on the DirectX SDK for D3DX9, D3DX11, and DXERR. It also includes some code tidying and a few customer requests.
 <!--more-->
 
+<span style="color:red">**The project on [GitHub](https://github.com/Microsoft/DXUT) is marked as archive. It is still available for use for legacy projects, but use of it for new projects is not recommended.**</span>
+
 <ul>
 <li>The DXUT framework is for use in <strong>Win32 desktop applications</strong>. It not usable for Windows Store apps on Windows 8.x or Windows RT.</li>
 <li>This version of DXUT only supports <strong>Direct3D 11</strong>, and therefore is not compatible with Windows XP or early versions of Windows Vista.</li>
