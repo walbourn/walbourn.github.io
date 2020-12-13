@@ -20,9 +20,9 @@ The D3DX12 Utility header is **focused** on use for runtime rendering with the D
 
 # What's in it?
 
-The bulk of the ``D3DX12.h`` header are C++ class versions of the core C-style API structs. For Direct3D 11, these were in the core ``d3d11.h`` headers--you could define the preprocessor symbols  ``D3D11_NO_HELPERS`` and/or ``D3D11_VIDEO_NO_HELPERS`` to turn them off. Things like ``CD3D12_RECT``, ``CD3DX12_VIEWPORT``, ``CD3DX12_BLEND_DESC``, ``CD3DX12_RASTERIZER_DESC``, etc. which provides C++ constructors and reasonable defaults. There are also a few utility functions as well sprinkled in as well, such as ``D3D12CalcSubresource``.
+The bulk of the ``D3DX12.h`` header are C++ class versions of the core C-style API structs. For Direct3D 11, these were in the core ``d3d11.h`` headers--you could define the preprocessor symbols  ``D3D11_NO_HELPERS`` and/or ``D3D11_VIDEO_NO_HELPERS`` to turn them off. Things like ``CD3D12_RECT``, ``CD3DX12_VIEWPORT``, ``CD3DX12_BLEND_DESC``, ``CD3DX12_RASTERIZER_DESC``, etc. which provides C++ constructors and reasonable defaults. There are also a few utility functions sprinkled in as well, such as ``D3D12CalcSubresource``.
 
-D3DX12 does not support code for loading/saving bitmaps as textures, but it does have the ``UpdateSubresources`` helpers to simplify basic texture transfer from CPU memory to GPU memory--something that in DirectX 11 was handled behind the scenes.
+D3DX12 does not include code for loading/saving bitmaps as textures, but it does have the ``UpdateSubresources`` helpers to simplify basic texture transfer from CPU memory to GPU memory--something that in DirectX 11 was handled behind the scenes.
 
 Lastly there's a set of "State Object Creation Helpers" intended for use with DirectX Raytracing (DXR) and the new Amplification & Mesh shaders. These shader stages do not have dedicated description structures in the Pipeline State Object (PSO), and instead make use of a 'stream' data description which these helpers can build. Note you can disable these by defining ``D3DX12_NO_STATE_OBJECT_HELPERS`` if you don't need them in your application.
 
