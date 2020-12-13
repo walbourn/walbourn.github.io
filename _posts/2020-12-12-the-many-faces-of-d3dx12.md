@@ -28,13 +28,17 @@ Lastly there's a set of "State Object Creation Helpers" intended for use with Di
 
 There's a summary of the content in the header on my [DirectX Tool Kit for DX12 wiki](https://github.com/microsoft/DirectXTK12/wiki/DirectXHelpers) and they are documented on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3d12/helper-structures-and-functions-for-d3d12)
 
+**Note**: The ``d3dx12.h`` header originally used ``__uuidof`` operator which is a Microsoft language extension. More recent versions avoid this extension for better compiler conformance and portability, but that assumes your DirectX application is linking against ``dxguid.lib``.
+
 # Getting the latest D3DX12 header
 
 Since it's optional and not the Windows 10 SDK, there's a number of ways to obtain ``d3dx12.h``. The Visual Studio "DirectX12 App" templates for UWP development come with a copy if it. I include the header in my [Direct3D 12 Game VS Templates](https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/) for similar reasons.
 
-Officially the 'latest and greatest' version can be obtained from [GitHub](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12). The key thing to remember is that this version assumes you are using the latest public Windows 10 SDK (at this point, that would be Windows 10 SDK 19041). If you use an older SDK, that version of ``d3dx12.h`` won't compile.
+Officially the 'latest and greatest' version for the past few years is obtained from [GitHub: DirectX-Graphics-Samples](https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12). The key thing to remember is that this version assumes you are using the latest public Windows 10 SDK (at this point, that would be Windows 10 SDK 19041). If you use an older SDK, that version of ``d3dx12.h`` won't compile.
 
 While you can use an older version, there's been a number of minor fixes and I've done a lot of clang/LLVM C++ conformance work for the latest versions as well. I maintain the version on [directx-vs-templates](https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/d3dx12.h) to match the latest public one, but mine has a bunch of conditional compilation preprocessor stuff so it will build with older Windows 10 SDKs.
+
+Moving forward, there is now a [GitHub: DirectX-Headers](https://github.com/microsoft/DirectX-Headers) repository which includes the latest Direct3D 12 headers along with the latest D3DX12 utility header in one place.
 
 > Because Xbox developers use a specialized version of DirectX for their development, the matching D3DX12 utility header is called ``d3dx12_x.h`` and/or ``d3dx12_xs.h`` which are  part of that development environment's include paths.
 

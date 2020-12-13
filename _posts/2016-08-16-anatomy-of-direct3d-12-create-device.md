@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [direct3d, win10]
 ---
-Based on some questions I've been getting lately, it seems like now's a good time to revisit my classic post <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a> updated for Direct3D 12!
+Based on some questions I've been getting lately, it seems like now's a good time to revisit my classic post <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a> updated for Direct3D 12.
 <!--more-->
 
 The first thing to note is that while you can pass a <code>nullptr</code> for the 'default' device with Direct3D 12 to <a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d12/nf-d3d12-d3d12createdevice">D3D12CreateDevice</a>, that's probably not the best solution. At this point, every driver on Windows 7 or later supports Direct3D 11, so you can pretty safely assume the default device is going to support Direct3D 11 at some <a href="https://walbourn.github.io/direct3d-feature-levels/">Direct3D hardware feature level</a>. While a lot of existing (as well as new) GPUs support Direct3D 12, this doesn't apply to all GPUs. Specifically, a new WDDM 2 driver is required to support Direct3D 12, and there are no devices below Direct3D Feature Level 11.0 that are expected to get such updated drivers.
@@ -139,6 +139,8 @@ To build an application using Direct3D 12 APIs, you must make use of the Windows
 
 <strong>Update:</strong> With Visual Studio 2017, you can use the <a href="https://walbourn.github.io/windows-10-creators-update-sdk/">Windows 10 Creators Update SDK (15063)</a> or <a href="https://walbourn.github.io/windows-10-fall-creators-update-sdk/">Windows 10 Fall Creators Update SDK (16299)</a>. VS 2015 is not supported by these newer SDKs.
 
+<strong>GitHub:</strong> Note that you can now obtain the latest Direct3D 12 headers directly from [DirectX-Headers](https://github.com/microsoft/DirectX-Headers).
+
 <h1>Direct3D 12.x</h1>
 
 With the <a href="https://walbourn.github.io/windows-10-anniversary-update-sdk/">Windows 10 Anniversary Update (14393)</a>, newer drivers and devices can support some additional features for Direct3D 12. You can obtain the 12.1 interface from your 12.0 device by using <code>QueryInterface</code> or <code>ComPtr::As</code>--this will fail on older versions of Windows 10.
@@ -202,8 +204,12 @@ if (!pD3D12CreateDevice)
 // Direct3D 11 instead
 ```
 
+<strong>Windows 7:</strong> For details on using Direct3D 12 on Windows 7, see [GitHub](https://microsoft.github.io/DirectX-Specs/d3d/D3D12onWin7.html).
+
 <h1>Universal Windows Platform (UWP) notes</h1>
 
 Because the minimum OS version is enforced for the platform, you can count on <code>IDXGIFactory4</code> always being available.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12,</a> <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>
+<strong>Link libraries:</strong> The standard list of libraries to link to for a DirectX 12 application is ``d3d12.lib dxgi.lib dxguid.lib``. To use Windows Imaging Component (WIC) add ``uuid.lib``.
+
+<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12,</a> <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>, <a href="https://walbourn.github.io/care-and-feeding-of-modern-swapchains/">The Care and Feeding of Modern Swap Chains</a>

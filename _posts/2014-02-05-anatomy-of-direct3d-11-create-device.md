@@ -73,7 +73,7 @@ if ( SUCCEEDED(device.As(&device1) )
 
 This code requires you include ``<d3d11_1.h>`` and have the <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Windows 8.0 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Windows 8.1 SDK</a>, or the <a href="https://walbourn.github.io/windows-10-sdk-rtm/">Windows 10 SDK</a>. You will get a valid <code>device1</code> and <code>context1</code> pointer on Windows 10,Windows 8.1, Windows 8.0, and Windows 7 SP1 with <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">KB 2670838</a> installed.
 
-<strong>Note: </strong>For modern games, DirectX 11.1 or later is a reasonable requirement. Games should already require Windows 7 Service Pack 1 as Windows 7 RTM is out of support and isn't supported by VS 2015/2017 in any case. If you fail to obtain a 11.1 device in this case or get a <code>E_INVALIDARG</code> above, a fatal error telling the user they need to install KB 2670838 or upgrade to a newer OS is a reasonable course of action.
+<strong>Note:</strong> For modern games, DirectX 11.1 or later is a reasonable requirement. Games should already require Windows 7 Service Pack 1 as Windows 7 RTM is out of support and isn't supported by VS 2015/2017 in any case. If you fail to obtain a 11.1 device in this case or get a <code>E_INVALIDARG</code> above, a fatal error telling the user they need to install KB 2670838 or upgrade to a newer OS is a reasonable course of action.
 
 <h1>Direct3D 11.2</h1>
 
@@ -181,6 +181,8 @@ if ( d3ddevice )
 }
 ```
 
+<strong>Link libraries:</strong> The standard list of libraries to link to for a DirectX 11 application is ``d3d11.lib dxgi.lib dxguid.lib``. To use Windows Imaging Component (WIC) add ``uuid.lib``.
+
 <strong>Update:</strong> I've updated this blog post to make use of <code>Microsoft::WRL::ComPtr</code>. See this <a href="https://github.com/Microsoft/DirectXTK/wiki/ComPtr">page</a> for more information about this helpful smart-pointer for COM programming. Also updated with UWP information for Windows 10.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>, <a href="https://walbourn.github.io/care-and-feeding-of-modern-swapchains/">The Care and Feeding of Modern Swap Chains</a>
