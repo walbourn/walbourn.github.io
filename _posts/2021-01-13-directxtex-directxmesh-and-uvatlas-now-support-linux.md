@@ -45,3 +45,5 @@ vcpkg install directxtk12
 vcpkg install directxmesh
 vcpkg install uvatlas
 ```
+
+<b>Visual C++ Team Blog</b>: <a href="https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/">C++ with Visual Studio 2019 and Windows Subsystem for Linux (WSL)</a>, <a href="https://devblogs.microsoft.com/cppblog/c-with-visual-studio-and-wsl2/">C++ with Visual Studio and WSL2</a>
