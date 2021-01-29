@@ -9,9 +9,11 @@ categories: [dxsdk, hlsl, pixw, visualc, directxmath]
 The June 2010 release of the DirectX SDK is now available on [Microsoft Downloads](https://www.microsoft.com/en-us/download/details.aspx?id=6812). This release introduces official support for Visual Studio 2010, an updated version of the HLSL compiler with numerous fixes and minor improvements, improved documentation and samples, XNAMath C++ SIMD library version 2.03, and PIX for Windows usability improvements.
 <!--more-->
 
-For download details, see the [DirectX Developer Center](http://msdn.microsoft.com/directx/).
+<strike>For download details, see the [DirectX Developer Center](http://msdn.microsoft.com/directx/).</strike>
 
-The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D3DX9/10/11, D3DCSX, D3DCompiler, XAUDIO2, and XACT is also available online ([Web](https://www.microsoft.com/en-us/download/details.aspx?id=35) or [stand-alone](https://www.microsoft.com/en-us/download/details.aspx?id=8109))
+<strike>The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D3DX9/10/11, D3DCSX, D3DCompiler, XAUDIO2, and XACT is also available online ([Web](https://www.microsoft.com/en-us/download/details.aspx?id=35) or [stand-alone](https://www.microsoft.com/en-us/download/details.aspx?id=8109))</strike>
+
+> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373).
 
 <strong>Update:</strong> Please note that the REDIST folder for the DirectX SDK (June 2010) is slightly out of date now. You should make use of the [refreshed version](https://walbourn.github.io/dxsetup-update/) of DirectSetup if you need the REDIST.
 
