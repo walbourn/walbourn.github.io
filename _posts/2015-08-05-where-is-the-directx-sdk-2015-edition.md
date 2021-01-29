@@ -17,6 +17,8 @@ As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sd
 
 <em>Remember that use of the legacy DirectX SDK is not supported for UWP app or Xbox One development.</em>
 
+> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373).
+
 <strong>Developer Runtime:</strong> The Windows 8.1 SDK or Windows 10 SDK is where you obtain the latest <a href="https://walbourn.github.io/direct3d-sdk-debug-layer-tricks/">DirectX Developer Runtime</a> that is compatible with Windows 7, Windows 8.0, and Windows 8.1. The DirectX Developer Runtime for Windows 10 is an optional Windows feature you <a href="https://devblogs.microsoft.com/cppblog/visual-studio-2015-and-graphics-tools-for-windows-10/">enable</a> in the operating system. You can also enable it on Windows 10 via the command-line using an admin prompt:
 
     Dism /online /add-capability /capabilityname:Tools.Graphics.DirectX~~~~0.0.1.0
