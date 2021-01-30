@@ -60,11 +60,15 @@ The best option is to upgrade to XAudio 2.9. For Windows 10, this is built-in an
 
 For samples, see [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2).
 
+> Do not use XAudio 2.7 or earlier. It has a number of known bugs as well as relying on the legacy redistribution.
+
 ## XInput
 
 The Windows SDK includes ``xinput.h`` / ``xinput.lib`` / ``Xinput9_1_0.lib``. You can use XInput 9.1.0 for Windows 7 support as it's always present in the OS. See [this blog post](https://walbourn.github.io/xinput-and-windows-8/).
 
 For samples, see [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/XInput).
+
+> Do not use XInput 1.1, 1.2, or 1.3. These rely on the legacy redistribution.
 
 ## XNAMath
 
