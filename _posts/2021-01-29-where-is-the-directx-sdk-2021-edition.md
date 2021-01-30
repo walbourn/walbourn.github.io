@@ -32,7 +32,7 @@ Common |  Dcommon.h, D3Dcommon.h, DXGUID.LIB
 DirectDraw | DDraw.h. *See [this blog post](https://walbourn.github.io/whither-directdraw/) for why there is no ddraw.lib*.
 Direct2D | D2D1.h, D2D1Helper.h, D2DBaseTypes.h, D2Derr.h, d2d1.lib
 DirectWrite | DWrite.h, dwrite.lib
-Dirct3D 10 | D3D10.h, D3D10effect.h, d3d10misc.h, d3d10sdklayers.h, D3D10shader.h, d3d10.lib
+Direct3D 10 | D3D10.h, D3D10effect.h, d3d10misc.h, d3d10sdklayers.h, D3D10shader.h, d3d10.lib
 Direct3D 10.1 | D3D10_1.h, D3D10_1shader.h, d3d10_1.lib
 Direct3D 11 | D3D11.h, D3D11SDKLayers.h, D3D11Shader.h, d3d11.lib
 Direct3D 9 | d3d9.h, d3d9caps.h, d3d9types.h, d3d9.lib
