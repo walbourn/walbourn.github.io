@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, dxsdk]
 ---
-<strong>See also "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>"</strong>
+<strong>See "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
 
 At <a href="http://www.buildwindows.com/">BUILD 2013</a> last week, Microsoft released the <a href="http://go.microsoft.com/fwlink/p/?LinkID=302144">Windows 8.1 Preview</a>, <a href="http://go.microsoft.com/fwlink/?LinkId=306566">Visual Studio 2013 Preview</a>, and the <a href="https://developer.microsoft.com/en-us/windows/downloads/sdk-archive">Windows SDK for Windows 8.1 Preview</a> (included in the VS 2013 Preview). <em>Note that RTM was released on </em><em>October 17th, 2013.</em>
 <!--more-->

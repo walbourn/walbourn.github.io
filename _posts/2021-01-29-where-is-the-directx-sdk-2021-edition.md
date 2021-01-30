@@ -29,6 +29,7 @@ As has been the case the past decade, the strong recommendation is to no longer 
 DirectX component|Developer files in Windows SDK
 -|-
 Common |  Dcommon.h, D3Dcommon.h, DXGUID.LIB
+DirectDraw | DDraw.h. *See [this blog post](https://walbourn.github.io/whither-directdraw/) for why there is no ddraw.lib*.
 Direct2D | D2D1.h, D2D1Helper.h, D2DBaseTypes.h, D2Derr.h, d2d1.lib
 DirectWrite | DWrite.h, dwrite.lib
 Dirct3D 10 | D3D10.h, D3D10effect.h, d3d10misc.h, d3d10sdklayers.h, D3D10shader.h, d3d10.lib

@@ -6,6 +6,8 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, dxsdk]
 ---
+<strong>See "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
+
 As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a>, the DirectX SDK is deprecated. The June 2010 release is the last release, and "DirectX" is now part of the Windows SDK. There are really only three scenarios where you should continue to use the old DirectX SDK:
 <!--more-->
 
