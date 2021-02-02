@@ -166,6 +166,8 @@ bool DSoundtoMMEndpoint(const GUID& guid, WCHAR* id, size_t maxsize, bool captur
 }
 ```
 
-The legacy XInput 9.1.0 doesn't support headset audio, so if you make use of audio features for XInput devices you'll have to use either the Windows 8 in box XInput 1.4 or the legacy DirectX SDK XInput 1.3 release.
+The legacy XInput 9.1.0 doesn't support headset audio, so if you make use of audio features for XInput devices you'll have to use either the Windows 8.x / Windows 10  XInput 1.4 or the legacy DirectX SDK XInput 1.3 release.
+
+> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373). Therefore, it's best to avoid using XInput 1.1, 1.2, or 1.3 entirely.
 
 In a future post I'll cover how to make use of the capture device given that XAudio2 doesn't support audio capture. We'll make use of the new <a href="https://docs.microsoft.com/en-us/uwp/api/Windows.Media.Capture">MediaCapture</a> API on Windows 8, and the venerable <code>waveIn</code> otherwise.

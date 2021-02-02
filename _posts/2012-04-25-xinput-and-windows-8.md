@@ -10,7 +10,7 @@ categories: [audio, input, win8]
 
 <!--more-->
 
-<strong>REDIST:</strong> For XInput 1.4 on Windows 8.x, Windows 10, and Windows RT; no redistribution is required since XInput 1.4 is included with the OS. For XInput 9.1.0 on Windows Vista, Windows 7, or Windows 8, no redistribution is required since XInput 9.1.0 is included with the OS. For XInput 1.3 on any version of Windows, use the <a href="https://walbourn.github.io/not-so-direct-setup/">legacy DirectX SDK REDIST</a>.
+<strong>REDIST:</strong> For XInput 1.4 on Windows 8.x, Windows 10, and Windows RT; no redistribution is required since XInput 1.4 is included with the OS. For XInput 9.1.0 on Windows Vista, Windows 7, Windows 8.x, or Windows 10, no redistribution is required since XInput 9.1.0 is included with the OS. For XInput 1.3 on any version of Windows, use the <a href="https://walbourn.github.io/not-so-direct-setup/">legacy DirectX SDK REDIST</a>.
 
 Since Xinput version 1.4 is not available on Windows 7, Win32 desktop games that support older versions of Windows can use either XInput 1.3 or the still supported older XInput 9.1.0 which is included in Windows Vista, Windows 7, and Windows 8.
 
@@ -56,7 +56,9 @@ else
 
 If using the XInput 1.3 solution, You should follow the instructions on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> to use the Windows 8.x/10 SDK headers and libraries where possible and explicitly link to the <code>DXSDK_DIR</code> for the headers where you need older versions to support older versions of Windows. (see "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>").
 
-In a future <a href="https://walbourn.github.io/xinput-and-xaudio2/">post</a>, I'll address the details of using XInput 1.4's audio features, and how to implement similiar behavior down-level using XInput 1.3. XInput 9.1.0 doesn't support audio features.
+> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373). Therefore, it's best to avoid using XInput 1.1, 1.2, or 1.3 entirely.
+
+In a future <a href="https://walbourn.github.io/xinput-and-xaudio2/">post</a>, I address the details of using XInput 1.4's audio features, and how to implement similar behavior down-level using XInput 1.3. XInput 9.1.0 doesn't support audio features.
 
 <strong>Note:</strong> The <a href="https://walbourn.github.io/windows-sdk-7-1/">Windows 7.1 SDK</a> includes the <code>xinput.h</code> header and <code>xinput.lib</code> import library for the the Xinput 9.1.0 version as well. XInput 9.1.0 can be deployed on Windows XP using the legacy DirectX SDK's REDIST (aka DirectSetup).
 
