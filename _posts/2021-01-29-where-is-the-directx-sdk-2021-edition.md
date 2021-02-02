@@ -96,4 +96,24 @@ For Windows 7 with DirectX 11.1 or Windows 8.x, the DirectX Developer Runtime is
 
 See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-devices-layers), [Direct3D SDK Debug Layer Tricks](https://walbourn.github.io/direct3d-sdk-debug-layer-tricks/), and [DXGI Debug Device](https://walbourn.github.io/dxgi-debug-device/)
 
+# Windows XP
+
+All of the advice above assumes you are targeting Windows 7 or up. For Windows XP / Windows Server 2003, there's no choice at all but to use the legacy DirectX SDK. In order to target Windows XP, you must use the Windows 7.1A SDK instead of the modern Windows SDK which is before the DirectX content was fully moved over. The Windows 8.x SDK and Windows 10 SDK do not support Windows XP development.
+
+In this case, the only option is to obtain the legacy DirectX SDK from some Internet mirror. For example, there's a copy on [archive.org](https://archive.org/details/dxsdk_2010). To ensure you are using the genuine bits, I highly recommend you verify the hash *before* running it.
+
+```
+certutil -hashfile DXSDK_Jun10.exe SHA512
+```
+
+The valid SHA-512 hash is:
+
+```
+4869ac947a35cd0d6949fbda17547256ea806fef36f48474dda63651f751583e9902641087250b6e8ccabaab85e51effccd9235dc6cdf64e21ec2b298227fe19
+```
+
+For more information on using the Windows 7.1A SDK, see [this blog post](https://walbourn.github.io/visual-studio-2012-update-1/).
+
+Also, be sure to read about this [known issue](https://walbourn.github.io/known-issue-directx-sdk-june-2010-setup-and-the-s1023-error/) with the legacy DirectX SDK setup.
+
 <b>See Also:</b> [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/)
