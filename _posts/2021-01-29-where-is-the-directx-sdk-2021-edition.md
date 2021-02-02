@@ -18,8 +18,6 @@ As I've communicated numerous times, this legacy installer *never installs Direc
 
 For games that included the *DirectX SDK* ``REDIST`` folder in their installation, there is no impact as that continues to work. Following the legacy recommendations of cutting down the number of ``.cab`` files you ship to control overall download/media sizes remains a useful option per [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/directx-setup-for-game-developers).
 
-For game installers that 'chained' to the *DirectX End-User Web Installer* (``DXWSETUP.EXE``), it can no longer find the hosted files it relies on, and will *always fail*. While this was always an 'off-label' use of the web installer, there are a number of smaller download games that used this approach, which unfortunately is no longer supportable.
-
 For legacy DirectX SDK-built games using [**Desktop Bridge**](https://developer.microsoft.com/en-us/windows/bridges/desktop), you can still make use of the of the "DirectX Framework Package" [Microsoft.DirectX.x86](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x86.appx) / [Microsoft.DirectX.x64](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x64.appx) which remain available as the ``appx`` is signed with SHA-256.
 
 # Impact for existing developers
@@ -29,17 +27,17 @@ As has been the case the past decade, the strong recommendation is to no longer 
 DirectX component|Developer files in Windows SDK
 -|-
 Common |  Dcommon.h, D3Dcommon.h, DXGUID.LIB
-DirectDraw | DDraw.h. *See [this blog post](https://walbourn.github.io/whither-directdraw/) for why there is no ddraw.lib*.
 Direct2D | D2D1.h, D2D1Helper.h, D2DBaseTypes.h, D2Derr.h, d2d1.lib
 DirectWrite | DWrite.h, dwrite.lib
-Direct3D 10 | D3D10.h, D3D10effect.h, d3d10misc.h, d3d10sdklayers.h, D3D10shader.h, d3d10.lib
-Direct3D 10.1 | D3D10_1.h, D3D10_1shader.h, d3d10_1.lib
 Direct3D 11 | D3D11.h, D3D11SDKLayers.h, D3D11Shader.h, d3d11.lib
+Direct3D 10.1 | D3D10_1.h, D3D10_1shader.h, d3d10_1.lib
+Direct3D 10 | D3D10.h, D3D10effect.h, d3d10misc.h, d3d10sdklayers.h, D3D10shader.h, d3d10.lib
 Direct3D 9 | d3d9.h, d3d9caps.h, d3d9types.h, d3d9.lib
 DXGI | DXGI.h, DXGIFormat.h, DXGIType.h, dxgi.lib
+DirectDraw | DDraw.h. *See [this blog post](https://walbourn.github.io/whither-directdraw/) for why there is no ddraw.lib*.
 DirectInput | dinput.h, dinputd.h, dinput8.lib
 DirectSound | dsconf.h, dsound.h, dsound.lib
-DXDiag | dxdiag.h  
+DXDiagProvider | dxdiag.h
 Game Explorer UX | gameux.h
 HLSL Compiler | D3Dcompiler.h, d3dcompiler.lib. *See [this blog post](https://walbourn.github.io/hlsl-fxc-and-d3dcompile/) for more information.*
 D3DX11 Compute Shader Utility  |  D3DCSX.h, D3DCSX.lib, D3DCSXd.lib
