@@ -44,7 +44,7 @@ The next set of headers/libs are those that are unique to the legacy DirectX SDK
 <tbody>
 <tr>
 <td><code>dxsdk\include\</code></td>
-<td><code>audiodefs.h<br /> comdecl.h<br /> D3DX10.h<br /> d3dx10async.h<br /> D3DX10core.h<br /> D3DX10math.h<br /> D3DX10math.inl<br /> D3DX10mesh.h<br /> D3DX10tex.h<br /> D3DX11.h<br /> D3DX11async.h<br /> D3DX11core.h<br /> D3DX11tex.h<br /> d3dx9.h<br /> d3dx9anim.h<br /> d3dx9core.h<br /> d3dx9effect.h<br /> d3dx9math.h<br /> d3dx9math.inl<br /> d3dx9mesh.h<br /> d3dx9shader.h<br /> d3dx9shape.h<br /> d3dx9tex.h<br /> d3dx9xof.h<br /> dsetup.h<br /> dxdiag.h<br /> DxErr.h*<br /> dxfile.h<br /> dxsdkver.h<br /> PIXPlugin.h<br /> rmxfguid.h<br /> rmxftmpl.h<br /> xact3.h<br /> xact3d3.h<br /> xact3wb.h<br /> XDSP.h<br /> xma2defs.h</code></td>
+<td><code>audiodefs.h<br /> comdecl.h<br /> D3DX10.h<br /> d3dx10async.h<br /> D3DX10core.h<br /> D3DX10math.h<br /> D3DX10math.inl<br /> D3DX10mesh.h<br /> D3DX10tex.h<br /> D3DX11.h<br /> D3DX11async.h<br /> D3DX11core.h<br /> D3DX11tex.h<br /> d3dx9.h<br /> d3dx9anim.h<br /> d3dx9core.h<br /> d3dx9effect.h<br /> d3dx9math.h<br /> d3dx9math.inl<br /> d3dx9mesh.h<br /> d3dx9shader.h<br /> d3dx9shape.h<br /> d3dx9tex.h<br /> d3dx9xof.h<br /> D3DX_DXGIFormatConvert.inl<br /> dsetup.h<br /> dxdiag.h<br /> DxErr.h*<br /> dxfile.h<br /> dxsdkver.h<br /> PIXPlugin.h<br /> rmxfguid.h<br /> rmxftmpl.h<br /> xact3.h<br /> xact3d3.h<br /> xact3wb.h<br /> XDSP.h<br /> xma2defs.h</code></td>
 </tr>
 <tr>
 <td><code>dxsdk\lib\x86\</code></td>
