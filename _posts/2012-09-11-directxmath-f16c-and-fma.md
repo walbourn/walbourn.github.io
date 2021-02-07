@@ -137,6 +137,6 @@ FMA3 and F16C/CVT16 intrinsic support requires Visual Studio 2012.
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox:</strong> Xbox One supports F16C, but does not support FMA3 or FMA4.
+<strong>Xbox:</strong> Xbox One supports F16C, but does not support FMA3 or FMA4. Xbox Series X/S supports both F16C and FMA3.
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2;</a> <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>
