@@ -14,7 +14,9 @@ The January 2021 releases of [DirectXTex](https://github.com/microsoft/DirectXTe
 
 The support for DirectX 11 is not built for Linux. The DirectX12 support will be available for x64 on WSL but will require linking to WSL DirectX libraries to use at runtime. As a bonus, I also updated the 'standalone' versions of DDSTextureLoader12 and ScreenGrab12 included in the DirectXTex package to support WSL. The Windows Imaging Component (WIC) is not supported for WSL, so there's no WICTextureLoader12 or other WIC-based reader/writers available.
 
-> There are January 2021 releases of *DirectX Tool Kit* [DX11](https://github.com/microsoft/DirectXTK/releases) / [DX12](https://github.com/microsoft/DirectXTK12/releases), but these *do not* have Linux support. They do include updates for the CMake projects to support 'install' which is leveraged by the latest vcpkg ports for these libraries. I did update a few parts of these libraries to support GCC, specifically SimpleMath, so you can use that module standalone on Linux.
+> There are January 2021 releases of *DirectX Tool Kit* [DX11](https://github.com/microsoft/DirectXTK/releases) / [DX12](https://github.com/microsoft/DirectXTK12/releases), but these *do not* have Linux support. They do include updates for the CMake projects to support 'install' which is leveraged by the latest vcpkg *directxtk* and *directxtk12* ports. I did update a few parts of these libraries to support GCC, specifically SimpleMath, so you can use that module standalone on Linux.
+
+> There are February 2021 releases of [DXUT](https://github.com/microsoft/DXUT/releases) and [Effects 11](https://github.com/microsoft/FX11/releases) that add CMake projects, but again these *do not* have Linux support. These are referenced by the latest *dxut* and *effects11* ports.
 
 DirectXTex, DirectXMesh, and UVAtlas require the latest [DirectXMath](https://github.com/microsoft/DirectXMath/releases) and [DirectX-Headers](https://github.com/microsoft/DirectX-Headers/releases) to build. These are referenced using the standard CMake package system, so you can always build, install, and provide the paths yourself. Alternatively, you can make use of [vcpkg](https://docs.microsoft.com/en-us/cpp/build/vcpkg). The latest vcpkg ports handle all these dependencies automatically.
 
@@ -44,6 +46,8 @@ vcpkg install directxtk
 vcpkg install directxtk12
 vcpkg install directxmesh
 vcpkg install uvatlas
+vcpkg install dxut
+vcpkg install effects11
 ```
 
 <b>Visual C++ Team Blog</b>: <a href="https://devblogs.microsoft.com/cppblog/c-with-visual-studio-2019-and-windows-subsystem-for-linux-wsl/">C++ with Visual Studio 2019 and Windows Subsystem for Linux (WSL)</a>, <a href="https://devblogs.microsoft.com/cppblog/c-with-visual-studio-and-wsl2/">C++ with Visual Studio and WSL2</a>
