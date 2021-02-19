@@ -131,7 +131,9 @@ if (CPUInfo[0] > 0x80000000)
 
 FMA4 intrinsics were added to Visual Studio 2010 via Service Pack 1.
 
-FMA3 and F16C/CVT16 intrinsic support requires Visual Studio 2012.
+FMA3 and F16C/CVT16 intrinsic support requires Visual Studio 2012 or later.
+
+> For Visual C++, the compiler will emit these instructions when you use their intrinsic without any specific ``/arch`` setting, but clang/LLVM will error out if you use ``_mm_cvtph_ps`` or ``_mm_cvtps_ph`` unless you use the ``-mavx2`` or ``-mf16c`` compiler switches.
 
 <h1>Utility Code</h1>
 

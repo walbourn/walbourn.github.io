@@ -18,7 +18,7 @@ As I've communicated numerous times, this legacy installer *never installs Direc
 
 For games that included the *DirectX SDK* ``REDIST`` folder in their installation, there is no impact as that continues to work. Following the legacy recommendations of cutting down the number of ``.cab`` files you ship to control overall download/media sizes remains a useful option per [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/dxtecharts/directx-setup-for-game-developers).
 
-For legacy DirectX SDK-built games using [**Desktop Bridge**](https://developer.microsoft.com/en-us/windows/bridges/desktop), you can still make use of the of the "DirectX Framework Package" [Microsoft.DirectX.x86](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x86.appx) / [Microsoft.DirectX.x64](https://download.microsoft.com/download/c/c/2/cc291a37-2ebd-4ac2-ba5f-4c9124733bf1/UAPSignedBinary_Microsoft.DirectX.x64.appx) which remain available as the ``appx`` is signed with SHA-256.
+For legacy DirectX SDK-built games using [**Desktop Bridge**](https://developer.microsoft.com/en-us/windows/bridges/desktop), you can still make use of the of the "DirectX Framework Package" [Microsoft.DirectX.x86](https://aka.ms/directx_x86_appx) / [Microsoft.DirectX.x64](https://aka.ms/directx_x64_appx) which remain available as the ``appx`` is signed with SHA-256.
 
 # Impact for existing developers
 
