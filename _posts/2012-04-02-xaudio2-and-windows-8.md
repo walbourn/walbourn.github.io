@@ -11,8 +11,6 @@ The <em>Windows 8 Consumer Preview</em> includes version 2.8 of the <a href="htt
 
 <strong>Windows 7 Update: </strong> There is now a [NuGet package](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) for using XAudio 2.9 down-level on Windows 7 Service Pack 1, Windows 8.0, and Windows 8.1. In addition to providing Windows 7 support, it also provides xWMV playback support on Windows 8.x. On Windows 10, this automatically redirects to the built-in version. See [Microsoft Docs](https://aka.ms/XAudio2Redist) for details.
 
-> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373). Therefore you should avoid using XAudio 2.7 or earlier.
-
 <strong>Update: </strong>This information also applies to <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">Windows 8</a> RTM, <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Visual Studio 2012</a> RTM, Windows 8.1, and <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Visual Studio 2013</a>.
 
 <strong>Windows phone</strong>: <a href="http://go.microsoft.com/fwlink/?LinkID=261873">Windows phone 8</a> supports XAudio 2.8 as well.

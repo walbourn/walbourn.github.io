@@ -13,8 +13,6 @@ The June 2010 release of the DirectX SDK is now available on [Microsoft Download
 
 <strike>The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D3DX9/10/11, D3DCSX, D3DCompiler, XAUDIO2, and XACT is also available online ([Web](https://www.microsoft.com/en-us/download/details.aspx?id=35) or [stand-alone](https://www.microsoft.com/en-us/download/details.aspx?id=8109))</strike>
 
-> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373).
-
 <strong>Update:</strong> Please note that the REDIST folder for the DirectX SDK (June 2010) is slightly out of date now. You should make use of the [refreshed version](https://walbourn.github.io/dxsetup-update/) of DirectSetup if you need the REDIST.
 
 <strong>Known Issues:</strong> Be sure to read [this article](https://walbourn.github.io/known-issue-directx-sdk-june-2010-setup-and-the-s1023-error/) for known issues trying to install the DirectX SDK (June 2010) due to a problem with the Visual Studio 2010 CRT.

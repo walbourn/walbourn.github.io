@@ -9,9 +9,7 @@ categories: [directx, dxsdk]
 
 Microsoft announced last year that it was retiring all SHA-1 signed content from Microsoft Downloads in [this blog post](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373) since the SHA-1 algorithm is no longer considered secure. The original timeline was stretched out a bit due to COVID-19, but as of January 2021 this content is no longer hosted by Microsoft servers.
 
-This impacted the legacy [*DirectX SDK*](http://go.microsoft.com/fwlink/?LinkId=226640), the [*DirectX End-User Runtime*](http://go.microsoft.com/fwlink/?LinkID=194352), and the [*DirectX End-User Runtime Web Installer*](http://go.microsoft.com/fwlink/p/?LinkId=159853). In January 2021 they were removed from the Microsoft Download Center. As of February 20, 2021, these three downloads have been republished using SHA-256 signing for the 'outer' containers--there's been no change to the contents or binaries.
-
-**The payload DLLs are still using SHA-1, and there are known security issues, so it is highly recommended you move to the replacements mentioned in this post.**
+This impacted the legacy [*DirectX SDK*](http://go.microsoft.com/fwlink/?LinkId=226640), the [*DirectX End-User Runtime*](http://go.microsoft.com/fwlink/?LinkID=194352), and the [*DirectX End-User Runtime Web Installer*](http://go.microsoft.com/fwlink/p/?LinkId=159853). In January 2021 they were removed from the Microsoft Download Center. As of February 20, 2021, these three downloads have been republished using SHA-256 signing for the 'outer' containers--there's been no change to the contents or binaries. **The payload DLLs are still using SHA-1, and there are known security issues, so it is highly recommended you move to the replacements mentioned in this post.**
 <!--more-->
 
 # Impact for existing games

@@ -56,7 +56,7 @@ else
 
 If using the XInput 1.3 solution, You should follow the instructions on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> to use the Windows 8.x/10 SDK headers and libraries where possible and explicitly link to the <code>DXSDK_DIR</code> for the headers where you need older versions to support older versions of Windows. (see "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>").
 
-> **NOTICE:** The *DirectX SDK*, the *DirectX End-User Runtime*, and the files for the *DirectX End-User Web Installer* were all SHA-1 signed, and therefore have been removed from Microsoft Downloads per [this policy](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373). Therefore, it's best to avoid using XInput 1.1, 1.2, or 1.3 entirely.
+> **NOTICE:** The legacy XInput 1.1, 1.2, and 1.3 DLLs are SHA-1 signed, and there are known security issues. Therefore, it's best to avoid using XInput 1.1, 1.2, or 1.3 entirely.
 
 In a future <a href="https://walbourn.github.io/xinput-and-xaudio2/">post</a>, I address the details of using XInput 1.4's audio features, and how to implement similar behavior down-level using XInput 1.3. XInput 9.1.0 doesn't support audio features.
 
