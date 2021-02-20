@@ -35,4 +35,20 @@ MsiExec.exe /passive /X{1D8E6291-B0D5-35EC-8441-6616F567A0F7}
 <strong>Setup writers:</strong> If you are creating a deployment for your application and you are using VS 2010, it is recommended you use the <a href="https://walbourn.github.io/visual-studio-2010-service-pack-1/">Service Pack 1</a> version and not the RTM version to avoid this issue. You should also consider picking up the updated version of the <a href="https://walbourn.github.io/dxsetup-update/">DirectX End-User Runtime Package</a> if you are deploying DirectX SDK components with your application, and of course fully understand the issues detailed in this earlier blog <a href="https://walbourn.github.io/not-so-direct-setup/">post</a>.
 
 
-<strong>FCIV:</strong> This of course assumes you actually have an uncorrupted copy of the DirectX SDK setup package. The best way to validate this it to run <code><a href="http://support.microsoft.com/kb/841290">fciv</a> -sha1 DXSDK_Jun10.exe</code> and verify you get <code>8fe98c00fde0f524760bb9021f438bd7d9304a69 dxsdk_jun10.exe</code>
+<strong>SHA-512:</strong> This of course assumes you actually have an uncorrupted copy of the DirectX SDK setup package. The best way to validate this it to run:
+
+```
+certutil -hashfile DXSDK_Jun10.exe SHA512
+```
+
+The valid SHA-512 hash for the original SHA-1 signed exe is:
+
+```
+4869ac947a35cd0d6949fbda17547256ea806fef36f48474dda63651f751583e9902641087250b6e8ccabaab85e51effccd9235dc6cdf64e21ec2b298227fe19
+```
+
+The valid SHA-512 has for the SHA-256 signed exe is:
+
+```
+24e1e9bda319b780124b865f4640822cfc44e4d18fbdcc8456d48fe54081652ce4ddb63d3bd8596351057cbae50fc824b8297e99f0f7c97547153162562ba73f
+```

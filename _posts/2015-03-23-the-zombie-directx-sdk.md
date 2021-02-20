@@ -101,7 +101,7 @@ Lastly, this set of headers/libraries are only needed when targeting Windows XP 
 </tbody>
 </table>
 
-<strong>Note:</strong> <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> will work on Windows XP, and while it's not present in the Windows 7.1A SDK you can use the [NuGet](https://www.nuget.org/packages/directxmath/) package or download it from [GitHub](https://github.com/microsoft/DirectXMath).</em>
+> <strong>Note:</strong> <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> will work on Windows XP, and while it's not present in the Windows 7.1A SDK you can use the [NuGet](https://www.nuget.org/packages/directxmath/) package or download it from [GitHub](https://github.com/microsoft/DirectXMath).
 
 <h1>Project Configuration</h1>
 
