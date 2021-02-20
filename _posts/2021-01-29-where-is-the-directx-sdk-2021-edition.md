@@ -9,7 +9,9 @@ categories: [directx, dxsdk]
 
 Microsoft announced last year that it was retiring all SHA-1 signed content from Microsoft Downloads in [this blog post](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373) since the SHA-1 algorithm is no longer considered secure. The original timeline was stretched out a bit due to COVID-19, but as of January 2021 this content is no longer hosted by Microsoft servers.
 
-In particular, this means the legacy *DirectX SDK*, the *DirectX End-User Runtime*, and the *DirectX End-User Runtime Web Installer* are **no longer available for download from Microsoft**.
+This impacted the legacy [*DirectX SDK*](http://go.microsoft.com/fwlink/?LinkId=226640), the [*DirectX End-User Runtime*](http://go.microsoft.com/fwlink/?LinkID=194352), and the [*DirectX End-User Runtime Web Installer*](http://go.microsoft.com/fwlink/p/?LinkId=159853). In January 2021 they were removed from the Microsoft Download Center. As of February 20, 2021, these three downloads have been republished using SHA-256 signing for the 'outer' containers--there's been no change to the contents or binaries.
+
+**The payload DLLs are still using SHA-1, and there are known security issues, so it is highly recommended you move to the replacements mentioned in this post.**
 <!--more-->
 
 # Impact for existing games
@@ -66,7 +68,7 @@ The Windows SDK includes ``xinput.h`` / ``xinput.lib`` / ``Xinput9_1_0.lib``. Yo
 
 For samples, see [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/XInput).
 
-> Do not use XInput 1.1, 1.2, or 1.3. These rely on the legacy redistribution.
+> Do not use XInput 1.1, 1.2, or 1.3. These rely on the legacy redistribution, and there are known security issues with using these versions of the DLLs.
 
 ## XNAMath
 
@@ -100,16 +102,22 @@ See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3d11/o
 
 All of the advice above assumes you are targeting Windows 7 or up. For Windows XP / Windows Server 2003, there's no choice at all but to use the legacy DirectX SDK. In order to target Windows XP, you must use the Windows 7.1A SDK instead of the modern Windows SDK which is before the DirectX content was fully moved over. The Windows 8.x SDK and Windows 10 SDK do not support Windows XP development.
 
-In this case, the only option is to obtain the legacy DirectX SDK from some Internet mirror. For example, there's a copy on [archive.org](https://archive.org/details/dxsdk_2010). To ensure you are using the genuine bits, I highly recommend you verify the hash *before* running it.
+In this case, the only option is to obtain the legacy DirectX SDK from [Microsoft Downloads](http://go.microsoft.com/fwlink/?LinkId=226640) or some Internet mirror (for example, there's a copy on [archive.org](https://archive.org/details/dxsdk_2010)). To ensure you are using the genuine bits, I highly recommend you verify the hash *before* running it.
 
 ```
 certutil -hashfile DXSDK_Jun10.exe SHA512
 ```
 
-The valid SHA-512 hash is:
+The valid SHA-512 hash for the original SHA-1 signed exe is:
 
 ```
 4869ac947a35cd0d6949fbda17547256ea806fef36f48474dda63651f751583e9902641087250b6e8ccabaab85e51effccd9235dc6cdf64e21ec2b298227fe19
+```
+
+The valid SHA-512 has for the SHA-256 signed exe is:
+
+```
+24e1e9bda319b780124b865f4640822cfc44e4d18fbdcc8456d48fe54081652ce4ddb63d3bd8596351057cbae50fc824b8297e99f0f7c97547153162562ba73f
 ```
 
 For more information on using the Windows 7.1A SDK, see [this blog post](https://walbourn.github.io/visual-studio-2012-update-1/).
