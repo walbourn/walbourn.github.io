@@ -50,6 +50,8 @@ Numerous replacements for legacy D3DX11 are detailed on this blog, most of which
 
 For users of D3DX10, the strong recommendation is to port to Direct3D 11 and use the D3DX11 replacements above. There is no technical reason to use Direct3D 10.x. See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3d11/d3d11-programming-guide-migrating) for a detailed porting guide.
 
+> There is an option for obtaining the deprecated D3DX9, D3DX10, and/or D3DX11 libraries without using the legacy DirectX SDK or redist via [NuGet](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX). The open source replacements are still preferable. See [this blog post](https://walbourn.github.io/legacy-d3dx-on-nuget/) for more details.
+
 > D3DX12 (i.e. D3DX for DirectX 12) is of course still a thing. It never shipped in the legacy DirectX SDK, nor does it have any dependency on the legacy DirectSetup redist. See [this blog post](https://walbourn.github.io/the-many-faces-of-d3dx12/).
 
 ## XAudio2

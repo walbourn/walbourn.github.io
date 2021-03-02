@@ -13,6 +13,8 @@ There is, however, one case that I've not addressed to date: <strong>A number of
 
 <em>If you do not already have the legacy DirectX SDK headers/libraries submitted into your source control, I do not recommend doing so. This post is for people who already have and can't simply delete it all without breaking supported scenarios. This is explicitly not an endorsement of the practice and I make no claims about whether or not this use is actually allowed by the terms of the DirectX SDK EULA.</em>
 
+> There is an option for obtaining the deprecated D3DX9, D3DX10, and/or D3DX11 libraries without using the legacy DirectX SDK or redist via [NuGet](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX). See [this blog post](https://walbourn.github.io/legacy-d3dx-on-nuget/) for more details.
+
 <h1>Delete</h1>
 
 The first step in this process is to delete the following legacy DirectX SDK headers & libraries completely. These are already provided by the Windows 8.x SDK when using the standard "v110", "v120", or "v140" Platform Toolsets, and are also provided by the Windows 7.1A SDK that is used when building with the "v110_xp", "v120_xp", or "v140_xp" Platform Toolsets that allow you to target Windows XP systems (see <a href="https://walbourn.github.io/visual-studio-2012-update-1/">this post</a> for more details). <em>You do not need a private copy of these and the legacy DirectX SDK versions are out of date.</em>
