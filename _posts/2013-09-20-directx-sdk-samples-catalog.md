@@ -173,6 +173,24 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p><em>Keyboard and Mouse samples are not included as use of DirectInput for these scenarios is not recommended. See <a href="https://walbourn.github.io/directx-tool-kit-keyboard-and-mouse-support/">this blog post</a>.</em></p>
 </td>
 </tr>
+<tr>
+<td><strong>Direct3D 9</strong></td>
+<td>
+<p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+</td>
+</tr>
+<tr>
+<td><strong>Direct3D 10</strong></td>
+<td>
+<p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+</td>
+</tr>
+<tr>
+<td><strong>DirectSound</strong></td>
+<td>
+<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+</td>
+</tr>
 </tbody>
 </table>
 <h1>Windows 7.1 SDK Samples</h1>
@@ -207,7 +225,7 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 <tr>
 <td>DepthOfField10.1<br /> HDAO10.1<br /> TransparencyAA10.1<br /> <br /> ContactHardeningShadows11<br /> DecalTessellation11<br /> DetailTessellation11<br /> PNTriangles11</td>
 <td>
-<p>AMD Radeon SDK (see the <a href="http://developer.amd.com/tools-and-sdks/graphics-development/amd-radeon-sdk/archive/">archive</a> page)</p>
+<p>This samples make use of D3DX10/D3DX11 and therefore require the use of the Microsoft.DXSDK.D3DX NuGet package. These are included in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 </tbody>
@@ -215,13 +233,6 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 <h1>Retired Samples</h1>
 <table border="1">
 <tbody>
-<tr>
-<td>Direct3D9</td>
-<td>
-<p>The Direct3D 9 samples require D3DX9, so these remain available only in the DirectX SDK.</p>
-</td>
-</tr>
-<tr>
 <td>DirectDraw</td>
 <td>
 <p>The DirectX SDK 8.1 was the last to contain the DirectDraw samples.</p>
@@ -231,12 +242,6 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 <td>DirectMusic<br /> DirectPlay</td>
 <td>
 <p>DirectX 9.0b (Summer 2003) was the last release of the DirectMusic or DirectPlay samples.</p>
-</td>
-</tr>
-<tr>
-<td>DirectSound</td>
-<td>
-<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped.</p>
 </td>
 </tr>
 <tr>
