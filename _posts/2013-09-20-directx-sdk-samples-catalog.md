@@ -159,7 +159,7 @@ SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2CustomAPO</td>
 <td>
 <p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Samples</a> (Win32)</p>
-<p>XAudio 2.8 is only supported on Windows 8.x or later. XAudio 2.7 is only available in the DirectX SDK. <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> works on Windows 7 SP1 or later.</p>
+<p>XAudio 2.8 is supported on Windows 8.x or Windows 10. Windows 10 includes XAudio 2.9 and is available through <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> on Windows 7 SP1 or Windows 8.x as well.</p>
 <p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> for more information.</p>
 <p><em><a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK for Audio</a> is also a sample of XAudio2 usage, and is demonstrated in the <a href="https://github.com/walbourn/directxtk-samples">DirectX Tool Kit Simple Samples</a>.</em></p>
 </td>
@@ -175,27 +175,30 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 </td>
 </tr>
 <tr>
-<td><strong>Direct3D 9</strong>
+<td>
+<p><strong>Direct3D 9</strong></p>
 <p>AntiAlias<br />-<br />Text3D</p>
 </td>
 <td>
-<p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+<p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/Direct3D">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 <tr>
-<td><strong>Direct3D 10</strong>
+<td>
+<p><strong>Direct3D 10</strong></p>
 <p>10BitScanout10<br />-<br />TransparencyAA10.1</p>
 </td>
 <td>
-<p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+<p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/Direct3D10">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 <tr>
-<td><strong>DirectSound</strong>
+<td>
+<p><strong>DirectSound</strong></p>
 <p>AdjustSound<br />-<br />VoiceManagement</p>
 </td>
 <td>
-<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/DirectSound">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 </tbody>
