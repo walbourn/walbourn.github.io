@@ -149,7 +149,7 @@ SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <td>
 <p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XInput">XInput Samples</a> (Win32)</p>
 <p>XInputGame can be found <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/XInput">here.</a></p>
-<p>XInput 1.4 is only supported on Windows 8.x. XInput 1.3 is only available in the DirectX SDK. XInput 9.1.0 is in all versions of Windows since Windows Vista.</p>
+<p>XInput 1.4 is supported on Windows 8.x and Windows 10. XInput 9.1.0 is in all versions of Windows since Windows Vista.</p>
 <p>See <a href="https://walbourn.github.io/xinput-and-windows-8/">XINPUT and Windows 8</a> for more information.</p>
 </td>
 </tr>
@@ -224,7 +224,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 </tbody>
 </table>
 
-> The Windows 7.1A SDK is integrated with VS 2012 - VS 2017 as part of the ``v1xx_xp`` Platform Toolset, but does not include the samples. The easiest place to get these legacy samples now is on [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples).
+> The Windows 7.1A SDK is integrated with VS 2012 - VS 2019 as part of the ``v1xx_xp`` Platform Toolset, but does not include the samples. The easiest place to get these legacy samples now is on [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples).
 
 <h1>AMD Samples</h1>
 
@@ -267,7 +267,8 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 <td>XACT</td>
 <td>
 <p>The DirectX SDK (June 2010) contains the last release of XACT and related samples.</p>
-<p>Note that the <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit for Audio</a> includes a <code>XWBTool</code> command-line utility for creating/using XACT-style wave banks for both in-memory playback and streaming.</a>
+<p>Note that the <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit for Audio</a> includes a <code>XWBTool</code> command-line utility for creating/using XACT-style wave banks for both in-memory playback and streaming.
+</p>
 </td>
 </tr>
 </tbody>
