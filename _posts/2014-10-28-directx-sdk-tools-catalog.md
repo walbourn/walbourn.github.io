@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [dxsdk]
 ---
-In the same vein as my post on where you can find many of the <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a> from the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee663275/">legacy DirectX SDK</a>, where you can find all the various <a href="https://walbourn.github.io/living-without-d3dx/">replacements for D3DX</a>, and the status of various <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX components</a>; this post is a catalog of where you can find the latest version of various tools that shipped with the legacy DirectX SDK. Lacking that, it at least provides a status or alternative for the tool.
+In the same vein as my post on where you can find many of the <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a> from the <a href="https://docs.microsoft.com/en-us/windows/win32/directx-sdk--august-2009-">legacy DirectX SDK</a>, where you can find all the various <a href="https://walbourn.github.io/living-without-d3dx/">replacements for D3DX</a>, and the status of various <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX components</a>; this post is a catalog of where you can find the latest version of various tools that shipped with the legacy DirectX SDK. Lacking that, it at least provides a status or alternative for the tool.
 <!--more-->
 
 <table border="1">
@@ -78,10 +78,10 @@ Certification for Windows logo usage for Win32 desktop application is managed th
 <tr>
 <td>PIX for Windows</td>
 <td><p>Legacy PIX for Windows is not compatible with the DirectX 11.1 or later runtime on Windows 8.x or Windows 7 SP1 with <a href="http://support.microsoft.com/kb/2670838">KB2670838</a>. It's not compatible with Windows 10. See <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">this post</a> for details.</p>
-<p><a href="https://docs.microsoft.com/en-us/visualstudio/debugger/overview-of-visual-studio-graphics-diagnostics">Visual Studio Graphics Diagnostics</a> in VS 2012 Pro+, VS 2013 Express for Windows, VS 2013 Pro+, or VS 2013 Community.</p>
+<p><a href="https://docs.microsoft.com/en-us/visualstudio/debugger/overview-of-visual-studio-graphics-diagnostics">Visual Studio Graphics Diagnostics</a> in VS 2012 Pro+, VS 2013 Express for Windows, VS 2013 Pro+, or VS 2013 Community, or later.</p>
 <p></p>
 <p>Graphics vendor tools from Intel (<a href="http://www.intel.com/software/gpa">GPA</a>), AMD (<a href="http://developer.amd.com/tools-and-sdks/graphics-development/gpu-perfstudio/">GPU PerfStudio</a>), or NVidia (<a href="https://developer.nvidia.com/nvidia-nsight-visual-studio-edition">Nsight</a>).</p>
-<p><b>UPDATE:</b> For DirectX 12 development, see <a href="https://devblogs.microsoft.com/pix/">PIX on Windows</a>.</td>
+<p><b>UPDATE:</b> For DirectX 12 development, see <a href="https://devblogs.microsoft.com/pix/">PIX on Windows</a>.</p></td>
 </tr>
 <tr>
 <td>UVAtlas Tool</td>
