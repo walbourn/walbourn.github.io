@@ -11,7 +11,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 
 > <strong>Update: </strong>As of the Windows 10 SDK, official Windows samples are hosted on GitHub: <a href="https://github.com/Microsoft/Windows-universal-samples">Windows-universal-samples</a>, <a href="https://github.com/Microsoft/Windows-classic-samples">Windows-classic-samples</a>, <a href="https://github.com/Microsoft/Windows-driver-samples">Windows-driver-samples</a>. You can also use this <a href="https://docs.microsoft.com/en-us/samples/browse/">website</a> to search Microsoft official samples.
 
-> These republished legacy DirectX SDK samples are now found on <a href="https://github.com/walbourn/directx-sdk-samples">GitHub</a> as <i>MSDN Code Gallery</i> has been retired. DirectX 12 samples have their own [repo](https://github.com/Microsoft/DirectX-Graphics-Samples/), and also [this one](https://github.com/Microsoft/Xbox-ATG-Samples/) which hosts samples on DirectX and game development.
+> These republished legacy DirectX SDK samples are now found on GitHub <a href="https://github.com/walbourn/directx-sdk-samples">directx-sdk-samples</a> and <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> as <i>MSDN Code Gallery</i> has been retired. DirectX 12 samples have their own [repo](https://github.com/Microsoft/DirectX-Graphics-Samples/), and also [this one](https://github.com/Microsoft/Xbox-ATG-Samples/) which hosts samples on DirectX and game development.
 
 <table border="1">
 <tbody>
@@ -145,9 +145,10 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <tr>
 <td>
 <p><strong>XInput</strong></p>
-SimpleController<br /> RumbleController</td>
+SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <td>
 <p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XInput">XInput Samples</a> (Win32)</p>
+<p>XInputGame can be found <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/XInput">here.</a></p>
 <p>XInput 1.4 is only supported on Windows 8.x. XInput 1.3 is only available in the DirectX SDK. XInput 9.1.0 is in all versions of Windows since Windows Vista.</p>
 <p>See <a href="https://walbourn.github.io/xinput-and-windows-8/">XINPUT and Windows 8</a> for more information.</p>
 </td>
@@ -158,7 +159,7 @@ SimpleController<br /> RumbleController</td>
 XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2CustomAPO</td>
 <td>
 <p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Samples</a> (Win32)</p>
-<p>XAudio 2.8 is only supported on Windows 8.x. XAudio 2.7 is only available in the DirectX SDK. <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> works on Windows 7 SP1 or later.</p>
+<p>XAudio 2.8 is only supported on Windows 8.x or later. XAudio 2.7 is only available in the DirectX SDK. <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> works on Windows 7 SP1 or later.</p>
 <p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> for more information.</p>
 <p><em><a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK for Audio</a> is also a sample of XAudio2 usage, and is demonstrated in the <a href="https://github.com/walbourn/directxtk-samples">DirectX Tool Kit Simple Samples</a>.</em></p>
 </td>
@@ -174,19 +175,25 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 </td>
 </tr>
 <tr>
-<td><strong>Direct3D 9</strong></td>
+<td><strong>Direct3D 9</strong>
+<p>AntiAlias<br />-<br />Text3D</p>
+</td>
 <td>
 <p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 <tr>
-<td><strong>Direct3D 10</strong></td>
+<td><strong>Direct3D 10</strong>
+<p>10BitScanout10<br />-<br />TransparencyAA10.1</p>
+</td>
 <td>
 <p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
 </td>
 </tr>
 <tr>
-<td><strong>DirectSound</strong></td>
+<td><strong>DirectSound</strong>
+<p>AdjustSound<br />-<br />VoiceManagement</p>
+</td>
 <td>
 <p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
 </td>
@@ -230,9 +237,12 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 </tr>
 </tbody>
 </table>
+
 <h1>Retired Samples</h1>
+
 <table border="1">
 <tbody>
+<tr>
 <td>DirectDraw</td>
 <td>
 <p>The DirectX SDK 8.1 was the last to contain the DirectDraw samples.</p>
