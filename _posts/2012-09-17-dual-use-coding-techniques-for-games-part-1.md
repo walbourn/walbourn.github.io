@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [win10, win8, winphone, xbox one]
 ---
-<em>Writing shared code for Windows Store, Xbox One, Universal Windows Platform (UWP) apps, and Win32 desktop apps</em>
+<em>Writing shared code for Windows Store, Xbox, Universal Windows Platform (UWP) apps, and Win32 desktop apps</em>
 
 <h1>Introduction</h1>
 
@@ -28,14 +28,12 @@ The purpose of this series of posts is to talk about the overlap, and how develo
 <td><code>WINAPI_FAMILY_DESKTOP_APP</code></td>
 </tr>
 <tr>
-<td>Windows Store app
-
-Universal Windows Platform (UWP) apps for Windows 10</td>
-<td><code>WINAPI_FAMILY_APP</code> (Windows 8.0 SDK)
+<td>Windows Store app<br />Universal Windows Platform (UWP) apps for Windows 10</td>
+<td><code>WINAPI_FAMILY_APP</code> (Windows 8.0 SDK)<br />
 or <code>WINAPI_FAMILY_PC_APP</code> (Windows 8.1 SDK)</td>
 </tr>
 <tr>
-<td>Windows phone 8<br />(<i>deprecated<i>)</td>
+<td>Windows phone 8<br />(<i>deprecated</i>)</td>
 <td><code>WINAPI_FAMILY_PHONE_APP</code></td>
 </tr>
 <tr>
@@ -47,7 +45,7 @@ or <code>WINAPI_FAMILY_PC_APP</code> (Windows 8.1 SDK)</td>
 <td><code>WINAPI_FAMILY_TV_TITLE</code></td>
 </tr>
 <tr>
-<td>Xbox One ADK<br />(<i>deprecated<i>)</td>
+<td>Xbox One ADK<br />(<i>deprecated</i>)</td>
 <td><code>WINAPI_FAMILY_TV_APP</code></td>
 </tr>
 </tbody>
