@@ -280,8 +280,8 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <tr>
 <td>Direct3D 11.0, DXGI 1.1, Direct2D, and DirectWrite</td>
 <td><p>These technologies are available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8.x, Windows 7, and Windows Vista SP2+<a href="http://support.microsoft.com/kb/971644">KB971644</a>.</p>
-<p><em>Direct3D 9 and Direct3D 10.x are not supported for Windows Store apps, Windows phone 8.x, Universal Windows Platform (UWP) apps for Windows 10, or Xbox One</em>.</p>
-<p><em>Note:</em> Windows phone 8.0 and Xbox One XDK do not support Direct2D or DirectWrite.</p></td>
+<p><em>Direct3D 9 and Direct3D 10.x are not supported for Windows Store apps, Windows phone 8.x, Universal Windows Platform (UWP) apps for Windows 10, or Xbox</em>.</p>
+<p><em>Note:</em> Windows phone 8.0, Xbox One XDK, and Microsoft GDK do not support Direct2D or DirectWrite.</p></td>
 </tr>
 <tr>
 <td>Direct3D 11.1, DXGI 1.2, improved Direct2D and DirectWrite</td>
@@ -292,24 +292,27 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td>Direct3D 11.2, DXGI 1.3</td>
 <td><p>These technologies are available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 8.1 and Windows 10.</p>
 <p>Windows Store apps for Windows 8.1 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p>
-<p><em>Note: </em>Windows phone 8.0 and Xbox One XDK do not support Direct3D 11.2 / DXGI 1.3</p></td>
+<p><em>Note: </em>Windows phone 8.0, Xbox One XDK, and Microsoft GDK do not support Direct3D 11.2 / DXGI 1.3</p></td>
 </tr>
 <tr>
 <td>Diret3D 12, Direct3D 11.3/11.4, DXGI 1.4/1.5</td>
 <td><p>These technologies are available for Universal Windows Platform (UWP) apps for Windows 10 and Win32 desktop apps for Windows 10.</p>
-<p>Universal Windows Platform (UWP) apps for Windows 10 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p></td>
+<p>Universal Windows Platform (UWP) apps for Windows 10 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p>
+<p><em>Note:</em> Microsoft GDK for Xbox One and Xbox Series X/S only supports Direct3D 12.</p></td>
 </tr>
 <tr>
 <td>D3DX</td>
-<td><p>All versions of the D3DX utility library (D3DX9, D3DX10, and D3DX11) are deprecated, and are not supported for Windows Store apps, Windows phone 8, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</p>
+<td><p>All versions of the D3DX utility library (D3DX9, D3DX10, and D3DX11) are deprecated, and are not supported for Windows Store apps, Windows phone 8, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</p>
 <p><a href="https://github.com/Microsoft/DirectXTK">DirectXTK</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> support Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop applications on Windows 10, Windows 8.x, Windows 7, and Windows Vista. These provide <a href="https://walbourn.github.io/living-without-d3dx/">replacements</a> for much of the functionality in D3DX for Direct3D 11. See "<a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">Direct3D 11 Textures and Block Compression</a>" for more information.</p>
-<p>The D3DCSX Compute Shader helper utility is available for Win32 desktop applications, but not for Windows Store apps or Windows phone 8.</p></td>
+<p>The D3DCSX Compute Shader helper utility is available for Win32 desktop applications, but not for Windows Store apps or Windows phone 8.</p>
+<p>The D3DX12 C++ helper library is header-only, supported on all DirectX 12 platforms, and is available on <a href="https://github.com/microsoft/DirectX-Headers/tree/main/include/directx">GitHub</a>.</td>
 </tr>
 <tr>
 <td>HLSL Compiler / D3DCompile</td>
 <td><p>The HLSL compiler (<code>FXC.EXE</code>) and the D3DCompile (<code>D3DCompiler_*.DLL</code>) APIs are supported for both Windows Store apps and Win32 desktop apps.</p>
 <p>Note that for Windows Store apps on Windows 8.0 and Windows phone 8.0, the HLSL compiler / D3DCompile APIs are only supported for development and not for deployment.</p>
-<p>Windows Store apps for Windows 8.1, Windows Phone 8.1, Xbox One, and Universal Windows Platform (UWP) apps for Windows 10 have complete support for D3DCompile APIs. See "<a href="https://walbourn.github.io/hlsl-fxc-and-d3dcompile/">HLSL, FXC, and D3DCompile</a>" for more information.</p></td>
+<p>Windows Store apps for Windows 8.1, Windows Phone 8.1, Xbox One, and Universal Windows Platform (UWP) apps for Windows 10 have complete support for D3DCompile APIs. See "<a href="https://walbourn.github.io/hlsl-fxc-and-d3dcompile/">HLSL, FXC, and D3DCompile</a>" for more information.</p>
+<p>DirectX 12 on Windows 10 and Xbox via the Microsoft GDK use the DXIL Shader Model 6 Compiler (DXCompile API / <code>DXC.EXE</code>). See <a href="https://github.com/Microsoft/DirectXShaderCompiler">GitHub</a> for more information.</p></td>
 </tr>
 <tr>
 <td>Effects 11 (FX11)</td>
@@ -319,31 +322,31 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <tr>
 <td>DirectXMath</td>
 <td><p>The DirectXMath library is supported for Windows Store, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop apps. This library provides SSE/SSE2 optimizations for Windows x86 and x64 native, as well as ARM-NEON optimizations for Windows RT and Windows phone 8.x. See "<a href="https://walbourn.github.io/introducing-directxmath/">Introducing DirectXMath</a>" for more information.</p>
-<p><em>Note:</em> DirectXMath on Xbox One also makes use of SSE3, SSSE3, SSE 4.1, AVX, and F16C as described in this blog <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">series</a>.</p></td>
+<p><em>Note:</em> DirectXMath on Xbox also makes use of SSE3, SSSE3, SSE 4.1, AVX, AVX2, and F16C as described in this blog <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">series</a>.</p></td>
 </tr>
 <tr>
 <td>XAudio2</td>
 <td><p>Windows 8.x and Windows 10 includes XAudio 2.8 which is supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, and Xbox One. See "<a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a>" for more details.</p>
 <p>Windows Core Audio (WASAPI) is also available for use by low-level audio libraries.</p>
-<p><em>DirectSound is not supported for Windows Store apps, Windows phone 8.x, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</em></p></td>
+<p><em>DirectSound is not supported for Windows Store apps, Windows phone 8.x, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</em></p></td>
 </tr>
 <tr>
 <td>XINPUT</td>
 <td><p>Windows 8.x and Windows 10 includes XInput 1.4 which is supported for Windows store apps and Win32 desktop apps. Windows Vista, Windows 7, Windows 8.x, and Windows 10 also include XInput 9.1.0 which is supported for Win32 desktop applications. See "<a href="https://walbourn.github.io/xinput-and-windows-8/">XInput and Windows 8</a>" for more details.</p>
-<p><em>DirectInput is not supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, or Xbox One</em></p>
+<p><em>DirectInput is not supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, or Xbox.</em></p>
 <p><em>Note:</em> XINPUT is not supported by Windows phone 8.x or Xbox One.</p>
 <p>Xbox One and Universal Windows Platform (UWP) apps for Windows 10 make use of a WinRT <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">gamepad API</a> which has similar functionality.</p></td>
 </tr>
 <tr>
 <td>Windows Imaging Component (WIC)</td>
-<td><p>This technology is available for Windows Store apps,Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to set the `_WIN32_WINNT` definition properly to ensure use of the correct version of the WIC factory. See "<a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">Windows Imaging Component and Windows 8</a>" for more information.</p>
-<p><em>Note:</em> Windows phone 8.0 does not support WIC, but this is supported for Windows phone 8.1. Xbox One XDK does not support the JPEG XR / HD Photo codec and a few other aspects of 'standard' WIC.</p></td>
+<td><p>This technology is available for Windows Store apps,Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to set the <code>_WIN32_WINNT</code> definition properly to ensure use of the correct version of the WIC factory. See "<a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">Windows Imaging Component and Windows 8</a>" for more information.</p>
+<p><em>Note:</em> Windows phone 8.0 does not support WIC, but this is supported for Windows phone 8.1. Xbox One XDK / Microsoft GDK does not support the JPEG XR / HD Photo codec and a few other aspects of 'standard' WIC.</p></td>
 </tr>
 <tr>
 <td>Windows Media Foundation (MF)</td>
 <td><p>The Windows Media Foundation is available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop applications on Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to read <a href="https://walbourn.github.io/quot-who-moved-my-windows-media-cheese-quot/">this</a> post for some additional guidance.</p>
-<p><em>DirectShow is not supported for Windows Store apps, Windows phone 8.x, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</em></p>
-<p><em>Note:</em> Windows phone 8.0 has partial support for the Media Foundation API, specifically <a href="https://docs.microsoft.com/en-us/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengine">IMFMediaEngine</a>. Xbox One XDK also has partial support for the Media Foundation API.</p></td>
+<p><em>DirectShow is not supported for Windows Store apps, Windows phone 8.x, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</em></p>
+<p><em>Note:</em> Windows phone 8.0 has partial support for the Media Foundation API, specifically <a href="https://docs.microsoft.com/en-us/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengine">IMFMediaEngine</a>. Xbox One XDK and Microsoft GDK also have partial support for the Media Foundation API.</p></td>
 </tr>
 </tbody>
 </table>
