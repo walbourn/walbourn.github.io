@@ -17,7 +17,7 @@ In general, applications should be written to target either the Windows Store or
 
 The purpose of this series of posts is to talk about the overlap, and how developers creating shared libraries and game middleware can write C++ code that will successfully compile for both platforms.
 
-<strong>Windows phone and Xbox One:</strong> This article also applies to Windows phone 8.x and Xbox One development using the XDK or ADK (see <a href="http://www.xbox.com/id">ID@Xbox</a>)
+<strong>Windows phone and Xbox:</strong> This article also applies to Windows phone 8.x and Xbox development using the XDK or GDK (see <a href="http://www.xbox.com/id">ID@Xbox</a>)
 
 <strong>Windows 10:</strong> The guidance here applies to Universal Windows Platform (UWP) apps for Windows 10 as well.
 
@@ -35,15 +35,19 @@ Universal Windows Platform (UWP) apps for Windows 10</td>
 or <code>WINAPI_FAMILY_PC_APP</code> (Windows 8.1 SDK)</td>
 </tr>
 <tr>
-<td>Windows phone 8</td>
+<td>Windows phone 8<br />(<i>deprecated<i>)</td>
 <td><code>WINAPI_FAMILY_PHONE_APP</code></td>
 </tr>
 <tr>
-<td>Xbox One XDK</td>
+<td>Microsoft GDK<br />(Xbox One, Xbox Series X/S)</td>
+<td><code>WINAPI_FAMILY_GAMES</code></td>
+</tr>
+<tr>
+<td>Xbox One XDK<br />(Xbox One)</td>
 <td><code>WINAPI_FAMILY_TV_TITLE</code></td>
 </tr>
 <tr>
-<td>Xbox One ADK</td>
+<td>Xbox One ADK<br />(<i>deprecated<i>)</td>
 <td><code>WINAPI_FAMILY_TV_APP</code></td>
 </tr>
 </tbody>
@@ -237,7 +241,7 @@ Universal character names in literals</td>
 
 > VS 2017 supports all C++11 features as well as C++14 and C++17. VS 2019 supports C++11, C++14, C++17, and portions of the C++20 draft.
 
-Use of the older standalone DirectX SDK is not recommended or supported for Windows Store apps. It includes many legacy technologies that are not supported for this platform, and thus their use complicates the goal of 'dual-use' coding. See the blog posts "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>", "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>", and "<a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>" for more information.
+Use of the legacy standalone DirectX SDK is not recommended or supported for Windows Store apps or on Xbox. It includes many legacy technologies that are not supported for this platform, and thus their use complicates the goal of 'dual-use' coding. See the blog posts "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK (2021 Edition)?</a>" and "<a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>" for more information.
 
 <h1>C++11 Standard Library</h1>
 
