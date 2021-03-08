@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, dxsdk, visualc]
 ---
-<strong>Note that the DirectX SDK is deprecated. See "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/">Where is the DirectX SDK (2021 Edition)?</a>" for details.</strong>
+<strong>Note that the DirectX SDK is deprecated. See "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK (2021 Edition)?</a>" for details.</strong>
 
 Over the past few month we've been getting reports of problems with the <strong>DirectX SDK (June 2010)</strong> setup failing for customers displaying an installation error when it gets to point of installing the "redistributable packages". This particular problem has been traced to an issue with the <em>Visual C++ 2010 Redistributable Package</em> version 10.0.30319 (RTM). When the 10.0.40219 (Service Pack 1) version is already present on the system, the 10.0.30319 (RTM) version returns a failure instead of a success as was expected.
 <!--more-->

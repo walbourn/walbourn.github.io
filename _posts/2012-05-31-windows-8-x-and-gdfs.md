@@ -37,7 +37,7 @@ Includes support for four new ratings systems:
 
 <h1>Game Definition File (GDF) Tools</h1>
 
-The DirectX SDK has historically been the shipping vehicle for the various Game Explorer tools. With the transition to the Windows SDK (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>), these tools now have new homes:
+The DirectX SDK has historically been the shipping vehicle for the various Game Explorer tools. With the transition to the Windows SDK (see <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>), these tools now have new homes:
 
 <h2>Game Definition File Editor</h2>
 

@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, dxsdk]
 ---
-<strong>See "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
+<strong>See "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
 
 At <a href="http://www.buildwindows.com/">BUILD 2013</a> last week, Microsoft released the <a href="http://go.microsoft.com/fwlink/p/?LinkID=302144">Windows 8.1 Preview</a>, <a href="http://go.microsoft.com/fwlink/?LinkId=306566">Visual Studio 2013 Preview</a>, and the <a href="https://developer.microsoft.com/en-us/windows/downloads/sdk-archive">Windows SDK for Windows 8.1 Preview</a> (included in the VS 2013 Preview). <em>Note that RTM was released on </em><em>October 17th, 2013.</em>
 <!--more-->
@@ -53,6 +53,6 @@ Visual Studio 2013 can be installed on Windows 8.1, Windows 8, and Windows 7 Ser
 
 <strong>Samples:</strong> A number of samples from the DirectX SDK (June 2010) release have been updated and posted to MSDN Code Gallery. See <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">DirectX SDK Samples Catalog</a>.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?,</a> <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/visual-studio-2013-release-candidate/">Visual Studio 2013 Release Candidate</a>, <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Visual Studio 2013 and Windows 8.1 SDK RTM are now available</a>, <a href="https://walbourn.github.io/the-zombie-directx-sdk/">The Zombie DirectX SDK</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/visual-studio-2013-release-candidate/">Visual Studio 2013 Release Candidate</a>, <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Visual Studio 2013 and Windows 8.1 SDK RTM are now available</a>, <a href="https://walbourn.github.io/the-zombie-directx-sdk/">The Zombie DirectX SDK</a>
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where is DXERR.LIB?</a>, <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">GDF Tools</a>, <a href="https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/">XDSP.H</a>, <a href="https://walbourn.github.io/spherical-harmonics-math/">SH Math</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/BC6HBC7EncoderCS">BC6H/BC7Encoder</a>

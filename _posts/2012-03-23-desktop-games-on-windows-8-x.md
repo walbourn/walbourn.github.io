@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [gfwtr, win8]
 ---
-Developers working on games for Windows are already familiar with the <em>DirectX SDK</em>. Important changes to the DirectX family of technologies are included in the new Windows SDK, which is the new home for the DirectX SDK. Be sure to read "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>" for the details.
+Developers working on games for Windows are already familiar with the <em>DirectX SDK</em>. Important changes to the DirectX family of technologies are included in the new Windows SDK, which is the new home for the DirectX SDK. Be sure to read "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>" for the details.
 <!--more-->
 
 <em><strong>Windows 8.1: </strong>Note that these guidelines also apply for Win32 Desktop games running on Windows 8.1. The <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/windows-8-and-windows-server-8-compatibility-cookbook-portal">Windows and Windows Server compatibility cookbook</a> has been updated with notes about Windows 8.1. Pay particular attention to the <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/operating-system-version-changes-in-windows-8-1">OS version detection</a> behavior change, as well as the new <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/high-dpi-for-desktop-apps-in-windows-8-1">200% high-DPI</a> scaling mode. Also note that in Windows 8.1 DirectPlay is now a distinct Windows feature that is <a href="https://docs.microsoft.com/en-us/windows/desktop/w8cookbook/windows-components-installed-on-demand">off by default</a>.</em>

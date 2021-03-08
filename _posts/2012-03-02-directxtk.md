@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [codeplex, direct3d, winphone]
 ---
-The <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> library does an excellent job of providing all the 'texture content processing' functionality from the venerable D3DX library (see "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>"), and <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> (or the older <a href="https://walbourn.github.io/xna-math-version-2-04/">XNAMath</a>) takes over for D3DXMath. <a href="https://www.shawnhargreaves.com/">Shawn Hargreaves</a> and I have been putting together another utility library, dubbed "DirectX Tool Kit" or "DirectXTK", to address some additional runtime needs for Direct3D 11 applications.
+The <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> library does an excellent job of providing all the 'texture content processing' functionality from the venerable D3DX library (see "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>"), and <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> (or the older <a href="https://walbourn.github.io/xna-math-version-2-04/">XNAMath</a>) takes over for D3DXMath. <a href="https://www.shawnhargreaves.com/">Shawn Hargreaves</a> and I have been putting together another utility library, dubbed "DirectX Tool Kit" or "DirectXTK", to address some additional runtime needs for Direct3D 11 applications.
 <!--more-->
 
 DirectXTK includes the following components:
@@ -89,5 +89,7 @@ Where XXX is "DDS" for working with ``.DDS`` files, or "WIC" for working with WI
 <strong>Windows phone 8:</strong> DirectXTK supports Windows phone 8 apps using the <a href="http://go.microsoft.com/fwlink/?LinkID=261873">Windows phone SDK 8.0</a>. See ShawnHar's <a href="http://www.shawnhargreaves.com/blog/directx-tool-kit-now-supports-windows-phone-8.html">post</a>. It also supports <a href="http://www.shawnhargreaves.com/blog/windows-phone-8-1.html">Windows phone 8.1</a> using VS 2013 Update 2 or later.
 
 <strong>DirectX 12</strong>: If you are already an expert in using DirectX 11 and would like to use DirectX 12 instead, see <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12</a>
+
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [directxtk](https://github.com/microsoft/vcpkg/tree/master/ports/directxtk) port available.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a>

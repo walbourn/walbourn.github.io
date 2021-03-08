@@ -124,4 +124,6 @@ For more information on using the Windows 7.1A SDK, see [this blog post](https:/
 
 Also, be sure to read about this [known issue](https://walbourn.github.io/known-issue-directx-sdk-june-2010-setup-and-the-s1023-error/) with the legacy DirectX SDK setup.
 
-<b>See Also:</b> [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/)
+<strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>, <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>, <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>
+
+<b>See Also:</b> [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/),

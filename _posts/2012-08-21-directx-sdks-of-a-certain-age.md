@@ -9,7 +9,7 @@ categories: [dxsdk]
 Recently many older releases of the DirectX SDK and REDIST packages expired and were removed from the Microsoft Downloads Center site. The DirectX SDK and REDIST packages for all 2008, 2009, and 2010 releases are currently available, but all 2007 and prior releases are no longer hosted by Microsoft.
 <!--more-->
 
-Here is a quick summary of DirectX technologies and recommended solutions. Be sure to read <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a> and <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a> as well.
+Here is a quick summary of DirectX technologies and recommended solutions. Be sure to read <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>.
 
 <table border="1">
 <tbody>

@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directx, dxsdk]
 ---
-<strong>See "<a href="https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
+<strong>See "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK (2021 Edition)?</a>"</strong>
 
 As noted on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a>, the DirectX SDK is deprecated. The June 2010 release is the last release, and "DirectX" is now part of the Windows SDK. There are really only three scenarios where you should continue to use the old DirectX SDK:
 <!--more-->
@@ -51,6 +51,6 @@ There is something called the <em>DirectX 12 SDK</em> which was used as a beta v
 
 <strong>D3DX:</strong> Note that there is also a header file called <code>d3dx12.h</code> which is an all inline header with some utility code shipped in the GitHub samples and [DirectX 12 Visual Studio templates](https://github.com/walbourn/directx-sdk-samples). D3DX12 is not in any SDK, there's no DLL, and there's no REDIST for it. You can obtain the latest version from [GitHub](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12). <a href="https://github.com/Microsoft/DirectXTK12">DirectX Tool Kit</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> also support DirectX 12.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>, <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>
 
 <strong>See also:</strong> <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where is DXERR.LIB?</a>, <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">GDF Tools</a>, <a href="https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/">XDSP.H</a>, <a href="https://walbourn.github.io/spherical-harmonics-math/">SH Math</a>

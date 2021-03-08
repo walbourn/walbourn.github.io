@@ -50,7 +50,7 @@ The latest release is available on <a href="https://directxtex.codeplex.com/">Co
 
 <h1>Effects11</h1>
 
-In other news, the <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff476136.aspx">Effects 11 library</a> now has a home on <a href="https://fx11.codeplex.com/">CodePlex</a> and on <a href="https://github.com/Microsoft/FX11">GitHub</a>. Be sure to read my original <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects for Direct3D 11 Update</a> post for details on this library.
+In other news, the <a href="https://docs.microsoft.com/en-us/windows/win32/direct3d11/d3d11-graphics-programming-guide-effects">Effects 11 library</a> now has a home on <strike><a href="https://fx11.codeplex.com/">CodePlex</a></strike><a href="https://github.com/Microsoft/FX11">GitHub</a>. Be sure to read my original <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects for Direct3D 11 Update</a> post for details on this library.
 
 <h2>July 16, 2013 (11.07)</h2>
 

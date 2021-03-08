@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [codeplex, direct3d, dxsdk]
 ---
-The <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects">Effects 11</a> library (FX11) was made available as shared-source in the DirectX SDK. Previous versions of the Effects library were part of D3DX (FX9) or built into the OS (FX10). With the DirectX SDK now legacy (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>, <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>, and <a href="https://walbourn.github.io/where-is-the-directx-sdk-2015-edition/">Where is the DirectX SDK (2015 Edition)?</a>), there are still a number of people looking for the latest version since it is not included in the Windows 8.0 SDK. This post provides an updated version of the Effects 11 (FX11) library. The primary purpose of this release is to remove the dependencies on the legacy DirectX SDK for the D3DX11 headers, but it also includes some code tidying and a few customer requests.
+The <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects">Effects 11</a> library (FX11) was made available as shared-source in the DirectX SDK. Previous versions of the Effects library were part of D3DX (FX9) or built into the OS (FX10). With the DirectX SDK now legacy (see <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>), there are still a number of people looking for the latest version since it is not included in the Windows 8.0 SDK. This post provides an updated version of the Effects 11 (FX11) library. The primary purpose of this release is to remove the dependencies on the legacy DirectX SDK for the D3DX11 headers, but it also includes some code tidying and a few customer requests.
 <!--more-->
 
 > If you still need Visual Studio 2008 support, you should keep using the legacy DirectX SDK (June 2010) version.
@@ -96,5 +96,7 @@ D3D10DisassembleEffect</code></td>
 <strong>Update:</strong> Effects 11 is now hosted on <a href="http://go.microsoft.com/fwlink/?LinkId=271568">CodePlex</a> and <a href="https://github.com/Microsoft/FX11">GitHub</a>. The latest version of the library, documentation, release history, and other information is now available there.
 
 <strong>Samples:</strong> Effects 11 Win32 Samples on <a href="https://github.com/walbourn/directx-sdk-samples">GitHub</a>: Direct3D11TutorialsFX11, BasicHLSLFX11, DynamicShaderLinkageFX11, FixedFuncEmuFX11, and InstancingFX11.
+
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has an [effects11](https://github.com/microsoft/vcpkg/tree/master/ports/effects11) port available.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/directxtex-and-effects-11-update/">DirectXTex and Effects 11 Update</a>

@@ -9,7 +9,7 @@ categories: [codeplex, github]
 A number of my projects over the past few years have been to provide modern replacements for the full range of functionality provided in the now legacy D3DX library: <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> in the Windows 8.x SDK, <a href="https://walbourn.github.io/directxtk/">DirectX Tool Kit</a> and the <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> texture processing libraries on CodePlex. To round out that set, I've created <strong>DirectXMesh</strong> for geometry processing functionality such as computing triangle adjacency, computing normals and tangent frames, and vertex cache optimization.
 <!--more-->
 
-DirectXMesh is hosted on <a href="http://go.microsoft.com/fwlink/?LinkID=324981">CodePlex</a> and <a href="https://github.com/Microsoft/DirectXMesh">GitHub</a>. The latest version of the library, documentation, notes on future work, release history, and other information is available there.
+DirectXMesh is hosted on <strike><a href="http://go.microsoft.com/fwlink/?LinkID=324981">CodePlex</a></strike><a href="https://github.com/Microsoft/DirectXMesh">GitHub</a>. The latest version of the library, documentation, notes on future work, release history, and other information is available there.
 
 <strong>Platforms: </strong>The code is designed to build with the Windows 8.x SDK using Visual Studio 2010, 2012, or 2013 and works on Windows Vista, Windows 7, Windows 8.x Win32 desktop, Windows Store apps, and Xbox One.
 
@@ -71,3 +71,7 @@ CompactVB</code></td>
 </tr>
 </tbody>
 </table>
+
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [directxmesh](https://github.com/microsoft/vcpkg/tree/master/ports/directxmesh) port available.
+
+<strong>See also:</strong> <a href="https://walbourn.github.io/directxtex/">DirectXTex</a>, <a href="https://walbourn.github.io/directxtk/">DirectXTK</a>, <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a>

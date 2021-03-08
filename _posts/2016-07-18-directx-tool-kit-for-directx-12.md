@@ -48,3 +48,5 @@ There are a few key differences compared to the DirectX 11 version:
 Both version so the DirectX Tool Kit now include support for NormalMapEffect and per-pixel lighting support for EnvironmentMapEffect.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>, <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>, <a href="https://walbourn.github.io/directxtex-and-directxmesh-now-support-direct3d-12/">DirectXTex and DirectXMesh now support Direct3D 12</a>
+
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [directxtk12](https://github.com/microsoft/vcpkg/tree/master/ports/directxtk12) port available.

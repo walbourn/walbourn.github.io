@@ -18,7 +18,7 @@ Attached to this blog post is an updated version that uses Autodesk FBX SDK 2011
 
 Remember to set the <code>FBX_SDK</code> environment variable to the location of the 2011.3.1 <em>Autodesk FBX SDK</em> installed on your system (such as "``C:\Program Files\Autodesk\FBX\FbxSdk\2011.3.1``"). You are free to use either the DLL or static library version of the Autodesk FBX SDK, but would recommend using the DLL version which keeps the content exporter tool itself to around 1 MB instead of being nearly 7 MB.
 
-<strike>The <em>Samples Content Exporter</em> relies on the legacy D3DX9 library that is only available in the DirectX SDK. If trying to build with Visual Studio 11, be sure to read through "<a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>"</strike>
+<strike>The <em>Samples Content Exporter</em> relies on the legacy D3DX9 library that is only available in the DirectX SDK. If trying to build with Visual Studio 11, be sure to read through "<a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>"</strike>
 <p />
 
 <strong>Update:</strong> This project is now hosted on <a href="https://github.com/walbourn/contentexporter">GitHub</a> and has been updated to support VS 2012 with Autodesk FBX SDK 2014.1 or later, and VS 2013 with Autodesk FBX SDK 2015.1 or later. It is available under the MIT license, and no longer makes use of the legacy DirectX SDK or D3DX9. See <a href="https://walbourn.github.io/samples-content-exporter/">Samples Content Exporter (May 2015)</a>.

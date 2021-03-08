@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [codeplex, direct3d]
 ---
-With the deprecation of the DirectX SDK (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a> and <a href="https://walbourn.github.io/where-is-the-directx-sdk-2013-edition/">Where is the DirectX SDK (2013 Edition)?</a>), there's been a lot of guidance both on this blog and on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> on moving to newer, supported solutions. As a number of folks have noticed, DXUT (aka the DirectX SDK samples framework) is not included in the Windows 8.x SDK.  This post provides an updated version of DXUT for Direct3D 11. The primary purpose of this release is to remove dependencies on the DirectX SDK for D3DX9, D3DX11, and DXERR. It also includes some code tidying and a few customer requests.
+With the deprecation of the DirectX SDK (see <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>), there's been a lot of guidance both on this blog and on <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> on moving to newer, supported solutions. As a number of folks have noticed, DXUT (aka the DirectX SDK samples framework) is not included in the Windows 8.x SDK.  This post provides an updated version of DXUT for Direct3D 11. The primary purpose of this release is to remove dependencies on the DirectX SDK for D3DX9, D3DX11, and DXERR. It also includes some code tidying and a few customer requests.
 <!--more-->
 
 <span style="color:red">**The project on [GitHub](https://github.com/Microsoft/DXUT) is marked as archive. It is still available for use for legacy projects, but use of it for new projects is not recommended.**</span>
@@ -79,5 +79,7 @@ Visual Studio 2012 and 2013 include great DirectX templates for Windows Store ap
 <strong>Samples</strong>: <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Samples</a>, <a href="https://github.com/walbourn/directx-sdk-samples">DXUT Win32 Samples</a>, <a href="http://code.msdn.microsoft.com/DXUTDirectXTK-Simple-Win32-9cf797e9">DXUT+DirectXTK Simple Sample</a>
 
 > You can use DXUT in combination with <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> in the same project, but you should remove the files <code>DDSTextureLoader.h, DDSTextureLoader.cpp, ScreenGrab.h, ScreenGrab.cpp, WICTextureLoader.h,</code> and <code>WICTextureLoader.cpp</code> from ``DXUT\Core``. Removal of <code>SDKmesh.h</code> and <code>SDKmesh.cpp</code> from ``DXUT\Optional`` is also recommended. You may have to add additional include paths to the DXUT projects to find the ``DirectXTK\Inc`` folder as well.
+
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [dxut](https://github.com/microsoft/vcpkg/tree/master/ports/dxut) port available.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/living-without-d3dx/">Living without D3DX</a>, <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects 11</a>, <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where's DXERR.lIB?</a>

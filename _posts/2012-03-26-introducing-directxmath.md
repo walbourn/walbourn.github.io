@@ -64,4 +64,6 @@ A detailed list of D3DXMath mappings to DirectXMath is available on <a href="htt
 
 <strong>Note:</strong> DirectXMath is now hosted on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a>.
 
+<strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [directxmath](https://github.com/microsoft/vcpkg/tree/master/ports/directxmath) port available.
+
 <strong>Related</strong>: <a href="https://walbourn.github.io/xna-math-version-2-05-smoothing-the-transition-to-directxmath/">XNA Math version 2.05</a>, <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">DirectXMath: SSE, SSE2, and ARM-NEON</a>, <a href="https://walbourn.github.io/known-issues-directxmath-3-03/">Known Issues: DirectXMath 3.03</a>, <a href="https://walbourn.github.io/directxmath-3-06/">DirectXMath 3.06</a>, <a href="https://walbourn.github.io/directxmath-3-07/">DirectXMath 3.07</a>, <a href="https://walbourn.github.io/directxmath-3-08/">DirectXMath 3.08</a>, <a href="https://walbourn.github.io/directxmath-3-09/">DirectXMath 3.09</a>, <a href="https://walbourn.github.io/directxmath-3-10/">DirectXMath 3.10</a>, <a href="https://walbourn.github.io/directxmath-3-11/">DirectXMath 3.11</a>

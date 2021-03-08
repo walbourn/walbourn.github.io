@@ -19,7 +19,7 @@ Full technical details on what is and is not included in the update are availabl
 
 <h1>Notes for users of the DirectX SDK</h1>
 
-The updated headers and link libraries needed to target the new components on Windows 8 and Windows 7 are in the Windows 8.x SDK as indicated in previous posts (see <a href="https://walbourn.github.io/where-is-the-directx-sdk/">Where is the DirectX SDK?</a>). See <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> for details on 'mixing' the Windows 8.x SDK and legacy DirectX SDK if needed.
+The updated headers and link libraries needed to target the new components on Windows 8 and Windows 7 are in the Windows 8.x SDK as indicated in previous posts (see <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>). See <a href="https://docs.microsoft.com/en-us/windows/desktop/directx-sdk--august-2009-">Microsoft Docs</a> for details on 'mixing' the Windows 8.x SDK and legacy DirectX SDK if needed.
 
 It is also important to note that the updated "<a href="https://walbourn.github.io/direct3d-sdk-debug-layer-tricks/">Debug Runtime</a>" components in the Windows 8.x SDK are required on Windows 7 once KB 2670838 is installed. The legacy <em>DirectX SDK (June 2010)</em> "Debug Runtime" for Direct3D 10.x and Direct3D 11.0 is not compatible with Windows 10, Windows 8.x or Windows 7 once this update is applied. You can install the <a href="http://go.microsoft.com/fwlink/?LinkID=323507">Windows 8.x SDK standalone</a>, VS 2012 or VS 2013 which includes the Windows 8.x SDK, or the VS 2013 Remote Debugging Tools (<a href="http://go.microsoft.com/?linkid=9832075">x86</a> or <a href="http://go.microsoft.com/?linkid=9832085">x64</a>) to get the updated SDK Debug Layers files.
 
