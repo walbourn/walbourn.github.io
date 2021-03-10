@@ -103,7 +103,7 @@ See <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">A
 
 <h1>DirectX 12</h1>
 
-For UWP on Xbox One, DirectX12 is supported as <strong>Direct3D Hardware Feature Level 12.0</strong> while in Game mode.
+For UWP on Xbox One, DirectX12 is supported as <strong>Direct3D Hardware Feature Level 11.0</strong> while in Game mode. It supports Shader Model 5.1 and Shader Model 6.4 shaders.
 
 > Note that in development mode, if you try to create a DirectX 12 device while not in Game mode, you will end up with a WARP software device rather than the much faster hardware device. Remember also that WARP it not supported for retail Xbox One machines.
 
