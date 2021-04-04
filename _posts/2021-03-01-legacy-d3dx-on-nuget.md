@@ -48,4 +48,10 @@ I plan to make use of it for ``meshconvert.exe`` in [DirectXMesh](https://github
 
 > You should avoid using the older ``IDirectXFile`` and ``d3dxof.lib`` import library. ``d3dxof.dll`` is a 32-bit only DLL and is not supported for x64 native applications.
 
+<b>UPDATE</b>: The initial release of the ``Microsoft.DXSDK.D3DX`` package contained header files identical to those that shipped in the legacy DirectX SDK (June 2010). I've updated the package with some minor edits to the header files to better integrate with the modern Windows SDKs:
+
+* ``D3DX_DXGIFormatConvert.inl`` updated to rely on DirectXMath rather than XNAMath for C++ support.
+* ``WINAPI_FAMILY_DESKTOP_APP`` partitioning for the ``d3dx9.h``, ``d3dx10.h``, and ``d3dx11.h`` headers.
+* Converted VS-style SAL to SAL2 for better code analysis support.
+
 <b>See also:</b> [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/)
