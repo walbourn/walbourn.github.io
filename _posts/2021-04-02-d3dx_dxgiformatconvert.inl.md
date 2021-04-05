@@ -1,7 +1,7 @@
 ---
 layout: post
 title: D3DX_DXGIFormatConvert.inl - Back from the dead
-date: 2021-04-01 23:22
+date: 2021-04-02 23:22
 author: Chuck Walbourn
 comments: true
 categories: [dxsdk]
@@ -11,7 +11,7 @@ In the DirectX SDK (June 2010) release, there was this release note:
 
 > The new D3DX_DXGIFormatConvert.inl inline header includes light-weight conversion functions for use in Compute Shaders or Pixel Shaders on D3D11 Hardware that can be useful when applications need to simultaneously read and write to textures, such as in-place editing scenarios.
 
-A number of developers found it useful, including [Tom Forsyth](https://tomforsyth1000.github.io/blog.wiki.html). Unfortunately, the header more or less disappeared after that. This [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-unpacking-packing-dxgi-format) page mentions the header, but hasn't mentioned *where* to find it in over a decade...
+A number of developers found it useful, including [Tom Forsyth](https://tomforsyth1000.github.io/blog.wiki.html). Unfortunately, the header more or less disappeared after that. This [Microsoft Docs Programming Guide](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/dx-graphics-hlsl-unpacking-packing-dxgi-format) page mentions the header, and there are detailed [Reference Guide](https://docs.microsoft.com/en-us/windows/win32/direct3dhlsl/inline-format-conversion-reference) pages, but they all failed to mention *where* to find it...
 <!--more-->
 
 When I created the [Microsoft.DXSDK.D3DX](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) NuGet, I included the ``D3DX_DXGIFormatConvert.inl`` header. See [this blog post](https://walbourn.github.io/legacy-d3dx-on-nuget/) for more on the package.
