@@ -16,7 +16,7 @@ The [DirectX Tool Kit for Audio](https://walbourn.github.io/directx-tool-kit-for
 
 The primary value of the XACT-style streaming wavebank is that the data is laid out for non-buffered asynchronous I/O "sector" alignment requirements, which is the ideal mode for efficient sound streaming from disk. The **XAudio2AsyncStream** sample implemented this for PCM audio, which is pretty simple because the block size, packet size, and sector size all align. Getting MS-ADPCM, xWMA, or XMA2 to work was not quite as easy.
 
-In any case, thanks in part to the global pandemic, I finally had the time and motiviation to implement the [SoundStreamInstance](https://github.com/microsoft/DirectXTK/wiki/SoundStreamInstance) class. It supports streaming for PCM, MS-ADPCM, xWMA (XAudio 2.7 or XAudio 2.9 required), and XMA2 (Xbox One XDK) from XACT-style streaming wavebanks.
+In any case, thanks in part to the global pandemic, I finally had the time and motivation to implement the [SoundStreamInstance](https://github.com/microsoft/DirectXTK/wiki/SoundStreamInstance) class. It supports streaming for PCM, MS-ADPCM, xWMA (XAudio 2.7 or XAudio 2.9 required), and XMA2 (Xbox) from XACT-style streaming wavebanks.
 
 The main functional limitation compared to XACT's streaming implementation is that I don't yet support loop-points for streaming or loop-counts. I do support basic looping and the "exit loop" behavior of the ``Stop`` method.
 
