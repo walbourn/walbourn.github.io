@@ -12,8 +12,8 @@ The December 2013 release of <a href="http://go.microsoft.com/fwlink/?LinkId=248
 <ul>
 <li><strong>AudioEngine</strong> - This class represents an XAudio2 audio graph, device, and mastering voice; similar to XNA's AudioEngine.</li>
 <li><strong>SoundEffect</strong> - A container class for sound resources which can be loaded from <code>.wav</code> files similar to XNA's SoundEffect. These can be played as 'one-shots' managed by the engine, or used to create a SoundEffectInstance.</li>
-<li><strong>SoundEffectInstance</strong> (<i>new in  May 2020</i>) - Provides a single playing, looped, paused, or stopped instance of a sound similar to XNA's SoundEffectInstance. These support 3D positional audio and optionally reverb effects</li>
-<li><strong>SoundStreamInstance</strong> - SoundEffectInstance for playing waves from a streaming XACT-style <code>.xwb</code> wave bank.
+<li><strong>SoundEffectInstance</strong> - Provides a single playing, looped, paused, or stopped instance of a sound similar to XNA's SoundEffectInstance. These support 3D positional audio and optionally reverb effects</li>
+<li><strong>SoundStreamInstance</strong> (<i>new in  May 2020</i>) - SoundEffectInstance for playing waves from a streaming XACT-style <code>.xwb</code> wave bank.</li>
 <li><strong>DynamicSoundEffectInstance</strong> - SoundEffectInstance where the application provides the audio data on demand similar to XNA's DynamicSoundEffectInstance.</li>
 <li><strong>WaveBank</strong> - A container class for sound resources packaged into an XACT-style <code>.xwb</code> wave bank, similar to XNA's WaveBank but with support for directly playing one-shots and creating SoundEffectInstances that refer to entries in the wave bank.</li>
 <li><strong>AudioListener</strong>, <strong>AudioEmitter</strong> - Utility classes used with SoundEffectInstance::Apply3D.</li>
