@@ -7,7 +7,7 @@ comments: true
 categories: [conference]
 ---
 
-The [GameStack Live](https://developer.microsoft.com/en-us/games/events/game-stack-live/) virtual event is underway, with live chat in the [Discord channel](https://discord.com/invite/gamestack). It includes news about DirectX 12, public information about the Xbox Series X console, and Azure cloud development. You can watch the talks on-demand on [YouTube](https://www.youtube.com/c/MSFTGameStack/videos).
+The [GameStack Live](https://developer.microsoft.com/en-us/games/events/game-stack-live/) virtual event is underway, with live chat in the [Discord channel](https://discord.com/invite/gamestack). It includes news about DirectX 12, public information about the Xbox Series X console, and Azure cloud development. You can watch the talks on-demand on [YouTube](https://www.youtube.com/c/MSFTGameStack/videos). Presentations are available for download from [GitHub](https://aka.ms/gitgsl).
 <!--more-->
 
 # DirectX 12
