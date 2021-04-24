@@ -305,7 +305,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td><p>All versions of the D3DX utility library (D3DX9, D3DX10, and D3DX11) are deprecated, and are not supported for Windows Store apps, Windows phone 8, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</p>
 <p><a href="https://github.com/Microsoft/DirectXTK">DirectXTK</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> support Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop applications on Windows 10, Windows 8.x, Windows 7, and Windows Vista. These provide <a href="https://walbourn.github.io/living-without-d3dx/">replacements</a> for much of the functionality in D3DX for Direct3D 11. See "<a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">Direct3D 11 Textures and Block Compression</a>" for more information.</p>
 <p>The D3DCSX Compute Shader helper utility is available for Win32 desktop applications, but not for Windows Store apps or Windows phone 8.</p>
-<p>The D3DX12 C++ helper library is header-only, supported on all DirectX 12 platforms, and is available on <a href="https://github.com/microsoft/DirectX-Headers/tree/main/include/directx">GitHub</a>.</td>
+<p>The D3DX12 C++ helper library is header-only, supported on all DirectX 12 platforms, and is available on <a href="https://github.com/microsoft/DirectX-Headers/tree/main/include/directx">GitHub</a>.</p></td>
 </tr>
 <tr>
 <td>HLSL Compiler / D3DCompile</td>
@@ -326,7 +326,8 @@ One of the reasons that dual-use shared code is possible for game technology is 
 </tr>
 <tr>
 <td>XAudio2</td>
-<td><p>Windows 8.x and Windows 10 includes XAudio 2.8 which is supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, and Xbox One. See "<a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a>" for more details.</p>
+<td><p>Windows 8.x and Windows 10 includes XAudio 2.8/2.9 which is supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, and Xbox One. See "<a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a>" for more details.</p>
+<p><em>Windows 7 SP1 or later can use XAudio 2.9 via <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a></em>.</p>
 <p>Windows Core Audio (WASAPI) is also available for use by low-level audio libraries.</p>
 <p><em>DirectSound is not supported for Windows Store apps, Windows phone 8.x, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</em></p></td>
 </tr>
@@ -334,8 +335,8 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td>XINPUT</td>
 <td><p>Windows 8.x and Windows 10 includes XInput 1.4 which is supported for Windows store apps and Win32 desktop apps. Windows Vista, Windows 7, Windows 8.x, and Windows 10 also include XInput 9.1.0 which is supported for Win32 desktop applications. See "<a href="https://walbourn.github.io/xinput-and-windows-8/">XInput and Windows 8</a>" for more details.</p>
 <p><em>DirectInput is not supported for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, or Xbox.</em></p>
-<p><em>Note:</em> XINPUT is not supported by Windows phone 8.x or Xbox One.</p>
-<p>Xbox One and Universal Windows Platform (UWP) apps for Windows 10 make use of a WinRT <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">gamepad API</a> which has similar functionality.</p></td>
+<p><em>Note:</em> XINPUT is not supported by Windows phone 8.x or Xbox.</p>
+<p>Xbox and Universal Windows Platform (UWP) apps for Windows 10 make use of a <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">gamepad API</a> which has similar functionality.</p></td>
 </tr>
 <tr>
 <td>Windows Imaging Component (WIC)</td>
