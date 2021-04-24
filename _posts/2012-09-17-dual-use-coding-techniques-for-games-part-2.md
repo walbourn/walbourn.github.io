@@ -247,7 +247,7 @@ etc.</td>
 <tr>
 <td>OpenGL</td>
 <td><p>OpenGL is not supported for Windows Store apps, Windows phone 8.x, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</p>
-<p><em>Note:</em> For OpenGL ES applications, you may find the <a href="https://github.com/Microsoftangle">Angle project</a> useful.</p></td>
+<p><em>Note:</em> For OpenGL ES applications, you may find the <a href="https://github.com/Microsoft/angle">Angle project</a> useful.</p></td>
 </tr>
 <tr>
 <td><code>QueryPerformanceCounter
@@ -303,7 +303,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <tr>
 <td>D3DX</td>
 <td><p>All versions of the D3DX utility library (D3DX9, D3DX10, and D3DX11) are deprecated, and are not supported for Windows Store apps, Windows phone 8, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</p>
-<p><a href="https://github.com/Microsoft/DirectXTK">DirectXTK</a>, <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, and <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a> support Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop applications on Windows 10, Windows 8.x, Windows 7, and Windows Vista. These provide <a href="https://walbourn.github.io/living-without-d3dx/">replacements</a> for much of the functionality in D3DX for Direct3D 11. See "<a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">Direct3D 11 Textures and Block Compression</a>" for more information.</p>
+<p>DirectX Tool Kit (<a href="https://github.com/Microsoft/DirectXTK">DX11</a> / <a href="https://github.com/Microsoft/DirectXTK12">DX12</a>), <a href="https://github.com/Microsoft/DirectXTex">DirectXTex</a>, <a href="https://github.com/Microsoft/DirectXMesh">DirectXMesh</a>, and <a href="https://github.com/Microsoft/DirectXMath">DirectXMath</a> support Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop applications on Windows 10, Windows 8.x, Windows 7, and Windows Vista. These provide <a href="https://walbourn.github.io/living-without-d3dx/">replacements</a> for much of the functionality in D3DX for Direct3D 11. See "<a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">Direct3D 11 Textures and Block Compression</a>" for more information.</p>
 <p>The D3DCSX Compute Shader helper utility is available for Win32 desktop applications, but not for Windows Store apps or Windows phone 8.</p>
 <p>The D3DX12 C++ helper library is header-only, supported on all DirectX 12 platforms, and is available on <a href="https://github.com/microsoft/DirectX-Headers/tree/main/include/directx">GitHub</a>.</p></td>
 </tr>
@@ -321,7 +321,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 </tr>
 <tr>
 <td>DirectXMath</td>
-<td><p>The DirectXMath library is supported for Windows Store, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox One, and Win32 desktop apps. This library provides SSE/SSE2 optimizations for Windows x86 and x64 native, as well as ARM-NEON optimizations for Windows RT and Windows phone 8.x. See "<a href="https://walbourn.github.io/introducing-directxmath/">Introducing DirectXMath</a>" for more information.</p>
+<td><p>The <a href="https://github.com/Microsoft/DirectXMath">DirectXMath</a> library is supported for Windows Store, Universal Windows Platform (UWP) apps for Windows 10, Windows phone 8.x, Xbox, and Win32 desktop apps. This library provides SSE/SSE2 optimizations for Windows x86 and x64 native, as well as ARM-NEON optimizations for Windows RT and Windows phone 8.x. See "<a href="https://walbourn.github.io/introducing-directxmath/">Introducing DirectXMath</a>" for more information.</p>
 <p><em>Note:</em> DirectXMath on Xbox also makes use of SSE3, SSSE3, SSE 4.1, AVX, AVX2, and F16C as described in this blog <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">series</a>.</p></td>
 </tr>
 <tr>
