@@ -247,7 +247,7 @@ etc.</td>
 <tr>
 <td>OpenGL</td>
 <td><p>OpenGL is not supported for Windows Store apps, Windows phone 8.x, Xbox One, or Universal Windows Platform (UWP) apps for Windows 10.</p>
-<p><em>Note:</em> For OpenGL ES applications, you may find the <a href="https://github.com/Microsoft/angle">Angle project</a> useful.</p></td>
+<p><em>Note:</em> For OpenGL ES applications, you may find the <a href="https://opensource.google/projects/angle">Angle project</a> useful.</p></td>
 </tr>
 <tr>
 <td><code>QueryPerformanceCounter
