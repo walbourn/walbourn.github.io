@@ -43,36 +43,7 @@ Visual Studio 2012 and 2013 include great DirectX templates for Windows Store ap
 
 <h1>Version History</h1>
 
-<h2>September 2013 (11.03)</h2>
-<ul>
-<li>Removed dependencies on the D3DX9 and D3DX11 libraries, so DXUT no longer requires the legacy DirectX SDK to build. It does require the d3dcompiler.h header from the Windows 8.x SDK.</li>
-<li>Includes standalone DDSTextureLoader, WICTexureLoader, ScreenGrab, and DxErr modules.</li>
-<li>Removed support for Direct3D 9 and Windows XP</li>
-<li>Deleted the DXUTDevice9.h/.cpp, SDKSound.h/.cpp, and SDKWaveFile.h/.cpp files</li>
-<li>Deleted legacy support for MCE relaunch</li>
-<li>General C++ code cleanups (nullptr, auto keyword, C++ style casting, Safer CRT, etc.) which are compatible with Visual C++ 2010 and 2012</li>
-<li>SAL2 annotation and /analyze cleanup</li>
-<li>Added DXUTCompileFromFile, DXUTCreateShaderResourceViewFromFile, DXUTCreateTextureFromFile, DXUTSaveTextureToFile helpers</li>
-<li>Added ``-forcewarp`` command-line switch</li>
-<li>Added support for DXGI 1.1 and 1.2 formats</li>
-<li>Added Direct3D 11.1 Device/Context state</li>
-<li>Support Feature Level 11.1 when available</li>
-</ul>
-
-<h2>June 2010 (11.02)</h2>
-<ul>
-<li>The DirectX SDK (June 2010) included an update to DXUT11. This is the last version to support Visual Studio 2008, Windows XP, or Direct3D 9. The source code is located in ``Samples\C++\DXUT11``.</li>
-</ul>
-
-<h2>February 2010 (11.01)</h2>
-<ul>
-<li>An update was shipped with the DirectX SDK (February 2010). This is the last version to support Visual Studio 2005. The source code is located in <code>Samples\C++\DXUT11</code>.</li>
-</ul>
-
-<h2>August 2009 (11.00)</h2>
-<ul>
-<li>The initial release of DXUT11 was in DirectX SDK (August 2009). The source code is located in ``Samples\C++\DXUT11``. This was a port of the original DXUT which supported Direct3D 10 / Direct3D 9 applications on Windows XP and Windows Vista.</li>
-</ul>
+See [GitHub](https://github.com/microsoft/DXUT/blob/master/HISTORY.md) for the complete version history.
 
 <strong>Update: </strong>DXUT is now hosted on <a href="https://dxut.codeplex.com/">CodePlex</a> and <a href="https://github.com/Microsoft/DXUT">GitHub</a>. The latest version of the framework, documentation, notes on future work, release history, and other information is now available there.
 

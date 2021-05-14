@@ -9,6 +9,8 @@ categories: [codeplex, direct3d, dxsdk]
 The <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-graphics-programming-guide-effects">Effects 11</a> library (FX11) was made available as shared-source in the DirectX SDK. Previous versions of the Effects library were part of D3DX (FX9) or built into the OS (FX10). With the DirectX SDK now legacy (see <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>), there are still a number of people looking for the latest version since it is not included in the Windows 8.0 SDK. This post provides an updated version of the Effects 11 (FX11) library. The primary purpose of this release is to remove the dependencies on the legacy DirectX SDK for the D3DX11 headers, but it also includes some code tidying and a few customer requests.
 <!--more-->
 
+<span style="color:red">**The project on [GitHub](https://github.com/Microsoft/FX11) is marked as archive. It is still available for use for legacy projects, but use of it for new projects is not recommended.**</span>
+
 > If you still need Visual Studio 2008 support, you should keep using the legacy DirectX SDK (June 2010) version.
 
 <h1>Disclaimer</h1>
@@ -63,40 +65,14 @@ D3D10DisassembleEffect</code></td>
 
 <h1>Version History</h1>
 
-<h2>October 24, 2012 (11.03)</h2>
-<ul>
- 	<li>Removed the dependency on the D3DX11 headers, so FX11 no longer requires the legacy DirectX SDK to build. It does require the d3dcompiler.h header from either the Windows 8.0 SDK or from the legacy DirectX SDK</li>
- 	<li>Removed references to D3D10 constants and interfaces</li>
- 	<li>Deleted the d3dx11dbg.cpp and d3dx11dbg.h files</li>
- 	<li>Deleted the D3DX11_EFFECT_PASS flags which were never implemented</li>
- 	<li>General C++ code cleanups (nullptr, C++ style casting, stdint.h types, Safer CRT, etc.) which are compatible with Visual C++ 2010 and 2012</li>
- 	<li>SAL2 annotation and /analyze cleanup</li>
- 	<li>Added population of Direct3D debug names for object naming support in PIX and the SDK debug layer; added additional optional parameter to D3DX11CreateEffectFromMemory to provide a debug name</li>
- 	<li>Added D3DX11CreateEffectFromFile, D3DX11CompileEffectFromMemory, and D3DX11CompileEffectFromFile</li>
-</ul>
-
-<h2>June 2010 (11.02)</h2>
-
-<ul>
- 	<li>The DirectX SDK (June 2010) included an update with some minor additional bug fixes. This also included the Effects 11-based sample DynamicShaderLinkageFX11. This is the last version to support Visual Studio 2008. The source code is located in ``Samples\C++\Effects11``.</li>
-</ul>
-
-<h2>February 2010 (11.01)</h2>
-
-<ul>
- 	<li>An update was shipped with the DirectX SDK (February 2010). This fixed a problem with the library which prevented it from working correctly on 9.x and 10.x feature levels. This is the last version to support Visual Studio 2005. The source code is located in ``Samples\C++\Effects11``.</li>
-</ul>
-
-<h2>August 2009 (11.00)</h2>
-
-<ul>
- 	<li>The initial release of Effects 11 (FX11) was in DirectX SDK (August 2009). The source code is located in ``Utilities\Source\Effects11``. This is essentially the Effects 10 (FX10) system ported to Direct3D 11.0 with support for effects pools removed and support for groups added.</li>
-</ul>
+See [GitHub](https://github.com/microsoft/FX11/blob/master/HISTORY.md) for the complete version history.
 
 <strong>Update:</strong> Effects 11 is now hosted on <a href="http://go.microsoft.com/fwlink/?LinkId=271568">CodePlex</a> and <a href="https://github.com/Microsoft/FX11">GitHub</a>. The latest version of the library, documentation, release history, and other information is now available there.
 
 <strong>Samples:</strong> Effects 11 Win32 Samples on <a href="https://github.com/walbourn/directx-sdk-samples">GitHub</a>: Direct3D11TutorialsFX11, BasicHLSLFX11, DynamicShaderLinkageFX11, FixedFuncEmuFX11, and InstancingFX11.
 
 <strong>vcpkg</strong>: The vcpkg C++ Package Manager has an [effects11](https://github.com/microsoft/vcpkg/tree/master/ports/effects11) port available.
+
+<strong>NuGet</strong>: This [NuGet](https://www.nuget.org/packages/fx11_desktop_2017) contains the last release of Effects.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/directxtex-and-effects-11-update/">DirectXTex and Effects 11 Update</a>
