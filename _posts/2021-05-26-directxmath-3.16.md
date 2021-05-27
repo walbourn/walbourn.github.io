@@ -38,7 +38,7 @@ It also includes new functionality:
 * Added ``XMColorRGBToYUV_UHD`` / ``XMColorYUVToRGB_UHD`` for Rec. 2020 YUV
 * Added optional *rhcoords* parameter for ``BoundingFrustum::CreateFromMatrix`` which previously only supported left-handed projection matrices.
 
-With VS 2019, there is now optional use of the Intel® Short Vector Matrix Library (SVML). This library provides highly optimized versions of SIMD sin, cos, tan, asin, acos, atan, sinh, cosh, tanh, exp, log, and pow functions. This library is ‘vendor-neutral’ so it works well on all x86/x64 compatible CPUs.
+With VS 2019, there is now optional use of the Intel&reg; Short Vector Matrix Library (SVML). This library provides highly optimized versions of SIMD sin, cos, tan, asin, acos, atan, sinh, cosh, tanh, exp, log, and pow functions. This library is ‘vendor-neutral’ so it works well on all x86/x64 compatible CPUs. For more information on SVML and Visual Studio, see [this blog post](https://devblogs.microsoft.com/cppblog/msvc-backend-updates-in-visual-studio-2019-preview-2/).
 
 * For the Windows 10 SDK version of DirectXMath 3.16, you enable SVML usage by defining the preprocessor symbol ``_XM_SVML_INTRINSICS_``
 * For the other versions, SVML use is enabled automatically with VS 2019. You can opt-out of using it by defining the symbol ``_XM_DISABLE_INTEL_SVML_``
