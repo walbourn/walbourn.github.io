@@ -67,6 +67,6 @@ Support for AVX2 intrinsics was added to Visual Studio 2012. The <code>/arch:AVX
 
 The source for this project and the rest of the blog series is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox:</strong> Xbox One does not support AVX2. Xbox Series X/S does support AVX2.
+<strong>Xbox:</strong> Xbox One does not support AVX2. Xbox Series X|S does support AVX2.
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>;  <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>
