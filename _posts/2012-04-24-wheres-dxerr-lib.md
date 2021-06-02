@@ -31,8 +31,10 @@ While we are on the topic of utility libraries, the <code>DXGUID.LIB</code> stat
 
 <strong>Update:</strong> in <code>DXTraceW</code> now takes ``__FILEW__`` along with some /analyze and /W4 cleanup, support for <code>WINAPI_FAMILY</code> macros; define NOMINMAX; some fixes for VS 2015 ``printf`` string portability, package updated on November 9, 2015.
 
+<strong>Update:</strong> Updated based on [this blog post](https://devblogs.microsoft.com/oldnewthing/20071128-00/?p=24353), package updated on June 2, 2021.
+
 <strong>DXUT: </strong>This DXERR is included in the <a href="https://walbourn.github.io/dxut-for-win32-desktop-update/">DXUT for Win32 Desktop Update</a>
 
 <strong>VS 2015/2017: </strong>The VS 2015/2017 C Runtime is not compatible with the <code>DXERR.LIB</code> that ships in the legacy DirectX SDK. You will get link errors trying to use it. You can use this module to replace DXERR LIB but will have to rebuild the code that uses it. You can try linking with <code>legacy_stdio_definitions.lib</code> instead, but ideally you'd remove this dependency on the legacy DirectX SDK.
 
-<a href="https://walbourn.github.io/download/dxerr_nov2015.zip">dxerr_nov2015.zip</a>
+<a href="https://walbourn.github.io/download/dxerr_jun2021.zip">dxerr_jun2021.zip</a>
