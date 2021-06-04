@@ -30,8 +30,8 @@ Here's a handy table of equivalents for D3DX (see <a href="https://walbourn.gith
 <td><code>ComputeNormals</code></td>
 </tr>
 <tr>
-<td><code>D3DXComputeTangent
-D3DXComputeTangentFrame
+<td><code>D3DXComputeTangent<br />
+D3DXComputeTangentFrame<br />
 D3DXComputeTangentFrameEx</code></td>
 <td><code>ComputeTangentFrame</code></td>
 </tr>
@@ -45,11 +45,11 @@ D3DXComputeTangentFrameEx</code></td>
 </tr>
 <tr>
 <td><code>ID3DX10Mesh::Optimize</code></td>
-<td><code>AttributeSort
-OptimizeFacesEx
-OptimizeVertices
-ReorderIB
-FinalizeIB
+<td><code>AttributeSort<br />
+OptimizeFacesEx<br />
+OptimizeVertices<br />
+ReorderIB<br />
+FinalizeIB<br />
 FinalizeVB</code></td>
 </tr>
 <tr>
@@ -66,8 +66,16 @@ FinalizeVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXWeldVertices</code></td>
-<td><code>WeldVertices
+<td><code>WeldVertices<br />
 CompactVB</code></td>
+</tr>
+<tr>
+<td><code>D3DXGetFVFVertexSize<br />
+D3DXGetDeclVertexSize<br />
+D3DXGetDeclLength<br />
+D3DXDeclaratorFromFVF<br />
+D3DXFVFFromDeclarator</code></td>
+<td><code>FlexibleVertexFormat.h</code></td>
 </tr>
 </tbody>
 </table>

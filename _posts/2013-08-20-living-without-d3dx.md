@@ -42,10 +42,10 @@ The <a href="https://walbourn.github.io/directxtk/">DirectX Tool Kit</a> provide
 <td><code>Model, ModelMesh, ModelMeshPart</code></td>
 </tr>
 <tr>
-<td><code>D3DXCreateBox
-D3DXCreateCylinder
-D3DXCreateSphere
-D3DXCreateTeapot
+<td><code>D3DXCreateBox<br />
+D3DXCreateCylinder<br />
+D3DXCreateSphere<br />
+D3DXCreateTeapot<br />
 D3DXCreateTorus</code></td>
 <td><code>GeometricPrimitive</code></td>
 </tr>
@@ -54,7 +54,7 @@ D3DXCreateTorus</code></td>
 <td><code>CreateXXXTextureFromFile</code></td>
 </tr>
 <tr>
-<td><code>D3DX11CreateShaderResourceViewFromResource
+<td><code>D3DX11CreateShaderResourceViewFromResource<br />
 D3DX11CreateShaderResourceViewFromMemory</code></td>
 <td><code>CreateXXXTextureFromMemory</code></td>
 </tr>
@@ -63,7 +63,7 @@ D3DX11CreateShaderResourceViewFromMemory</code></td>
 <td><code>CreateXXXTextureFromFile</code></td>
 </tr>
 <tr>
-<td><code>D3DX11CreateTextureFromResource
+<td><code>D3DX11CreateTextureFromResource<br />
 D3DX11CreateTextureFromMemory </code></td>
 <td><code>CreateXXXTextureFromMemory</code></td>
 </tr>
@@ -93,63 +93,63 @@ The HLSL compiler, shader reflection API, and related functionality has been bro
 <table border="1">
 <tbody>
 <tr>
-<td><code>D3DXCompileShaderFromFile
-D3DX10CompileFromFile
+<td><code>D3DXCompileShaderFromFile<br />
+D3DX10CompileFromFile<br />
 D3DX11CompileFromFile</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3dcompilefromfile">D3DCompileFromFile</a></td>
 </tr>
 <tr>
-<td><code>D3DXCompileShader
-D3D10CompileShader
-D3DX10CompileFromMemory
+<td><code>D3DXCompileShader<br />
+D3D10CompileShader<br />
+D3DX10CompileFromMemory<br />
 D3DX11CompileFromMemory</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3dcompile">D3DCompile</a></td>
 </tr>
 <tr>
-<td><code>D3DXCompileShaderFromResource
-D3DX10CompileFromResource
+<td><code>D3DXCompileShaderFromResource<br />
+D3DX10CompileFromResource<br />
 D3DX11CompileFromResource</code></td>
 <td>No direct equivalent. Can use resource APIs and then <code>D3DCompile</code> above.</td>
 </tr>
 <tr>
-<td><code>D3DXPreprocessShader
-D3DXPreprocessShaderFromFile
-D3DXPreprocessShaderFromResource
-D3D10PreprocessShader
-D3DX10PreprocessShaderFromFile
-D3DX10PreprocessShaderFromMemory
-D3DX10PreprocessShaderFromResource
-D3DX11PreprocessShaderFromFile
-D3DX11PreprocessShaderFromMemory
+<td><code>D3DXPreprocessShader<br />
+D3DXPreprocessShaderFromFile<br />
+D3DXPreprocessShaderFromResource<br />
+D3D10PreprocessShader<br />
+D3DX10PreprocessShaderFromFile<br />
+D3DX10PreprocessShaderFromMemory<br />
+D3DX10PreprocessShaderFromResource<br />
+D3DX11PreprocessShaderFromFile<br />
+D3DX11PreprocessShaderFromMemory<br />
 D3DX11PreprocessShaderFromResource</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3dpreprocess">D3DPreprocess</a></td>
 </tr>
 <tr>
-<td><code>D3DXDisassembleShader
-D3D10DisassembleShader
+<td><code>D3DXDisassembleShader<br />
+D3D10DisassembleShader<br />
 D3DX10DisassembleShader</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3ddisassemble">D3DDisassemble</a></td>
 </tr>
 <tr>
-<td><code>D3D10ReflectShader
+<td><code>D3D10ReflectShader<br />
 D3DX10ReflectShader</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3dreflect">D3DReflect</a>
 <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3dhlsl/d3d11reflect">D3D11Reflect</a></td>
 </tr>
 <tr>
-<td><code>ID3DXBuffer
+<td><code>ID3DXBuffer<br />
 ID3D10Blob</code></td>
 <td><a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ff728743.aspx">ID3DBlob</a></td>
 </tr>
 <tr>
-<td><code>D3DXCreateBuffer
+<td><code>D3DXCreateBuffer<br />
 D3D10CreateBlob</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompilerd3dcreateblob">D3DCreateBlob</a></td>
 </tr>
 <tr>
-<td><code>D3D10GetInputSignatureBlob
-D3D10GetOutputSignatureBlob
-D3D10GetInputAndOutputSignatureBlob
+<td><code>D3D10GetInputSignatureBlob<br />
+D3D10GetOutputSignatureBlob<br />
+D3D10GetInputAndOutputSignatureBlob<br />
 D3D10GetShaderDebugInfo</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3dcompiler/nf-d3dcompiler-d3dgetblobpart">D3DGetBlobPart</a></td>
 </tr>
@@ -199,6 +199,7 @@ D3DX11CreateTextureFromResource</code></td>
 <td><code>D3DX11GetImageInfoFromResource</code></td>
 <td>No direct equivalent, can use Win32 resource functions and then the 'from memory' APIs above.</td>
 </tr>
+<td><code>OptimizeVertices</code></td>
 <tr>
 <td><code>D3DX11LoadTextureFromTexture</code></td>
 <td>DirectXTex library, <code>Resize</code>, <code>Convert</code>, <code>Compress</code>, <code>Decompress</code>, and/or <code>CopyRectangle</code></td>
@@ -231,8 +232,8 @@ The <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a> library is
 <td><code>ComputeNormals</code></td>
 </tr>
 <tr>
-<td><code>D3DXComputeTangent
-D3DXComputeTangentFrame
+<td><code>D3DXComputeTangent<br />
+D3DXComputeTangentFrame<br />
 D3DXComputeTangentFrameEx</code></td>
 <td><code>ComputeTangentFrame</code></td>
 </tr>
@@ -259,7 +260,6 @@ FinalizeVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXOptimizeVertices</code></td>
-<td><code>OptimizeVertices</code></td>
 </tr>
 <tr>
 <td><code>D3DXValidMesh</code></td>
@@ -269,6 +269,14 @@ FinalizeVB</code></td>
 <td><code>D3DXWeldVertices</code></td>
 <td><code>WeldVertices
 CompactVB</code></td>
+</tr>
+<tr>
+<td><code>D3DXGetFVFVertexSize<br />
+D3DXGetDeclVertexSize<br />
+D3DXGetDeclLength<br />
+D3DXDeclaratorFromFVF<br />
+D3DXFVFFromDeclarator</code></td>
+<td><code>FlexibleVertexFormat.h</code></td>
 </tr>
 </tbody>
 </table>
@@ -929,11 +937,11 @@ The <a href="https://walbourn.github.io/spherical-harmonics-math/">SHmath</a> li
 <td>Computes the dot product of two SH vectors. Equivalent to the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/d3dxshdot">D3DXSHDot</a> function.</td>
 </tr>
 <tr>
-<td><code>XMSHMultiply
-XMSHMultiply2
-XMSHMultiply3
-XMSHMultiply4
-XMSHMultiply5
+<td><code>XMSHMultiply<br />
+XMSHMultiply2<br />
+XMSHMultiply3<br />
+XMSHMultiply4<br />
+XMSHMultiply5<br />
 XMSHMultiply6</code></td>
 <td>Computes the product of two functions represented using SH. Equivalent to <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/d3dxshmultiply2">D3DXSHMultiply2</a>, <code>D3DXSHMultiply3</code>, <code>D3DXSHMultiply4</code>, <code>D3DXSHMultiply5</code>, and <code>D3DXSHMultiply6</code>.</td>
 </tr>
@@ -967,15 +975,15 @@ The <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects
 <table border="1">
 <tbody>
 <tr>
-<td><code>D3DXCreateEffect
-D3DXCreateEffectEx
-D3DXCreateEffectFromResource
-D3DXCreateEffectFromResourceEx
+<td><code>D3DXCreateEffect<br />
+D3DXCreateEffectEx<br />
+D3DXCreateEffectFromResource<br />
+D3DXCreateEffectFromResourceEx<br />
 D3D10CompileEffectFromMemory</code></td>
 <td><code>D3DX11CompileEffectFromMemory</code></td>
 </tr>
 <tr>
-<td><code>D3DXCreateEffectFromFile
+<td><code>D3DXCreateEffectFromFile<br />
 D3DXCreateEffectFromFileEx</code></td>
 <td><code>D3DX11CompileEffectFromFile</code></td>
 </tr>
@@ -984,13 +992,13 @@ D3DXCreateEffectFromFileEx</code></td>
 <td><code>D3DX11CreateEffectFromMemory</code></td>
 </tr>
 <tr>
-<td><code>D3DXCreateEffectPool
+<td><code>D3DXCreateEffectPool<br />
 D3D10CreateEffectPoolFromMemory</code></td>
 <td>Effects 11 does not support 'effect pools'
 or <code>D3DCOMPILE_EFFECT_CHILD_EFFECT</code>. Effect <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-effect-group-syntax">groups</a> provide a more efficient solution for common scenarios previously addressed with 'effect pools'</td>
 </tr>
 <tr>
-<td><code>D3DXDisassembleEffect
+<td><code>D3DXDisassembleEffect<br />
 D3D10DisassembleEffect</code></td>
 <td><code>D3DDisassemble</code>
 <code>D3DDisassemble10Effect</code> in D3DCompile</td>
@@ -1003,12 +1011,12 @@ D3DX9 included the entry-points intercepted by PIX for Windows for performance p
 <table border="1">
 <tbody>
 <tr>
-<td><code>D3DPERF_BeginEvent
-D3DPERF_EndEvent
-D3DPERF_SetMarker
-D3DPERF_SetRegion
-D3DPERF_QueryRepeatFrame
-D3DPERF_SetOptions
+<td><code>D3DPERF_BeginEvent<br />
+D3DPERF_EndEvent<br />
+D3DPERF_SetMarker<br />
+D3DPERF_SetRegion<br />
+D3DPERF_QueryRepeatFrame<br />
+D3DPERF_SetOptions<br />
 D3DPERF_GetStatus</code></td>
 <td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation">ID3DUserDefinedAnnotation</a> which is supported by the DirectX 11.1 runtime on Windows 8.x and Windows 7 Service Pack 1 + <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">KB2670838</a>
 
@@ -1058,10 +1066,10 @@ The <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas
 Careful readers will note that there are a few omissions from this table.
 
 <ul>
- 	<li>The <code>ID3DXMatrixStack</code> from D3DXMath doesn't have a new version, but it's actually pretty easy to implement your own. If someone has a burning need for this, please comment below.</li>
+ 	<li>The <code>ID3DXMatrixStack</code> from D3DXMath doesn't have a new version, but it's actually pretty easy to implement your own. If someone has a burning need for this, see <a href="https://github.com/microsoft/DirectXTK/issues/240">here</a>.</li>
  	<li>The Precomputed Radiance Transfer (PRT) simulator is only available in closed-source form in legacy D3DX9. There are a number of papers that cover this technology in the literature, and the most generally useful parts of this functionality are the <a href="https://walbourn.github.io/spherical-harmonics-math/">SHmath</a> functions which are available.</li>
 </ul>
 
 <h1>Background</h1>
 
-A few folks have asked why the D3DX libraries were deprecated in the first place in the transition to the Windows 8.x SDK. D3DX has been a useful set of utility code for Direct3D applications since Direct3D 7, but has a presented a number of challenges over the years. The primary one is that as a 'closed-source' utility library; it was difficult to debug, resolve performance issues, or apply hot-fixes without taking a dependency on a newer release of the DirectX SDK. Second, with the security requirements that came with the adoption of the <a href="http://www.microsoft.com/security/sdl/default.aspx">Secure Development Lifecycle</a> (SDL) at Microsoft, the transition to a DLL rather than a static library created a redistribution requirement that<a href="https://walbourn.github.io/not-so-direct-setup/"> complicated setup</a> for many developers--note that static libraries have their own problems such as being specific to a particular release of the compiler including service pack level. D3DX9 itself became a bit bloated which resulted in a DLL larger than many EXEs that used it. Finally, the actual usable content of subsequent generations of D3DX left D3DX11 with not much in it. The need for useful utility code is still there, but it is now being solved with various 'shared-source' solutions rather than a monolithic closed-source DLL like D3DX.
+A few folks have asked why the D3DX libraries were deprecated in the first place in the transition to the Windows 8.x SDK. D3DX has been a useful set of utility code for Direct3D applications since Direct3D 7, but has a presented a number of challenges over the years. The primary one is that as a 'closed-source' utility library; it was difficult to debug, resolve performance issues, or apply hot-fixes without taking a dependency on a newer release of the DirectX SDK. Second, with the security requirements that came with the adoption of the <a href="https://www.microsoft.com/en-us/securityengineering/sdl/">Secure Development Lifecycle</a> (SDL) at Microsoft, the transition to a DLL rather than a static library created a redistribution requirement that<a href="https://walbourn.github.io/not-so-direct-setup/"> complicated setup</a> for many developers--note that static libraries have their own problems such as being specific to a particular release of the compiler including service pack level. D3DX9 itself became a bit bloated which resulted in a DLL larger than many EXEs that used it. Finally, the actual usable content of subsequent generations of D3DX left D3DX11 with not much in it. The need for useful utility code is still there, but it is now being solved with various 'shared-source' solutions rather than a monolithic closed-source DLL like D3DX.
