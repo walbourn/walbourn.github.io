@@ -34,6 +34,7 @@ The half-precision conversion intrinsics are used when building for the ARM64 pl
  	<li><a href="https://walbourn.github.io/directxmath-3-07/">DirectXMath 3.07</a> was the first version to include basic ARM64 support using the same ARM-NEON implementation as used for ARM (32-bit).</li>
  	<li><a href="https://walbourn.github.io/directxmath-3-10/">DirectXMath 3.10</a> uses ARMv8 intrinsics when building the ``_M_ARM64`` architecture for optimizations of specific functions including the new <em>XMVectorSum</em> horizontal add function.</li>
  	<li><a href="https://walbourn.github.io/directxmath-3-13/">DirectXMath 3.12</a> uses ARM64 fused-multiply and accumulate to implement <em>XMVectorMultiplyAdd</em> and <em>XMVectorNegativeMultiplySubtract</em> on the ARM64 platform.</li>
+  <li><a href="https://walbourn.github.io/directxmath-3-13/">DirectXMath 3.13</a> - <a href="https://walbourn.github.io/directxmath-3.16/">3.16</a> cleaned up the ARM-NEON implementation for better compiler portability for clang/LLVM and GNUC.
 </ul>
 
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>
