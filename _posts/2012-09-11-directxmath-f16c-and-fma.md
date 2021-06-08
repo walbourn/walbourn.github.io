@@ -75,9 +75,11 @@ AMD has announced it is planning to implement FMA3 with "Piledriver". It is also
 
 F16C/CVT16 is supported by AMD "Piledriver", Intel "Ivy Bridge", and later processors.
 
-FMA4 is supported by AMD Bulldozer.
+FMA4 is supported by AMD Bulldozer. <i>AMD Zen1 or later removed FMA4</i>.
 
-FMA3 will be supported by Intel "Haswell" and AMD "Piledriver" processors.
+FMA3 is supported by Intel "Haswell" and AMD "Piledriver" processors or later.
+
+> All CPUs with [AVX2](https://walbourn.github.io/directxmath-avx2/) support include AVX, FMA3, and F16C.
 
 As extensions of the AVX instruction set, these instructions all require OSXSAVE support. This support is included in Windows 7 Service Pack 1, Windows Server 2008 R2 Service Pack 1, Windows 8, and Windows Server 2012.
 

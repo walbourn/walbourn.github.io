@@ -25,7 +25,7 @@ As a side note, there are some older instruction sets available on many CPUs inc
 
 <h1>Processor Support</h1>
 
-Intel Pentium 4, AMD Athlon 64, all x64-capable CPUs, and later processors support both SSE and SSE2.
+Intel Pentium 4, AMD Athlon 64, Intel Atom, all x64-capable CPUs, and later processors support both SSE and SSE2.
 
 Intel Pentium 3, AMD K7, and some lesser known older x86 clones (VIA C3, Transmeta Crusoe) only support SSE.
 
@@ -63,6 +63,8 @@ if (CPUInfo[0] > 0)
     bSSE2 = (CPUInfo[3] & 0x4000000) != 0;
 }
 ```
+
+> The Surface X Pro ARM64 device supports x86 with SSE, SSE2, SSE3, SSSE3, and SSE4.1 support.
 
 <h1>Compiler Support</h1>
 

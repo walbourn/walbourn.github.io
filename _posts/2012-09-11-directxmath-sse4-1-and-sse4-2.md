@@ -147,7 +147,7 @@ The ``_mm_blend_ps`` instruction can be used as special-cases for the <code>XMVe
 
 SSE4.1 is supported on Intel Core 2 ("Penryn"), Intel Core i7 ("Nehalem"), AMD Bulldozer, and later processors.
 
-SSE 4.1 and SSE4.2 are supported on Intel Core i7 ("Nehalem"), AMD Bulldozer, and later processors.
+SSE 4.1 and SSE4.2 are supported on Intel Core i7 ("Nehalem"), AMD Bulldozer, and later processors. Intel Atom "Silvermont" or later support SSE 4.1 and SSE 4.2 as well.
 
 ```cpp
 #if defined(__clang__) || defined(__GNUC__)
@@ -175,6 +175,8 @@ if (CPUInfo[0] > 0)
     bSSE4_2 = (CPUInfo[2] & 0x100000) != 0;
 }
 ```
+
+> The Surface X Pro ARM64 device supports x86 with SSE, SSE2, SSE3, SSSE3, and SSE4.1 support.
 
 <h1>Compiler Support</h1>
 

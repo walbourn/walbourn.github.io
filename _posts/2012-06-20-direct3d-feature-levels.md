@@ -31,7 +31,7 @@ Surface RT; Surface 2)</p>
 </tr>
 <tr>
 <td><code>D3D_FEATURE_LEVEL_9_3</code>
-(e.g. NVidia GeForce 6600;
+(e.g. nVidia GeForce 6600;
 ATI Radeon X1300)</td>
 <td><p>Direct3D 9 hardware: must support Shader Model 2.0 (<code>vs_2_0/ps_2_x</code>) with instancing and additional shader caps, 4K textures, multiple render targets (4 MRTs), floating-point blending (limited), all 9_2 features.</p>
 <p><em>Windows phone 8.x developers have access to this feature level.</em></p></td>
@@ -39,7 +39,7 @@ ATI Radeon X1300)</td>
 <tr>
 <td><code>D3D_FEATURE_LEVEL_10_0</code>
 (e.g. ATI Radeon HD 2000;
-NVIDIA GeForce 8/9;
+nVidia GeForce 8/9;
 Intel G965M Express Chipset, HD Graphics "Arrandale/Clarkdale")</td>
 <td><p>Direct3D 10 hardware: Shader Model 4.0, geometry shader, stream out, alpha-to-coverage, 8K textures, MSAA textures, 2-sided stencil, general render target views, texture arrays, BC4/BC5, optional DirectCompute (CS 4.0), full floating-point format support, all 9_3 features.</p>
 <p><em>Xbox One ADK / UWP developers have access to this feature level.</em></p></td>
@@ -47,7 +47,7 @@ Intel G965M Express Chipset, HD Graphics "Arrandale/Clarkdale")</td>
 <tr>
 <td><code>D3D_FEATURE_LEVEL_10_1</code>
 (e.g. ATI Radeon HD 3000/4000;
-NVIDIA GeForce  GTX 300;
+nVidia GeForce GTX 300;
 Intel HD Graphics 3000/2000 "Sandy
 Bridge")</td>
 <td>Direct3D 10.1 hardware: Shader Model 4.1, cubemap arrays, extended MSAA, optional DirectCompute (CS 4.1), all 10_0 features.</td>
@@ -55,14 +55,14 @@ Bridge")</td>
 <tr>
 <td><p><code>D3D_FEATURE_LEVEL_11_0</code>
 (e.g. ATI Radeon HD 5000-7000;
-NVIDIA Geforce GTX 400-700;
+nVidia Geforce GTX 400-700;
 Intel HD Graphics 4000/2500 "Ivy Bridge"; Surface Pro)</p>
 <p><em>Implies a WDDM 1.1 or later driver</em></p></td>
 <td>Direct3D 11 hardware: Shader Model 5.0, hull & domain shaders, mandatory DirectCompute (CS 5.0), 16K textures, BC6H/BC7, all 10_1 features.</td>
 </tr>
 <tr>
 <td><p><code>D3D_FEATURE_LEVEL_11_1</code>
-(e.g. AMD Radeon HD 8000; NVIDIA GeForce GTX 900;
+(e.g. AMD Radeon HD 8000; nVidia GeForce GTX 900;
 Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro 2, Surface Pro 3, Xbox One, HoloLens)</p>
 <p><em>Implies a WDDM 1.2 or later driver</em></p></td>
 <td><p>Direct3D 11.1 hardware: Shader Model 5.0 with optional extensions, Logical blend operations, Target-independent rasterization, UAVs at every stage, Constant buffer offsetting and partial updates, UAV only rendering with force sample count, all 11_0 features.</p>
@@ -70,13 +70,14 @@ Intel HD Graphics 5000/4x00 "Haswell"; Intel "Broadwell"; Surface 3, Surface Pro
 <p><em>Xbox One XDK developers have access to this feature level plus additional platform-specific APIs.</em></p></td>
 </tr>
 <tr>
-<td><code>D3D_FEATURE_LEVEL_12_0</code>
-<code>D3D_FEATURE_LEVEL_12_1</code></td>
+<td><p><code>D3D_FEATURE_LEVEL_12_0</code> (e.g. AMD Radeon 400/500 Series, nVidia GeForce 700/800 Series, Intel "Skylake-S")</code><br /><br />
+<code>D3D_FEATURE_LEVEL_12_1</code> (e.g. AMD Radeon RX 5000 Series, nVidia GeForce 10/20 Series, Intel Xe-LP, Surface X Pro)</p>
+<p><em>Implies a WDDM 2.0 or later driver</em></p></td>
 <td><p>See <a href="https://channel9.msdn.com/Events/GDC/GDC-2015/Advanced-DirectX12-Graphics-and-Performance">Advanced DirectX12 Graphics and Performance</a> (GDC 2015).</p></td>
 </tr>
 <tr>
-<td><p><code>D3D_FEATURE_LEVEL_12_2</code></p>
-<p><em>Implies a WDDM 2.0 or later driver</em></p></td>
+<td><p><code>D3D_FEATURE_LEVEL_12_2</code> (e.g. AMD Radeon RX 6000 Series, nVidia GeForce RTX 30 Series, Intel Xe-HPG, Xbox Series X/S)</p>
+</td>
 <td><p>See <a href="https://devblogs.microsoft.com/directx/new-in-directx-feature-level-12_2/">this blog post</a> about this new DirectX12 only feature level. Technical details are <a href="https://microsoft.github.io/DirectX-Specs/d3d/D3D12_FeatureLevel12_2.html#capabilities">here</a>.</p></td>
 </tr>
 </tbody>

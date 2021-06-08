@@ -82,7 +82,9 @@ There's not enough use for this kind of operation to make this function part of 
 
 <h1>Processor Support</h1>
 
-SSE3 is supported by Intel Pentium 4 processors ("Prescott"), AMD Athlon 64 ("revision E"), AMD Phenom, and later processors. This means most, but not quite all, x64 capable CPUs should support SSE3.
+SSE3 is supported by Intel Pentium 4 processors ("Prescott"), Intel Atom, AMD Athlon 64 ("revision E"), AMD Phenom, and later processors. This means most, but not quite all, x64 capable CPUs should support SSE3.
+
+> Windows 10 tightened the requirements for x64 support so those few early first-generation x64 AMD and Intel CPUs aren't supported these days in any case.
 
 Supplemental SSE3 (SSSE3) is supported by Intel Core 2 Duo, Intel Core i7/i5/i3, Intel Atom, AMD Bulldozer, and later processors.
 
@@ -114,6 +116,8 @@ if (CPUInfo[0] > 0)
 ```
 
 You can also use the <code>IsProcessorFeaturePresent</code> Win32 API with <code>PF_SSE3_INSTRUCTIONS_AVAILABLE</code> on Windows Vista or later to detect SSE3 support. This API does not report support for SSSE3.
+
+> The Surface X Pro ARM64 device supports x86 with SSE, SSE2, SSE3, SSSE3, and SSE4.1 support.
 
 <h1>Utility Code</h1>
 
