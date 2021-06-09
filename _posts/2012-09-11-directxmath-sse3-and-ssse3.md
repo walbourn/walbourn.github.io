@@ -123,7 +123,7 @@ You can also use the <code>IsProcessorFeaturePresent</code> Win32 API with <code
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>. A <code>XMVectorSum</code> function was added to recent versions of DirectXMath which makes use of horizontal-add.
 
-<strong>Xbox:</strong> Xbox One and Xbox Series X|S support SSE3 and SSSE3.
+<strong>Xbox:</strong> Xbox One and Xbox Series X\|S support SSE3 and SSSE3.
 
 <strong>DirectXMath 3.10:</strong> Added the <code>XMVectorSum</code> method for horizontal adds, as well as the ability to specifically opt-in to just the SSE3 optimizations via ``-D_XM_SSE3_INTRINSICS_``
 

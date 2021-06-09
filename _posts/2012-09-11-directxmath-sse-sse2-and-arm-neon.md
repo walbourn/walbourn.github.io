@@ -85,7 +85,7 @@ In this series of posts, I explore how applications using DirectXMath can take a
  	<li><a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a></li>
 </ul>
 
-<strong>Xbox:</strong> The Xbox One version of DirectXMath in the XDK and ADK includes the majority optimizations discussed in this series as Xbox One supports SSE3, SSSE3, SSE4.1, SSE4.2, AVX, and F16C. Xbox Series X|S supports all these plus AVX2 and FMA3.
+<strong>Xbox:</strong> The Xbox One version of DirectXMath in the XDK and ADK includes the majority optimizations discussed in this series as Xbox One supports SSE3, SSSE3, SSE4.1, SSE4.2, AVX, and F16C. Xbox Series X\|S supports all these plus AVX2 and FMA3.
 
 <strong>GitHub:</strong> Note that DirectXMath is now hosted on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a>.
 

@@ -298,7 +298,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td>Diret3D 12, Direct3D 11.3/11.4, DXGI 1.4/1.5</td>
 <td><p>These technologies are available for Universal Windows Platform (UWP) apps for Windows 10 and Win32 desktop apps for Windows 10.</p>
 <p>Universal Windows Platform (UWP) apps for Windows 10 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p>
-<p><em>Note:</em> Microsoft GDK for Xbox One and Xbox Series X|S only supports Direct3D 12.</p></td>
+<p><em>Note:</em> Microsoft GDK for Xbox One and Xbox Series X\|S only supports Direct3D 12.</p></td>
 </tr>
 <tr>
 <td>D3DX</td>

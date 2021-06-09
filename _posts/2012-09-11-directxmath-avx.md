@@ -133,7 +133,7 @@ Support for AVX intrinsics was added to Visual Studio 2010 via Service Pack 1. T
 
 <strong>Update:</strong> The source for this project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub </a>under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
 
-<strong>Xbox:</strong> Xbox One and Xbox Series X|S support AVX.
+<strong>Xbox:</strong> Xbox One and Xbox Series X\|S support AVX.
 
 <strong>Windows 7 x64 Known Issue with AVX:</strong> See <a href="http://support.microsoft.com/kb/2864432/">KB 2864432</a>
 
