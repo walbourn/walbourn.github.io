@@ -37,7 +37,7 @@ or <code>WINAPI_FAMILY_PC_APP</code> (Windows 8.1 SDK)</td>
 <td><code>WINAPI_FAMILY_PHONE_APP</code></td>
 </tr>
 <tr>
-<td>Microsoft GDK<br />(Xbox One, Xbox Series X\|S)</td>
+<td>Microsoft GDK<br />(Xbox One, Xbox Series X|S)</td>
 <td><code>WINAPI_FAMILY_GAMES</code></td>
 </tr>
 <tr>
