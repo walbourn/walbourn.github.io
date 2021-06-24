@@ -17,7 +17,7 @@ In general, applications should be written to target either the Windows Store or
 
 The purpose of this series of posts is to talk about the overlap, and how developers creating shared libraries and game middleware can write C++ code that will successfully compile for both platforms.
 
-<strong>Windows phone and Xbox:</strong> This article also applies to Windows phone 8.x and Xbox development using the XDK or GDK (see <a href="http://www.xbox.com/id">ID@Xbox</a>)
+<strong>Windows phone and Xbox:</strong> This article also applies to Windows phone 8.x and Xbox development using the XDK or GDKX (see <a href="http://www.xbox.com/id">ID@Xbox</a>)
 
 <strong>Windows 10:</strong> The guidance here applies to Universal Windows Platform (UWP) apps for Windows 10 as well.
 
@@ -37,7 +37,7 @@ or <code>WINAPI_FAMILY_PC_APP</code> (Windows 8.1 SDK)</td>
 <td><code>WINAPI_FAMILY_PHONE_APP</code></td>
 </tr>
 <tr>
-<td>Microsoft GDK<br />(Xbox One, Xbox Series X|S)</td>
+<td>Microsoft GDKX<br />(Xbox One, Xbox Series X|S)</td>
 <td><code>WINAPI_FAMILY_GAMES</code></td>
 </tr>
 <tr>

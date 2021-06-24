@@ -281,7 +281,7 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td>Direct3D 11.0, DXGI 1.1, Direct2D, and DirectWrite</td>
 <td><p>These technologies are available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8.x, Windows 7, and Windows Vista SP2+<a href="http://support.microsoft.com/kb/971644">KB971644</a>.</p>
 <p><em>Direct3D 9 and Direct3D 10.x are not supported for Windows Store apps, Windows phone 8.x, Universal Windows Platform (UWP) apps for Windows 10, or Xbox</em>.</p>
-<p><em>Note:</em> Windows phone 8.0, Xbox One XDK, and Microsoft GDK do not support Direct2D or DirectWrite.</p></td>
+<p><em>Note:</em> Windows phone 8.0, Xbox One XDK, and Microsoft GDKX do not support Direct2D or DirectWrite.</p></td>
 </tr>
 <tr>
 <td>Direct3D 11.1, DXGI 1.2, improved Direct2D and DirectWrite</td>
@@ -292,13 +292,13 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <td>Direct3D 11.2, DXGI 1.3</td>
 <td><p>These technologies are available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 8.1 and Windows 10.</p>
 <p>Windows Store apps for Windows 8.1 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p>
-<p><em>Note: </em>Windows phone 8.0, Xbox One XDK, and Microsoft GDK do not support Direct3D 11.2 / DXGI 1.3</p></td>
+<p><em>Note: </em>Windows phone 8.0, Xbox One XDK, and Microsoft GDKX do not support Direct3D 11.2 / DXGI 1.3</p></td>
 </tr>
 <tr>
 <td>Diret3D 12, Direct3D 11.3/11.4, DXGI 1.4/1.5</td>
 <td><p>These technologies are available for Universal Windows Platform (UWP) apps for Windows 10 and Win32 desktop apps for Windows 10.</p>
 <p>Universal Windows Platform (UWP) apps for Windows 10 can rely on these technologies always being present, while Win32 desktop applications need to provide suitable fallbacks for older versions of Windows.</p>
-<p><em>Note:</em> Microsoft GDK for Xbox One and Xbox Series X|S only supports Direct3D 12.</p></td>
+<p><em>Note:</em> Microsoft GDKX for Xbox One and Xbox Series X|S only supports Direct3D 12.</p></td>
 </tr>
 <tr>
 <td>D3DX</td>
@@ -341,13 +341,13 @@ One of the reasons that dual-use shared code is possible for game technology is 
 <tr>
 <td>Windows Imaging Component (WIC)</td>
 <td><p>This technology is available for Windows Store apps,Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop apps for Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to set the <code>_WIN32_WINNT</code> definition properly to ensure use of the correct version of the WIC factory. See "<a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">Windows Imaging Component and Windows 8</a>" for more information.</p>
-<p><em>Note:</em> Windows phone 8.0 does not support WIC, but this is supported for Windows phone 8.1. Xbox One XDK / Microsoft GDK does not support the JPEG XR / HD Photo codec and a few other aspects of 'standard' WIC.</p></td>
+<p><em>Note:</em> Windows phone 8.0 does not support WIC, but this is supported for Windows phone 8.1. Xbox One XDK / Microsoft GDKX does not support the JPEG XR / HD Photo codec and a few other aspects of 'standard' WIC.</p></td>
 </tr>
 <tr>
 <td>Windows Media Foundation (MF)</td>
 <td><p>The Windows Media Foundation is available for Windows Store apps, Universal Windows Platform (UWP) apps for Windows 10, and Win32 desktop applications on Windows 10, Windows 8, Windows 7, and Windows Vista. Be sure to read <a href="https://walbourn.github.io/quot-who-moved-my-windows-media-cheese-quot/">this</a> post for some additional guidance.</p>
 <p><em>DirectShow is not supported for Windows Store apps, Windows phone 8.x, Xbox, or Universal Windows Platform (UWP) apps for Windows 10.</em></p>
-<p><em>Note:</em> Windows phone 8.0 has partial support for the Media Foundation API, specifically <a href="https://docs.microsoft.com/en-us/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengine">IMFMediaEngine</a>. Xbox One XDK and Microsoft GDK also have partial support for the Media Foundation API.</p></td>
+<p><em>Note:</em> Windows phone 8.0 has partial support for the Media Foundation API, specifically <a href="https://docs.microsoft.com/en-us/windows/desktop/api/mfmediaengine/nn-mfmediaengine-imfmediaengine">IMFMediaEngine</a>. Xbox One XDK and Microsoft GDKX also have partial support for the Media Foundation API.</p></td>
 </tr>
 </tbody>
 </table>
