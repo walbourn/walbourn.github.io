@@ -119,6 +119,6 @@ if (uint32_t(CPUInfo[0]) > 0x80000000)
 }
 ```
 
-<strong>Xbox:</strong> Xbox One supports ABM, AES, BMI1, and MOVBE. Xbox Series X|S supports those as well plus BMI2.
+<strong>Xbox:</strong> Xbox One supports ABM, AES, BMI1, and MOVBE. Xbox Series X\|S supports those as well plus BMI2.
 
 <strong>Related</strong>: See [Visual C++ Team Blog](https://devblogs.microsoft.com/cppblog/bit-in-visual-studio-2019-version-16-8-preview-2/)
