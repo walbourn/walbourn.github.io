@@ -109,7 +109,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p>ContentExporter</p>
 </td>
 <td>
-<p><a href="http://go.microsoft.com/fwlink/?LinkId=226208">Samples Content Exporter Update</a></p>
+<p><a href="https://aka.ms/dxsdkcontentexporter">Samples Content Exporter Update</a></p>
 </td>
 </tr>
 <tr>

@@ -21,7 +21,7 @@ In the same vein as my post on where you can find many of the <a href="https://w
 </tr>
 <tr>
 <td>DirectX Capabilities Viewer (<code>DxCapsViewer.exe</code>)</td>
-<td>See <a href="https://walbourn.github.io/directx-caps-viewer-update/">DirectX Caps Viewer Update</a>.</td>
+<td>See <a href="https://walbourn.github.io/directx-caps-viewer-update/">DirectX Caps Viewer Update</a> and <a href="https://github.com/microsoft/DxCapsViewer">GitHub</a>.</td>
 </tr>
 <tr>
 <td>DirectX Error Lookup Tool (<code>DXErr.exe</code>)</td>
@@ -42,7 +42,7 @@ For notes on the DxErr library that the <code>DXErr.exe</code> tool used, see <a
 <td><code>Meshconvert.exe</code></td>
 <td><a href="http://go.microsoft.com/fwlink/?LinkID=324981">DirectXMesh</a><br />
 <br />
-See also the <a href="http://go.microsoft.com/fwlink/?LinkId=226208">Samples Content Exporter</a>.</td>
+See also the <a href="https://aka.ms/dxsdkcontentexporter">Samples Content Exporter</a>.</td>
 </tr>
 <tr>
 <td>DirectX Texture Editor (<code>DxTex.exe</code>)</td>
