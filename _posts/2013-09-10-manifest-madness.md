@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [win10, win8]
 ---
-<em>This blog post discusses </em><a href="https://docs.microsoft.com/en-us/windows/desktop/SbsCs/application-manifests"><em>Application Manifest</em></a><em> elements for use in Win32 desktop applications. This is not about the </em><a href="https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest"><em>App package manifest</em></a><em> (aka AppX) used for Windows Store apps for Windows 8.x, UWP, Centennial Desktop Bridge, or Xbox One XDK.</em>
+<em>This blog post discusses </em><a href="https://docs.microsoft.com/en-us/windows/desktop/SbsCs/application-manifests"><em>Application Manifest</em></a><em> elements for use in Win32 desktop applications. This is not about the </em><a href="https://docs.microsoft.com/en-us/uwp/schemas/appxpackage/appx-package-manifest"><em>App package manifest</em></a><em> (aka AppX) used for Windows Store apps for Windows 8.x, UWP, Centennial Desktop Bridge,  Xbox One XDK, or the Microsoft GDK.</em>
 
 <h1>User Account Control</h1>
 
@@ -114,11 +114,13 @@ Some examples of what can go wrong for a game that fails to use the proper High-
 Note that the <a href="http://blogs.windows.com/bloggingwindows/2014/09/30/announcing-windows-10/">latest version of Windows</a> includes the default version lie shim that was present in Windows 8.1. If you have the 8.1 GUID present in the ``<compatibility>`` section of the manifest, Windows 10 will report version 6.3 if your application uses the legacy <code>GetVersion(Ex)</code> APIs. Without it or with only older GUIDs, it will report 6.2. To get the version number reported as 10.0 (note this was 6.4 with the original Windows 10 Technical Preview build 9841), you must add another GUID to your manifest:
 
 ```
-<!-- Windows 10 -->
+<!-- Windows 10 / Windows 11 -->
 <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>
 ```
 
 <strong>Update: </strong>With Windows 10 <code>VerifyVersionInfo</code> is now subject to the same manifest-based behavior as <code>GetVersion(Ex)</code>: by default <code>IsWindows8OrGreater</code> and earlier will return 'true' as expected on Windows 10, but both <code>IsWindows8Point1OrGreater</code> and <code>IsWindows10OrGreater</code> will return 'false' without the appropriate GUIDs present in the ``<compatibility>`` section.
+
+Windows 11 uses the same `supportedOS` GUID as Windows 10. The version number of Windows 11 is still "10.0", with a build number  >= 22000.
 
 <strong>Windows 10 & High DPI:</strong> The Windows 10 High DPI settings can be 100%, 125%, 150%, 175%, 200%, 225%, 250%, 300%, 350%, 400%, or 450%. See <a href="https://blogs.technet.microsoft.com/askcore/2015/12/08/display-scaling-in-windows-10/">this post</a> for details.
 
