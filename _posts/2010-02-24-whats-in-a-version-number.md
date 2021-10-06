@@ -122,4 +122,6 @@ At this point we have excluded Windows Vista / Server 2008 RTM. This is useful b
 
 <strong>Diagnostic Logs:</strong> If you are just trying to obtain a version number for a diagnostic log output, the best thing to do is just call ``GetVersion(Ex)`` and add the [compatibly manifest](https://walbourn.github.io/manifest-madness/) to your EXE. If you are in a scenario where you can't add the manifest, you can make use of WMI with the <a href="https://docs.microsoft.com/en-us/windows/desktop/CIMWin32Prov/win32-operatingsystem">Win32_OperatingSystem</a> class.
 
+<strong>Windows 11:</strong> See [Windows SDK for Windows 11](https://walbourn.github.io/windows-sdk-for-windows-11) for details on Windows 11 OS version checks.
+
 [source code](https://walbourn.github.io/download/oscheck_direct3d9.cpp)

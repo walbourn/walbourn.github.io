@@ -10,6 +10,8 @@ categories: [directxmath]
 DirectXMath 3.16 is now available via [GitHub](https://github.com/microsoft/DirectXMath/releases/tag/jan2021), [NuGet](https://www.nuget.org/packages/directxmath/2021.1.11.2), and [vcpkg](https://github.com/walbourn/vcpkg/tree/master/ports/directxmath). It is included in the **Windows 10 SDK (20348), version 2104**
 
 > Note that the GitHub, vcpkg, and NuGet links above point to DirectXMath 3.16b which is a hot-fixed version compared to the Windows 10 SDK (20348) copy of DirectXMath 3.16. This includes a few minor syntax fixes to support clang/LLVM and GNUC for the ARM64 platform. There are no functional differences.
+
+> The Windows SDK for Windows 11 (10.0.22000) includes the updated 3.16b version.
 <!--more-->
 
 # DirectXMath 3.15
