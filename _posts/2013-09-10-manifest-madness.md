@@ -103,7 +103,9 @@ Windows 8.1 also includes enhancements to High-DPI support including per-monitor
 </assembly>
 ```
 
-Visual Studio 2010 and 2012 do not offer the new "Per Monitor" or "True/PM" settings, so you will need to go back to using "Additional Manifest Files" and set the "Enable DPI Awareness" project setting to "No".
+Visual Studio 2010 - 2015 do not offer the new "Per Monitor" or "True/PM" settings, so you will need to go back to using "Additional Manifest Files" and set the "Enable DPI Awareness" project setting to "No".
+
+Visual Studio 2017 or later does offer "PerMonitorHighDPIAware" as a setting in the project properties.
 
 See <a href="http://go.microsoft.com/fwlink/p/?LinkID=307061">Writing DPI-Aware Desktop Applications in Windows 8.1 Preview</a>.
 
@@ -120,7 +122,7 @@ Note that the <a href="http://blogs.windows.com/bloggingwindows/2014/09/30/annou
 
 <strong>Update: </strong>With Windows 10 <code>VerifyVersionInfo</code> is now subject to the same manifest-based behavior as <code>GetVersion(Ex)</code>: by default <code>IsWindows8OrGreater</code> and earlier will return 'true' as expected on Windows 10, but both <code>IsWindows8Point1OrGreater</code> and <code>IsWindows10OrGreater</code> will return 'false' without the appropriate GUIDs present in the ``<compatibility>`` section.
 
-Windows 11 uses the same `supportedOS` GUID as Windows 10. The version number of Windows 11 is still "10.0", with a build number  >= 22000.
+> <strong>Windows 11</strong> uses the same `supportedOS` GUID as Windows 10. The version number of Windows 11 is still "10.0", with a build number  >= 22000.
 
 <strong>Windows 10 & High DPI:</strong> The Windows 10 High DPI settings can be 100%, 125%, 150%, 175%, 200%, 225%, 250%, 300%, 350%, 400%, or 450%. See <a href="https://blogs.technet.microsoft.com/askcore/2015/12/08/display-scaling-in-windows-10/">this post</a> for details.
 
@@ -132,5 +134,6 @@ Windows 11 uses the same `supportedOS` GUID as Windows 10. The version number of
 
 <strong>Dynamic Link Library (DLL):</strong> Embedded manifests can be applied to DLLs for specific elements, but none of the elements listed in this article apply. They only work if provided in the original launching EXE.
 
-**VS 2008 or later**: <a href="https://walbourn.github.io/download/settings.manifest">settings.manifest</a>   
+**VS 2017 or later**: <a href="https://walbourn.github.io/download/settings.manifest">settings.manifest</a>   
+**VS 2008 - VS 2015**: <a href="https://walbourn.github.io/download/settingsHighDPI.manifest">settingsHighDPI.manifest</a>   
 **Other toolsets**: <a href="https://walbourn.github.io/download/settingsUAC.manifest">settingsUAC.manifest</a>
