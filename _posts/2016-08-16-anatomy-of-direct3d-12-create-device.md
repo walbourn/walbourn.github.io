@@ -68,7 +68,7 @@ for (UINT adapterIndex = 0;
 }
 ```
 
-<strong>Note:</strong> We are excluding the <em>Microsoft Basic Render</em> adapter here (aka <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/gg615082.aspx">WARP</a>+VGA driver) since games typically don't play well using WARP, but keep in mind that WARP12 is not present on standard Windows 10 systems; it's only installed as part of the Graphics Tools optional feature.
+<strong>Note:</strong> We are excluding the <em>Microsoft Basic Render</em> adapter here (aka <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/directx-warp">WARP</a>+VGA driver) since games typically don't play well using WARP, but keep in mind that WARP12 is not present on standard Windows 10 systems; it's only installed as part of the Graphics Tools optional feature.
 
 > You could also query a ``IDXGIFactory6`` interface and use ``EnumAdapterByGpuPreference`` to prefer using discrete (``DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE``) vs. integrated (``DXGI_GPU_PREFERENCE_MINIMUM_POWER``) graphics on hybrid systems. This interface is supported on  Windows 10 April 2018 Update (17134) or later.
 
@@ -137,7 +137,7 @@ One more consideration: For gamma-correct rendering to standard 8-bit per channe
 
 <strong>Note:</strong> With Direct3D 12, you cannot use the <code>device.As(&dxgiDevice)</code> sequence to obtain the DXGI factory from the Direct3D 12 device for cases where you use <code>nullptr</code> to create the <code>D3D12CreateDevice</code> instance. You must always explicitly create the DXGI factory using <code>CreateDXGIFactory1</code> or <code>CreateDXGIFactory2</code>.
 
-<b>Update:</b> If you want to make use of <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/mt742104.aspx">variable refresh displays</a> or <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/mt742103.aspx">HDR10</a> output see <a href="https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/DeviceResources.cpp">DeviceResources</a>.
+<b>Update:</b> If you want to make use of <a href="https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/high-dynamic-range">HDR10</a> output see <a href="https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/DeviceResources.cpp">DeviceResources</a>.
 
 <h1>Windows SDK</h1>
 
@@ -218,4 +218,4 @@ Because the minimum OS version is enforced for the platform, you can count on <c
 
 <strong>Link libraries:</strong> The standard list of libraries to link to for a DirectX 12 application is ``d3d12.lib dxgi.lib dxguid.lib``. To use Windows Imaging Component (WIC) add ``uuid.lib``.
 
-<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12,</a> <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>, <a href="https://walbourn.github.io/care-and-feeding-of-modern-swapchains/">The Care and Feeding of Modern Swap Chains</a>
+<strong>Related:</strong> <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game Visual Studio templates (Redux)</a>, <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12,</a> <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>, <a href="https://walbourn.github.io/hdr-lighting-and-displays/">HDR Lighting and Displays</a>, <a href="https://walbourn.github.io/care-and-feeding-of-modern-swapchains/">The Care and Feeding of Modern Swap Chains</a>

@@ -28,3 +28,11 @@ The focus the past few weeks has been in catching up on the documentation backlo
 * The tutorials now cover *Multistream rendering and instancing*, *Authoring an Effect*, and *Physically-based rendering*. I also added a DirectX 12 version of *Writing custom shaders* on using custom shaders with ``SpriteBatch``.
 * Post-processing content in the *wiki* [DX11](https://github.com/microsoft/DirectXTK/wiki) / [DX12](https://github.com/microsoft/DirectXTK12/wiki) now includes examples.
 * The *utilities* [DX11](https://github.com/microsoft/DirectXTK/wiki/Utilities) / [DX12](https://github.com/microsoft/DirectXTK12/wiki/Utilities) page now includes a *MSAAHelper* and *SkyboxEffect* as well as a *Compressing assets* topic.
+
+# Work in progress
+
+I'm finally making progress on a [ModelBone](https://github.com/microsoft/DirectXTK/issues/280) implementation for both ``SDKMESH`` and ``CMO``, with the associated Draw methods for hierarchical bone drawing and skinned models. I'm also adding [CMO model loading](https://github.com/microsoft/DirectXTK12/pull/105) support to the *DirectX Tool Kit for DX12*, although I have no plans to support the DGSL effect system for DirectX 12 since it is strongly tied to HLSL Shader Model 4.
+
+**Update**: This functionality has shipped in the September 2021 releases.
+
+Much like *XNA Game Studio*, I don't have a specific animation system implementation, but I do have some example code for both SDKMESH and CMO animations. I'm currently working on tutorials for rigid-body animation, skinned animation, and skinning support for the normalmap effect.
