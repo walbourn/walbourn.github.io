@@ -35,6 +35,8 @@ if (FAILED(hr))
     // Error!
 ```
 
+> For DXGI Debugging, we'd actually use ``CreateDXGIFactory2`` with ``DXGI_CREATE_FACTORY_DEBUG``, but this only works if the *Windows Graphics Tools* optional feature is installed. See [DXGI Debug Device](https://walbourn.github.io/dxgi-debug-device/) for more information.
+
 Then we scan DXGI adapters looking for one that supports Direct3D 12:
 
 ```cpp
@@ -67,6 +69,8 @@ for (UINT adapterIndex = 0;
 ```
 
 <strong>Note:</strong> We are excluding the <em>Microsoft Basic Render</em> adapter here (aka <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/gg615082.aspx">WARP</a>+VGA driver) since games typically don't play well using WARP, but keep in mind that WARP12 is not present on standard Windows 10 systems; it's only installed as part of the Graphics Tools optional feature.
+
+> You could also query a ``IDXGIFactory6`` interface and use ``EnumAdapterByGpuPreference`` to prefer using discrete (``DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE``) vs. integrated (``DXGI_GPU_PREFERENCE_MINIMUM_POWER``) graphics on hybrid systems. This interface is supported on  Windows 10 April 2018 Update (17134) or later.
 
 If there's no Direct3D 12-capable hardware, then for development builds it is useful to fallback to the WARP software device for Direct3D 12. Here is another difference compared to Direct3D 11: WARP12 is a specific adapter you obtain from the DXGI factory (<code>IDXGIFactory4</code> or later):
 
@@ -118,6 +122,8 @@ if (SUCCEEDED(hr))
     featureLevel = featLevels.MaxSupportedFeatureLevel;
 }
 ```
+
+> With the *DirectX Agility SDK* or the *Windows SDK for Windows 11*, you can also add ``D3D_FEATURE_LEVEL_12_2`` to the array above.
 
 <h1>Swap Chain</h1>
 
