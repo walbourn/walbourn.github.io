@@ -4,7 +4,7 @@ title: DirectX Tool Kit - Now with GamePads
 date: 2014-09-05 13:04
 author: Chuck Walbourn
 comments: true
-categories: [input, xbox one]
+categories: [input, xbox]
 ---
 The <strong>XInput</strong> API is almost trivial to use at first glance which is basically two simple C APIs with very simple parameters. There are, however, a number of subtleties that have crept in over the years, including the split between Windows 8 and previous releases. There is also a potential performance problem if you naively try to search for multiple gamepads that are not currently connected every frame due to the underlying overhead of device enumeration to look for newly connected gamepads. Also, while XInput was available on Xbox 360, the Xbox One makes use of a WinRT IGamePad API instead.
 <!--more-->

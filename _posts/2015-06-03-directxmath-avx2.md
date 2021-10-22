@@ -4,7 +4,7 @@ title: DirectXMath - AVX2
 date: 2015-06-03 16:02
 author: Chuck Walbourn
 comments: true
-categories: [directxmath]
+categories: [directxmath, xbox]
 ---
 The Advanced Vector Extensions 2 (<a href="http://en.wikipedia.org/wiki/Advanced_Vector_Extensions">AVX2</a>) rounds out the instruction set introduced with AVX. The majority of the new instructions are for 256-bit registers, so they aren't directly applicable to <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a>. AVX2 is very useful if trying to make a fully equivalent <code>double4</code> version of all the DirectXMath functionality which is otherwise focused on <code>float4</code> vectors, but that is beyond the scope of this article or the library generally.
 <!--more-->

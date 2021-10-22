@@ -4,7 +4,7 @@ title: Windows Imaging Component and Windows 8
 date: 2012-11-19 15:07
 author: Chuck Walbourn
 comments: true
-categories: [win7, win8, xbox one]
+categories: [win7, win8, xbox]
 ---
 There are a number of new features and some bugs fixed in the <a href="https://docs.microsoft.com/en-us/previous-versions//hh994467(v=vs.85)">Windows Imaging Component for Windows 8</a>. With the installation of <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">KB 2670838</a> this new version of WIC is also available on Windows 7 Service Pack 1.
 <!--more-->

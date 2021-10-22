@@ -4,7 +4,7 @@ title: DirectX Caps Viewer Update
 date: 2020-07-29 20:05
 author: Chuck Walbourn
 comments: true
-categories: [github]
+categories: [github, dxsdk]
 ---
 
 The *DirectX Capabilities Viewer* utility dates back to the DirectX 5 era, which was written to help developers review the myriad "caps bits", resolutions, and devices supported by DirectX components. It shipped in the legacy [DirectX SDK](https://docs.microsoft.com/en-us/windows/win32/directx-sdk--august-2009-), and then moved to the Windows 8.0 SDK, Windows 8.1 SDK, and ships in the Windows 10 SDK today.

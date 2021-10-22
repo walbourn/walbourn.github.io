@@ -4,7 +4,7 @@ title: XAudio2 and Windows 8
 date: 2012-04-02 15:12
 author: Chuck Walbourn
 comments: true
-categories: [audio, dxsdk, win8, windowssdk, winphone, xbox one]
+categories: [audio, dxsdk, win8, windowssdk, winphone, xbox]
 ---
 The <em>Windows 8 Consumer Preview</em> includes version 2.8 of the <a href="https://docs.microsoft.com/en-us/windows/desktop/xaudio2/xaudio2-apis-portal">XAudio2</a> game audio API built in, and this API is fully supported for both Windows Store apps (including x86, x64, and Windows on ARM) and desktop Win32 applications. The full details of the differences compared to XAudio2 2.7 which shipped in the <em>DirectX SDK (June 2010)</em> release are addressed on <a href="https://docs.microsoft.com/en-us/windows/desktop/xaudio2/xaudio2-versions">Microsoft Docs</a>. The headers and libraries for XAudio 2.8 are included in the Windows SDK 8.0 that is part of <a href="https://walbourn.github.io/visual-studio-11-beta/">Visual Studio 11 Beta</a>.
 <!--more-->

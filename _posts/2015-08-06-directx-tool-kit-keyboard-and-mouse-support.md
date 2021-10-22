@@ -4,7 +4,7 @@ title: DirectX Tool Kit - Keyboard and Mouse support
 date: 2015-08-06 12:08
 author: Chuck Walbourn
 comments: true
-categories: [github, win10, win8]
+categories: [github, input]
 ---
 The <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">GamePad</a> abstraction in <em>DirectX Tool Kit</em> was designed to simplify implementing game controller input across the spectrum of platforms supported by <em>DirectX Tool Kit</em>: Windows desktop, Xbox One, Windows 8 Store, and now universal Windows Apps for Windows 10. In a similar vein, the July 2015 release of <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit</a> includes two new classes for handling keyboard and mouse input across Windows desktop, Windows 8 Store, and universal Windows apps for Windows 10.
 <!--more-->

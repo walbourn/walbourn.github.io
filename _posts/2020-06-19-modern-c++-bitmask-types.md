@@ -4,7 +4,7 @@ title: Modern C++ Bitmask types
 date: 2020-06-19 14:38
 author: Chuck Walbourn
 comments: true
-categories: [github]
+categories: [general]
 ---
 
 Bitmask flags are a ubiquitous pattern in C & C++ code. In the 'old days', they were typically defined as:

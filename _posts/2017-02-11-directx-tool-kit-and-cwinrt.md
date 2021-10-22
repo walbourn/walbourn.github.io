@@ -4,7 +4,7 @@ title: DirectX Tool Kit and C++/WinRT
 date: 2017-02-11 07:54
 author: Chuck Walbourn
 comments: true
-categories: [uwp, visualc, xbox one]
+categories: [uwp, visualc, xbox]
 ---
 The <strong>February 2017</strong> releases of <em>DirectX Tool Kit</em> for <a href="https://github.com/Microsoft/DirectXTK/releases">DirectX 11</a> and <a href="https://github.com/Microsoft/DirectXTK12/releases">DirectX 12</a> are now available on GitHub. In addition to various bug-fixes and a few minor improvements to the input classes (<a href="https://walbourn.github.io/directx-tool-kit-keyboard-and-mouse-support/">Mouse, Keyboard</a>, and <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">GamePad</a>), the libraries now also support <strong>C++/WinRT applications</strong> for UWP and Xbox One. C++/WinRT language projections allow you to use Windows Runtime APIs without using the C++/CX language extensions (i.e. the libraries will work with applications built with or without <code>/ZW</code>).
 <!--more-->

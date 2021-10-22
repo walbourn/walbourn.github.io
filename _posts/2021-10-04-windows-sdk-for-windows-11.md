@@ -4,7 +4,7 @@ title: Windows SDK for Windows 11
 date: 2021-10-04 22:08
 author: Chuck Walbourn
 comments: true
-categories: [generl]
+categories: [windowssdk]
 ---
 
 The Windows SDK for Windows 11 (10.0.22000) is now available for [download](https://aka.ms/windowssdk), and is offered as an optional component in [Visual Studio 2019 16.11.4](https://docs.microsoft.com/en-us/visualstudio/releases/2019/release-notes) and [Visual Studio 2022 Preview](https://visualstudio.microsoft.com/vs/preview/). See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/apps/whats-new/windows-11-build-22000) for an overview of new OS features, as well as these posts on [Windows Blogs](https://blogs.windows.com/windowsdeveloper/2021/10/04/developing-for-windows-11/) and the [Game Stack Blog](https://developer.microsoft.com/en-us/games/blog/game-developers-everywhere-welcome-to-windows-11/).

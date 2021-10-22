@@ -4,7 +4,7 @@ title: DirectX and UWP on Xbox One
 date: 2017-12-15 02:25
 author: Chuck Walbourn
 comments: true
-categories: [xbox one]
+categories: [uwp, xbox]
 ---
 With the release of the Fall Creators Update (October 2017) for Xbox One, UWP apps can now opt into expanded resources as was announced in <a href="https://blogs.windows.com/buildingapps/2017/09/15/resources-universal-windows-platform-games-fall-xbox-one-update/">this Windows Blog post</a>. Details about UWP on Xbox One can be found on <a href="https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/">Microsoft Docs</a>, but in this blog post I'll be talking about a few technical issues and specifics I encountered while updating the UWP samples on the <a href="https://github.com/Microsoft/Xbox-ATG-Samples">Xbox-ATG-Samples</a> GitHub and working with the UWP versions of my <a href="https://github.com/walbourn/directx-vs-templates/wiki">Direct3D Game template</a>.
 <!--more-->

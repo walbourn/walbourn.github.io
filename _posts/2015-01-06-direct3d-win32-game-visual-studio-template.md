@@ -4,7 +4,7 @@ title: Direct3D Win32 Game Visual Studio template
 date: 2015-01-06 04:00
 author: Chuck Walbourn
 comments: true
-categories: [direct3d, uwp, visual]
+categories: [direct3d, uwp, visualc]
 ---
 For people new to DirectX development, <a href="https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh452744(v=win.10)">Microsoft Docs</a> provides numerous tutorials for writing Windows Store apps, Windows phone apps, and Universal apps which all begin with creating a new project using a Visual Studio template built into to VS 2012 or VS 2013. For people targeting Win32 desktop (i.e. when developing on or for Windows 7), however, there's no "DirectX" project template to be found in Visual Studio. Instead, you have to use the generic Win32 project and then add support for Direct3D such as is done with the <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11Tutorials">Direct3D Win32 tutorial</a>.
 <!--more-->

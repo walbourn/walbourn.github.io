@@ -4,7 +4,7 @@ title: DirectXMath AVX and AVX2 - A Coda
 date: 2021-07-16 16:49
 author: Chuck Walbourn
 comments: true
-categories: [general]
+categories: [directxmath, xbox]
 ---
 
 Over the years, I've done a number of optimizations for [DirectXMath](https://github.com/Microsoft/DirectXMath) using advanced instruction sets available on x86/x64 CPUs. For Xbox developers, making the choice to use these is very easy since you can count on them along with AVX. For PC developers, modern x64 development means you can rely on SSE, SSE2--and at this point, SSE3--without sacrificing any target market. I've recently done some work for another project unrelated to DirectMath per se, but I wanted to add some notes about using other advanced instruction sets.

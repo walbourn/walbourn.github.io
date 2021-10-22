@@ -35,7 +35,7 @@ DirectX Tool Kit for DirectX 12 also includes <a href="https://walbourn.github.i
 There are a few key differences compared to the DirectX 11 version:
 
 <ul>
-  <li>No support for loading <code>.CMO</code> models or DGSL effect shaders (i.e. DGSLEffect)</li>
+  <li>No support for <strike>loading <code>.CMO</code> models or</strike> DGSL effect shaders (i.e. DGSLEffect)</li>
   <li>VertexTypes does not include <code>VertexPositionNormalTangentColorTexture</code> or
 <code>VertexPositionNormalTangentColorTextureSkinning</code></li>
   <li>DirectX Tool Kit for DirectX 11 supports Feature Level 9.3, while DirectX 12 requires Direct3D Feature Level 11.0. There are no expected DirectX 12 drivers for  any lower feature level devices.</li>
@@ -49,5 +49,7 @@ There are a few key differences compared to the DirectX 11 version:
 Both version so the *DirectX Tool* Kit now include support for NormalMapEffect and per-pixel lighting support for EnvironmentMapEffect.
 
 <strong>vcpkg</strong>: The vcpkg C++ Package Manager has a [directxtk12](https://github.com/microsoft/vcpkg/tree/master/ports/directxtk12) port available.
+
+<strong>CMO:</strong>: Originally *DirectX Tool Kit for DX12* did not support loading Visual Studio Content Pipeline (CMO) models. This is now supported with the September 2021 release. DGSL shaders are still not supported.
 
 <strong>Related:</strong> <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a>, <a href="https://walbourn.github.io/getting-started-with-direct3d-12/">Getting Started with Direct3D 12</a>, <a href="https://walbourn.github.io/directxtex-and-directxmesh-now-support-direct3d-12/">DirectXTex and DirectXMesh now support Direct3D 12</a>

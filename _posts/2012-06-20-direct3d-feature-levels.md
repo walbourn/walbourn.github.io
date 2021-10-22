@@ -4,7 +4,7 @@ title: Direct3D Feature Levels
 date: 2012-06-20 11:31
 author: Chuck Walbourn
 comments: true
-categories: [direct3d, winphone, xbox one]
+categories: [direct3d, winphone, xbox]
 ---
 In various forums and discussion threads of late, I've seen some confusion about the difference between "DirectX 11" the API and "DirectX 11" the class of video hardware. The key to this is the concept of a "Feature Level" for devices which simplifies the old Direct3D 9 "sea of capabilities bits" to an increasingly capable group of level-sets for video hardware. An application requests a particular feature level (or a set of feature levels where the application can optionally use more advanced features if present), and the majority of the capabilities are known already. There are some specific optional features and format usages that may or may not be present (and thus require the use of <code>CheckFormatSupport</code> or <code>CheckFeatureSupport</code>), but most things can just be assumed based on the current device's Feature Level. This makes writing games and applications much simpler, and more importantly if something works for Feature Level X, then you can assume it will work for Feature Level X+1. This simplifies fallbacks as well, where the application only has to handle a few discrete cases. The HLSL shader profiles are designed so that a shader compiled for <code>4_0_level_9_1</code> will work on all feature levels, and a shader compiled for <code>4_0</code> will work on Feature Level 10.0, 10.1, 11.0, or 11.1 devices to limit the combinatorial explosion problem of shader permutations.
 <!--more-->

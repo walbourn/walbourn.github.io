@@ -4,7 +4,7 @@ title: Windows 10 May 2020 Update SDK
 date: 2020-05-15 23:54
 author: Chuck Walbourn
 comments: true
-categories: [general]
+categories: [windowssdk]
 ---
 
 The Windows 10 May 2020 Update (a.k.a. Version 2004) is now [available](https://blogs.windows.com/windowsexperience/2020/05/27/how-to-get-the-windows-10-may-2020-update/), and the Windows 10 May 2020 Update SDK (19041) has been [released](https://blogs.windows.com/windowsdeveloper/2020/05/12/start-developing-on-windows-10-version-2004-today/). The new SDK is available for download [standalone](https://developer.microsoft.com/en-US/windows/downloads/windows-10-sdk/) as well as an optional component with VS 2019 ([16.5](https://walbourn.github.io/vs-2019-update-5/)) or later. See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/uwp/whats-new/windows-10-build-19041) for an overview of the new OS features.

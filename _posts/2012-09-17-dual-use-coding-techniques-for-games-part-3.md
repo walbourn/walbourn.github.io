@@ -4,7 +4,7 @@ title: Dual-use Coding Techniques for Games, part 3
 date: 2012-09-17 17:37
 author: Chuck Walbourn
 comments: true
-categories: [win10, win8, winphone, xbox one]
+categories: [win10, win8, winphone, xbox]
 ---
 <em>Writing shared code for Windows Store, Xbox One, Universal Windows Platform (UWP) apps, and Win32 desktop apps</em>
 

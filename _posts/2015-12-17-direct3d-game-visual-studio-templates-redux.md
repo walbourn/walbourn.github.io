@@ -4,7 +4,7 @@ title: Direct3D Game Visual Studio templates (Redux)
 date: 2015-12-17 12:45
 author: Chuck Walbourn
 comments: true
-categories: [direct3d, uwp, visual]
+categories: [direct3d, uwp, visualc]
 ---
 Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-template/">January</a>, I released a <strong>D3D11Win32Game</strong> Visual Studio 2013 template for Win32 desktop development primarily to support my <a href="https://github.com/Microsoft/DirectXTK/wiki/Getting-Started">DirectX Tool Kit tutorials</a>. I modeled it after the basic template that we ship with the Xbox One XDK that consist of a <code>Game</code> class which sets up a device, swap chain, and timed rendering loop. I've since updated the templates on <a href="https://github.com/walbourn/directx-vs-templates">GitHub</a> and now have versions for VS 2015, for the Universal Windows Platform, for Direct3D 12, and versions with the <code>DeviceResources</code> abstraction that is used in the official Windows Store and UWP templates.
 <!--more-->

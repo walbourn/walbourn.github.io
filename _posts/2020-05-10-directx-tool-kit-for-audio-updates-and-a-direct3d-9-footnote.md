@@ -4,7 +4,7 @@ title: DirectXTK for Audio updates and a Direct3D 9 footnote
 date: 2020-05-10 14:20
 author: Chuck Walbourn
 comments: true
-categories: [github]
+categories: [direct3d, audio]
 ---
 
 The May 2020 releases of [DirectXTex](https://github.com/microsoft/DirectXTex/releases/tag/may2020), [DirectXMesh](https://github.com/microsoft/DirectXMesh/releases/tag/may2020), *DirectX Tool Kit* [DX11](https://github.com/microsoft/DirectXTK/releases/tag/may2020) / [DX12](https://github.com/microsoft/DirectXTK12/releases/tag/may2020), and [UVAltas](https://github.com/microsoft/UVAtlas/releases/tag/may2020) are now available on GitHub and NuGet. Two notable features in these releases as well as a bonus tool kit feature for DirectX 12 are covered in this post.
