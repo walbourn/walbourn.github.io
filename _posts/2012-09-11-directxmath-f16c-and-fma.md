@@ -4,7 +4,7 @@ title: DirectXMath - F16C and FMA
 date: 2012-09-11 12:50
 author: Chuck Walbourn
 comments: true
-categories: [xbox one, directxmath]
+categories: [xbox, directxmath]
 ---
 In this installment in our series, we cover a few additional instructions that extend the <a href="http://en.wikipedia.org/wiki/Advanced_Vector_Extensions">AVX</a> instruction set. These instructions make use of the <a href="http://en.wikipedia.org/wiki/VEX_prefix">VEX</a> prefix and require the OS implement "OXSAVE". Without this support, these instructions are all invalid and will generate an invalid instruction hardware exception.
 <!--more-->

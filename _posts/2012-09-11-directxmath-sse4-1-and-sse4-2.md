@@ -4,7 +4,7 @@ title: DirectXMath - SSE4.1 and SSE4.2
 date: 2012-09-11 12:18
 author: Chuck Walbourn
 comments: true
-categories: [xbox one, directxmath]
+categories: [xbox, directxmath]
 ---
 The <a href="http://en.wikipedia.org/wiki/SSE4">SSE4</a> instruction set consists of two parts, referred as SSE4.1 and 4.2. The intrinsics are located in the <code>smmintrin.h</code> header. The SSE4.1 instruction set is the most interesting for DirectXMath, while SSE 4.2 adds some more specialized instructions for CRC checks and string handling. The key new features are a flexible dot-product instruction, float4 vector rounding, a 2-vector 'mux' blend, and some specialized extract/insert operations.
 <!--more-->

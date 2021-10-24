@@ -4,7 +4,7 @@ title: XNA Math Version 2.05 - Smoothing the transition to DirectXMath
 date: 2012-06-22 11:45
 author: Chuck Walbourn
 comments: true
-categories: [directxmath]
+categories: [directxmath, xnamath]
 ---
 The July 2012 release of the Xbox 360 XDK includes a new version of XNA Math, version 2.05. We are making it available here for Windows developers. The update is subject to the <strike>same EULA as the <a href="http://go.microsoft.com/fwlink/?LinkId=226640">DirectX SDK</a> (June 2010) release</strike> <a href="https://opensource.org/licenses/MIT">MIT</a> license.
 <!--more-->

@@ -4,7 +4,7 @@ title: DirectXMath - SSE, SSE2, and ARM-NEON
 date: 2012-09-11 11:43
 author: Chuck Walbourn
 comments: true
-categories: [xbox one, xnamath, directxmath]
+categories: [xbox, xnamath, directxmath]
 ---
 The <a href="https://walbourn.github.io/introducing-directxmath/">DirectXMath</a> library provides high-performance linear algebra math support for the typical kinds of operations found in a 3D graphics application. The library achieves this by making use of specialized SIMD (Single-Instruction-Multiple-Data) instruction sets to work on 4 single-precision float values at a time. The design of the library is itself heavily influenced by these instructions to provide data in a way most friendly to efficient computation.
 <!--more-->

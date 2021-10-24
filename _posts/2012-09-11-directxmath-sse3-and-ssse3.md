@@ -4,7 +4,7 @@ title: DirectXMath - SSE3 and SSSE3
 date: 2012-09-11 12:01
 author: Chuck Walbourn
 comments: true
-categories: [xbox one, directxmath]
+categories: [xbox, directxmath]
 ---
 The <a href="http://en.wikipedia.org/wiki/SSE3">SSE3</a> instruction set adds about a dozen instructions (intrinsics are in the <code>pimmintrin.h</code> header). The main operation these instructions provide is the ability to do "horizontal" adds and subtracts (ARM-NEON refers to these as 'pairwise' operations) for float4 and double2 data.
 <!--more-->

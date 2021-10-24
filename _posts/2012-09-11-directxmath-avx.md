@@ -4,7 +4,7 @@ title: DirectXMath - AVX
 date: 2012-09-11 12:36
 author: Chuck Walbourn
 comments: true
-categories: [xbox one, directxmath]
+categories: [xbox, directxmath]
 ---
 The Advanced Vector Extensions (<a href="http://en.wikipedia.org/wiki/Advanced_Vector_Extensions">AVX</a>) instruction set goes beyond just adding more instructions like we've seen in previous installments. AVX also introduces an extended register file and a new x86 instruction encoding prefix.
 <!--more-->
