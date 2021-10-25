@@ -68,4 +68,4 @@ Note that <code>vmulComplex</code>, <code>ButterflyDIT4_1</code>, and <code>Butt
 
 <strong>Note:</strong> There is a Windows Store app sample on <a href="https://code.msdn.microsoft.com/windowsapps/XAudio2-Stream-Effect-3f95c8f2/">MSDN Code Gallery</a> that makes use of this header.
 
-<strong>Update:</strong> This project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.
+<strong>Update:</strong> This project is now available on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a> under the <a href="http://opensource.org/licenses/MIT">MIT license</a>. ``XDSP.h`` is also included in the [Microsoft.XAudio2.Redist](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) NuGet package, the Microsoft GDKX, and Xbox One XDK.

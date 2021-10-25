@@ -968,6 +968,10 @@ XMSHMultiply6</code></td>
 </tbody>
 </table>
 
+<h1>Math Matrix Stack</h1>
+
+A DirectXMath-based version of ``D3DXCreateMatrixStack`` / ``ID3DXMATRIXStack`` is available on the [DirectXMath](https://github.com/microsoft/DirectXMath/blob/master/MatrixStack/DirectXMatrixStack.h) GitHub.
+
 <h1>Effects (FX)</h1>
 
 The <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects system for Direct3D 11</a> is primarily provided as a porting aid for older code. The library is available on <a href="http://go.microsoft.com/fwlink/p/?LinkId=271568">CodePlex</a> and <a href="https://github.com/Microsoft/FX11">GitHub</a>.
@@ -1066,7 +1070,6 @@ The <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas
 Careful readers will note that there are a few omissions from this table.
 
 <ul>
- 	<li>The <code>ID3DXMatrixStack</code> from D3DXMath doesn't have a new version, but it's actually pretty easy to implement your own. If someone has a burning need for this, see <a href="https://github.com/microsoft/DirectXTK/issues/240">here</a>.</li>
  	<li>The Precomputed Radiance Transfer (PRT) simulator is only available in closed-source form in legacy D3DX9. There are a number of papers that cover this technology in the literature, and the most generally useful parts of this functionality are the <a href="https://walbourn.github.io/spherical-harmonics-math/">SHmath</a> functions which are available.</li>
 </ul>
 
