@@ -33,4 +33,6 @@ This reliance on Windows Media components is not limited to just gamers, so it i
 
 <strong>Windows 8.0, Windows 8.1, and Windows 10: </strong>See<strong> </strong><a href="https://support.microsoft.com/en-us/kb/3145500">KB 3145500</a> for which Media Feature Pack to install for your OS.
 
+<strong>Windows 10 / Windows 11:</strong> As of Windows 10 Version 1903 (Build 18362) or later, the "Media Feature Pack" is available as a [Windows optional feature](https://support.microsoft.com/en-au/windows/media-feature-pack-for-windows-n-8622b390-4ce6-43c9-9b42-549e5328e407).
+
 Note that both Window Vista and Windows 7 N and KN editions excluded <code>MFPLAT.DLL</code>, but for Windows 8.x there is handling for systems without the Media Feature Pack installed that returns <code>E_NOTIMPL</code> when you call <code><a href="https://docs.microsoft.com/en-us/windows/desktop/api/mfapi/nf-mfapi-mfstartup">MFStartup</a></code>. This simplifies handling for Windows Store apps and UWP apps which cannot make use of explicit linking to system DLLs. Windows Store apps and UWP apps should therefore make use of delay loading (using dloadhelper.lib) for all Media Foundation DLLs.
