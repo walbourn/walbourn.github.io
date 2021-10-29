@@ -68,7 +68,7 @@ for (UINT adapterIndex = 0;
 }
 ```
 
-<strong>Note:</strong> We are excluding the <em>Microsoft Basic Render</em> adapter here (aka <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/directx-warp">WARP</a>+VGA driver) since games typically don't play well using WARP, but keep in mind that WARP12 is not present on standard Windows 10 systems; it's only installed as part of the Graphics Tools optional feature.
+<strong>Note:</strong> We are excluding the <em>Microsoft Basic Render</em> adapter here (aka <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/directx-warp">WARP</a>+VGA driver) since games typically don't play well using WARP. <strike>Keep in mind that WARP12 is not present on standard Windows 10 systems; it's only installed as part of the Graphics Tools optional feature.</strike> WARP for DirectX 12 is supported on Windows 10 (Version 1709, Build 16299) or later.
 
 > You could also query a ``IDXGIFactory6`` interface and use ``EnumAdapterByGpuPreference`` to prefer using discrete (``DXGI_GPU_PREFERENCE_HIGH_PERFORMANCE``) vs. integrated (``DXGI_GPU_PREFERENCE_MINIMUM_POWER``) graphics on hybrid systems. This interface is supported on  Windows 10 April 2018 Update (17134) or later.
 
