@@ -22,7 +22,7 @@ Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-te
 <tr>
 <td><strong>Template</strong></td>
 <td><strong>VS 2013</strong></td>
-<td><strong>VS 2015 / 2017 / 2019</strong></td>
+<td><strong>VS 2015 / 2017 / 2019 / 2022</strong></td>
 <td><strong>Description</strong></td>
 </tr>
 <tr>
@@ -206,6 +206,8 @@ Otherwise the DR version of the template is the same as the <a href="https://wal
 
 > Note that the VS 2013 version of the template was last updated in [July 2017](https://github.com/walbourn/directx-vs-templates/releases/tag/jul2017).
 
-<strong>VS 2017:</strong> The latest version of the ``Direct3DUWPGame.vsix`` (March 2017 or later) now supports both VS 2015 and VS 2017. On VS 2015, it will use Platform Toolset ``v140`` while for VS 2017 it uses ``v141``. The Direct3D 11 Win32 game template originally used the VS 2015 default Windows 8.1 SDK while the other templates all require a Windows 10 SDK. Since VS 2017 only includes a Windows 10 SDK by default, the Direct3D 11 Win32 game template and it's DeviceResources variant now trigger the same Windows 10 SDK selection wizard as the UWP and Direct3D 12 templates.
+<strong>VS 2017:</strong> ``Direct3DUWPGame.vsix`` (March 2017 or later) supports both VS 2015 and VS 2017. On VS 2015, it will use Platform Toolset ``v140`` while for VS 2017 it uses ``v141``. The Direct3D 11 Win32 game template originally used the VS 2015 default Windows 8.1 SDK while the other templates all require a Windows 10 SDK. Since VS 2017 only includes a Windows 10 SDK by default, the Direct3D 11 Win32 game template and it's DeviceResources variant now trigger the same Windows 10 SDK selection wizard as the UWP and Direct3D 12 templates.
 
-<strong>VS 2019:</strong> The latest version of the ``Direct3DUWPGame.vsix`` (April 2019 or later) now supports VS 2015, 2017, and 2019. It uses a Platform Toolset of ``v140``, ``v141``, or ``v142`` accordingly.
+<strong>VS 2019:</strong> ``Direct3DUWPGame.vsix`` (April 2019 or later) now supports VS 2015, 2017, and 2019. It uses a Platform Toolset of ``v140``, ``v141``, or ``v142`` accordingly. You can also change it to use ``clang-cl``. Note that VS 2015 support was dropped starting in March 2020.
+
+<strong>VS 2022:</strong> The latest version of the ``Direct3DUWPGame.vsix`` (October 2021 or later) now supports VS 2017, 2019, and 2022. It uses a Platform Toolset of ``v141``, ``v142``, or ``v143`` accordingly. You can also change it to use ``clang-cl``. Note that for Win32 desktop projects, it no longer prompts for Windows SDK selection. Instead it uses Windows 10 SDK (19041) for VS 2017 or "Use latest installed" (10.0) for VS 2019 / VS 2022. For UWP projects, it still uses the SDK selection dialog.
