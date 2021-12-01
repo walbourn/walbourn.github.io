@@ -99,6 +99,8 @@ Cubemaps</td>
 
 > Note that in development mode, if you try to create a DirectX 11 device and do not provide the option of using ``D3D_FEATURE_LEVEL_10_0``, then you will end up with a WARP software device rather than the much faster hardware device. Remember also that WARP it not supported for retail Xbox One machines.
 
+**Xbox Series X\|S**: When using UWP on Xbox Series X\|S, Direct3D Hardware Feature Level 11.0 is supported for DirectX 11.
+
 See <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a> for more details on DirectX 11 device creation.
 
 <h1>DirectX 12</h1>
