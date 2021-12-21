@@ -70,4 +70,4 @@ In a future <a href="https://walbourn.github.io/xinput-and-xaudio2/">post</a>, I
 
 Also note that for Windows 10, input focus is automatic like it is with mouse and keyboard. For this reason,  using ``XInputEnable`` when building with ``_WIN32_WINNT`` set to ``0x0A00`` will generate a deprecation compiler warning.
 
-<strong>Related:</strong> <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XInput">XInput Win32 Samples</a>, <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">DirectX Tool Kit - Now with GamePads</a>
+<strong>Related:</strong> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XInput">XInput Win32 Samples</a>, <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">DirectX Tool Kit - Now with GamePads</a>

@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [direct3d]
 ---
-So you've downloaded the latest <strike>DirectX SDK</strike>Windows SDK and start digging through the various <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11Tutorials">tutorials</a>, <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a>, and <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/dx-graphics-overviews">documentation</a>, and you are trying to get a handle on where to start learning Direct3D 11...
+So you've downloaded the latest <strike>DirectX SDK</strike>Windows SDK and start digging through the various <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11Tutorials">tutorials</a>, <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">samples</a>, and <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/dx-graphics-overviews">documentation</a>, and you are trying to get a handle on where to start learning Direct3D 11...
 <!--more-->
 
 > The <a href="https://github.com/Microsoft/DirectXTK/wiki/Getting-Started">DirectX Tool Kit tutorials</a> and the <a href="https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/">Direct3D Game VS Templates</a> are a good place to start. You should also take a look at the Introductory Graphics samples on <a href="https://github.com/Microsoft/Xbox-ATG-Samples#introductory-graphics">Xbox-ATG-Samples</a>.

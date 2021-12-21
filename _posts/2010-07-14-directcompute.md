@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directcompute, directx]
 ---
-The DirectX 11 Compute Shader, also known as <em>Direct Compute</em>, is a powerful but complex feature. In addition to the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/direct3d-11-advanced-stages-compute-shader">Windows DirectX Graphics documentation</a>, here is a list of resources for learning to use this technology:
+The DirectX 11 Compute Shader, also known as <em>Direct Compute</em>, is a powerful but complex feature. In addition to the <a href="https://docs.microsoft.com/windows/win32/direct3d11/direct3d-11-advanced-stages-compute-shader">Windows DirectX Graphics documentation</a>, here is a list of resources for learning to use this technology:
 <!--more-->
 
 <strong>Gamefest 2008</strong> - <em>Direct3D 11 Compute Shader -- More Generality for Advanced Techniques</em> <a href="https://walbourn.github.io/download/Direct3D-11-Compute-Shader-More-Generality-for-Advanced-Techniques.zip">link</a><br />
@@ -19,7 +19,7 @@ The DirectX 11 Compute Shader, also known as <em>Direct Compute</em>, is a power
 
 <strong>PDC 2009</strong> - DirectCompute Hands On Lab<br />
 
-The following samples:<br /><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/BasicCompute11">BasicCompute11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/ComputeShaderSort11">ComputeShaderSort11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/BC6HBC7EncoderCS">BC6HBC7EncoderCS</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/AdaptiveTessellationCS40">AdaptiveTessellationCS40</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/FluidCS11">FluidCS11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/HDRToneMappingCS11">HDRToneMappingCS11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/NBodyGravityCS11">NBodyGravityCS11</a>, and <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/OIT11">OIT11</a>
+The following samples:<br /><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/BasicCompute11">BasicCompute11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/ComputeShaderSort11">ComputeShaderSort11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/BC6HBC7EncoderCS">BC6HBC7EncoderCS</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/AdaptiveTessellationCS40">AdaptiveTessellationCS40</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/FluidCS11">FluidCS11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/HDRToneMappingCS11">HDRToneMappingCS11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/NBodyGravityCS11">NBodyGravityCS11</a>, and <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/OIT11">OIT11</a>
 
 NVIDIA and AMD also did a number of presentations at <strong>Game Developers Conference</strong>, including the following talks covering DirectCompute:
 

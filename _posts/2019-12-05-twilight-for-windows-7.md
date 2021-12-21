@@ -30,7 +30,7 @@ In my many blog posts about the retiring of the [legacy DirectX SDK](https://aka
 
 The great news here is that much like the DirectX 12 story, there is a version of XAudio 2.9 that supports Windows 7 SP1, Windows 8.0, Windows 8.1, and still takes advantage of the Windows 10 built-in version. See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/xaudio2/xaudio2-redistributable) for all the details. The developer story utilizes a [NuGet](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) package as well.
 
-> The XAudio2 samples on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2) have been updated to support using the new XAudio 2.9 REDIST version instead of the DirectX SDK.
+> The XAudio2 samples on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/main/XAudio2) have been updated to support using the new XAudio 2.9 REDIST version instead of the DirectX SDK.
 
 # HLSL
 
@@ -52,6 +52,6 @@ You can and should use the manifesto practices on Windows 7 as well, but there's
 
 * With Windows 7 or later, Win32 desktop applications should include embedded manifests. See [Manifest Madness](https://walbourn.github.io/manifest-madness/).
 
-* If you are wanting to integrate with the Game Explorer, the most recent version of the GDFMaker tool can be found in Windows 10 SDK. You can find [GDFTrace](https://github.com/walbourn/directx-sdk-samples/tree/master/GDFTrace) and [GamesuxInstallHelper](https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/GameuxInstallHelper) on GitHub.
+* If you are wanting to integrate with the Game Explorer, the most recent version of the GDFMaker tool can be found in Windows 10 SDK. You can find [GDFTrace](https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace) and [GamesuxInstallHelper](https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/GameuxInstallHelper) on GitHub.
 
 <b>Related:</b> <a href="https://walbourn.github.io/a-look-back-windows-vista/">Windows Vista</a>, <a href="https://walbourn.github.io/goodbye-to-an-old-friend/">Windows XP</a>

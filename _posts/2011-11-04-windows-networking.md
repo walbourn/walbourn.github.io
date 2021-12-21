@@ -17,7 +17,7 @@ The Windows Firewall included in Windows XP Service Pack 2 was a big part of the
 
 <em>Games, Firewalls and Microsoft Windows XP SP2</em> (Meltdown 2004 presentation in the Windows Track)
 
-<em>Related </em><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/FirewallInstallHelper">FirewallInstallHelper</a> sample
+<em>Related </em><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/FirewallInstallHelper">FirewallInstallHelper</a> sample
 
 <h1>IPV6</h1>
 

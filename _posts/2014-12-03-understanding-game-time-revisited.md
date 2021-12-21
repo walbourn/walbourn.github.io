@@ -79,4 +79,4 @@ If you don't really need a high-precision timer and instead can handle a resolut
 
 <strong>Xbox One:</strong> The Xbox One XDK and Xbox One ADK Direct3D game templates also made use of <code>BasicTimer</code>. As of the September 2014 version, they now use <code>StepTimer</code> instead.
 
-The source file is subject to the <a href="http://opensource.org/licenses/MIT">MIT license</a> and is available on <a href="https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_uwp/StepTimer.h">GitHub</a>
+The source file is subject to the <a href="http://opensource.org/licenses/MIT">MIT license</a> and is available on <a href="https://github.com/walbourn/directx-vs-templates/blob/main/d3d11game_uwp/StepTimer.h">GitHub</a>

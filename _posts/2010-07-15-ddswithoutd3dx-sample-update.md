@@ -9,7 +9,7 @@ categories: [dds]
 Over the past few releases of the DirectX SDK, I've been working on updating our documentation for the ``DDS`` file format. The <strong>DDSWithoutD3DX</strong> and <strong>DDSWithoutD3DX11</strong> samples in the <em>DirectX SDK (June 2010)</em> release demonstrate the details of interpreting the DDS file format for basic 2D textures and 2D texture arrays for Direct3D 9, Direct3D 10.x, and Direct3D 11. Since the June release, I've been expanding the sample to support cubemaps, volume textures, and 1D textures. In the process I also found a number of minor issues with the DDSTextureLoader code and the ``DDS.H`` header.
 <!--more-->
 
-**UPDATE: The latest version of DDSTextureLoader for Direct3D 9, Direct3D 11, and Direct3D 12 can be found on [GitHub](https://github.com/microsoft/DirectXTex/tree/master/DDSTextureLoader)**
+**UPDATE: The latest version of DDSTextureLoader for Direct3D 9, Direct3D 11, and Direct3D 12 can be found on [GitHub](https://github.com/microsoft/DirectXTex/tree/main/DDSTextureLoader)**
 
 > Attached to this post is a ZIP containing an updated DDS.H, DDSTextureLoader.cpp, and DDSTextureLoader.h which you can drop into the <strong>DDSWithoutD3DX11</strong> sample code in the DirectX SDK (June 2010). Note that the <strong>DDSWithoutD3DX</strong> sample is very similar if you are looking to use it with Direct3D 10.x instead of Direct3D 11, although there are some additional complexities when dealing with cubemap arrays which are supported by the Direct3D 10.1 API with ``D3D10_FEATURE_LEVEL_10_1`` hardware, but not the Direct3D 10.0 API or ``D3D10_FEATURE_LEVEL_10_0`` hardware.
 

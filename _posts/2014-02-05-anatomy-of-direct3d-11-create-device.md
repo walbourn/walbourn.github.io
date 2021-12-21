@@ -127,7 +127,7 @@ For Universal Windows Platform (UWP) apps, you should also consider using <code>
 
 One more consideration: For gamma-correct rendering to standard 8-bit per channel UNORM formats, you'll want to create the Render Target using an sRGB format. The new flip modes required for UWP apps, however, do not allow you to create a swap chain back buffer using an sRGB format. In this case, you create one using the non-sRGB format (i.e. <code>DXGI_SWAP_CHAIN_DESC1.Format = DXGI_FORMAT_B8G8R8A8_UNORM</code>) and use sRGB for the Render Target View (i.e. <code>D3D11_RENDER_TARGET_VIEW_DESC.Format = DXGI_FORMAT_B8G8R8A8_UNORM_SRGB</code>).
 
-<strong>Update:</strong> You also need to use the <code>FLIP_*</code> swap effects if you want to make use of <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/high-dynamic-range-and-wide-color-gamut">HDR10</a> output. See <a href="https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_win32_dr/DeviceResources.cpp">DeviceResources</a> for more details.
+<strong>Update:</strong> You also need to use the <code>FLIP_*</code> swap effects if you want to make use of <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/high-dynamic-range-and-wide-color-gamut">HDR10</a> output. See <a href="https://github.com/walbourn/directx-vs-templates/blob/main/d3d11game_win32_dr/DeviceResources.cpp">DeviceResources</a> for more details.
 
 <h1>Microsoft Basic Render Driver</h1>
 

@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [direct3d, uwp, visualc]
 ---
-For people new to DirectX development, <a href="https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh452744(v=win.10)">Microsoft Docs</a> provides numerous tutorials for writing Windows Store apps, Windows phone apps, and Universal apps which all begin with creating a new project using a Visual Studio template built into to VS 2012 or VS 2013. For people targeting Win32 desktop (i.e. when developing on or for Windows 7), however, there's no "DirectX" project template to be found in Visual Studio. Instead, you have to use the generic Win32 project and then add support for Direct3D such as is done with the <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11Tutorials">Direct3D Win32 tutorial</a>.
+For people new to DirectX development, <a href="https://docs.microsoft.com/en-us/previous-versions/windows/apps/hh452744(v=win.10)">Microsoft Docs</a> provides numerous tutorials for writing Windows Store apps, Windows phone apps, and Universal apps which all begin with creating a new project using a Visual Studio template built into to VS 2012 or VS 2013. For people targeting Win32 desktop (i.e. when developing on or for Windows 7), however, there's no "DirectX" project template to be found in Visual Studio. Instead, you have to use the generic Win32 project and then add support for Direct3D such as is done with the <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11Tutorials">Direct3D Win32 tutorial</a>.
 <!--more-->
 
 Ideally, I'd like a Win32 desktop project template that looks similar to the other C++ DirectX templates as a common starting point for some tutorials and other explanatory posts. And so, here it is! This is a Visual Studio extension for VS 2013 Pro, VS 2013 Premium, VS 2013 Ultimate, or VS 2013 Community which installs a <em>Direct3D Win32 Game</em> project template for <em>Visual C++</em>.
@@ -25,7 +25,7 @@ Ideally, I'd like a Win32 desktop project template that looks similar to the oth
 <h1>Creating a new project</h1>
 To create a new project, use <strong>File / New -> Project...</strong>
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/4380.newproject.png"><img src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/4380.newproject.png" alt="" border="0" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/4380.newproject.png"><img src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/4380.newproject.png" alt="" border="0" /></a>
 
 When finished, you have a Win32 desktop app project that is ready to use for <a href="https://walbourn.github.io/getting-started-with-direct3d-11/">learning Direct3D 11</a> on Windows 7 or Windows 8.x. For those familiar with the existing "DirectX App" VS templates or <em>XNA Game Studio</em>, it has a similar structure with a <code>Game</code> class with methods like <code>Render</code>, <code>Update</code>, and <code>Clear</code>. Search for <strong><code>TODO</code></strong> for hints as to where to add your code.
 
@@ -73,7 +73,7 @@ Go to <strong>Project / </strong><strong>Manage NuGet Packages...</strong>
 
 Search for "DirectX Tool Kit" online and select the package with <strong>Id: directxtk_desktop_2013</strong> (use the latest one which is 2014.11.24.2 at this time; if you have an older version you can update it using the NuGet interface)
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/8546.nuget.png"><img src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/8546.nuget.png" alt="" border="0" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/8546.nuget.png"><img src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/8546.nuget.png" alt="" border="0" /></a>
 
 <h2>Use Project-to-project references</h2>
 
@@ -207,4 +207,4 @@ You can use NuGet (Id: <em>directxtk_windowsstore_8_1</em> or <em>directxtk_wind
 
 <strong>GitHub: </strong>The files for the template are also hosted on <a href="https://github.com/walbourn/directx-vs-templates">GitHub</a>.
 
-<strong>Download:</strong> <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> (VS 2013), <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame</a> (VS 2015 for both Win32 and UWP)
+<strong>Download:</strong> <a href="https://github.com/walbourn/directx-vs-templates/raw/main/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> (VS 2013), <a href="https://github.com/walbourn/directx-vs-templates/raw/main/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame</a> (VS 2015 for both Win32 and UWP)

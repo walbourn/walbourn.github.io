@@ -60,7 +60,7 @@ A detailed list of D3DXMath mappings to DirectXMath is available on <a href="htt
 
 <strong>SimpleMath:</strong> If you are new to C++ and/or SIMD programming, you might want to take a look at '<a href="https://github.com/Microsoft/DirectXTK/wiki/SimpleMath">simple math</a>' as a starting point.
 
-<strong>Samples:</strong> <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Collision">DirectXMath Win32 Sample</a>
+<strong>Samples:</strong> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Collision">DirectXMath Win32 Sample</a>
 
 <strong>Note:</strong> DirectXMath is now hosted on <a href="https://github.com/Microsoft/DirectXMath">GitHub</a>.
 

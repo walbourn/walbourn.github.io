@@ -137,7 +137,7 @@ One more consideration: For gamma-correct rendering to standard 8-bit per channe
 
 <strong>Note:</strong> With Direct3D 12, you cannot use the <code>device.As(&dxgiDevice)</code> sequence to obtain the DXGI factory from the Direct3D 12 device for cases where you use <code>nullptr</code> to create the <code>D3D12CreateDevice</code> instance. You must always explicitly create the DXGI factory using <code>CreateDXGIFactory1</code> or <code>CreateDXGIFactory2</code>.
 
-<b>Update:</b> If you want to make use of <a href="https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/high-dynamic-range">HDR10</a> output see <a href="https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/DeviceResources.cpp">DeviceResources</a>.
+<b>Update:</b> If you want to make use of <a href="https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/win32/direct3darticles/high-dynamic-range">HDR10</a> output see <a href="https://github.com/walbourn/directx-vs-templates/blob/main/d3d12game_win32_dr/DeviceResources.cpp">DeviceResources</a>.
 
 <h1>Windows SDK</h1>
 

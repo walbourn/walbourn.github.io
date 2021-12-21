@@ -31,7 +31,7 @@ For notes on the DxErr library that the <code>DXErr.exe</code> tool used, see <a
 </tr>
 <tr>
 <td>Game Definition File Validator (<code>gdftrace.exe</code>)</td>
-<td><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/GDFTrace">GitHub</a></td>
+<td><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace">GitHub</a></td>
 </tr>
 <tr>
 <td>Texture Conversion Tool (<code>Texconv.exe</code>)

@@ -13,7 +13,7 @@ Back in <a href="https://walbourn.github.io/direct3d-win32-game-visual-studio-te
 
 <h1>Using the VSIX</h1>
 
-<strong>To install</strong>: VS 2013 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> and VS 2015 / VS 2017 / VS 2019 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/master/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame.vsix</a>. These packages install all the templates supported for that version of Visual Studio under the "Visual C++" node of the <em>New Project</em> dialog. If you have Visual Studio open, you should shut it down and restart it. If you have an older version installed of this VSIX installed, you should uninstall the old one first.
+<strong>To install</strong>: VS 2013 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/main/VSIX/Direct3DWin32Game.vsix">Direct3DWin32Game.vsix</a> and VS 2015 / VS 2017 / VS 2019 users should run <a href="https://github.com/walbourn/directx-vs-templates/raw/main/VSIX/Direct3DUWPGame.vsix">Direct3DUWPGame.vsix</a>. These packages install all the templates supported for that version of Visual Studio under the "Visual C++" node of the <em>New Project</em> dialog. If you have Visual Studio open, you should shut it down and restart it. If you have an older version installed of this VSIX installed, you should uninstall the old one first.
 
 <strong>To remove: </strong>Go to <em>Tools / Extensions and Updates...</em> then uninstall "Direct3DWin32Game" or "Direct3DUWPGame".
 

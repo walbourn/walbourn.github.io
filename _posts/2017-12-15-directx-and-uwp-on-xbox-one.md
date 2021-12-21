@@ -17,19 +17,19 @@ When an application is published, this is handled by Windows Store metadata that
 
 First, build & deploy the application package to the Xbox One. Then using the Xbox One game controller, highlight the package in DevHome's Games & apps list:
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox1.png"><img width="300" height="234" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox1.png"/></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox1.png"><img width="300" height="234" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox1.png"/></a>
 
 Then press the View button to bring up the context menu:
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox2.png"><img width="300" height="157" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox2.png" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox2.png"><img width="300" height="157" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox2.png" /></a>
 
 Go down to the bottom to <em>View details and</em> press the A button:
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox3.png"><img width="300" height="157" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox3.png" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox3.png"><img width="300" height="157" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox3.png" /></a>
 
 This brings up the App details page and the <em>App type</em> field should be selected. Use the combo box to set it to "Game" by pressing A, down on the D-pad, and then pressing A again. Then press B to return to the main page.
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox4.png"><img width="300" height="169" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox4.png" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox4.png"><img width="300" height="169" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox4.png" /></a>
 
 <strong>When you start the application, it will be running in Game mode.</strong>
 
@@ -37,7 +37,7 @@ This brings up the App details page and the <em>App type</em> field should be se
 
 <strong>Note: </strong>You can also use the <a href="https://docs.microsoft.com/en-us/windows/uwp/debug-test-perf/device-portal-xbox">Xbox Device Portal (Windows Device Portal on Xbox)</a> to configure your Xbox One to default to "Game" rather than "App" for newly deployed development apps as of the November 2017 update. If you change this setting, keep in mind that if you also want to develop a non-game application, you should explicitly set it to 'App' using the instructions above.
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox5.png"><img width="300" height="122" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox5.png" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox5.png"><img width="300" height="122" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox5.png" /></a>
 
 <h1>DirectX 11</h1>
 
@@ -231,9 +231,11 @@ if (QueryOptionalDelayLoadedAPI(
 
 You set the delay load via the Visual C++ project settings:
 
-<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox6.png"><img width="300" height="205" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/master/images/uwpxbox6.png" /></a>
+<a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox6.png"><img width="300" height="205" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox6.png" /></a>
 
 If you use a native 4k swapchain on Xbox One X and the TV is in a 1080p mode, then image is downscaled automatically by the display hardware which does have the effect of 'super-sampling' for better image quality. In other words, if you decide to render at native 4k, you should do so regardless of the TV setting.
+
+> For Xbox Series S, you should use 1440p (2560 x 1440) instead of 4K, although there's no easy way to detect this platform at the moment within UWP. 1080p is a reasonable default for this platform as well.
 
 <h1>HDR</h1>
 

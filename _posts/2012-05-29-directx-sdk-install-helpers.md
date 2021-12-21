@@ -21,4 +21,4 @@ Three very important samples are actually helper modules for deployment solution
 
 These are all Visual Studio 2010 solutions, but can be easily upgraded to build with <a href="https://walbourn.github.io/visual-studio-2012-release-candidate/">Visual Studio 2012</a> (non-Express edition since these are Win32 desktop projects). Be sure to add the preprocessor definition ``_WIN32_WINNT=0x0600`` when upgrading to ensure the resulting binaries are compatible "down-level".
 
-**Update:** These are now available on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers)
+**Update:** These are now available on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers)

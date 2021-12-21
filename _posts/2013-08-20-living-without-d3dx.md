@@ -17,7 +17,7 @@ I've built a number of porting notes tables for each of these topics, and then r
 
 <strong>Direct3D 10:</strong> The best option for Direct3D 10.x applications is to update them to use Direct3D 11, and then utilize all the options here to replace legacy D3XD10. Porting the API is very <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-programming-guide-migrating">straightforward</a>, and Direct3D 11 is <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3darticles/direct3d11-deployment">available</a> on all supported platforms that have Direct3D 10.
 
-<strong>Direct3D 12: </strong>There is a header that ships in the DirectX 12 samples on <a href="https://github.com/Microsoft/DirectX-Graphics-Samples/tree/master/Libraries/D3DX12">GitHub</a> called <code>d3dx12.h</code>. It is all inline utility header which has no DLL or redistributable dependency, and can be used under the MIT license. It is not included in the Windows SDK. If you are looking for additional functionality, see the <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12</a>, <a href="https://walbourn.github.io/directxtex-and-directxmesh-now-support-direct3d-12/">DirectXTex and DirectXMesh</a>.
+<strong>Direct3D 12: </strong>There is a header that ships in the DirectX 12 samples on <a href="https://github.com/microsoft/DirectX-Headers/blob/main/include/directx/d3dx12.h">GitHub</a> called <code>d3dx12.h</code>. It is all inline utility header which has no DLL or redistributable dependency, and can be used under the MIT license. It is not included in the Windows SDK. If you are looking for additional functionality, see the <a href="https://walbourn.github.io/directx-tool-kit-for-directx-12/">DirectX Tool Kit for DirectX 12</a>, <a href="https://walbourn.github.io/directxtex-and-directxmesh-now-support-direct3d-12/">DirectXTex and DirectXMesh</a>.
 
 <strong>Related:</strong> <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/dxut-for-win32-desktop-update/">DXUT for Win32 Desktop Update</a>, <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">DirectX SDK Samples Catalog</a>, <a href="https://walbourn.github.io/directx-sdk-tools-catalog/">DirectX SDK Tools Catalog</a>
 
@@ -970,7 +970,7 @@ XMSHMultiply6</code></td>
 
 <h1>Math Matrix Stack</h1>
 
-A DirectXMath-based version of ``D3DXCreateMatrixStack`` / ``ID3DXMATRIXStack`` is available on the [DirectXMath](https://github.com/microsoft/DirectXMath/blob/master/MatrixStack/DirectXMatrixStack.h) GitHub.
+A DirectXMath-based version of ``D3DXCreateMatrixStack`` / ``ID3DXMATRIXStack`` is available on the [DirectXMath](https://github.com/microsoft/DirectXMath/blob/main/MatrixStack/DirectXMatrixStack.h) GitHub.
 
 <h1>Effects (FX)</h1>
 

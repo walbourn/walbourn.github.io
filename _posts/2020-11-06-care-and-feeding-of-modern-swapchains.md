@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [direct3d]
 ---
-The original idea for *Microsoft DirectX Graphics Infrastructure* ([DXGI](https://docs.microsoft.com/en-us/windows/win32/direct3ddxgi/dx-graphics-dxgi)) was to factor out creating swapchains and enumerating monitor resolutions from the evolution of Direct3D, and that DXGI would be basically the same for a long time. Alas, in practice that's not remotely true, and DXGI has changed with every update of Direct3D and/or Windows. As a result, the "right" way to use DXGI has changed as well. The basic recommendations on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3darticles/dxgi-best-practices) are still a good place to start, but there are a number of important areas that need more explanation.
+The original idea for *Microsoft DirectX Graphics Infrastructure* ([DXGI](https://docs.microsoft.com/windows/win32/direct3ddxgi/dx-graphics-dxgi)) was to factor out creating swapchains and enumerating monitor resolutions from the evolution of Direct3D, and that DXGI would be basically the same for a long time. Alas, in practice that's not remotely true, and DXGI has changed with every update of Direct3D and/or Windows. As a result, the "right" way to use DXGI has changed as well. The basic recommendations on [Microsoft Docs](https://docs.microsoft.com/windows/win32/direct3darticles/dxgi-best-practices) are still a good place to start, but there are a number of important areas that need more explanation.
 <!--more-->
 
 # Old vs. new flip modes
@@ -34,11 +34,11 @@ swapChainDesc.SwapEffect = (m_options & c_FlipPresent)
     : DXGI_SWAP_EFFECT_DISCARD;
 ```
 
-> For more implementation details, especially handling older versions of Windows, see the [DX11 DeviceResources](https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_win32_dr/DeviceResources.cpp).
+> For more implementation details, especially handling older versions of Windows, see the [DX11 DeviceResources](https://github.com/walbourn/directx-vs-templates/blob/main/d3d11game_win32_dr/DeviceResources.cpp).
 
 > For anyone who has looked at [D3D12 on Windows 7](https://microsoft.github.io/DirectX-Specs/d3d/D3D12onWin7.html), there's a lot of weirdness and limitations around handling the swapchain present since Windows 7 doesn't support the newer flip modes.
 
-See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi/ne-dxgi-dxgi_swap_effect)
+See [Microsoft Docs](https://docs.microsoft.com/windows/win32/api/dxgi/ne-dxgi-dxgi_swap_effect)
 
 # Scaling modes
 
@@ -46,7 +46,7 @@ Another swap chain feature introduced with DirectX 11.1/Window 8/DXGI 1.2 was co
 
 A more interesting ``DXGI_SCALING_ASPECT_RATIO_STRETCH`` mode was added for Windows Phone 8 and Windows 10/DXGI 1.4, which automatically supports "letter-boxing". It's an awesomely useful mode for dealing with scaling backbuffer size for performance (more on that later), but alas is only implemented for "CoreWindow" and "DirectComposition"-enabled Windows, not classic Win32 windows.
 
-See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_scaling)
+See [Microsoft Docs](https://docs.microsoft.com/windows/win32/api/dxgi1_2/ne-dxgi1_2-dxgi_scaling)
 
 # Gamma-correct rendering
 
@@ -198,8 +198,8 @@ Flags = 0x0 }
 
 For a detailed C++ implementation handling this behavior, see:
 
-* DeviceResources for DirectX 11 [Win32](https://github.com/walbourn/directx-vs-templates/blob/master/d3d11game_win32_dr/DeviceResources.cpp) and/or [UWP](https://github.com/walbourn/directx-vs-templates/tree/master/d3d11game_uwp_dr)
-* DeviceResources for DirectX 12 [Win32](https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/DeviceResources.cpp) and/or [UWP](https://github.com/walbourn/directx-vs-templates/tree/master/d3d12game_uwp_dr)
+* DeviceResources for DirectX 11 [Win32](https://github.com/walbourn/directx-vs-templates/blob/main/d3d11game_win32_dr/DeviceResources.cpp) and/or [UWP](https://github.com/walbourn/directx-vs-templates/tree/main/d3d11game_uwp_dr)
+* DeviceResources for DirectX 12 [Win32](https://github.com/walbourn/directx-vs-templates/blob/main/d3d12game_win32_dr/DeviceResources.cpp) and/or [UWP](https://github.com/walbourn/directx-vs-templates/tree/main/d3d12game_uwp_dr)
 
 # References
 [Gamma correction](http://en.wikipedia.org/wiki/Gamma_correction)

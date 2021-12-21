@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [audio, codeplex, github, winphone, xbox]
 ---
-The December 2013 release of <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit</a> is now available on <strike>CodePlex</strike>GitHub, and includes a C++ implementation of the XNA Game Studio's low-level audio framework using XAudio2 and X3DAudio. *DirectX Tool Kit for Audio* is included in both the [DirectX 11](https://github.com/microsoft/DirectXTK/tree/master/Audio) and [DirectX 12](https://github.com/microsoft/DirectXTK12/tree/master/Audio) versions of *DirectX Tool Kit*.
+The December 2013 release of <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit</a> is now available on <strike>CodePlex</strike>GitHub, and includes a C++ implementation of the XNA Game Studio's low-level audio framework using XAudio2 and X3DAudio. *DirectX Tool Kit for Audio* is included in both the [DirectX 11](https://github.com/microsoft/DirectXTK/tree/main/Audio) and [DirectX 12](https://github.com/microsoft/DirectXTK12/tree/main/Audio) versions of *DirectX Tool Kit*.
 <!--more-->
 
 <ul>

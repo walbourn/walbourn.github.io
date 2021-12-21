@@ -21,9 +21,9 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p>Tutorials</p>
 </td>
 <td>
-<p>Tutorial01 - 07<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11Tutorials">Direct3D Tutorial Win32 Sample</a></p>
-<p>Tutorial08-10<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Sample</a></p>
-<p>Tutorial11-14<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11TutorialsFX11">Effects Tutorial Win32 Sample</a></p>
+<p>Tutorial01 - 07<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11Tutorials">Direct3D Tutorial Win32 Sample</a></p>
+<p>Tutorial08-10<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Sample</a></p>
+<p>Tutorial11-14<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11TutorialsFX11">Effects Tutorial Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
@@ -78,7 +78,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <tr>
 <td>MultithreadedRendering11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a></p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
@@ -101,7 +101,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p>Collision</p>
 </td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Collision">DirectXMath Win32 Sample</a></p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Collision">DirectXMath Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
@@ -115,31 +115,31 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <tr>
 <td>CoreDetection</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/CoreDetection">Core Detection Sample</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/CoreDetection">Core Detection Sample</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>D3D11InstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/D3D11InstallHelper">Direct3D 11 Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/D3D11InstallHelper">Direct3D 11 Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>FirewallInstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/FirewallInstallHelper">Windows Firewall Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/FirewallInstallHelper">Windows Firewall Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>GameuxInstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/GameuxInstallHelper">Gameux Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/GameuxInstallHelper">Gameux Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>VideoMemory</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/VideoMemory">DirectX Video Memory</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/VideoMemory">DirectX Video Memory</a> (Win32)</p>
 </td>
 </tr>
 <tr>
@@ -147,7 +147,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p><strong>XInput</strong></p>
 SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XInput">XInput Samples</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XInput">XInput Samples</a> (Win32)</p>
 <p>XInputGame can be found <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/XInput">here.</a></p>
 <p>XInput 1.4 is supported on Windows 8.x and Windows 10. XInput 9.1.0 is in all versions of Windows since Windows Vista.</p>
 <p>See <a href="https://walbourn.github.io/xinput-and-windows-8/">XINPUT and Windows 8</a> for more information.</p>
@@ -158,7 +158,7 @@ SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <p><strong>XAudio2</strong></p>
 XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2CustomAPO</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Samples</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XAudio2">XAudio2 Samples</a> (Win32)</p>
 <p>XAudio 2.8 is supported on Windows 8.x or Windows 10. Windows 10 includes XAudio 2.9 and is available through <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> on Windows 7 SP1 or Windows 8.x as well.</p>
 <p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> for more information.</p>
 <p><em><a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK for Audio</a> is also a sample of XAudio2 usage, and is demonstrated in the <a href="https://github.com/walbourn/directxtk-samples">DirectX Tool Kit Simple Samples</a>.</em></p>
@@ -170,7 +170,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p>Customformat<br /> FFConst<br /> Joystick</p>
 </td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/master/DirectInput">DirectInput Samples</a> (Win32)</p>
+<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/DirectInput">DirectInput Samples</a> (Win32)</p>
 <p><em>Keyboard and Mouse samples are not included as use of DirectInput for these scenarios is not recommended. See <a href="https://walbourn.github.io/directx-tool-kit-keyboard-and-mouse-support/">this blog post</a>.</em></p>
 </td>
 </tr>
@@ -210,7 +210,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <td><strong>DirectShow</strong></td>
 <td>
 <p>A list of Windows 7.x SDK DirectShow samples is available on <a href="https://docs.microsoft.com/en-us/windows/desktop/DirectShow/directshow-samples">Microsoft Docs</a>.</p>
-<p>Note: You can find them on <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/directshow">GitHub</a>.</p>
+<p>Note: You can find them on <a href="https://github.com/Microsoft/Windows-classic-samples/tree/main/Samples/Win7Samples/multimedia/directshow ">GitHub</a>.</p>
 </td>
 </tr>
 <tr>
@@ -218,13 +218,13 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 </td>
 <td>
 <p>WIC Progressive Decode Win32 Sample<br />WIC Animated GIF Win32 Sample<br />WIC and Direct2D Image Viewer Win32 Sample</p>
-<p>You can find them on <a href="https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples/multimedia/wic">GitHub</a>.</p>
+<p>You can find them on <a href="https://github.com/Microsoft/Windows-classic-samples/tree/main/Samples/Win7Samples/multimedia/wic">GitHub</a>.</p>
 </td>
 </tr>
 </tbody>
 </table>
 
-> The Windows 7.1A SDK is integrated with VS 2012 - VS 2019 as part of the ``v1xx_xp`` Platform Toolset, but does not include the samples. The easiest place to get these legacy samples now is on [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/Win7Samples).
+> The Windows 7.1A SDK is integrated with VS 2012 - VS 2019 as part of the ``v1xx_xp`` Platform Toolset, but does not include the samples. The easiest place to get these legacy samples now is on [GitHub](https://github.com/Microsoft/Windows-classic-samples/tree/main/Samples/Win7Samples).
 
 <h1>AMD Samples</h1>
 

@@ -45,7 +45,7 @@ With the inclusion of <a href="https://walbourn.github.io/xaudio2-and-windows-8/
 
 <h1>Win32 desktop samples</h1>
 
-<a href="https://github.com/walbourn/directx-sdk-samples/tree/master/XAudio2">XAudio2 Win32 Samples</a>
+<a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XAudio2">XAudio2 Win32 Samples</a>
 
 <h1>MSDN Magazine</h1>
 

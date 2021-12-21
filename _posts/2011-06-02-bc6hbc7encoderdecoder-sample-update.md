@@ -15,6 +15,6 @@ For more information on BC6H and BC7 texture compression, see the Gamefest 2010 
 
 <strong>Update</strong>: Note that full documentation on the BC6H and BC7 formats is now available on <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/texture-block-compression-in-direct3d-11">Microsoft Docs</a>. The source to the D3DX11 software compressor and decompressor has been incorporated into the <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a> library as well.
 
-<strong>Note:</strong> The latest version of this code is now available on <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/BC6HBC7EncoderCS">GitHub</a>.
+<strong>Note:</strong> The latest version of this code is now available on <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/BC6HBC7EncoderCS">GitHub</a>.
 
 <strong>DirectXTex</strong>: The DirectCompute BC6H and BC7 compressors are now integrated into <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a>.

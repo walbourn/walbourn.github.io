@@ -43,11 +43,11 @@ Visual Studio 2012 and 2013 include great DirectX templates for Windows Store ap
 
 <h1>Version History</h1>
 
-See [GitHub](https://github.com/microsoft/DXUT/blob/master/HISTORY.md) for the complete version history.
+See [GitHub](https://github.com/microsoft/DXUT/blob/main/HISTORY.md) for the complete version history.
 
 <strong>Update: </strong>DXUT is now hosted on <a href="https://dxut.codeplex.com/">CodePlex</a> and <a href="https://github.com/Microsoft/DXUT">GitHub</a>. The latest version of the framework, documentation, notes on future work, release history, and other information is now available there.
 
-<strong>Samples</strong>: <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Samples</a>, <a href="https://github.com/walbourn/directx-sdk-samples">DXUT Win32 Samples</a>, <a href="http://code.msdn.microsoft.com/DXUTDirectXTK-Simple-Win32-9cf797e9">DXUT+DirectXTK Simple Sample</a>
+<strong>Samples</strong>: <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Samples</a>, <a href="https://github.com/walbourn/directx-sdk-samples">DXUT Win32 Samples</a>, <a href="http://code.msdn.microsoft.com/DXUTDirectXTK-Simple-Win32-9cf797e9">DXUT+DirectXTK Simple Sample</a>
 
 > You can use DXUT in combination with <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK</a> in the same project, but you should remove the files <code>DDSTextureLoader.h, DDSTextureLoader.cpp, ScreenGrab.h, ScreenGrab.cpp, WICTextureLoader.h,</code> and <code>WICTextureLoader.cpp</code> from ``DXUT\Core``. Removal of <code>SDKmesh.h</code> and <code>SDKmesh.cpp</code> from ``DXUT\Optional`` is also recommended. You may have to add additional include paths to the DXUT projects to find the ``DirectXTK\Inc`` folder as well.
 

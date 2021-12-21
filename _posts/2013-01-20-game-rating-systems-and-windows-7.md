@@ -11,6 +11,6 @@ Windows 8 includes a number of changes to the parental control ratings systems s
 
 For full details on these changes to the ratings systems and GDF-related tools, see the <a href="https://walbourn.github.io/windows-8-release-preview-and-gdfs/">Windows 8 and GDFs</a> blog post.
 
-> The latest version of the <em>Game Definition File Validator</em> (<code>GDFTrace.EXE</code>) on <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/GDFTrace">GitHub</a> has been updated for all the latest ratings system changes.
+> The latest version of the <em>Game Definition File Validator</em> (<code>GDFTrace.EXE</code>) on <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace">GitHub</a> has been updated for all the latest ratings system changes.
 
 <strong>Update:</strong> The latest version of <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">GDFMaker</a> is in the Windows 8.1 SDK.

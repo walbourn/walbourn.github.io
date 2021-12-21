@@ -17,7 +17,7 @@ For more on C++/WinRT, see:
 
 <a href="https://github.com/Microsoft/cppwinrt">cppwinrt on GitHub</a>
 
-<a href="https://github.com/Microsoft/cppwinrt/blob/master/Docs/Migrating%20C%2B%2B%20CX%20source%20code%20to%20C%2B%2B%20WinRT.md">Migrating C++/CX source code to C++/WinRT</a>
+<a href="https://aka.ms/cppwinrt">Migrating C++/CX source code to C++/WinRT</a>
 
 "<a href="https://www.youtube.com/watch?v=lm4IwfiJ3EU">Embracing Standard C++ for the Windows Runtime</a>" (CppCon 2016)
 

@@ -15,7 +15,7 @@ There's a lot of interest in the Multithreading features in Direct3D 11, especia
 
 <strong>Gamefest 2010 / GDC 2010 - </strong><em>DirectX Technology Update<br /></em> <a href="https://walbourn.github.io/download/DirectX-11-Technology-Update.zip">link</a>
 
-<a href="https://github.com/walbourn/directx-sdk-samples/tree/master/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a>
+<a href="https://github.com/walbourn/directx-sdk-samples/tree/main/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a>
 
 Be sure to review the blog post on the known issue with <a href="https://walbourn.github.io/known-issue-direct3d-11-updatesubresource-and-deferred-contexts/">UpdateSubresource</a>.
 

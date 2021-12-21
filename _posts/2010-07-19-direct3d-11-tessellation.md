@@ -19,7 +19,7 @@ The new hardware tessellation feature available on Direct3D 11 video cards has g
 
 <strong>Gamefest 2010</strong> -<em> Think DirectX 11 Tessellation! - What Are Your Options?</em> <a href="https://walbourn.github.io/download/Think-DirectX11-Tessellation-what-are-your-options.zip">link</a><br />
 
-The following samples:<br /><a href="http://developer.amd.com/tools-and-sdks/graphics-development/amd-radeon-sdk/">DetailTessellation11, PNTriangles11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/SimpleBezier11">SimpleBezier11</a>, and <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/SubD11">SubD11</a>
+The following samples:<br /><a href="http://developer.amd.com/tools-and-sdks/graphics-development/amd-radeon-sdk/">DetailTessellation11, PNTriangles11</a>, <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/SimpleBezier11">SimpleBezier11</a>, and <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/SubD11">SubD11</a>
 
 NVIDIA and AMD also did a number of presentations at <strong>Game Developers Conference</strong>, including the following talks on Direct3D 11 Tessellation:
 

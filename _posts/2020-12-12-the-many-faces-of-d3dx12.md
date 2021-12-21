@@ -36,7 +36,7 @@ Since it's optional and not the Windows 10 SDK, there's a number of ways to obta
 
 Officially the 'latest and greatest' version is obtained from [GitHub](https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/d3dx12.h). The key thing to remember is that this version assumes you are using the latest public Windows 10 SDK (at this point, that would be Windows 10 SDK 19041). If you use an older SDK, that version of ``d3dx12.h`` won't compile.
 
-While you can use an older version, there's been a number of minor fixes and I've done a lot of clang/LLVM C++ conformance work for the latest versions as well. I maintain the version on [directx-vs-templates](https://github.com/walbourn/directx-vs-templates/blob/master/d3d12game_win32_dr/d3dx12.h) to match the latest public one, but mine has a bunch of conditional compilation preprocessor stuff so it will build with older Windows 10 SDKs.
+While you can use an older version, there's been a number of minor fixes and I've done a lot of clang/LLVM C++ conformance work for the latest versions as well. I maintain the version on [directx-vs-templates](https://github.com/walbourn/directx-vs-templates/blob/main/d3d12game_win32_dr/d3dx12.h) to match the latest public one, but mine has a bunch of conditional compilation preprocessor stuff so it will build with older Windows 10 SDKs.
 
 > **UPDATE::** I've moved my copy up to a minimum of Windows 10 SDK (19041) because it was getting pretty unwieldy to maintain. You can find versions for older Windows 10 SDKs in the release history, of course.
 

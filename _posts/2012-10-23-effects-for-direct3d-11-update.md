@@ -65,7 +65,7 @@ D3D10DisassembleEffect</code></td>
 
 <h1>Version History</h1>
 
-See [GitHub](https://github.com/microsoft/FX11/blob/master/HISTORY.md) for the complete version history.
+See [GitHub](https://github.com/microsoft/FX11/blob/main/HISTORY.md) for the complete version history.
 
 <strong>Update:</strong> Effects 11 is now hosted on <a href="http://go.microsoft.com/fwlink/?LinkId=271568">CodePlex</a> and <a href="https://github.com/Microsoft/FX11">GitHub</a>. The latest version of the library, documentation, release history, and other information is now available there.
 

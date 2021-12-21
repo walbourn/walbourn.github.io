@@ -34,4 +34,4 @@ The fix is fairly easy. In the <code>D3D11Install.cpp</code> file, just add a ``
 #define MSG_SIZE    1024
 #pragma comment(linker,"\"/manifestdependency:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' processorArchitecture='*' publicKeyToken='6595b64144ccf1df' language='*'\"")
 ```
-<strong>Update</strong>: Note the most current version of this sample is available on <a href="https://github.com/walbourn/directx-sdk-samples/tree/master/InstallHelpers/D3D11InstallHelper">GitHub</a>.
+<strong>Update</strong>: Note the most current version of this sample is available on <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/D3D11InstallHelper">GitHub</a>.
