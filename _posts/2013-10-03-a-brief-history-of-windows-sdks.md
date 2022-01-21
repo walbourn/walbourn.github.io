@@ -19,67 +19,71 @@ Most developers get a copy of the Windows SDK or Platform SDK with their Visual 
 <table border="1">
 <tbody>
 <tr>
+<td>Visual Studio 2022</td>
+<td>Windows SDK (<a href="https://walbourn.github.io/windows-sdk-for-windows-11/">22000</a>)<br />
+<br />
+Windows 10 SDK (18362, 19041, 20348) [optional]</td>
+</tr>
+<tr>
 <td>Visual Studio 2019</td>
-<td>Windows 10 SDK (17763 or 18363)
-
-Windows 8.1 SDK Spring 2015 [optional]
-
-Windows 7.1A SDK for ``v14?_xp`` Platform Toolset</td>
+<td>Windows 10 SDK (17763 - <a href="https://walbourn.github.io/windows-10-may-2020-update-sdk/">19041</a>)<br />
+<br />
+Windows 8.1 SDK Spring 2015 [optional]</td>
 </tr>
 <tr>
 <td>Visual Studio 2017</td>
-<td>Windows 10 SDK (14393, 15063, 16299, or 17763)
-
-Windows 8.1 SDK Spring 2015 [optional]
-
-Windows 7.1A SDK for ``v14?_xp`` Platform Toolset</td>
+<td>Windows 10 SDK (14393, 15063, 16299, or <a href="https://walbourn.github.io/windows-10-october-2018-update/">17763</a>)<br />
+<br />
+Windows 8.1 SDK Spring 2015 [optional]<br />
+<br />
+Windows 7.1A SDK for <code>v141_xp</code> Platform Toolset</td>
 </tr>
 <tr>
 <td>Visual Studio 2015</td>
-<td>Windows 8.1 SDK Spring 2015
-
-Windows 10 SDK (10240, 10586, or 14393) [optional]
-
-Windows 7.1A SDK for ``v140_xp`` Platform Toolset</td>
+<td>Windows 8.1 SDK Spring 2015<br />
+<br />
+Windows 10 SDK (10240, 10586, or 14393) [optional]<br />
+<br />
+Windows 7.1A SDK for <code>v140_xp</code> Platform Toolset</td>
 </tr>
 <tr>
 <td>Visual Studio 2013</td>
-<td>Windows 8.1 SDK (VS 2013 Update 3 and Update 5 contain newer versions)
-
-Windows 7.1A SDK for ``v120_xp`` Platform Toolset
-
+<td>Windows 8.1 SDK (VS 2013 Update 3 and Update 5 contain newer versions)<br />
+<br />
+Windows 7.1A SDK for <code>v120_xp</code> Platform Toolset<br />
+<br />
 VS 2013 Express for Windows only includes a subset of the full Windows 8.1 SDK</td>
 </tr>
 <tr>
 <td>Visual Studio 2012</td>
-<td>Windows 8.0 SDK
-
-Windows 7.1A SDK for ``v110_xp`` Platform Toolset (added in Update 1)
-
+<td>Windows 8.0 SDK<br />
+<br />
+Windows 7.1A SDK for <code>v110_xp</code> Platform Toolset (added in Update 1)<br />
+<br />
 VS 2012 Express for Windows only includes a subset of the full Windows 8.0 SDK</td>
 </tr>
 <tr>
 <td>Visual Studio 2010</td>
-<td>Windows SDK 7.0A
-
+<td>Windows SDK 7.0A<br />
+<br />
 Similar to <em>Windows SDK for Windows 7 and .NET Framework 3.5 SP1</em> (August 2009)</td>
 </tr>
 <tr>
 <td>Visual Studio 2008</td>
-<td>Windows SDK 6.0A
-
+<td>Windows SDK 6.0A<br />
+<br />
 Similar to <em>Windows SDK for Windows Vista Update and .NET Framework 3.0</em> (February 2007)</td>
 </tr>
 <tr>
 <td>Visual Studio 2005</td>
-<td>Similar to <em>Windows Server 2003 SP1 Platform SDK</em> (April 2005)
-
+<td>Similar to <em>Windows Server 2003 SP1 Platform SDK</em> (April 2005)<br />
+<br />
 VS 2005 Express did not include the Platform SDK</td>
 </tr>
 </tbody>
 </table>
 
-> Which version of the Windows 10 SDK you get by default with VS 2017 depends on which Visual Studio update you are installing. With VS 2017 (15.9), you'll get Windows 10 SDK (17763) but you can choose the other versions as optional components.
+> Which version of the Windows  SDK you get by default with VS 2017 or later depends on which Visual Studio update you are installing. With VS 2017 (15.9), you'll get Windows 10 SDK (17763) but you can choose the other versions as optional components.
 
 <h1>Q: What platform does a given Windows SDK target?</h1>
 
@@ -112,5 +116,7 @@ Not all Windows SDKs can be used with all versions of Visual Studio. Changes in 
 The standard way of doing this is to set a Preprocessor Define ``_WIN32_WINNT`` to the appropriate value for the 'oldest' version of Windows you are targeting (see <a href="https://docs.microsoft.com/en-us/windows/desktop/WinProg/using-the-windows-headers">Using the Windows Headers</a>). This causes the headers to work in such a way that newer APIs are not available at build time. This can get a bit complicated for "Platform Updates" that put portions of newer OS features onto older version of Windows, but otherwise ``_WIN32_WINNT`` is usually sufficient to get the expected behavior. Otherwise, you can set a 'higher' value to give you access to newer APIs, but the programmer must take care to handle detection or fallback as needed for partially supported or unsupported APIs on down-level versions of Windows (i.e. <a href="https://walbourn.github.io/windows-imaging-component-and-windows-8/">WIC2</a>, <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Direct3D 11</a>)
 
 Note that unlike previous Windows SDKs, the Windows 8.x SDKs use a default value of ``_WIN32_WINNT`` that is the 'newest' rather than the 'oldest' version of the OS.
+
+<strong>NuGet:</strong> Note that Windows SDK (17763) or later are avaiable as [NuGet packages](https://www.nuget.org/packages/Microsoft.Windows.SDK.CPP/) from nuget.org.
 
 <strong>Related: </strong><a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/windows-sdk-7-1/">Windows 7.1 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2012-and-windows-8-0-sdk-rtm-are-now-available/">Windows 8.0 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2013-and-windows-8-1-sdk-rtm-are-now-available/">Windows 8.1 SDK</a>, <a href="https://walbourn.github.io/visual-studio-tools-for-windows-10-preview/">Windows 10 SDK</a>, <a href="https://walbourn.github.io/visual-studio-2012-update-1/">VS 2012 Update 1</a>
