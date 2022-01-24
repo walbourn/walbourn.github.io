@@ -16,7 +16,7 @@ XNA Game Studio demonstrated that fixed-step timing can be a lot more useful, wh
 For the Visual Studio 2013 templates for Windows Store apps for Windows 8.1 and Windows phone 8.1, they no longer include <code>BasicTimer</code> and instead they have the C++ <code>StepTimer</code> class. This class also uses <code>QueryPerformanceCounter</code>, but supports both variable-length and fixed-step timing. It makes use of 64-bit accumulation for elapsed time, and returns time in units of seconds as a <code>double</code>. The timer also ensures that there's an upper-bound to the maximum delta since debugging or pausing can otherwise result in huge time jumps that are not well handled by game code. As an added bonus, since it's no longer a WinRT class you can use it for Win32 desktop C++ programs too (with a minor switch of basic types).
 
 ```cpp
-#include <windows.h>
+#include <Windows.h>
 #include "StepTimer.h"
 
 DX::StepTimer s_timer;
