@@ -1,3 +1,20 @@
+//
+// This is the original source for this blog post. It is designed
+// to ensure that the current OS is one that includes the
+// DirectX 9.0c Runtime -and- is the most recent servicing update
+// of the relevant OS.
+//
+// https://walbourn.github.io/whats-in-a-version-number
+//
+// For modern DirectX 11 games, the VersionHelpers.h test IsWindows7SP1OrGreater
+// is all you should need.
+//
+// https://docs.microsoft.com/en-us/windows/win32/sysinfo/version-helper-apis
+//
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+//
+
 #define UNICODE
 #define _UNICODE
 
