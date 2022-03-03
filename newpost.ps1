@@ -9,7 +9,13 @@
     process {
         $Date = Get-Date -Format "yyyy-MM-dd"
         $Time = Get-Date -Format "HH:mm"
-        $FileName = "$($date.ToString())-$($name.Replace(" ","-")).md"
+
+        $pattern = "[{0}]" -f ([Regex]::Escape([String] `
+[System.IO.Path]::GetInvalidPathChars()))
+        $SafeName = $Name -replace $pattern, '-'
+        $SafeName = $SafeName.Replace(' ', '-').Replace('/','-').Replace('\','-')
+
+        $FileName = "$($date.ToString())-$($SafeName).md"
 
         $Blog = New-Object -TypeName "System.Text.StringBuilder"
         [void]$Blog.Append("---`n") 
