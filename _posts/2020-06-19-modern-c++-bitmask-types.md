@@ -121,6 +121,8 @@ DEFINE_ENUM_FLAG_OPERATORS(FLAGS_FOR_MYFUNCTION)
 HRESULT MyFunction(FLAGS_FOR_MYFUNCTION flags);
 ```
 
+> Prior to Windows 10 SDK (14393), the ``DEFINE_ENUM_FLAG_OPERATORS`` macro did not make use of ``constexpr``, meaning that the resulting flags couldn't be used in ``constexpr`` expressions. This issue should only impact legacy Xbox One XDK code at this point.
+
 > With the Windows 10 SDK (19041) and clang v10, there are some conformance issues with ``DEFINE_ENUM_FLAG_OPERATORS`` that generates ``-Wdeprecated-dynamic-exception-spec`` so I suppress those in my libraries when using this macro.
 
 # Client code impact
