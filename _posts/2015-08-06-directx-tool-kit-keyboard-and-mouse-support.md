@@ -74,3 +74,5 @@ void Game::Update(DX::StepTimer const& timer)
 See the <a href="https://github.com/Microsoft/DirectXTK/wiki/Mouse">documentation wiki page</a> on the new class for details, and the related <a href="https://github.com/Microsoft/DirectXTK/wiki/Mouse-and-keyboard-input">tutorial</a>.
 
 <strong>DirectInput:</strong> Developers are strongly discouraged from using legacy DirectInput for handling keyboard and mouse processing as far back as Windows XP. DirectInput should really only be used for supporting legacy HID game controllers and joysticks.
+
+<strong>Microsoft GDK:</strong> For Gaming.Xbox.*.x64 platforms, Mouse and Keyboard is implemented using the GameInput API. This API will be supported on PC as well at a later date.
