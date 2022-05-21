@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DirectX and UWP on Xbox Series X\|S
+title: DirectX and UWP on Xbox Series X|S
 date: 2022-05-20 23:51
 author: Chuck Walbourn
 comments: true
@@ -28,11 +28,11 @@ For DirectX 12, Shader Models 5.1 to 6.4 is supported.
 
  > `*` = Note that in Developer Mode, you can use WARP on DirectX 12 even in App Mode, but this is not supported for retail mode.
 
- # Gaming Device Information
+# Gaming Device Information
 
- **Windows 10, Version 1709** introduced the [**GetGamingDeviceModelInformation**](https://docs.microsoft.com/windows/win32/api/gamingdeviceinformation/nf-gamingdeviceinformation-getgamingdevicemodelinformation) API which reports a "VID/PID" style platform identity marker at runtime. This is intended to detect which member of the Xbox family is currently being used for UWP on Xbox.
+**Windows 10, Version 1709** introduced the [**GetGamingDeviceModelInformation**](https://docs.microsoft.com/windows/win32/api/gamingdeviceinformation/nf-gamingdeviceinformation-getgamingdevicemodelinformation) API which reports a "VID/PID" style platform identity marker at runtime. This is intended to detect which member of the Xbox family is currently being used for UWP on Xbox.
 
- The originally defined Device IDs for ``vendorId==GAMING_DEVICE_VENDOR_ID_MICROSOFT`` are as follows:
+The originally defined Device IDs for ``vendorId==GAMING_DEVICE_VENDOR_ID_MICROSOFT`` are as follows:
 
 deviceId | Value
 ---|---
@@ -68,7 +68,7 @@ As before, you can create a swapchain at 1080p or 4K, and the console will scale
 
  ```cpp
 #include "Gamingdeviceinformation.h"
-…
+...
 GAMING_DEVICE_MODEL_INFORMATION info = {};
 GetGamingDeviceModelInformation(&info);
 if (info.vendorId == GAMING_DEVICE_VENDOR_ID_MICROSOFT)
