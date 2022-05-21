@@ -9,7 +9,7 @@ categories: [uwp, xbox]
 With the release of the Fall Creators Update (October 2017) for Xbox One, UWP apps can now opt into expanded resources as was announced in <a href="https://blogs.windows.com/buildingapps/2017/09/15/resources-universal-windows-platform-games-fall-xbox-one-update/">this Windows Blog post</a>. Details about UWP on Xbox One can be found on <a href="https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/">Microsoft Docs</a>, but in this blog post I'll be talking about a few technical issues and specifics I encountered while updating the UWP samples on the <a href="https://github.com/Microsoft/Xbox-ATG-Samples">Xbox-ATG-Samples</a> GitHub and working with the UWP versions of my <a href="https://github.com/walbourn/directx-vs-templates/wiki">Direct3D Game template</a>.
 <!--more-->
 
-<h1>Game mode</h1>
+# Game mode
 
 By default all UWP apps run on the Xbox One (which must support either the "Universal" or "Xbox" device family and be built for the x64 architecture) run in a shared system mode with a <a href="https://docs.microsoft.com/en-us/windows/uwp/xbox-apps/system-resource-allocation">subset of system resources</a> with the remainder of the system resources reserved for games. With the latest version of the OS, a UWP app can declare itself a 'Game' which will give it access to additional memory, CPU, and GPU resources.
 
@@ -39,7 +39,7 @@ This brings up the App details page and the <em>App type</em> field should be se
 
 <a href="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox5.png"><img width="300" height="122" src="https://raw.githubusercontent.com/walbourn/walbourn.github.io/main/images/uwpxbox5.png" /></a>
 
-<h1>DirectX 11</h1>
+# DirectX 11
 
 For UWP on Xbox One, the DirectX 11 device is supported using <a href="https://walbourn.github.io/direct3d-feature-levels/">Direct3D Feature Level</a> 10.0. This is still true in Game mode, although you have significantly more GPU resources available to you than when you run as an 'App'.
 
@@ -99,11 +99,12 @@ Cubemaps</td>
 
 > Note that in development mode, if you try to create a DirectX 11 device and do not provide the option of using ``D3D_FEATURE_LEVEL_10_0``, then you will end up with a WARP software device rather than the much faster hardware device. Remember also that WARP it not supported for retail Xbox One machines.
 
-**Xbox Series X\|S**: When using UWP on Xbox Series X\|S, Direct3D Hardware Feature Level 11.0 is supported for DirectX 11.
+**Xbox Series X\|S**: When using UWP on Xbox Series X\|S, Direct3D Hardware Feature Level 11.0 is supported for DirectX 11 for both App and Game mode. See [this blog post](
+https://walbourn.github.io/directx-and-uwp-on-xbox-series-x-s/) for updates.
 
 See <a href="https://walbourn.github.io/anatomy-of-direct3d-11-create-device/">Anatomy of Direct3D 11 Create Device</a> for more details on DirectX 11 device creation.
 
-<h1>DirectX 12</h1>
+# DirectX 12
 
 For UWP on Xbox One, DirectX12 is supported as <strong>Direct3D Hardware Feature Level 11.0</strong> while in Game mode. It supports Shader Model 5.1 and Shader Model 6.4 shaders.
 
@@ -111,13 +112,16 @@ For UWP on Xbox One, DirectX12 is supported as <strong>Direct3D Hardware Feature
 
 See <a href="https://walbourn.github.io/anatomy-of-direct3d-12-create-device/">Anatomy of Direct3D 12 Create Device</a> for more details on DirectX 12 device creation.
 
-<h1>Game controller usage</h1>
+**Xbox Series X\|S**: When using UWP on Xbox Series X\|S, Direct3D Hardware Feature Level 11.0 is supported for DirectX 12 for both App and Game mode. See [this blog post](
+https://walbourn.github.io/directx-and-uwp-on-xbox-series-x-s/) for updates.
+
+# Game controller usage
 
 If you are using the Direct3D app model for your game rather than XAML or Direct3D+XAML, an important thing to note is that you need to handle the BackRequested navigation event. This event is generated whenever the B button is pressed on the Xbox One game controller, and if not handled it will result in the application being suspended as control is returned to DevHome (or the previous app). Typically Direct3D games would use <a href="https://docs.microsoft.com/en-us/uwp/api/windows.gaming.input">Windows.Gaming.Input</a> (or the XINPUT emulator library xinput_uap.lib) to react directly to the use of the B button as appropriate to the game control scheme rather than rely on the notion of a 'page stack'.
 
 See also <a href="https://walbourn.github.io/directx-tool-kit-now-with-gamepads/">GamePad</a> in the <em>DirectX Tool Kit</em> (<a href="https://github.com/Microsoft/DirectXTK">DX11</a> / <a href="https://github.com/Microsoft/DirectXTK12/">DX12</a>).
 
-<h2>C++/CX</h2>
+## C++/CX
 
 If using C++/CX (a.k.a. <code>/ZW</code>) then you can implement this as follows:
 
@@ -142,7 +146,7 @@ void OnBackRequested(Platform::Object^,
 }
 ```
 
-<h2>C++/WinRT</h2>
+## C++/WinRT
 
 If using the <a href="https://walbourn.github.io/directx-tool-kit-and-cwinrt/">C++/WinRT projections</a>, then you can implement this as:
 
@@ -162,7 +166,7 @@ void SetWindow(CoreWindow const & window)
 }
 ```
 
-<h1>4K</h1>
+# 4K
 
 For UWP on Xbox One apps, the system always indicates a window size of 1920 x 1080 (i.e. 1080p). If the TV is running as 4K on an Xbox One S or Xbox One X, the swapchain content is automatically scaled up by the display hardware.
 
@@ -197,7 +201,7 @@ Note that if your UWP app has a Target Platform Minimum Version before 10.0.0.16
 ```cpp
 #include <libloaderapi2.h>
 extern "C" IMAGE_DOS_HEADER __ImageBase;
-…
+...
 // Requires the linker settings to include
 // /DELAYLOAD:api-ms-win-gaming-deviceinformation-l1-1-0.dll
 
@@ -237,10 +241,12 @@ If you use a native 4k swapchain on Xbox One X and the TV is in a 1080p mode, th
 
 > For Xbox Series S, you should use 1440p (2560 x 1440) instead of 4K, although there's no easy way to detect this platform at the moment within UWP. 1080p is a reasonable default for this platform as well.
 
-<h1>HDR</h1>
+# HDR
 
-UWP on Xbox One apps have limited access to the High-Dynamic Range (HDR) capabilities of the Xbox One S and the Xbox One X. For games looking to implement HDR, contact the <a href="https://www.windowscentral.com/idxbox">ID@Xbox program</a>.
-<h1>Tools</h1>
+UWP on Xbox One apps have limited access to the High-Dynamic Range (HDR) capabilities of the Xbox One S and the Xbox One X. For games looking to implement HDR, contact the <a href="https://www.xbox.com/Developers/id">ID@Xbox program</a>.
+
+
+# Tools
 The Visual Studio Graphics Diagnostics (a.k.a. VSPIX) supports UWP on Xbox One.
 
 > Note that neither the Xbox PIX nor the <a href="https://blogs.msdn.microsoft.com/pix/">"new" PIX</a> tool currently support UWP on Xbox One.
