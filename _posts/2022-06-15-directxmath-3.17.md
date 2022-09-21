@@ -4,7 +4,7 @@ title: DirectXMath 3.17
 date: 2022-06-15 00:22
 author: Chuck Walbourn
 comments: true
-categories: [general]
+categories: [directxmath]
 ---
 
 DirectXMath 3.17 is now available via [GitHub](https://github.com/microsoft/DirectXMath/releases/tag/jan2022), [NuGet](https://www.nuget.org/packages/directxmath/2022.2.11.1), and [vcpkg](https://github.com/walbourn/vcpkg/tree/master/ports/directxmath). It is included in the **Windows SDK (10.0.22621) for Windows 11, Version 22H2**.
