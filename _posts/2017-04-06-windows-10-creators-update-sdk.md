@@ -12,6 +12,8 @@ The <a href="https://blogs.windows.com/buildingapps/2017/04/05/windows-10-creato
 
 <h1>Visual Studio 2017 (15.1/15.2 Updates)</h1>
 
+<em>All versions of Visual Studio 2017 are out of their "mainstream" [support lifecycle](https://docs.microsoft.com/lifecycle/products/visual-studio-2017) as of <b>April 2022</b>. Platform toolset v141 from 15.9 support is still available in Visual Studio 2019 and Visual Studio 2022 as optional components.</em>.
+
 You can install the new Windows 10 SDK by installing the latest VS 2017 update (<a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2017-update/">15.1</a>, <a href="https://devblogs.microsoft.com/visualstudio/update-to-visual-studio-2017-and-next-preview/">15.2</a>, or later). The new Windows 10 SDK  (15063) is actually three distinct components: <code>Microsoft.VisualStudio.Component.Windows10SDK.15063.Desktop</code>, <code>Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP</code>, and <code>Microsoft.VisualStudio.Component.Windows10SDK.15063.UWP.Native</code>.
 
 The <em>Windows 10 Creators Update SDK</em> resolves a number of conformance errors in Windows system headers enabling the use of the <a href="https://devblogs.microsoft.com/cppblog/permissive-switch/"><code>/permissive-</code> switch</a>.

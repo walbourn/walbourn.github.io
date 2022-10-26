@@ -29,3 +29,5 @@ lld-link: warning/error: ignoring unknown debug$S subsection kind 0xFF in file l
 ```
 
 See [this issue](https://reviews.llvm.org/D129378) for more details.
+
+> The Visual Studio 2022 17.4 Update includes clang 15.0.1 to address this issue.

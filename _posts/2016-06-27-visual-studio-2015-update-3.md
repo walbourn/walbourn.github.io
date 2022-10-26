@@ -9,7 +9,7 @@ categories: [visualc]
 VS 2015 Update 3 is now available for <a href="http://go.microsoft.com/fwlink/?LinkId=691129">download</a>, including the updated Community edition. The Visual C++ 2015 Update 3 Redistribution packages are also available (<a href="https://go.microsoft.com/fwlink/?LinkId=615459">x86</a>, <a href="https://go.microsoft.com/fwlink/?LinkId=615460">x64</a>), as well as the Remote Debugging Tools (<a href="https://go.microsoft.com/fwlink/?LinkId=615469">x86</a>, <a href="https://go.microsoft.com/fwlink/?LinkId=615470">x64</a>, <a href="https://go.microsoft.com/fwlink/?LinkId=717854">ARM</a>). For more information see the <a href="https://devblogs.microsoft.com/visualstudio/visual-studio-2015-update-3-and-net-core-1-0-available-now/">release notes</a>.
 <!--more-->
 
-<em>Note that Update 3 is the last  update for VS 2015. Per the Visual Studio [support lifecycle](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2015),  "mainstream" support for VS 2015 ended in <b>June 2016</b>. "Extended" support ends <b>October 2025</b></em>
+<em>Note that Update 3 is the last  update for VS 2015. Per the Visual Studio [support lifecycle](https://docs.microsoft.com/lifecycle/products/visual-studio-2015),  "mainstream" support for VS 2015 ended in <b>June 2016</b>. "Extended" support ends <b>October 2025</b>. Platform toolset v140 support is still available in Visual Studio 2019 and Visual Studio 2022 as an optional component.</em>
 
 <strong>Update: </strong>See the <a href="https://docs.microsoft.com/en-us/cpp/porting/visual-cpp-porting-and-upgrading-guide?view=vs-2015">Visual C++ Porting and Upgrading Guide</a> and the <a href="https://github.com/Microsoft/VCSamples">VC++ Samples GitHub</a>.
 
