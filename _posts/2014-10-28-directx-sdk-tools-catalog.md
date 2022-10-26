@@ -31,24 +31,24 @@ For notes on the DxErr library that the <code>DXErr.exe</code> tool used, see <a
 </tr>
 <tr>
 <td>Game Definition File Validator (<code>gdftrace.exe</code>)</td>
-<td><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace">GitHub</a></td>
+<td>See <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace">GitHub</a> for the latest version of this tool.</td>
 </tr>
 <tr>
 <td>Texture Conversion Tool (<code>Texconv.exe</code>)
 <code>Texconvex.exe</code></td>
-<td><a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a></td>
+<td>See <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a> and the <b>texconv</b> sample tool.</td>
 </tr>
 <tr>
 <td><code>Meshconvert.exe</code></td>
-<td><a href="http://go.microsoft.com/fwlink/?LinkID=324981">DirectXMesh</a><br />
+<td>See <a href="http://go.microsoft.com/fwlink/?LinkID=324981">DirectXMesh</a> and the <b>meshconvert</b> sample tool.<br />
 <br />
 See also the <a href="https://aka.ms/dxsdkcontentexporter">Samples Content Exporter</a>.</td>
 </tr>
 <tr>
 <td>DirectX Texture Editor (<code>DxTex.exe</code>)</td>
-<td>This legacy DirectX SDK tool does not support DDS files with the <a href="https://walbourn.github.io/the-dds-file-format-lives/">'DX10' header extension</a>.<br />
-<br />
-VS 2012 or later can view all DDS files supported by DirectXTex.</td>
+<td><p>See <a href="https://github.com/walbourn/dxtex">GitHub</a>.</p>
+<p>The original legacy DirectX SDK tool does not support DDS files with the <a href="https://walbourn.github.io/the-dds-file-format-lives/">'DX10' header extension</a>, BC4, BC5, BC6, or BC7 compressed formats.</p>
+<p>VS 2012 or later can view all DDS files supported by DirectXTex.</p></td>
 </tr>
 <tr>
 <td><code>TxView.DLL</code></td>
@@ -59,9 +59,8 @@ VS 2012 or later can view all DDS files supported by DirectXTex.</td>
 <p><code>Xact3.exe</code></p>
 <p><code>XactBld3.exe</code></p>
 <p><code>XaudConsole3.exe</code></p></td>
-<td>XACT is deprecated and is only available in the legacy DirectX SDK.
-
-The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit </a> can build XACT3-style <code>.xwb</code> wave banks for bulk loading of <code>.wav</code> files as well as streaming using <em>DirectX Tool Kit for Audio</em>.</td>
+<td><p>XACT is deprecated and is only available in the legacy DirectX SDK.</p>
+<p>The <code>xwbtool</code> in <a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectX Tool Kit</a> can build XACT3-style <code>.xwb</code> wave banks for bulk loading of <code>.wav</code> files as well as streaming using <em>DirectX Tool Kit for Audio</em></p>.</td>
 </tr>
 <tr>
 <td><code>xWMAEncode.exe</code></td>
