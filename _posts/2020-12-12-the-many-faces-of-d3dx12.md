@@ -24,7 +24,9 @@ The bulk of the ``D3DX12.h`` header are C++ class versions of the core C-style A
 
 D3DX12 does not include code for loading/saving bitmaps as textures, but it does have the ``UpdateSubresources`` helpers to simplify basic texture transfer from CPU memory to GPU memory--something that in DirectX 11 was handled behind the scenes.
 
-Lastly there's a set of "State Object Creation Helpers" intended for use with DirectX Raytracing (DXR) and the new Amplification & Mesh shaders. These shader stages do not have dedicated description structures in the Pipeline State Object (PSO), and instead make use of a 'stream' data description which these helpers can build. Note you can disable these by defining ``D3DX12_NO_STATE_OBJECT_HELPERS`` if you don't need them in your application.
+There's a set of "State Object Creation Helpers" intended for use with DirectX Raytracing (DXR) and the new Amplification & Mesh shaders. These shader stages do not have dedicated description structures in the Pipeline State Object (PSO), and instead make use of a 'stream' data description which these helpers can build. Note you can disable these by defining ``D3DX12_NO_STATE_OBJECT_HELPERS`` if you don't need them in your application.
+
+The latest addition to the library is the "Feature Support Helper" in the form of the ``CD3DX12FeatureSupport`` class. You can disable the inclusion of this class by defining ``D3DX12_NO_CHECK_FEATURE_SUPPORT_CLASS``. For more information, see [this blog post](https://devblogs.microsoft.com/directx/introducing-a-new-api-for-checking-feature-support-in-direct3d-12/).
 
 There's a summary of the content in the header on my [DirectX Tool Kit for DX12 wiki](https://github.com/microsoft/DirectXTK12/wiki/DirectXHelpers) and they are documented on [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3d12/helper-structures-and-functions-for-d3d12)
 
@@ -32,13 +34,15 @@ There's a summary of the content in the header on my [DirectX Tool Kit for DX12 
 
 # Getting the latest D3DX12 header
 
-Since it's optional and not the Windows 10 SDK, there's a number of ways to obtain ``d3dx12.h``. The Visual Studio "DirectX12 App" templates for UWP development come with a copy if it. I include the header in my [Direct3D 12 Game VS Templates](https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/) for similar reasons.
+Since it's optional and not included in the Windows SDK, there's a number of ways to obtain ``d3dx12.h``. The Visual Studio "DirectX12 App" templates for UWP development come with a copy if it. I include the header in my [Direct3D 12 Game VS Templates](https://walbourn.github.io/direct3d-game-visual-studio-templates-redux/) for similar reasons.
 
-Officially the 'latest and greatest' version is obtained from [GitHub](https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/d3dx12.h). The key thing to remember is that this version assumes you are using the latest public Windows 10 SDK (at this point, that would be Windows 10 SDK 19041). If you use an older SDK, that version of ``d3dx12.h`` won't compile.
+Officially the 'latest and greatest' version is obtained from [GitHub](https://raw.githubusercontent.com/microsoft/DirectX-Headers/main/include/directx/d3dx12.h). The key thing to remember is that this version assumes you are using the other Direct3D heders from the repository. If you use an older SDK, that version of ``d3dx12.h`` won't compile.
 
 While you can use an older version, there's been a number of minor fixes and I've done a lot of clang/LLVM C++ conformance work for the latest versions as well. I maintain the version on [directx-vs-templates](https://github.com/walbourn/directx-vs-templates/blob/main/d3d12game_win32_dr/d3dx12.h) to match the latest public one, but mine has a bunch of conditional compilation preprocessor stuff so it will build with older Windows 10 SDKs.
 
-> **UPDATE::** I've moved my copy up to a minimum of Windows 10 SDK (19041) because it was getting pretty unwieldy to maintain. You can find versions for older Windows 10 SDKs in the release history, of course.
+> **UPDATE:** I've moved my copy up to a minimum of Windows 10 SDK (19041) because it was getting pretty unwieldy to maintain. You can find versions for older Windows 10 SDKs in the release history, of course.
+>
+> You can also obtain an older version which supports the Windows 10 SDK (14393) which worked with VS 2015 from this [archive](https://github.com/microsoft/Xbox-ATG-Samples/blob/main/Kits/ATGTK/d3dx12.h).
 
 Moving forward, there is now a [GitHub: DirectX-Headers](https://github.com/microsoft/DirectX-Headers) repository which includes the latest Direct3D 12 headers along with the latest D3DX12 utility header in one place.
 
