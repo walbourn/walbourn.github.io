@@ -34,7 +34,7 @@
         Set-Content -Value $Blog -Path $NewBlogPath.tolower()
         Write-Output (Get-ChildItem $NewBlogPath.tolower())
 
-        atom $NewBlogPath
+        code $NewBlogPath
     }
     
     end {
