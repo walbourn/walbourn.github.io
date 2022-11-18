@@ -13,7 +13,7 @@ I've built a number of porting notes tables for each of these topics, and then r
 
 > There is an option for obtaining the deprecated D3DX9, D3DX10, and/or D3DX11 libraries without using the legacy DirectX SDK or redist via [NuGet](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX). The open source replacements listed below are still preferable. See [this blog post](https://walbourn.github.io/legacy-d3dx-on-nuget/) for more details.
 
-<strong>Direct3D 9:</strong> There are  limited replacements for the functionality in D3DX9 if you are still using Direct3D 9. You can make use of D3DCompile APIs directly with the legacy DirectX SDK, but newer versions of the D3DCompile DLL in the Windows 8.x SDK are not compatible with Windows XP for runtime use. You can use DirectXMath for Direct3D 9 instead of D3DXMath or XNAMath via [NuGet](https://www.nuget.org/packages/directxmath). You can find Direct3D 9 versions of DDSTextureLoader, WICTextureLoader, and ScreenGrab on [GitHub](https://github.com/microsoft/DirectXTex/). You can use <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> and <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a> when preparing content for use by Direct3D 9 (the [texconv](https://github.com/microsoft/DirectXTex/wiki/Texconv) supports a ``-dx9`` switch for this purpose).
+<strong>Direct3D 9:</strong> There are  limited replacements for the functionality in D3DX9 if you are still using Direct3D 9. You can make use of D3DCompile APIs directly with the legacy DirectX SDK, but newer versions of the D3DCompile DLL in the Windows 8.x SDK are not compatible with Windows XP for runtime use. You can use DirectXMath for Direct3D 9 instead of D3DXMath or XNAMath via [NuGet](https://www.nuget.org/packages/directxmath). You can find Direct3D 9 versions of DDSTextureLoader, WICTextureLoader, and ScreenGrab on [GitHub](https://github.com/microsoft/DirectXTex/). You can use <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> and <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a> when preparing content for use by Direct3D 9 (the [texconv](https://github.com/microsoft/DirectXTex/wiki/Texconv) tool supports a ``-dx9`` switch for this purpose).
 
 <strong>Direct3D 10:</strong> The best option for Direct3D 10.x applications is to update them to use Direct3D 11, and then utilize all the options here to replace legacy D3XD10. Porting the API is very <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-programming-guide-migrating">straightforward</a>, and Direct3D 11 is <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3darticles/direct3d11-deployment">available</a> on all supported platforms that have Direct3D 10.
 
@@ -21,11 +21,11 @@ I've built a number of porting notes tables for each of these topics, and then r
 
 <strong>Related:</strong> <a href="https://aka.ms/dxsdk">Where is the DirectX SDK?</a>, <a href="https://walbourn.github.io/directx-sdks-of-a-certain-age/">DirectX SDKs of a certain age</a>, <a href="https://walbourn.github.io/dxut-for-win32-desktop-update/">DXUT for Win32 Desktop Update</a>, <a href="https://walbourn.github.io/directx-sdk-samples-catalog/">DirectX SDK Samples Catalog</a>, <a href="https://walbourn.github.io/directx-sdk-tools-catalog/">DirectX SDK Tools Catalog</a>
 
-<strong>CodePlex: </strong>All CodePlex links below will redirect to the Microsoft organizational section of GitHub as CodePlex has been <a href="https://devblogs.microsoft.com/bharry/shutting-down-codeplex">shutdown</a>.
+<strong>CodePlex: </strong>All CodePlex links will redirect to the Microsoft organizational section of GitHub as CodePlex has been <a href="https://devblogs.microsoft.com/bharry/shutting-down-codeplex">shutdown</a>.
 
 <h1>General Helpers</h1>
 
-The <a href="https://walbourn.github.io/directxtk/">DirectX Tool Kit</a> provides a number of helpers that are designed to simplify Direct3D 11 programming in the tradition of the original D3DX library. You can find the library on <a href="http://go.microsoft.com/fwlink/?LinkId=248929">CodePlex</a> and <a href="https://github.com/Microsoft/DirectXTK">GitHub</a>.
+The <a href="https://walbourn.github.io/directxtk/">DirectX Tool Kit</a> provides a number of helpers that are designed to simplify Direct3D 11 programming in the tradition of the original D3DX library. You can find the library on <a href="https://github.com/Microsoft/DirectXTK">GitHub</a>.
 
 <table border="1">
 <tbody>
@@ -35,11 +35,11 @@ The <a href="https://walbourn.github.io/directxtk/">DirectX Tool Kit</a> provide
 </tr>
 <tr>
 <td><code>ID3DX10Font</code></td>
-<td><code>SpriteFont, SpriteBatch</code></td>
+<td><code>SpriteFont<br />SpriteBatch</code></td>
 </tr>
 <tr>
 <td><code>ID3DX10Mesh</code></td>
-<td><code>Model, ModelMesh, ModelMeshPart</code></td>
+<td><code>Model<br />ModelMesh<br />ModelMeshPart<br />ModelBone</code></td>
 </tr>
 <tr>
 <td><code>D3DXCreateBox<br />
@@ -48,6 +48,10 @@ D3DXCreateSphere<br />
 D3DXCreateTeapot<br />
 D3DXCreateTorus</code></td>
 <td><code>GeometricPrimitive</code></td>
+</tr>
+<tr>
+<td><code>D3DXCreatePolygon</code></td>
+<td><code>PrimitiveBatch</code></td>
 </tr>
 <tr>
 <td><code>D3DX11CreateShaderResourceViewFromFile</code></td>
@@ -79,9 +83,7 @@ The DXERR library is another helper that shipped in the legacy DirectX SDK. In W
 <table border="1">
 <tbody>
 <tr>
-<td><code>DXGetErrorString
-DXGetErrorDescription
-DXTrace</code></td>
+<td><code>DXGetErrorString<br />DXGetErrorDescription<br />DXTrace</code></td>
 <td>See <a href="https://walbourn.github.io/wheres-dxerr-lib/">Where's DXERR.LIB?</a></td>
 </tr>
 </tbody>
@@ -158,7 +160,7 @@ D3D10GetShaderDebugInfo</code></td>
 
 <h1>Texture Functions</h1>
 
-The <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> library is primarily intended for <a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">texture processing</a> offline with tools, although it can also be used at runtime for doing texture block compression, mipmap generation, or handling more general image processing needs. <a href="https://walbourn.github.io/directxtk/">DirectXTK</a> is intended for use at runtime with light-weight helpers and image loaders, but does not provide support for general runtime texture format conversion. You can find both libraries on <a href="http://go.microsoft.com/fwlink/?LinkId=248926">CodePlex</a> and <a href="https://github.com/Microsoft/DirectXTex">GitHub</a>.
+The <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> library is primarily intended for <a href="https://walbourn.github.io/direct3d-11-textures-and-block-compression/">texture processing</a> offline with tools, although it can also be used at runtime for doing texture block compression, mipmap generation, or handling more general image processing needs. <a href="https://walbourn.github.io/directxtk/">DirectXTK</a> is intended for use at runtime with light-weight helpers and image loaders, but does not provide support for general runtime texture format conversion. You can find both libraries on <a href="https://github.com/Microsoft/DirectXTex">GitHub</a>.
 
 <table border="1">
 <tbody>
@@ -169,14 +171,12 @@ The <a href="https://walbourn.github.io/directxtex/">DirectXTex</a> library is p
 <tr>
 <td><code>D3DX11CreateShaderResourceViewFromFile
 D3DX11CreateTextureFromFile</code></td>
-<td>DDSTextureLoader: <code>CreateDDSTextureFromFile</code>
-WICTextureLoader: <code>CreateWICTextureFromFile</code>DirectXTex library (tools), <code>LoadFromXXXFile</code> then <code>CreateShaderResourceView</code> or <code>CreateTexture</code></td>
+<td>DDSTextureLoader: <code>CreateDDSTextureFromFile</code><br />WICTextureLoader: <code>CreateWICTextureFromFile</code><br />DirectXTex library (tools), <code>LoadFromXXXFile</code> then <code>CreateShaderResourceView</code> or <code>CreateTexture</code></td>
 </tr>
 <tr>
 <td><code>D3DX11CreateShaderResourceViewFromMemory
 D3DX11CreateTextureFromMemory</code></td>
-<td>DDSTextureLoader: <code>CreateDDSTextureFromMemory</code>
-WICTextureLoader: <code>CreateWICTextureFromMemory</code>DirectXTex library (tools), <code>LoadFromXXXMemory</code> then <code>CreateShaderResourceView</code> or <code>CreateTexture</code></td>
+<td>DDSTextureLoader: <code>CreateDDSTextureFromMemory</code><br />WICTextureLoader: <code>CreateWICTextureFromMemory</code><br />DirectXTex library (tools), <code>LoadFromXXXMemory</code> then <code>CreateShaderResourceView</code> or <code>CreateTexture</code></td>
 </tr>
 <tr>
 <td><code>D3DX11CreateShaderResourceViewFromResource
@@ -199,7 +199,6 @@ D3DX11CreateTextureFromResource</code></td>
 <td><code>D3DX11GetImageInfoFromResource</code></td>
 <td>No direct equivalent, can use Win32 resource functions and then the 'from memory' APIs above.</td>
 </tr>
-<td><code>OptimizeVertices</code></td>
 <tr>
 <td><code>D3DX11LoadTextureFromTexture</code></td>
 <td>DirectXTex library, <code>Resize</code>, <code>Convert</code>, <code>Compress</code>, <code>Decompress</code>, and/or <code>CopyRectangle</code></td>
@@ -219,7 +218,7 @@ DirectXTex library, <code>CaptureTexture</code> then <code>SaveToXXXFile</code><
 
 <h1>Geometry Functions</h1>
 
-The <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a> library is intended for geometry processing offline with tools, although it can be used at runtime. You can find the library on <a href="http://go.microsoft.com/fwlink/?LinkID=324981">CodePlex</a> and <a href="https://github.com/Microsoft/DirectXMesh">GitHub</a>.
+The <a href="https://walbourn.github.io/directxmesh/">DirectXMesh</a> library is intended for geometry processing offline with tools, although it can be used at runtime. You can find the library on <a href="https://github.com/Microsoft/DirectXMesh">GitHub</a>.
 
 <table border="1">
 <tbody>
@@ -247,12 +246,7 @@ D3DXComputeTangentFrameEx</code></td>
 </tr>
 <tr>
 <td><code>ID3DX10Mesh::Optimize</code></td>
-<td><code>AttributeSort
-OptimizeFacesEx
-OptimizeVertices
-ReorderIB
-FinalizeIB
-FinalizeVB</code></td>
+<td><code>AttributeSort<br />OptimizeFacesEx<br />OptimizeVertices<br />ReorderIB<br />FinalizeIB<br />FinalizeVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXOptimizeFaces</code></td>
@@ -260,6 +254,7 @@ FinalizeVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXOptimizeVertices</code></td>
+<td><code>OptimizeVertices</code></td>
 </tr>
 <tr>
 <td><code>D3DXValidMesh</code></td>
@@ -267,8 +262,7 @@ FinalizeVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXWeldVertices</code></td>
-<td><code>WeldVertices
-CompactVB</code></td>
+<td><code>WeldVertices<br />CompactVB</code></td>
 </tr>
 <tr>
 <td><code>D3DXGetFVFVertexSize<br />
@@ -943,7 +937,7 @@ XMSHMultiply3<br />
 XMSHMultiply4<br />
 XMSHMultiply5<br />
 XMSHMultiply6</code></td>
-<td>Computes the product of two functions represented using SH. Equivalent to <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/d3dxshmultiply2">D3DXSHMultiply2</a>, <code>D3DXSHMultiply3</code>, <code>D3DXSHMultiply4</code>, <code>D3DXSHMultiply5</code>, and <code>D3DXSHMultiply6</code>.</td>
+<td>Computes the product of two functions represented using SH.<br />Equivalent to <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d9/d3dxshmultiply2">D3DXSHMultiply2</a>, <code>D3DXSHMultiply3</code>, <code>D3DXSHMultiply4</code>, <code>D3DXSHMultiply5</code>, and <code>D3DXSHMultiply6</code>.</td>
 </tr>
 <tr>
 <td><code>XMSHEvalDirectionalLight</code></td>
@@ -974,7 +968,7 @@ A DirectXMath-based version of ``D3DXCreateMatrixStack`` / ``ID3DXMATRIXStack`` 
 
 <h1>Effects (FX)</h1>
 
-The <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects system for Direct3D 11</a> is primarily provided as a porting aid for older code. The library is available on <a href="http://go.microsoft.com/fwlink/p/?LinkId=271568">CodePlex</a> and <a href="https://github.com/Microsoft/FX11">GitHub</a>.
+The <a href="https://walbourn.github.io/effects-for-direct3d-11-update/">Effects system for Direct3D 11</a> is primarily provided as a porting aid for older code. The library is available on <a href="https://github.com/Microsoft/FX11">GitHub</a>.
 
 <table border="1">
 <tbody>
@@ -999,7 +993,7 @@ D3DXCreateEffectFromFileEx</code></td>
 <td><code>D3DXCreateEffectPool<br />
 D3D10CreateEffectPoolFromMemory</code></td>
 <td>Effects 11 does not support 'effect pools'
-or <code>D3DCOMPILE_EFFECT_CHILD_EFFECT</code>. Effect <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-effect-group-syntax">groups</a> provide a more efficient solution for common scenarios previously addressed with 'effect pools'</td>
+or <code>D3DCOMPILE_EFFECT_CHILD_EFFECT</code>.<br />Effect <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3d11/d3d11-effect-group-syntax">groups</a> provide a more efficient solution for common scenarios previously addressed with 'effect pools'</td>
 </tr>
 <tr>
 <td><code>D3DXDisassembleEffect<br />
@@ -1022,16 +1016,18 @@ D3DPERF_SetRegion<br />
 D3DPERF_QueryRepeatFrame<br />
 D3DPERF_SetOptions<br />
 D3DPERF_GetStatus</code></td>
-<td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation">ID3DUserDefinedAnnotation</a> which is supported by the DirectX 11.1 runtime on Windows 8.x and Windows 7 Service Pack 1 + <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">KB2670838</a>
-
-If using DirectX 11.2+, you can use <a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2">ID3D11DeviceContext2</a> directly for BeginEventInt, SetMarkerInt, and EndEvent.</td>
+<td><a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d11_1/nn-d3d11_1-id3duserdefinedannotation">ID3DUserDefinedAnnotation</a> which is supported by the DirectX 11.1 runtime on Windows 8.x and Windows 7 Service Pack 1 + <a href="https://walbourn.github.io/directx-11-1-and-windows-7-update/">KB2670838</a><br />
+<br />
+If using DirectX 11.2+, you can use <a href="https://docs.microsoft.com/en-us/windows/desktop/api/d3d11_2/nn-d3d11_2-id3d11devicecontext2">ID3D11DeviceContext2</a> directly for BeginEventInt, SetMarkerInt, and EndEvent.<br />
+<br />
+For DirectX12, use the <a href="https://devblogs.microsoft.com/pix/winpixeventruntime/">WinPixEventRuntime</a> NuGet package.</td>
 </tr>
 </tbody>
 </table>
 
 <h1>UVAtlas Functions</h1>
 
-The <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas</a> library is intended for isochart creation offline with tools, although it can be used at runtime. You can find the library on <a href="http://go.microsoft.com/fwlink/?LinkID=512686">CodePlex</a> and <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.
+The <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas</a> library is intended for isochart creation offline with tools, although it can be used at runtime. You can find the library on <a href="https://github.com/Microsoft/UVAtlas">GitHub</a>.
 <table border="1">
 <tbody>
 <tr>
@@ -1065,14 +1061,39 @@ The <a href="https://walbourn.github.io/uvatlas-return-of-the-isochart/">UVAtlas
 </tbody>
 </table>
 
+<h1>XFile I/O</h1>
+
+The DirectX&reg; X-File format was dropped for Direct3D 10+, so if you need processing for these files the recommendation is to make use of the [Microsoft.DXSDK.D3DX](https://walbourn.github.io/legacy-d3dx-on-nuget/) NuGet package and the associated [D3DX XFile](https://learn.microsoft.com/windows/win32/direct3d9/dx9-graphics-reference-d3dx-x-file) APIs such as ``ID3DXFile`` which are hosted in the ``D3DX9_43.DLL``.
+
+> Avoid using the 'inbox' [legacy X-File APIs](https://learn.microsoft.com/windows/win32/direct3d9/dx9-graphics-reference-x-file) such as ``IDirectXFile``. Use of the D3DX9 version is much preferred for forward compatibilty. This older version is also x86 (32-bit) only.
+
+<h1>Miscellaneous</h1>
+
+<table border="1">
+<tbody>
+<tr>
+<td>D3DX9Anim</td>
+<td>See the animation utility code for <i>DirectX Tool Kit</i> for <a href="https://github.com/microsoft/DirectXTK/wiki/Using-skinned-models">DX11</a> / <a href="https://github.com/microsoft/DirectXTK12/wiki/Using-skinned-models">DX12</a>.</tr>
+</tr>
+<tr>
+<td><code>ID3DXRenderToSurface</code></td>
+<td>See the <code>RenderTexture</code> utility for <a href="https://github.com/microsoft/DirectXTK/wiki/RenderTexture">DX11</a> / <a href="https://github.com/microsoft/DirectXTK12/wiki/RenderTexture">DX12</a>.</td>
+</tr>
+<tr>
+<td><code>ID3DXLine</code></td>
+<td>Use of <a href="https://learn.microsoft.com/windows/win32/direct2d/direct2d-portal">Direct2D</a> either directly or via interop is the recommended solution for styled-lines and other "presentation" graphics rendering.
+</tbody>
+</table>
+
 <h1>Note</h1>
 
-Careful readers will note that there are a few omissions from this table.
+Careful readers will note that there are a few omissions from this table. Use the [NuGet package](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX) if you still need this functionality.
 
 <ul>
  	<li>The Precomputed Radiance Transfer (PRT) simulator is only available in closed-source form in legacy D3DX9. There are a number of papers that cover this technology in the literature, and the most generally useful parts of this functionality are the <a href="https://walbourn.github.io/spherical-harmonics-math/">SHmath</a> functions which are available.</li>
+	<li>Progressive Mesh (P-Mesh) is only available in closed-source form in legacy D3DX9.</li>
 </ul>
 
 <h1>Background</h1>
 
-A few folks have asked why the D3DX libraries were deprecated in the first place in the transition to the Windows 8.x SDK. D3DX has been a useful set of utility code for Direct3D applications since Direct3D 7, but has a presented a number of challenges over the years. The primary one is that as a 'closed-source' utility library; it was difficult to debug, resolve performance issues, or apply hot-fixes without taking a dependency on a newer release of the DirectX SDK. Second, with the security requirements that came with the adoption of the <a href="https://www.microsoft.com/en-us/securityengineering/sdl/">Secure Development Lifecycle</a> (SDL) at Microsoft, the transition to a DLL rather than a static library created a redistribution requirement that<a href="https://walbourn.github.io/not-so-direct-setup/"> complicated setup</a> for many developers--note that static libraries have their own problems such as being specific to a particular release of the compiler including service pack level. D3DX9 itself became a bit bloated which resulted in a DLL larger than many EXEs that used it. Finally, the actual usable content of subsequent generations of D3DX left D3DX11 with not much in it. The need for useful utility code is still there, but it is now being solved with various 'shared-source' solutions rather than a monolithic closed-source DLL like D3DX.
+A few folks have asked why the D3DX libraries were deprecated in the first place in the transition to the Windows 8.x SDK. D3DX has been a useful set of utility code for Direct3D applications since Direct3D 7, but has a presented a number of challenges over the years. The primary one is that as a 'closed-source' utility library; it was difficult to debug, resolve performance issues, or apply hot-fixes without taking a dependency on a newer release of the DirectX SDK. Second, with the security requirements that came with the adoption of the <a href="https://www.microsoft.com/en-us/securityengineering/sdl/">Secure Development Lifecycle</a> (SDL) at Microsoft, the transition to a DLL rather than a static library created a redistribution requirement that <a href="https://walbourn.github.io/not-so-direct-setup/"> complicated setup</a> for many developers--note that static libraries have their own problems such as being specific to a particular release of the compiler including service pack level. D3DX9 itself became a bit bloated which resulted in a DLL larger than many EXEs that used it. Finally, the actual usable content of subsequent generations of D3DX left D3DX11 with not much in it. The need for useful utility code is still there, but it is now being solved with various 'shared-source' solutions rather than a monolithic closed-source DLL like D3DX.
