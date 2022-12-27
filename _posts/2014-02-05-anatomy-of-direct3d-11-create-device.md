@@ -58,7 +58,7 @@ The <code>E_INVALIDARG</code> case is the one that trips up people, and it handl
 
 <strong>Update:</strong> The same thing happens if you include <code>D3D_FEATURE_LEVEL_12_0</code> and/or <code>D3D_FEATURE_LEVEL_12_1</code> in your array when run on versions of Windows prior to Windows 10. In this case, you'd end up with two <code>E_INVALIDARG</code> cases to handle if you wanted to go all the way back to DirectX 11.0 Runtime and still cover all possible feature levels. That said, the 12.x Direct3D hardware feature levels are basically just the 11.1 Direct3D hardware feature level with some additional optional features you could choose to detect individually instead.
 
-<h1>Direct3D 11.1</h1>
+# Direct3D 11.1
 
 Once you have the Direct3D device and context you can proceed, but if you want to use some of the newer features of Direct3D 11.1 you'll need another step:
 
@@ -75,7 +75,7 @@ This code requires you include ``<d3d11_1.h>`` and have the <a href="https://wal
 
 <strong>Note:</strong> For modern games, DirectX 11.1 or later is a reasonable requirement. Games should already require Windows 7 Service Pack 1 as Windows 7 RTM is out of support and isn't supported by VS 2015/2017 in any case. If you fail to obtain a 11.1 device in this case or get a <code>E_INVALIDARG</code> above, a fatal error telling the user they need to install KB 2670838 or upgrade to a newer OS is a reasonable course of action.
 
-<h1>Direct3D 11.2</h1>
+# Direct3D 11.2
 
 If you want to use Direct3D 11.2 features, you do basically the same thing:
 
@@ -92,7 +92,7 @@ This code requires you include ``<d3d11_2.h>`` and have the <a href="https://wal
 
 <strong>Update:</strong> You could do the same with Direct3D 11.3 which would only return a valid pointer on Windows 10. Direct3D 11.4 requires Windows 10 (November 2015 or later). You need to include ``<d3d11_3.h>`` or ``<d3d11_4.h>`` and have the <a href="https://walbourn.github.io/windows-10-sdk-november-2015/">Windows 10 SDK</a>.
 
-<h1>DXGI</h1>
+# DXGI
 
 The primary reason to get a DXGI interface is to enumerate adapters and inputs, but you also use them to create swap chains. There's a trick to making sure you get it robustly if you have passed <code>nullptr</code> to <code>D3D11CreateDevice</code> for the <code>pAdapter</code> pointer as we have above. Mixing different DXGI factory versions can cause problems, so ideally we want to use whatever the system used internally. You can do this with a little COM sequence that is perhaps familiar to Windows Store app and Xbox One developers:
 
@@ -117,7 +117,7 @@ ComPtr<IDXGIFactory1> dxgiFactory;
 
 If you want to specify a particular adapter for the device creation, you need a DXGI factory. For DirectX 11 systems generally, you use <code>CreateDXGIFactory1</code> (<code>CreateDXGIFactory</code> was for Direct3D 10 systems). You can make use of <code>CreateDXGIFactory2</code> on Windows 8.1 or Windows 10 systems to specify DXGI debugging, but generally you use <code>CreateDXGIFactory1</code> and then would <code>QueryInterface</code> other versions as needed.
 
-<h1>Swap Chains</h1>
+# Swap Chains
 
 For Win32 classic desktop apps on DirectX 11.0 systems, you must use the <a href="https://docs.microsoft.com/en-us/windows/desktop/api/dxgi/nf-dxgi-idxgifactory-createswapchain">IDXGIFactory1::CreateSwapChain</a> function. On DirectX 11.1 or later systems you can use <a href="https://docs.microsoft.com/en-us/windows/desktop/api/dxgi1_2/nf-dxgi1_2-idxgifactory2-createswapchainforhwnd">IDXGIFactory2::CreateSwapChainForHwnd</a>.
 
@@ -129,7 +129,34 @@ One more consideration: For gamma-correct rendering to standard 8-bit per channe
 
 <strong>Update:</strong> You also need to use the <code>FLIP_*</code> swap effects if you want to make use of <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/variable-refresh-rate-displays">variable refresh displays</a> or <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3ddxgi/high-dynamic-range-and-wide-color-gamut">HDR10</a> output. See <a href="https://github.com/walbourn/directx-vs-templates/blob/main/d3d11game_win32_dr/DeviceResources.cpp">DeviceResources</a> for more details.
 
-<h1>Microsoft Basic Render Driver</h1>
+# BGRA vs. RGBA
+
+In Direct3D 10, all DXGI formats were standardized to RGBA only formats. For Direct3D 11.0 or later and to support 10level9 Direct3D Hardware Feature Levels, some BGRA formats were added in DXGI 1.1 / 1.2. Everything newer than first-generation WDDM drivers therefore support these additional BGRA formats, but the best practice if you make use of them is to add `D3D11_CREATE_DEVICE_BGRA_SUPPORT` as part of device creation. Note: This is *required* to interop with Direct2D/DirectWrite.
+
+```cpp
+DWORD createDeviceFlags = D3D11_CREATE_DEVICE_BGRA_SUPPORT;
+#ifdef _DEBUG
+    createDeviceFlags |= D3D11_CREATE_DEVICE_DEBUG;
+#endif
+```
+
+Keep in mind that for swap-chains, only the following formats are supported (i.e. they have support for 'display scan-out'):
+
+```
+// Direct3D hardware feature level 9.1 or later
+DXGI_FORMAT_B8G8R8A8_UNORM
+
+// Direct3D hardware feature level 9.3 or later
+DXGI_FORMAT_R8G8B8A8_UNORM
+DXGI_FORMAT_R8G8B8A8_UNORM_SRGB
+
+// Direct3D hardware feature level 10.0 or later
+DXGI_FORMAT_R16G16B16A16_FLOAT
+DXGI_FORMAT_R10G10B10A2_UNORM
+DXGI_FORMAT_R10G10B10_XR_BIAS_A2_UNORM
+```
+
+# Microsoft Basic Render Driver
 
 In the original code, we use <code>D3D_DRIVER_TYPE_HARDWARE</code>. If you had wanted to use the <a href="https://docs.microsoft.com/en-us/windows/desktop/direct3darticles/directx-warp">WARP</a> software device, you would have used <code>D3D_DRIVER_TYPE_WARP</code>. WARP is exceptionally useful as a much faster 'ref' for testing and can be used quite successfully as a software fallback for many kinds of applications, but it is still a software renderer. As such, most games don't expect to be running under WARP.
 
