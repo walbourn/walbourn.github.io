@@ -7,16 +7,16 @@ comments: true
 categories: [general]
 ---
 
-As a reminder, [Windows 7 end-of-life](https://www.microsoft.com/en-us/windows/windows-7-end-of-life-support-information) for consumer is fast approaching on January 14, 2020. There are enterprises that will have on-going support contracts, but officially for consumers that's the end of the road. There are of course a number of gamers still running Windows 7--thankfully according to the [Valve Steam Hardware Survey](https://store.steampowered.com/hwsurvey) they are almost all running 64-bit--, and it will remain important in some markets for some time to come. So, here are a few tips for developers still needing to support Windows 7.
+As a reminder, [Windows 7 end-of-life](https://www.microsoft.com/windows/end-of-support?os=win7) for consumer is fast approaching on January 14, 2020. There are enterprises that will have on-going support contracts, but officially for consumers that's the end of the road. There are of course a number of gamers still running Windows 7--thankfully according to the [Valve Steam Hardware Survey](https://store.steampowered.com/hwsurvey) they are almost all running 64-bit--, and it will remain important in some markets for some time to come. So, here are a few tips for developers still needing to support Windows 7.
 <!--more-->
 
-First, [Windows 7 Service Pack 1](https://walbourn.github.io/windows-7-service-pack-1/) is really your minimum. Officially Windows 7 RTM isn't supported anymore even by the Visual C++ Runtime. There are also assumptions made for most consumer software that the system is updated with the latest changes from Windows Update. For a history of the roll-up releases, see [KB4009469](https://support.microsoft.com/en-us/help/4009469).
+First, [Windows 7 Service Pack 1](https://walbourn.github.io/windows-7-service-pack-1/) is really your minimum. Officially Windows 7 RTM isn't supported anymore even by the Visual C++ Runtime. There are also assumptions made for most consumer software that the system is updated with the latest changes from Windows Update. For a history of the roll-up releases, see [KB4009469](https://support.microsoft.com/help/4009469).
 
-Second, keep in mind that SHA-2 support is an essential update for a Windows 7 machine. See [KB4472027](https://support.microsoft.com/en-us/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) and [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).
+Second, keep in mind that SHA-2 support is an essential update for a Windows 7 machine. See [KB4472027](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) and [Windows Enforcement of SHA1 Certificates](https://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx).
 
 # DirectX
 
-Windows 7 SP1 supports all the DirectX 11.1 software features with [KB2670838](https://support.microsoft.com/en-us/help/2670838/platform-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1), but it does not support ``D3D_FEATURE_LEVEL_11_1`` or the various 'optional hardware features' that require updated drivers. Note the 11.1 Runtime makes it a lot easier to interop Direct2D/DirectWrite with Direct3D 11. See [this blog post](https://walbourn.github.io/directx-11-1-and-windows-7-update/) and [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/direct3darticles/platform-update-for-windows-7) for the technical details.
+Windows 7 SP1 supports all the DirectX 11.1 software features with [KB2670838](https://support.microsoft.com/help/2670838/platform-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1), but it does not support ``D3D_FEATURE_LEVEL_11_1`` or the various 'optional hardware features' that require updated drivers. Note the 11.1 Runtime makes it a lot easier to interop Direct2D/DirectWrite with Direct3D 11. See [this blog post](https://walbourn.github.io/directx-11-1-and-windows-7-update/) and [Microsoft Docs](https://docs.microsoft.com/windows/win32/direct3darticles/platform-update-for-windows-7) for the technical details.
 
 A limited form of Direct3D 12 is also available for Windows 7 SP1. This includes the DirectX Raytracing API. It requires some careful coding, and existing Windows 10 DirectX 12 applications are probably making a number of other system assumptions that need to be revisited, but it's a useful option for unifying your rendering. For details see [Porting DirectX 12 games to Windows 7](https://devblogs.microsoft.com/directx/porting-directx-12-games-to-windows-7/). For developers, this is supported through a [NuGet](https://www.nuget.org/packages/Microsoft.Direct3D.D3D12On7) package.
 
@@ -28,7 +28,7 @@ A limited form of Direct3D 12 is also available for Windows 7 SP1. This includes
 
 In my many blog posts about the retiring of the [legacy DirectX SDK](https://aka.ms/dxsdk), one key area that keeps it [alive](https://walbourn.github.io/the-zombie-directx-sdk/) is the fact that XAudio 2.7 was the last  release to support Windows 7. This made it difficult for games to use XAudio 2.8/2.9 features built into the OS for Win32 desktop applications on [later versions of Windows](https://walbourn.github.io/xaudio2-and-windows-8/).
 
-The great news here is that much like the DirectX 12 story, there is a version of XAudio 2.9 that supports Windows 7 SP1, Windows 8.0, Windows 8.1, and still takes advantage of the Windows 10 built-in version. See [Microsoft Docs](https://docs.microsoft.com/en-us/windows/win32/xaudio2/xaudio2-redistributable) for all the details. The developer story utilizes a [NuGet](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) package as well.
+The great news here is that much like the DirectX 12 story, there is a version of XAudio 2.9 that supports Windows 7 SP1, Windows 8.0, Windows 8.1, and still takes advantage of the Windows 10 built-in version. See [Microsoft Docs](https://docs.microsoft.com/windows/win32/xaudio2/xaudio2-redistributable) for all the details. The developer story utilizes a [NuGet](https://www.nuget.org/packages/Microsoft.XAudio2.Redist/) package as well.
 
 > The XAudio2 samples on [GitHub](https://github.com/walbourn/directx-sdk-samples/tree/main/XAudio2) have been updated to support using the new XAudio 2.9 REDIST version instead of the DirectX SDK.
 
@@ -48,7 +48,7 @@ You can and should use the manifesto practices on Windows 7 as well, but there's
 
 # Additional notes
 
-* The ``LOAD_LIBRARY_SEARCH_SYSTEM32`` flag is a useful security feature when explicitly loading a system DLL. Keep in mind that it's not supported on Windows 7 SP1 without [KB2533623](https://support.microsoft.com/en-us/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed.
+* The ``LOAD_LIBRARY_SEARCH_SYSTEM32`` flag is a useful security feature when explicitly loading a system DLL. Keep in mind that it's not supported on Windows 7 SP1 without [KB2533623](https://support.microsoft.com/help/2533623/microsoft-security-advisory-insecure-library-loading-could-allow-remot) installed.
 
 * With Windows 7 or later, Win32 desktop applications should include embedded manifests. See [Manifest Madness](https://walbourn.github.io/manifest-madness/).
 
