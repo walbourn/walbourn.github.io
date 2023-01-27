@@ -145,6 +145,7 @@ Keep in mind that for swap-chains, only the following formats are supported (i.e
 ```
 // Direct3D hardware feature level 9.1 or later
 DXGI_FORMAT_B8G8R8A8_UNORM
+DXGI_FORMAT_B8G8R8A8_UNORM_SRGB
 
 // Direct3D hardware feature level 9.3 or later
 DXGI_FORMAT_R8G8B8A8_UNORM

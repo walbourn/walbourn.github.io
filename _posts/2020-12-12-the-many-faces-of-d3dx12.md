@@ -64,4 +64,8 @@ I did want to end this post with a big thank you to all the Microsoft engineers 
 
 I believe the open source approach is a much improved model for this kind of 'useful optional stuff', and that also is a reflection of changes in Microsoft culture and processes. The GitHub libraries I created were all intended to honor the great work done for D3DX over the years, and keep it relevant for modern DirectX development.
 
+# Future work
+
+**UPDATE**: D3DX12 has had some major refactoring lately plus some additional functionality. See the [DirectX Developer Blog](https://devblogs.microsoft.com/directx/updates-in-directx-headers-repo/) for more information.
+
 **See also:** [Living without D3DX](https://walbourn.github.io/living-without-d3dx/), [The Zombie DirectX SDK](https://walbourn.github.io/the-zombie-directx-sdk/)
