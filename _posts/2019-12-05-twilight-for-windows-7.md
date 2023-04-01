@@ -54,4 +54,6 @@ You can and should use the manifesto practices on Windows 7 as well, but there's
 
 * If you are wanting to integrate with the Game Explorer, the most recent version of the GDFMaker tool can be found in Windows 10 SDK. You can find [GDFTrace](https://github.com/walbourn/directx-sdk-samples/tree/main/GDFTrace) and [GamesuxInstallHelper](https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/GameuxInstallHelper) on GitHub.
 
+<b>Update:</b> Note that [Steam](https://help.steampowered.com/faqs/view/4784-4F2B-1321-800A) is dropping support for Windows 7 as of January 1, 2024.
+
 <b>Related:</b> <a href="https://walbourn.github.io/a-look-back-windows-vista/">Windows Vista</a>, <a href="https://walbourn.github.io/goodbye-to-an-old-friend/">Windows XP</a>

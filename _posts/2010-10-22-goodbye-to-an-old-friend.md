@@ -26,3 +26,5 @@ A lot has happened in the past 9+ years here in Redmond, and while Windows XP ha
 <strong>Testing:</strong> If you still need to do some testing on Windows XP, consider using a VM rather than a physical Windows XP machine. On Windows 7, you can make use of "<a href="http://www.microsoft.com/windows/virtual-pc/download.aspx">Windows XP Mode</a>". On Windows 8 Pro or Enterprise, if you have an old Windows XP disk and valid product key laying about, you can setup a VM using <a href="https://www.techrepublic.com/blog/windows-and-office/install-windows-xp-in-windows-8-client-hyper-v/">Hyper-V</a>.
 
 <strong>Update:</strong> As of April 8, 2014, Windows XP is now <a href="https://support.microsoft.com/en-us/help/14223/windows-xp-end-of-support">end-of-life</a>.
+
+<b>Update:</b> Note that [Steam](https://help.steampowered.com/faqs/view/6E66-54EC-3EFC-283C) dropped support for Windows XP as of January 1, 2019.

@@ -20,3 +20,5 @@ While the RTM of Windows Vista was indeed a rough experience all around, by the 
 </ul>
 
 So if you love Windows 7 or Windows 10, remember to pour one out for the unloved older sibling that paved the way with a lot of blood, sweat, toil, and tears...
+
+<b>Update:</b> Note that [Steam](https://help.steampowered.com/faqs/view/6E66-54EC-3EFC-283C) dropped support for Windows Vista as of January 1, 2019.
