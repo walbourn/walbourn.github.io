@@ -27,3 +27,4 @@ excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
 
+google_analytics: "G-X026T44B1S"
