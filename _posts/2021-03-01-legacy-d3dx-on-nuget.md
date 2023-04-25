@@ -34,7 +34,7 @@ The only changes here were for updating the VC++ project files, a few minor VS 2
 
 When using the ``Microsoft.DXSDK.D3DX`` NuGet package, you *do not* need to run the *DirectX SDK* installer or the *DirectX End-User Runtime* as they use "application local" copies of the ``D3DX9$(D)_43.DLL``, ``D3DX10$(D)_43.DLL``, and/or ``D3DX11$(D)_43.DLL``.
 
-When it comes time to ship your game or application, just ship the ``D3DX9_43.DLL``, ``D3DX10_43.DLL``, and/or ``D3DX11_43.DLL`` along with ``D3DCompile_43.DLL`` depending on your usage as part of your normal package. No need for administrative rights to install them, no need to use the DirectSetup API, no registry editing needed. See the NuGet [license](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX/9.29.952.3/License) for more details.
+When it comes time to ship your game or application, just ship the ``D3DX9_43.DLL``, ``D3DX10_43.DLL``, and/or ``D3DX11_43.DLL`` along with ``D3DCompiler_43.DLL`` depending on your usage as part of your normal package. No need for administrative rights to install them, no need to use the DirectSetup API, no registry editing needed. See the NuGet [license](https://www.nuget.org/packages/Microsoft.DXSDK.D3DX/9.29.952.3/License) for more details.
 
 > Note you cannot use D3DX9, D3DX10, and/or D3DX11 in a Universal Windows Platforms (UWP) or Xbox app. These DLLs will not pass WACK certification. For those cases, the open source route is the way to go.
 

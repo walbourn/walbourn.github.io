@@ -53,4 +53,4 @@ For this initial release of the Xbox triplets, almost all existing ports that cl
 
 As such, currently around 1000 ports succeed in building against the triplets, and around 1100 ports fail to build. Over time, we hope library maintainers will take advantage of the flexibility offered by these triplets, and help improve the support for the Xbox platform.
 
-<strong>See Also</strong>: [Visual Studio Developer Blog](https://devblogs.microsoft.com/cppblog/category/vcpkg/)
+<strong>See Also</strong>: [Visual C++ Team Blog](https://devblogs.microsoft.com/cppblog/vcpkg-2023-04-15-release-vcpkg-ships-in-visual-studio-xbox-triplets-github-actions-cache-support-and-more/), [Visual Studio Developer Blog](https://devblogs.microsoft.com/cppblog/category/vcpkg/)
