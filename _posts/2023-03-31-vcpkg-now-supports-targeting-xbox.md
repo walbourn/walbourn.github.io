@@ -23,7 +23,7 @@ When using these triplets, code is built using the `WINAPI_FAMILY_GAMES` partiti
 
 For Xbox developers who have access to the *Microsoft GDK with Xbox Extensions*, these triplets are fully supported for both MSBuild and CMake-based build systems.
 
-For MSBuild, the *Gaming.Xbox.Scarlett.x64* and *Gaming.Xbox.XboxOne.x64* custom platforms will select the appropriate triplet when using MSBuild integration. Note that vcpkg triplets use the `GameDXLatest`, `GameGXDKLatest`, and `GameGRDKLatest` environment variables to locate installed GDKs.
+For MSBuild, the *Gaming.Xbox.Scarlett.x64* and *Gaming.Xbox.XboxOne.x64* custom platforms will select the appropriate triplet when using MSBuild integration. Note that vcpkg triplets use the `GameDKLatest`, `GameGXDKLatest`, and `GameGRDKLatest` environment variables to locate installed GDKs.
 
 For CMake-based builds, Xbox makes use of the "Windows" `CMAKE_SYSTEM_NAME` with a custom variable `XBOX_CONSOLE_TARGET` set to either "xboxone" or "scarlett". This is used both to communicate from the trip to CMake files within vcpkg, and for CMake projects making use of vcpkg to community their triplet requirements.
 
@@ -41,7 +41,7 @@ The vast majority of libraries can be built using the Xbox community triplets us
 
 * The Xbox Game OS utilizes a variant of DirectX called DirectX 12.X. Building graphics code therefore requires access to the *Microsoft GDK with Xbox Extensions*. The Xbox Game OS does not support Direct3D 11, Direct2D/DirectWrite, OpenGL, GDI, or any older version of Direct3D.
 
-  * The Universal Windows Platform (UWP) on Xbox supports stock Direct3D 12, Direct3D 11, and Direct2D/DirectWrite. Such code is built using the existing **x64-uwp** vcpkg triplet.
+  * The Universal Windows Platform (UWP) on Xbox supports stock Direct3D 12, Direct3D 11, and Direct2D/DirectWrite. Such code is built using the existing **x64-uwp** vcpkg triplet. See [DirectX and UWP on Xbox One](https://walbourn.github.io/directx-and-uwp-on-xbox-one/) and [DirectX and UWP on Xbox Series X\|S](https://walbourn.github.io/directx-and-uwp-on-xbox-series-x-s/).
 
 * Windows Imaging Component (WIC) is supported, although some extensions and codecs are not available.
 
