@@ -168,6 +168,9 @@ Interface | Windows OS version
 ``ID3D12Device5`` | Windows 10 October 2018 (17763)
 ``ID3D12Device6`` | Windows 10 May 2019 (18362)
 ``ID3D12Device7``, ``ID3D12Device8`` | Windows 10 May 2020 Update (19041)
+``ID3D12Device9`` | Agility SDK 1.4 and Windows 11 (22000)
+``ID3D12Device10`` | Agility SDK 1.6 and Windows 11 (22621)
+``ID3D12Device11``, ``ID3D12Device12`` | in preview
 
 The ``D3D12CreateDevice`` method can directly create newer versions of the interface if you know your target environment supports it. For example, if you are using DirectX 12 on Xbox or if your installer has already ensured a particular version of Windows 10 as a minimum.
 
