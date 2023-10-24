@@ -103,3 +103,7 @@ if (info.vendorId == GAMING_DEVICE_VENDOR_ID_MICROSOFT)
 # HDR, DirectX Raytracing, etc.
 
 For games looking to implement High-Dynamic Range (HDR), DirectX Raytracing (DXR), or other [DirectX Ultimate](https://devblogs.microsoft.com/directx/announcing-directx-12-ultimate/) features, contact the <a href="https://www.xbox.com/Developers/id">ID@Xbox program</a>.
+
+# Known Issues
+
+* As of the August 2023 Xbox recovery, UWP development on Xbox requires using the *Windows SDK for Windows 11, 22H2* (22621) or later. Older tools do not use the latest secure communication channel required by Xbox which no longer supports SHA1.
