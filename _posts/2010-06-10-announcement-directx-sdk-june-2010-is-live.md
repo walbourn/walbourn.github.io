@@ -6,14 +6,16 @@ author: Chuck Walbourn
 comments: true
 categories: [dxsdk, hlsl, pixw, visualc, directxmath]
 ---
-The June 2010 release of the DirectX SDK is now available on [Microsoft Downloads](http://go.microsoft.com/fwlink/?LinkId=226640). This release introduces official support for Visual Studio 2010, an updated version of the HLSL compiler with numerous fixes and minor improvements, improved documentation and samples, XNAMath C++ SIMD library version 2.03, and PIX for Windows usability improvements.
+The June 2010 release of the DirectX SDK is now available on [Microsoft Downloads](https://www.microsoft.com/download/details.aspx?id=6812). This release introduces official support for Visual Studio 2010, an updated version of the HLSL compiler with numerous fixes and minor improvements, improved documentation and samples, XNAMath C++ SIMD library version 2.03, and PIX for Windows usability improvements.
 
 <em><strong>Note: The DirectX SDK is now legacy. You should use the [Windows 10 SDK](https://aka.ms/dxsdk) instead.</strong></em>
 <!--more-->
 
+> The legacy June 2010 DXSDK and End-User Runtime packages were republished "as-is" with SHA256 code-signing. See [this post](https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/) for details.
+
 <strike>For download details, see the [DirectX Developer Center](http://msdn.microsoft.com/directx/).</strike>
 
-The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D3DX9/10/11, D3DCSX, D3DCompiler, XAUDIO2, and XACT is also available online ([Web](http://go.microsoft.com/fwlink/p/?LinkId=159853) or [stand-alone](http://go.microsoft.com/fwlink/p/?LinkId=159853)).
+The corresponding DirectX End-User Runtime with the June 2010 updated DLLs for D3DX9/10/11, D3DCSX, D3DCompiler, XAUDIO2, and XACT is also available online ([Web](https://www.microsoft.com/download/details.aspx?id=35) or [stand-alone](https://www.microsoft.com/download/details.aspx?id=8109)).
 
 <strong>Update:</strong> Please note that the REDIST folder for the DirectX SDK (June 2010) is slightly out of date now. You should make use of the [refreshed version](https://walbourn.github.io/dxsetup-update/) of DirectSetup if you need the REDIST.
 

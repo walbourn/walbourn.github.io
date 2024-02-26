@@ -6,7 +6,7 @@ author: Chuck Walbourn
 comments: true
 categories: [directx]
 ---
-We've republished the June 2010 <a href="http://go.microsoft.com/fwlink/p/?LinkId=159853">DirectX End-User Runtime Web Installer</a>, which now shows a release date of <strike>"11/30/2010"</strike> "4/18/2011". This deploys all the same binaries as the June 2010 version, but the setup itself has been updated to resolve a few key issues.
+We've republished the June 2010 <a href="https://www.microsoft.com/download/details.aspx?id=35">DirectX End-User Runtime Web Installer</a>, which now shows a release date of <strike>"11/30/2010" "4/18/2011"</strike> "2/20/2021". This deploys all the same binaries as the June 2010 version, but the setup itself has been updated to resolve a few key issues.
 <!--more-->
 
 **IMPORTANT: The *DirectX End-User Runtime* has been updated in 2021 to address SHA-1 deprecation. Be sure to read [this blog post](https://walbourn.github.io/where-is-the-directx-sdk-2021-edition/) and [this one](https://walbourn.github.io/legacy-d3dx-on-nuget/).**

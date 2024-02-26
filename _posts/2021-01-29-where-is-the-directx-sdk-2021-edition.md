@@ -9,7 +9,7 @@ categories: [directx, dxsdk]
 
 Microsoft announced last year that it was retiring all SHA-1 signed content from Microsoft Downloads in [this blog post](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/sha-1-windows-content-to-be-retired-august-3-2020/ba-p/1544373) since the SHA-1 algorithm is no longer considered secure. The original timeline was stretched out a bit due to COVID-19, but as of January 2021 this content is no longer hosted by Microsoft servers.
 
-This impacted the legacy [*DirectX SDK*](http://go.microsoft.com/fwlink/?LinkId=226640), the [*DirectX End-User Runtime*](http://go.microsoft.com/fwlink/?LinkID=194352), and the [*DirectX End-User Runtime Web Installer*](http://go.microsoft.com/fwlink/p/?LinkId=159853). In January 2021 they were removed from the Microsoft Download Center. As of February 20, 2021, these three downloads have been republished using SHA-256 signing for the 'outer' containers--there's been no change to the contents or binaries. **The payload DLLs are still using SHA-1, and there are known security issues, so it is highly recommended you move to the replacements mentioned in this post.**
+This impacted the legacy [*DirectX SDK*](https://www.microsoft.com/download/details.aspx?id=6812), the [*DirectX End-User Runtime*](https://www.microsoft.com/download/details.aspx?id=8109), and the [*DirectX End-User Runtime Web Installer*](https://www.microsoft.com/download/details.aspx?id=35). In January 2021 they were removed from the Microsoft Download Center. As of February 20, 2021, these three downloads have been republished using SHA-256 signing for the 'outer' containers--there's been no change to the contents or binaries. **The payload DLLs are still using SHA-1, and there are known security issues, so it is highly recommended you move to the replacements mentioned in this post.**
 <!--more-->
 
 # Impact for existing games
@@ -102,7 +102,7 @@ See [Microsoft Docs](https://docs.microsoft.com/windows/win32/direct3d11/overvie
 
 All of the advice above assumes you are targeting Windows 7 or up. For Windows XP / Windows Server 2003, there's no choice at all but to use the legacy DirectX SDK. In order to target Windows XP, you must use the Windows 7.1A SDK instead of the modern Windows SDK which is before the DirectX content was fully moved over. The Windows 8.x SDK and Windows 10 SDK do not support Windows XP development.
 
-In this case, the only option is to obtain the legacy DirectX SDK from [Microsoft Downloads](http://go.microsoft.com/fwlink/?LinkId=226640) or some Internet mirror (for example, there's a copy on [archive.org](https://archive.org/details/dxsdk_2010)). To ensure you are using the genuine bits, I highly recommend you verify the hash *before* running it.
+In this case, the only option is to obtain the legacy DirectX SDK from [Microsoft Downloads](https://www.microsoft.com/download/details.aspx?id=6812) or some Internet mirror (for example, there's a copy on [archive.org](https://archive.org/details/dxsdk_2010)). To ensure you are using the genuine bits, I highly recommend you verify the hash *before* running it.
 
 ```
 certutil -hashfile DXSDK_Jun10.exe SHA512
