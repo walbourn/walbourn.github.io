@@ -30,4 +30,6 @@ lld-link: warning/error: ignoring unknown debug$S subsection kind 0xFF in file l
 
 See [this issue](https://reviews.llvm.org/D129378) for more details.
 
-> The Visual Studio 2022 17.4 Update includes clang 15.0.1 to address this issue.
+> The [Visual Studio 2022 17.4 Update](https://walbourn.github.io/vs-2022-update-4/) includes clang 15.0.1 to address this issue.
+
+<b>Related:</b> <a href="https://walbourn.github.io/windows-sdk-for-windows-11/">Windows SDK for Windows 11</a>
