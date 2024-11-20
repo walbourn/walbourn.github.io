@@ -11,7 +11,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 
 > <strong>Update: </strong>As of the Windows 10 SDK, official Windows samples are hosted on GitHub: <a href="https://github.com/Microsoft/Windows-universal-samples">Windows-universal-samples</a>, <a href="https://github.com/Microsoft/Windows-classic-samples">Windows-classic-samples</a>, <a href="https://github.com/Microsoft/Windows-driver-samples">Windows-driver-samples</a>. You can also use this <a href="https://docs.microsoft.com/en-us/samples/browse/">website</a> to search Microsoft official samples.
 
-> These republished legacy DirectX SDK samples are now found on GitHub <a href="https://github.com/walbourn/directx-sdk-samples">directx-sdk-samples</a> and <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> as <i>MSDN Code Gallery</i> has been retired. DirectX 12 samples have their own [repo](https://github.com/Microsoft/DirectX-Graphics-Samples/), and also [this one](https://github.com/Microsoft/Xbox-ATG-Samples/) which hosts samples on DirectX and game development.
+> These republished legacy DirectX SDK samples are now found on <a href="https://github.com/microsoft/DirectX-SDK-Samples/">GitHub</a> as <i>MSDN Code Gallery</i> has been retired. DirectX 12 samples have their own [repo](https://github.com/Microsoft/DirectX-Graphics-Samples/), and also [this one](https://github.com/Microsoft/Xbox-ATG-Samples/) which hosts samples on DirectX and game development.
 
 <table border="1">
 <tbody>
@@ -21,45 +21,45 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p>Tutorials</p>
 </td>
 <td>
-<p>Tutorial01 - 07<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11Tutorials">Direct3D Tutorial Win32 Sample</a></p>
-<p>Tutorial08-10<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11TutorialsDXUT">DXUT Tutorial Win32 Sample</a></p>
-<p>Tutorial11-14<br /> <a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Direct3D11TutorialsFX11">Effects Tutorial Win32 Sample</a></p>
+<p>Tutorial01 - 07<br /> <a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11/Tutorials">Direct3D Tutorial Win32 Sample</a></p>
+<p>Tutorial08-10<br /></p>
+<p>Tutorial11-14<br /></p>
 </td>
 </tr>
 <tr>
 <td>AdaptiveTessellationCS40<br /> FluidCS11<br /> HDRToneMappingCS11<br /> NBodyGravityCS11<br /> OIT11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples">DirectCompute Graphics Win32 Samples</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">DirectCompute Graphics Win32 Samples</a></p>
 </td>
 </tr>
 <tr>
 <td>BasicCompute11<br /> ComputeShaderSort11</td>
-<td><a href="https://github.com/walbourn/directx-sdk-samples">DirectCompute Basic Win32 Samples</a></td>
+<td><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">DirectCompute Basic Win32 Samples</a></td>
 </tr>
 <tr>
 <td>BasicHLSL11<br /> EmptyProject11<br /> SimpleSample11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples">Basic DXUT Win32 Samples</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">Basic DXUT Win32 Samples</a></p>
 </td>
 </tr>
 <tr>
-<td>BasicHLSL10<br /> DynamicShaderLinkageFX11<br /> FixedFuncEMU<br />Instancing10</td>
+<td>BasicHLSL11FX<br /> DynamicShaderLinkageFX11<br /> FixedFuncEMU<br />Instancing10</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples">Effects 11 Win32 Samples</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">Effects 11 Win32 Samples</a></p>
 <p>These samples make use of the <a href="http://go.microsoft.com/fwlink/p/?LinkId=271568">Effects 11 (FX11) library</a>.</p>
 </td>
 </tr>
 <tr>
 <td>BC6HBC7EncoderDecoder11</td>
 <td>
-<p><a href="http://go.microsoft.com/fwlink/?LinkId=254494">BC6H/BC7 DirectCompute Encoder Tool</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11/BC6HBC7EncoderDecoder11">BC6H/BC7 DirectCompute Encoder Tool</a> (Win32)</p>
 <p>Note this functionality is also present in the <a href="http://go.microsoft.com/fwlink/?LinkId=248926">DirectXTex</a>.</p>
 </td>
 </tr>
 <tr>
 <td>CascadedShadowMaps11<br /> VarianceShadows11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/">Direct3D Shadow Win32 Samples</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">Direct3D Shadow Win32 Samples</a></p>
 </td>
 </tr>
 <tr>
@@ -72,19 +72,19 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <tr>
 <td>DynamicShaderLinkage11 / DynamicShaderLinkageFX11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/">Dynamic Shader Linkage Win32 Sample</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">Dynamic Shader Linkage Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
 <td>MultithreadedRendering11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11/MultithreadedRendering11">Direct3D Multithreaded Rendering Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
 <td>SimpleBezier11<br /> SubD11</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples">Direct3D Tessellation Win32 Samples</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D11">Direct3D Tessellation Win32 Samples</a></p>
 </td>
 </tr>
 <tr>
@@ -101,7 +101,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p>Collision</p>
 </td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/Collision">DirectXMath Win32 Sample</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/Collision">DirectXMath Win32 Sample</a></p>
 </td>
 </tr>
 <tr>
@@ -115,31 +115,31 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <tr>
 <td>CoreDetection</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/CoreDetection">Core Detection Sample</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/CoreDetection">Core Detection Sample</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>D3D11InstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/D3D11InstallHelper">Direct3D 11 Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/D3D11InstallHelper">Direct3D 11 Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>FirewallInstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/FirewallInstallHelper">Windows Firewall Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/FirewallInstallHelper">Windows Firewall Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>GameuxInstallHelper</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/InstallHelpers/GameuxInstallHelper">Gameux Install Helper</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/GameuxInstallHelper">Gameux Install Helper</a> (Win32)</p>
 </td>
 </tr>
 <tr>
 <td>VideoMemory</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/VideoMemory">DirectX Video Memory</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Misc/VideoMemory">DirectX Video Memory</a> (Win32)</p>
 </td>
 </tr>
 <tr>
@@ -147,8 +147,7 @@ Microsoft has moved away from providing samples in SDKs for a number of reasons,
 <p><strong>XInput</strong></p>
 SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XInput">XInput Samples</a> (Win32)</p>
-<p>XInputGame can be found <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/XInput">here.</a></p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/XInput">XInput Samples</a> (Win32)</p>
 <p>XInput 1.4 is supported on Windows 8.x and Windows 10. XInput 9.1.0 is in all versions of Windows since Windows Vista.</p>
 <p>See <a href="https://walbourn.github.io/xinput-and-windows-8/">XINPUT and Windows 8</a> for more information.</p>
 </td>
@@ -158,7 +157,7 @@ SimpleController<br /> RumbleController<br /><br />XInputGame</td>
 <p><strong>XAudio2</strong></p>
 XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2CustomAPO</td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/XAudio2">XAudio2 Samples</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/XAudio2">XAudio2 Samples</a> (Win32)</p>
 <p>XAudio 2.8 is supported on Windows 8.x or Windows 10. Windows 10 includes XAudio 2.9 and is available through <a href="https://aka.ms/XAudio2Redist">XAudio2Redist</a> on Windows 7 SP1 or Windows 8.x as well.</p>
 <p>See <a href="https://walbourn.github.io/xaudio2-and-windows-8/">XAudio2 and Windows 8</a> for more information.</p>
 <p><em><a href="http://go.microsoft.com/fwlink/?LinkId=248929">DirectXTK for Audio</a> is also a sample of XAudio2 usage, and is demonstrated in the <a href="https://github.com/walbourn/directxtk-samples">DirectX Tool Kit Simple Samples</a>.</em></p>
@@ -170,7 +169,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p>Customformat<br /> FFConst<br /> Joystick</p>
 </td>
 <td>
-<p><a href="https://github.com/walbourn/directx-sdk-samples/tree/main/DirectInput">DirectInput Samples</a> (Win32)</p>
+<p><a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/DirectInput">DirectInput Samples</a> (Win32)</p>
 <p><em>Keyboard and Mouse samples are not included as use of DirectInput for these scenarios is not recommended. See <a href="https://walbourn.github.io/directx-tool-kit-keyboard-and-mouse-support/">this blog post</a>.</em></p>
 </td>
 </tr>
@@ -180,7 +179,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p>AntiAlias<br />-<br />Text3D</p>
 </td>
 <td>
-<p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/Direct3D">directx-sdk-legacy-samples</a> repository.</p>
+<p>The Direct3D 9 samples require D3DX9, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found on <a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D">GitHub</a>.</p>
 </td>
 </tr>
 <tr>
@@ -189,7 +188,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p>10BitScanout10<br />-<br />TransparencyAA10.1</p>
 </td>
 <td>
-<p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/Direct3D10">directx-sdk-legacy-samples</a> repository.</p>
+<p>The Direct3D 10 samples require D3DX10, and therefore make use of the Microsoft.DXSDK.D3DX NuGet package. They can be found on <a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D10">GitHub</a>.</p>
 </td>
 </tr>
 <tr>
@@ -198,7 +197,7 @@ XAudio2BasicSound<br /> XAudio2BasicStream<br /> XAudio2Sound3D<br /> XAudio2Cus
 <p>AdjustSound<br />-<br />VoiceManagement</p>
 </td>
 <td>
-<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples/tree/main/DirectSound">directx-sdk-legacy-samples</a> repository.</p>
+<p>The DirectX SDK (November 2007) release was the last time the DirectSound samples were shipped. They can be found on <a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/DirectSound">GitHub</a>.</p>
 </td>
 </tr>
 </tbody>
@@ -235,7 +234,7 @@ These samples shipped in the DirectX SDK (June 2010) and were contributed by AMD
 <tr>
 <td>DepthOfField10.1<br /> HDAO10.1<br /> TransparencyAA10.1<br /> <br /> ContactHardeningShadows11<br /> DecalTessellation11<br /> DetailTessellation11<br /> PNTriangles11</td>
 <td>
-<p>This samples make use of D3DX10/D3DX11 and therefore require the use of the Microsoft.DXSDK.D3DX NuGet package. These are included in the <a href="https://github.com/walbourn/directx-sdk-legacy-samples">directx-sdk-legacy-samples</a> repository.</p>
+<p>This samples make use of D3DX10/D3DX11 and therefore require the use of the Microsoft.DXSDK.D3DX NuGet package. These are included on <a href="https://github.com/microsoft/DirectX-SDK-Samples/tree/main/C%2B%2B/Direct3D10">GitHub</a>.</p>
 </td>
 </tr>
 </tbody>
