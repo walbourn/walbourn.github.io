@@ -84,7 +84,7 @@ Managed DirectX 1.1 assemblies have been deprecated for a long time. They should
 
 * For ``DXERR.H`` / ``DXERR.LIB``, see [this blog post](https://walbourn.github.io/wheres-dxerr-lib/).
 
-* For the ``XDSP.H`` math helper header, you can find this on [GitHub](https://github.com/microsoft/DirectXMath/tree/main/XDSP). It relies on DirectXMath.
+* For the ``XDSP.H`` math helper header, see [this blog post](https://walbourn.github.io/xdsp-h-digital-signal-processing-helper-functions/).
 
 * XACT never saw wide-spread adoption. There's no direct replacement option for XACT. Use in new projects is not recommended.
 
