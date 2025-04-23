@@ -24,11 +24,11 @@ For GamePad and building using XInput, I assume XInput 1.4 is present rather tha
 
 # GameInput v1 API Support
 
-Speaking of the *DirectX Tool Kit* input classes. The GameInput implementation now supports both the original `GAMEINPUT_API_VERSION` of 0 and can now build for the new `GAMEINPUT_API_VERSION 1` release from *Game Developer Conference* last week. See [Microsoft Learn](https://learn.microsoft.com/gaming/gdk/_content/gc/input/overviews/input-versioning) for more details. GameInput v1 for PC is available on [NuGet](https://www.nuget.org/packages/Microsoft.GameInput) and [vcpkg](https://github.com/microsoft/vcpkg/tree/master/ports/gameinput). Be sure to run `GameInputRedist.msi` on your development system and include it in your redistribution.
+Speaking of the *DirectX Tool Kit* input classes. The GameInput implementation now supports both the original `GAMEINPUT_API_VERSION` of 0 and can now build for the new `GAMEINPUT_API_VERSION 1` release from *Game Developer Conference* last month. See [Microsoft Learn](https://learn.microsoft.com/gaming/gdk/_content/gc/input/overviews/input-versioning) for more details. GameInput v1 for PC is available on [NuGet](https://www.nuget.org/packages/Microsoft.GameInput) and [vcpkg](https://github.com/microsoft/vcpkg/tree/master/ports/gameinput). Be sure to run `GameInputRedist.msi` on your development system and include it in your redistribution.
 
 > To make use of GameInput v1 on PC, use the CMake option ``BUILD_GAMEINPUT``. The *directxtk* and *directxk12* vcpkg ports both offer *gameinput* features.
 
-> For Xbox One and Xbox Series X\|S using the Microsoft GDK with Xbox extensions, it sill uses the GameInput v0 API.
+> For Xbox One and Xbox Series X\|S using the Microsoft GDK with Xbox extensions, it still uses the GameInput v0 API.
 
 # DirectX Tool Kit for Audio
 
@@ -64,7 +64,7 @@ Windows on ARM 32-bit support was removed last year due to deprecation per [Micr
 
 # CMake support for generating shared library DLLs
 
-For many years, I have focused on only supporting C++ static linking for my GitHub projects. I have occassionaly gotten requests for DLL shared lib support, but didn't want to maange a lot of extra `vcxproj` files and macros. I've since added support to the CMake projects using `BUILD_SHARED_LIBS`. The GitHub projects can therefore be built as either static C++ libraries or DLLs using CMake. The MSBuild projects are all still C++ static libraries only.
+For many years, I have focused on only supporting C++ static linking for my GitHub projects. I have occassionaly gotten requests for DLL shared lib support, but didn't want to manage a lot of extra `vcxproj` files and macros. I've since added support to the CMake projects using `BUILD_SHARED_LIBS`. The GitHub projects can therefore be built as either static C++ libraries or DLLs using CMake. The MSBuild projects are all still C++ static libraries only.
 
 For vcpkg scenarios, this means that if you use *x64-windows* then you will get a DLL instead of a static C++ library for these projects. The CMake target will automatically set the required import preprocessor define. For vcpkg+MSBuild integration, you have to define it in your project settings directly.
 
