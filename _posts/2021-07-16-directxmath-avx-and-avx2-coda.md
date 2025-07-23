@@ -121,4 +121,6 @@ if (uint32_t(CPUInfo[0]) > 0x80000000)
 
 <strong>Xbox:</strong> Xbox One supports ABM, AES, BMI1, and MOVBE. Xbox Series X\|S supports those as well plus BMI2.
 
+<strong>Windows on ARM64:</strong> Windows 11 on ARM64 emulation of x64 now supports AVX instructions and others [per this blog post](https://blogs.windows.com/windows-insider/2024/11/06/announcing-windows-11-insider-preview-build-27744-canary-channel/). Initially it only supported up to SSE 4.2.
+
 <strong>Related</strong>: See [Visual C++ Team Blog](https://devblogs.microsoft.com/cppblog/bit-in-visual-studio-2019-version-16-8-preview-2/)

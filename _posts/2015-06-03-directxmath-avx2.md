@@ -69,4 +69,6 @@ The source for this project and the rest of the blog series is now available on 
 
 <strong>Xbox:</strong> Xbox One does not support AVX2. Xbox Series X\|S does support AVX2.
 
+<strong>Windows on ARM64:</strong> Windows 11 on ARM64 emulation of x64 now supports AVX instructions and others [per this blog post](https://blogs.windows.com/windows-insider/2024/11/06/announcing-windows-11-insider-preview-build-27744-canary-channel/). Initially it only supported up to SSE 4.2.
+
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-avx/">AVX</a>;  <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>

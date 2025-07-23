@@ -139,4 +139,6 @@ Support for AVX intrinsics was added to Visual Studio 2010 via Service Pack 1. T
 
 <strong>Update:</strong> Per the latest numbers from the [Value Hardware Survey](https://store.steampowered.com/hwsurvey), for PC games you could support AVX without excluding significant numbers of gamers. You should check for the CPU & OS support at startup to avoid unexplained crashes due to invalid instructions if a customer tries to run it on an older PC.
 
+<strong>Windows on ARM64:</strong> Windows 11 on ARM64 emulation of x64 now supports AVX instructions and others [per this blog post](https://blogs.windows.com/windows-insider/2024/11/06/announcing-windows-11-insider-preview-build-27744-canary-channel/). Initially it only supported up to SSE 4.2.
+
 <strong>See also</strong>: <a href="https://walbourn.github.io/directxmath-sse-sse2-and-arm-neon/">SSE. SSE2. and ARM-NEON</a>; <a href="https://walbourn.github.io/directxmath-sse3-and-ssse3/">SSE3 and SSSE3</a>; <a href="https://walbourn.github.io/directxmath-sse4-1-and-sse4-2/">SSE4.1 and SSE4.2</a>; <a href="https://walbourn.github.io/directxmath-f16c-and-fma/">F16C and FMA</a>; <a href="https://walbourn.github.io/directxmath-avx2/">AVX2</a>; <a href="https://walbourn.github.io/directxmath-arm64/">ARM64</a>

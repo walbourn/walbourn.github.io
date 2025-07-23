@@ -109,13 +109,13 @@ enum FLAGS_FOR_MYFUNCTION
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-dynamic-exception-spec"
+#pragma clang diagnostic ignored "-Wextra-semi-stmt"
 #endif
 
-DEFINE_ENUM_FLAG_OPERATORS(FLAGS_FOR_MYFUNCTION)
+DEFINE_ENUM_FLAG_OPERATORS(FLAGS_FOR_MYFUNCTION);
 
 #ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-dynamic-exception-spec"
+#pragma clang diagnostic pop
 #endif
 
 HRESULT MyFunction(FLAGS_FOR_MYFUNCTION flags);
@@ -124,6 +124,8 @@ HRESULT MyFunction(FLAGS_FOR_MYFUNCTION flags);
 > Prior to Windows 10 SDK (14393), the ``DEFINE_ENUM_FLAG_OPERATORS`` macro did not make use of ``constexpr``, meaning that the resulting flags couldn't be used in ``constexpr`` expressions. This issue should only impact legacy Xbox One XDK code at this point.
 
 > With the Windows 10 SDK (19041) and clang v10, there are some conformance issues with ``DEFINE_ENUM_FLAG_OPERATORS`` that generates ``-Wdeprecated-dynamic-exception-spec`` so I suppress those in my libraries when using this macro.
+
+> Technically the `;` after the macro results in an `-Wextra-semi-stmt` warning. Without it, however, C++ code formatting will be incorrectly indented. Hence the second warning suppression.
 
 # Client code impact
 
