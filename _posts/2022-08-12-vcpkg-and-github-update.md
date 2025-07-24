@@ -4,7 +4,7 @@ title: vcpkg and GitHub Update
 date: 2022-08-12 20:33
 author: Chuck Walbourn
 comments: true
-categories: [github]
+categories: [github, vcpkg]
 ---
 
 Over the summer I've made a few improvements to my GitHub project's CMake support and [vcpkg](https://vcpkg.io/) C++ Package Manager integration. In addition to updating for the July 2022 releases of *DirectX Tool Kit* [DX11](https://github.com/microsoft/DirectXTK/releases/tag/jul2022) / [DX12](https://github.com/microsoft/DirectXTK12/releases/tag/jul2022), [DirectXTex](https://github.com/microsoft/DirectXTex/releases/tag/jul2022), [DirectXMesh](https://github.com/microsoft/DirectXMesh/releases/tag/jul2022), and [UVAtlas](https://github.com/microsoft/UVAtlas/releases/tag/jul2022), I've done some work on some related vcpkg ports as well, which I've summarized in this blog post.

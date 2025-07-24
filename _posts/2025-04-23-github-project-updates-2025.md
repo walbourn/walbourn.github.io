@@ -4,7 +4,7 @@ title: GitHub Project Updates 2025
 date: 2025-04-23 09:37
 author: Chuck Walbourn
 comments: true
-categories: [github]
+categories: [github, vcpkg]
 ---
 
 
