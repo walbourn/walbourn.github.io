@@ -35,7 +35,7 @@ Stenning, <em>Direct3D Rendering Cookbook</em>, Packt Publishing (January 21, 20
 
 <a href="http://www.amazon.com/Direct3D-Rendering-Cookbook-Justin-Stenning/dp/1849697108/ref=sr_1_1?ie=UTF8&qid=1395900538&sr=8-1&keywords=Direct3D+Rendering+Cookbook">Amazon</a>, <a href="http://www.packtpub.com/direct3d-rendering-cookbook/book">Publisher</a>
 
-For developers more comfortable with C#, this book demonstrates the Direct3D 11.x API using SharpDX in a very step-by-step manner. The coverage includes advanced techniques including hardware tessellation and deferred shading, so it's definitely a good resource for anyone doing graphics or 3D games in C#. It also covers Windows Store apps development in some detail.
+For developers more comfortable with C#, this book demonstrates the Direct3D 11.x API using [SharpDX](https://github.com/sharpdx/SharpDX/) in a very step-by-step manner. The coverage includes advanced techniques including hardware tessellation and deferred shading, so it's definitely a good resource for anyone doing graphics or 3D games in C#. It also covers Windows Store apps development in some detail.
 
 <h1>Real-Time 3D Rendering with DirectX and HLSL</h1>
 
