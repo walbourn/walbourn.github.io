@@ -13,7 +13,7 @@ For the majority of that time, I have been the sole developer. I've had sporatic
 
 <!--more-->
 
-Thankfully, for the moment I was able to find Microsoft people to at take ownership of them since I lost corp access, but without a lot of personal passion and drive I'm not sure how long that will last. I'm also not sure where I'll land in this very chaotic tech market. I am able to contribute as an "outside" developer for now, but ultimately these projects won't last if there is no Microsoft FTE keeping the lights on.
+Thankfully, for the moment, I was able to find Microsoft people to take ownership of them since I lost corp access, but without a lot of personal passion and drive I'm not sure how long that will last. I'm also not sure where I'll land in this very chaotic tech market. I am able to contribute as an "outside" developer for now, but ultimately these projects won't last if there is no Microsoft FTE keeping the lights on.
 
 I had purposely avoided putting telemetry into these projects as I felt it was not appropriate for these tools under the MIT license, but that also means there's a data gap about adoption beyond some download/clone numbers. **As such, if you have found these libraries to be valuable, included them in shipping products, or included them in your indie titles, it would be helpful to have the new owners hear and see your feedback to help justify investment to their management**.
 
