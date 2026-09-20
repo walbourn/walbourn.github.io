@@ -4,7 +4,7 @@ title: GitHub - A Call to Action
 date: 2026-07-16 10:15
 author: Chuck Walbourn
 comments: true
-categories: [general]
+categories: [github]
 ---
 
 Since the deprecation of the original *DirectX SDK* back in ~2011, I've been developing and maintaining a number of Open Source projects to fill the gaps left behind when the core DirectX components moved to the Windows SDK. A lot of this was to replace legacy D3DX which had great utility but was effectively abandoned, never to be serviced again. It was also an attempt to modernize the utilities for C++11, make them more easily consumable by professional and hobbyist developers, and to merge in learning from other variants like the Xbox XGraphics libraries.
